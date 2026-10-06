@@ -6,7 +6,7 @@ Game dùng Unity IL2CPP và Addressables. Ngôn ngữ chính thức không có t
 
 ## Trạng thái
 
-Đã có hook lúc chơi: BepInEx IL2CPP và AutoTranslator. Chưa bắt câu, chưa dịch `strings.csv`, chưa có font tiếng Việt.
+Đã trích 127804 câu tiếng Anh từ `LocalizeData` vào `locale/vi/strings.csv`. Cột tiếng Việt còn trống. Chưa có font.
 
 ## Trong thư mục này
 
@@ -19,7 +19,8 @@ Game dùng Unity IL2CPP và Addressables. Ngôn ngữ chính thức không có t
 | `config.example.json` | Mẫu đường dẫn Steam / Epic. |
 | `runtime.lock.json` | URL và sha256 của BepInEx và AutoTranslator. |
 | `tools/fetch_runtime.py` | Tải hai gói đó vào `patch/`. |
-| `tools/echo_translate.py` | Ghi câu gốc lúc chơi, không gọi máy dịch. |
+| `tools/extract_strings.py` | Trích hết câu tiếng Anh từ `LocalizeData` vào CSV. |
+| `tools/echo_translate.py` | Hook lúc chơi. Không dùng để thu thập câu. |
 
 ## Bắt đầu
 
@@ -27,14 +28,15 @@ Làm từ thư mục gốc repo.
 
 1. Copy `games/patapon12-replay/config.example.json` thành `config.json` ngay trong thư mục game. `config.json` không được commit.
 2. Đọc `docs/pipeline.md`.
-3. Tải runtime, rồi kiểm tra CSV và mở launcher:
+3. Trích câu, rồi kiểm tra CSV:
 
 ```powershell
-.\.venv\Scripts\python.exe games\patapon12-replay\tools\fetch_runtime.py
+.\.venv\Scripts\python.exe games\patapon12-replay\tools\extract_strings.py
+python tools\validate_locale.py games\patapon12-replay
 ```
 
-4. Điền `locale/vi/strings.csv` khi đã có câu gốc. Xóa dòng `EXAMPLE-0001` khi bắt đầu dịch thật.
-5. Kiểm tra CSV, rồi mở launcher để chọn thư mục cài:
+4. Dịch cột `vi` trong `locale/vi/strings.csv`. Giữ nguyên `id` và `source`.
+5. Mở launcher khi đã có file trong `patch/` để áp hook:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
