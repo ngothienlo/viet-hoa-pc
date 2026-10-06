@@ -13,6 +13,8 @@ dist/
 global-metadata.dat
 GameAssembly.dll
 
+.venv/
+
 __pycache__/
 *.pyc
 .vs/

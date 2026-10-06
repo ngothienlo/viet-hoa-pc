@@ -26,11 +26,15 @@ Khung làm việc. Chưa trích chuỗi, chưa có bản dịch.
 1. Copy `config.example.json` thành `config.json`, điền thư mục cài game. `config.json` không được commit.
 2. Đọc `docs/pipeline.md` trước khi trích chuỗi.
 3. Điền `locale/vi/strings.csv`. Xóa dòng `EXAMPLE-0001` khi bắt đầu dịch thật.
-4. Chạy:
+4. Dùng virtual env rồi kiểm tra CSV:
 
-```bash
-python tools/validate_locale.py
+```powershell
+py -3.14 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python tools\validate_locale.py
 ```
+
+Env này gắn với Python 3.14. Muốn đổi phiên bản thì cài thêm bản đó, xóa `.venv`, rồi tạo lại, ví dụ `py -3.12 -m venv .venv`. Gói cài trong env không lẫn vào Python của hệ thống. Thư mục `.venv` không được commit.
 
 ## Bản quyền
 

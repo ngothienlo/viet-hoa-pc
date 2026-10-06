@@ -10,8 +10,11 @@
 
 Dòng có `id` bắt đầu bằng `EXAMPLE` được bỏ qua.
 
-```bash
-python tools/validate_locale.py
+Trong env của dự án:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python tools\validate_locale.py
 ```
 
-Script trả về mã 0 khi file hợp lệ, mã 1 khi có lỗi.
+Chưa có `.venv` thì tạo bằng `py -3.14 -m venv .venv` ở thư mục gốc repo. Script trả về mã 0 khi file hợp lệ, mã 1 khi có lỗi.
