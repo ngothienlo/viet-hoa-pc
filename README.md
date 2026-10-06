@@ -20,6 +20,7 @@ Khung làm việc. Chưa trích chuỗi, chưa có bản dịch.
 | `docs/van-phong.md` | Văn phong tiếng Việt. |
 | `config.example.json` | Mẫu đường dẫn Steam / Epic. |
 | `tools/validate_locale.py` | Kiểm tra CSV trước khi đóng gói. |
+| `CLAUDE.md` | Luật luôn bật cho agent. Bản giống nằm ở `.github/copilot-instructions.md`. |
 
 ## Bắt đầu
 
