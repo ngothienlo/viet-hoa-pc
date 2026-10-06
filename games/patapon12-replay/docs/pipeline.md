@@ -24,7 +24,9 @@ Không chơi game để bắt câu. Một lệnh đọc hết bảng tiếng Anh
 
 Script ghi `locale/vi/strings.csv`. Cột `source` là tiếng Anh. `vi` để trống, `status` là `todo`. Id có dạng `P1.mission.missionid_0010.line.0`, `P2.colony.3`, `P1.system.0`. P1 và P1S dùng chung số câu. P2 và P2S cũng vậy, nhưng id khác nhau vì game tải riêng.
 
-Bản trích hiện có 127804 câu: P1 25229, P1S 25229, P2 38673, P2S 38673.
+Bản trích có 127804 câu. Câu gốc khác nhau chỉ 4691, vì P1S trùng P1, P2S trùng P2, và nhiều khẩu lệnh lặp lại.
+
+Bản nháp tiếng Việt do một lô dịch: câu lệnh và nút chính được chốt tay, phần còn lại dịch một lần rồi gắn cho mọi dòng trùng. `status` là `draft`. Câu trong bảng EN mà thực ra là tiếng Nhật vẫn `todo`. Chưa đọc trên màn hình game, nên chưa lên `review`.
 
 ## Áp vào game
 

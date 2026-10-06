@@ -6,7 +6,7 @@ Game dùng Unity IL2CPP và Addressables. Ngôn ngữ chính thức không có t
 
 ## Trạng thái
 
-Đã trích 127804 câu tiếng Anh từ `LocalizeData` vào `locale/vi/strings.csv`. Cột tiếng Việt còn trống. Chưa có font.
+Đã có bản nháp tiếng Việt cho phần lớn 127804 câu. Câu lệnh được chốt tay. Phần dài là dịch một lô, `status` là `draft`. Câu tiếng Nhật lẫn trong bảng EN vẫn để trống. Chưa có font.
 
 ## Trong thư mục này
 
