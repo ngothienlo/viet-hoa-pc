@@ -1,6 +1,8 @@
 # Pipeline
 
-Làm trên bản cài hợp pháp. Steam và Epic dùng cùng cấu trúc thư mục game. Đường dẫn ghi trong `config.json`.
+Thư mục game này là `games/patapon12-replay/`. Đường dẫn CSV và docs bên dưới tính từ đó. Lệnh kiểm tra chạy từ thư mục gốc repo.
+
+Làm trên bản cài hợp pháp. Steam và Epic dùng cùng cấu trúc thư mục cài. Đường dẫn ghi trong `config.json`.
 
 ## Chữ nằm ở đâu
 
@@ -16,7 +18,7 @@ Làm trên bản cài hợp pháp. Steam và Epic dùng cùng cấu trúc thư m
 2. Trích chuỗi từ bản cài bằng công cụ đọc asset Unity (UABEA hoặc AssetStudio). Để kết quả thô trong `extract/`. Thư mục này bị git bỏ qua.
 3. Nguồn dịch là tiếng Anh. Đối chiếu tiếng Nhật khi câu Anh tối nghĩa.
 4. Đưa từng khóa vào `locale/vi/strings.csv`.
-5. Chạy `python tools/validate_locale.py`.
+5. Từ thư mục gốc repo, chạy `python tools/validate_locale.py games/patapon12-replay`.
 6. Đóng gói bản vá local trong `build/`. Không commit bundle.
 
 ## Cột trong `strings.csv`
