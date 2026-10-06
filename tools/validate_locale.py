@@ -1,4 +1,4 @@
-"""Kiểm tra locale/vi/strings.csv trước khi đóng gói bản dịch."""
+"""Kiểm tra locale/vi/strings.csv của một game hoặc mọi game trong games/."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CSV_PATH = ROOT / "locale" / "vi" / "strings.csv"
+GAMES = ROOT / "games"
 REQUIRED = ["id", "context", "source", "vi", "status", "note"]
 STATUSES = {"todo", "draft", "review", "done"}
 TOKEN = re.compile(r"(\{[^{}]+\}|%[sdif]|</?[A-Za-z][^>]*>|\\n)")
@@ -18,9 +18,26 @@ def tokens(text: str) -> list[str]:
     return TOKEN.findall(text)
 
 
-def main() -> int:
-    if not CSV_PATH.is_file():
-        print(f"Thiếu file: {CSV_PATH}")
+def game_dirs(args: list[str]) -> list[Path]:
+    if args:
+        found: list[Path] = []
+        for arg in args:
+            path = Path(arg)
+            if not path.is_absolute():
+                path = ROOT / path
+            found.append(path)
+        return found
+    return sorted(
+        path.parent.parent.parent
+        for path in GAMES.glob("*/locale/vi/strings.csv")
+    )
+
+
+def check(game_dir: Path) -> int:
+    csv_path = game_dir / "locale" / "vi" / "strings.csv"
+    label = game_dir.name
+    if not csv_path.is_file():
+        print(f"{label}: thiếu {csv_path}")
         return 1
 
     errors: list[str] = []
@@ -28,11 +45,11 @@ def main() -> int:
     seen: set[str] = set()
     rows = 0
 
-    with CSV_PATH.open(encoding="utf-8-sig", newline="") as handle:
+    with csv_path.open(encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         fieldnames = [name.strip() for name in (reader.fieldnames or [])]
         if fieldnames != REQUIRED:
-            print("Cột phải đúng thứ tự: " + ",".join(REQUIRED))
+            print(f"{label}: cột phải đúng thứ tự: " + ",".join(REQUIRED))
             return 1
         for line_no, row in enumerate(reader, start=2):
             rows += 1
@@ -51,7 +68,9 @@ def main() -> int:
             if status not in STATUSES:
                 errors.append(f"Dòng {line_no} ({key}): status '{status}' không hợp lệ")
             if status in {"review", "done"} and not vi.strip():
-                errors.append(f"Dòng {line_no} ({key}): status {status} nhưng chưa có bản dịch")
+                errors.append(
+                    f"Dòng {line_no} ({key}): status {status} nhưng chưa có bản dịch"
+                )
             if vi.strip() and tokens(source) != tokens(vi):
                 errors.append(
                     f"Dòng {line_no} ({key}): placeholder lệch. "
@@ -60,16 +79,32 @@ def main() -> int:
             if vi.strip() and source.strip() == vi.strip():
                 warnings.append(f"Dòng {line_no} ({key}): bản dịch giống chuỗi gốc")
 
-    print(f"Đã đọc {rows} dòng từ {CSV_PATH.relative_to(ROOT)}")
+    shown = csv_path
+    try:
+        shown = csv_path.relative_to(ROOT)
+    except ValueError:
+        pass
+    print(f"{label}: đã đọc {rows} dòng từ {shown}")
     for message in warnings:
-        print("Cảnh báo: " + message)
+        print(f"{label}: cảnh báo: {message}")
     for message in errors:
-        print("Lỗi: " + message)
+        print(f"{label}: lỗi: {message}")
     if errors:
-        print(f"{len(errors)} lỗi.")
+        print(f"{label}: {len(errors)} lỗi.")
         return 1
-    print("Ổn.")
+    print(f"{label}: ổn.")
     return 0
+
+
+def main() -> int:
+    dirs = game_dirs(sys.argv[1:])
+    if not dirs:
+        print("Không có game nào trong games/.")
+        return 1
+    failed = 0
+    for game_dir in dirs:
+        failed += check(game_dir)
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

@@ -1,14 +1,14 @@
 ---
-name: pp-task-workflow
+name: vh-task-workflow
 description: >
-  Run the PATAPON 1+2 REPLAY localization git workflow: GitHub issue with
-  Technical Solution, branch from main, docs, validate_locale.py, commit with
-  closes #N, ask before push, PR, post the review on the PR, ask before merge.
-  Use when starting a change, when the user says làm đúng quy trình, tạo ticket,
-  mở PR, or runs /pp-task-workflow.
+  Run the PC-game Vietnamese localization workflow: GitHub issue with Technical
+  Solution, branch from main, one game directory, validate_locale.py, commit
+  with closes #N, ask before push, PR, post the review on the PR, ask before
+  merge. Use when starting a change, when the user says làm đúng quy trình, tạo
+  ticket, mở PR, or runs /vh-task-workflow.
 ---
 
-# Patapon task workflow
+# Task workflow
 
 Luật luôn bật nằm ở `CLAUDE.md`. Skill này chỉ là thứ tự việc.
 
@@ -20,7 +20,7 @@ Tạo GitHub issue trước khi tạo nhánh hoặc sửa file.
 
 Thân issue dùng GitHub Markdown, không escape backtick:
 
-- Vấn đề, vì sao cần làm, phạm vi
+- Vấn đề, vì sao cần làm, phạm vi, và game nào nếu việc thuộc một game
 - Lỗi: bước tái hiện, kết quả đúng, kết quả đang thấy
 - Mục `Technical Solution`: cách làm, file, đánh đổi, việc để sau
 
@@ -32,8 +32,8 @@ Trước `checkout --`, `reset --hard`, `clean -fd`, hoặc `stash drop`: chạy
 
 ## 3. Sửa
 
-- Đọc file liên quan trong `/docs` trước khi đổi cách dịch.
-- Dịch chuỗi thì dùng `/pp-translate`. Không chép checklist đó vào đây.
+- Việc của một game chỉ đụng `games/<id>/` của game đó, trừ công cụ dùng chung ở `tools/`.
+- Dịch chuỗi thì dùng `/vh-translate`. Thêm game thì dùng `/vh-add-game`.
 - Không đưa bundle, thư mục cài game, `extract/`, `build/`, hay `config.json` vào git.
 
 ## 4. Kiểm tra
@@ -48,7 +48,7 @@ Lệnh phải trả mã 0. Đổi chỉ docs vẫn chạy một lần và ghi k�
 
 ## 5. Docs
 
-- Pipeline, thuật ngữ, văn phong → `/docs`
+- Việc của một game → `games/<id>/docs`
 - Quy trình agent → `/docs/technical`
 - Ghi cái đã đổi và cái bị ảnh hưởng
 - Sửa `CLAUDE.md` thì giữ `.github/copilot-instructions.md` giống từng byte
