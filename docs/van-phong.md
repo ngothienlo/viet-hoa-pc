@@ -1,6 +1,6 @@
 # Văn phong
 
-Người chơi là Chỉ Huy tối thượng. Xưng «hô» khi game nói với người chơi. Patapon xưng «chúng tôi» hoặc bỏ chủ ngữ nếu câu gốc là khẩu lệnh.
+Patapon gọi người chơi là đấng tối cao. Khi cần danh xưng, dùng «Người Chỉ Huy». Khi gọi trực tiếp, dùng «ngươi». Không dùng «bạn». Patapon xưng «chúng tôi», hoặc bỏ chủ ngữ nếu câu gốc là khẩu lệnh.
 
 ## Câu
 
@@ -9,7 +9,7 @@ Người chơi là Chỉ Huy tối thượng. Xưng «hô» khi game nói với 
 - Hướng dẫn điều khiển: động từ đầu câu. Ví dụ: «Nhấp bốn nút theo nhịp.»
 - Giữ độ dài gần với câu Anh. Nút UI dễ tràn nếu câu Việt dài hơn nhiều.
 
-## Đối đã xử lý
+## Quy ước
 
 - Dấu ngoặc kép trong hội thoại dùng «».
 - Không để dấu cách trước dấu phẩy, dấu chấm.
