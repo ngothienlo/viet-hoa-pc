@@ -19,3 +19,18 @@ __pycache__/
 *.pyc
 .vs/
 .idea/
+
+# Binary runtime tải vào patch/. Config .ini và file dịch .txt vẫn commit.
+games/*/patch/**/*.dll
+games/*/patch/**/*.dll.config
+games/*/patch/**/*.xml
+games/*/patch/**/*.cfg
+games/*/patch/**/*.md
+games/*/patch/**/*.exe
+games/*/patch/**/*.json
+games/*/patch/**/*.pdb
+games/*/patch/winhttp.dll
+games/*/patch/doorstop_config.ini
+games/*/patch/.doorstop_version
+games/*/patch/.fetch-stamp.json
+games/*/patch/dotnet/

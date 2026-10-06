@@ -19,9 +19,10 @@ python -m launcher.app
 - Khi áp, file gốc được chép vào `%LOCALAPPDATA%\viet-hoa-pc\backups\<id>\<thời điểm>\`. Gỡ thì trả lại. File nào do bản dịch thêm vào thì bị xóa.
 - Áp lần nữa thì gỡ trước, rồi copy lại. Bản sao lưu không lấy file đã vá làm bản gốc.
 - `patch/` trống thì không ghi gì vào thư mục cài. Nút Áp dụng tắt.
+- File ẩn bị bỏ qua, trừ `.doorstop_version`. Doorstop 4 cần đúng tên đó cạnh `winhttp.dll`. `.gitkeep` không được copy.
 
 ## Ảnh hưởng
 
-Patapon có `game.json` và `patch/` trống. Chọn thư mục và Chơi dùng được. Áp dụng chờ khi có file trong `patch/`.
+Patapon có `game.json`. `patch/` chứa config AutoTranslator. Binary BepInEx nằm cùng chỗ sau khi chạy script tải của game đó, và git bỏ qua các file đó. Áp dụng copy cả hai.
 
 Game mới cần `game.json` và `patch/`. Xem `/vh-add-game`.
