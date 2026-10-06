@@ -19,7 +19,7 @@ Làm trên bản cài hợp pháp. Steam và Epic dùng cùng cấu trúc thư m
 3. Nguồn dịch là tiếng Anh. Đối chiếu tiếng Nhật khi câu Anh tối nghĩa.
 4. Đưa từng khóa vào `locale/vi/strings.csv`.
 5. Từ thư mục gốc repo, chạy `python tools/validate_locale.py games/patapon12-replay`.
-6. Đóng gói bản vá local trong `build/`. Không commit bundle.
+6. Đặt file đè vào `patch/`, giữ đường dẫn tương đối với thư mục cài. Mở `python -m launcher.app`, chọn game này và bấm Áp dụng. Không commit bundle. Gỡ cũng từ launcher.
 
 ## Cột trong `strings.csv`
 
