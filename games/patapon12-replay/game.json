@@ -1,0 +1,7 @@
+{
+  "id": "patapon12-replay",
+  "title": "PATAPON 1+2 REPLAY",
+  "summary": "Bản PC Steam và Epic. Chữ nằm trong bundle Addressables.",
+  "exe": "PATAPON12_REPLAY.exe",
+  "detect": ["PATAPON12_REPLAY.exe"]
+}

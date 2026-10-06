@@ -25,12 +25,15 @@ Làm từ thư mục gốc repo.
 1. Copy `games/patapon12-replay/config.example.json` thành `config.json` ngay trong thư mục game. `config.json` không được commit.
 2. Đọc `docs/pipeline.md`.
 3. Điền `locale/vi/strings.csv`. Xóa dòng `EXAMPLE-0001` khi bắt đầu dịch thật.
-4. Kiểm tra:
+4. Kiểm tra CSV, rồi mở launcher để chọn thư mục cài:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 python tools\validate_locale.py games\patapon12-replay
+python -m launcher.app
 ```
+
+File đè để trong `patch/`. Thư mục này đang trống nên nút Áp dụng tắt. Chọn thư mục và Chơi vẫn dùng được.
 
 ## Bản quyền
 

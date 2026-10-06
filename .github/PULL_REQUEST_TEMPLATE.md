@@ -26,6 +26,7 @@
 ## Validation
 
 - [ ] `.\.venv\Scripts\python.exe tools\validate_locale.py`
+- [ ] `.\.venv\Scripts\python.exe -m launcher.test_launcher` khi đụng `launcher/`
 - [ ] Không đụng CSV hay script kiểm tra; vẫn chạy lệnh trên và ghi kết quả
 
 ## Notes

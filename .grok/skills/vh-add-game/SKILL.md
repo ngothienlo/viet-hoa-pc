@@ -18,7 +18,9 @@ Tạo `games/<id>/`. `<id>` là slug ngắn, chữ thường, không dấu, khô
 Trong đó:
 
 - `README.md` nói game nào, nền tảng nào, trạng thái
+- `game.json` với `id`, `title`, `summary`, `exe`, `detect`
 - `config.example.json` với đường dẫn Steam và Epic để trống nếu chưa biết
+- `patch/` để trống. File trong này là bản đè, launcher sẽ copy vào thư mục cài
 - `docs/pipeline.md`, `docs/thuat-ngu.md`, `docs/van-phong.md`
 - `locale/vi/strings.csv` với dòng tiêu đề `id,context,source,vi,status,note` và một dòng `EXAMPLE` nếu chưa có câu thật
 

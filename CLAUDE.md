@@ -8,6 +8,8 @@
 .\.venv\Scripts\Activate.ps1
 python tools\validate_locale.py
 python tools\validate_locale.py games\patapon12-replay
+python -m launcher.app
+python -m launcher.test_launcher
 py -0p
 ```
 
@@ -66,7 +68,7 @@ Sự thật của từng game nằm trong thư mục game đó:
 - Văn phong: `games/<id>/docs/van-phong.md`
 - Chuỗi: `games/<id>/locale/vi/strings.csv`
 
-Công cụ dùng chung nằm ở `tools/validate_locale.py`.
+Công cụ dùng chung nằm ở `tools/validate_locale.py` và `launcher/`. Launcher đọc `games/<id>/game.json`, áp file trong `games/<id>/patch/`. Chi tiết: `docs/technical/launcher.md`.
 
 ## Conventions
 
@@ -86,7 +88,13 @@ Khi đổi CSV hoặc `tools/validate_locale.py`, lệnh này phải qua trướ
 .\.venv\Scripts\python.exe tools\validate_locale.py
 ```
 
-Chỉ đụng một game thì chạy thêm đường dẫn, ví dụ `games\patapon12-replay`. Thay đổi chỉ gồm docs vẫn chạy lệnh không tham số một lần và ghi kết quả vào PR. Repo không có bộ test riêng.
+Khi đổi `launcher/`, chạy thêm:
+
+```powershell
+.\.venv\Scripts\python.exe -m launcher.test_launcher
+```
+
+Chỉ đụng một game thì chạy validator với đường dẫn, ví dụ `games\patapon12-replay`. Thay đổi chỉ gồm docs vẫn chạy validator không tham số một lần và ghi kết quả vào PR.
 
 ## Documentation
 
