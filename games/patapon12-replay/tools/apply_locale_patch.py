@@ -33,8 +33,9 @@ def translations() -> dict[str, str]:
             status = (row.get("status") or "").strip()
             source = row.get("source") or ""
             vi = row.get("vi") or ""
-            if note in {"viết tay", "giữ nguyên"} or status == "review":
-                table[row["id"]] = vi if vi else source
+            machine = note in {"dịch máy", "nguồn tiếng Nhật", "không dịch", "lệch placeholder"}
+            if vi.strip() and not machine:
+                table[row["id"]] = vi
             else:
                 table[row["id"]] = source
     return table
