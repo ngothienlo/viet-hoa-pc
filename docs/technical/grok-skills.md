@@ -13,6 +13,7 @@ Grok nạp skill khi người dùng gõ `/<tên>` hoặc khi câu khớp `descri
 | `vh-task-workflow` | Issue → nhánh từ `main` → docs → `validate_locale.py` → commit → hỏi trước khi push → PR → review trên PR → hỏi trước khi merge |
 | `vh-translate` | Sửa CSV của một game, không đụng game khác |
 | `vh-add-game` | Tạo `games/<id>/` mới |
+| `vh-font` | Sửa font của một game: ô vuông, lẫn font, thiếu dấu. Đọc `fonts.json` thay vì quét lại game |
 
 Skill `pp-task-workflow` và `pp-translate` đã bỏ. Hai skill đó gắn repo với Patapon.
 
@@ -30,4 +31,5 @@ Skill trỏ tới docs của đúng game. Không chép bảng tên riêng, khôn
 /vh-task-workflow
 /vh-translate
 /vh-add-game
+/vh-font
 ```

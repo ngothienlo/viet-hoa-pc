@@ -9,7 +9,8 @@ Làm trên bản cài hợp pháp. Steam và Epic dùng cùng cấu trúc thư m
 - Catalog Addressables: `PATAPON12_REPLAY_Data/StreamingAssets/aa/catalog.json`
 - Bundle: `PATAPON12_REPLAY_Data/StreamingAssets/aa/StandaloneWindows64/`
 - Hội thoại, menu, tips và trợ giúp nằm trong `LocalizeData.asset` của P1, P1S, P2, P2S. `TipsData.asset` chỉ là tên sprite, không có câu.
-- Bundle bị mã hóa bằng AES. Mật khẩu là `m_Hash` trong catalog. Salt là tên file bundle, bỏ đuôi. Giải xong thì UnityPy đọc được typetree của `LocalizeData`.
+- Bundle bị mã hóa bằng AES. Mật khẩu là `m_Hash` trong catalog. Salt là tên file bundle, bỏ đuôi. Giải xong thì UnityPy đọc được typetree của `LocalizeData`. `extract_strings.py` có `open_bundle` và `save_bundle` để đọc và ghi lại đúng khóa.
+- Script luôn đọc bundle gốc. Launcher đã áp bản vá thì bản gốc nằm trong thư mục sao lưu của launcher (`original()` trong `tools/game_config.py`).
 - Mục `Localize/<ngôn ngữ>` trên catalog chủ yếu là ảnh title, tips và logo. Những ảnh đó để sau.
 - Phim `.usme` để sau.
 
@@ -43,7 +44,7 @@ Bản dịch ghi đè tiếng Anh trong `LocalizeData.asset`, rồi mã hóa l�
 python -m launcher.app
 ```
 
-Menu tựa, logo và tips vẽ sẵn vẫn là ảnh tiếng Anh. Chữ hội thoại và menu chữ nằm trong asset. Font chữ Latin đã được thay bằng Be Vietnam Pro, nên dấu tiếng Việt nằm trên cùng một mặt chữ.
+Menu tựa, logo và tips vẽ sẵn vẫn là ảnh tiếng Anh. Chữ hội thoại và menu chữ nằm trong asset. Font chữ được vá để chữ Việt hiện đủ dấu và cùng một mặt chữ (xem `docs/font.md`).
 
 ## Đã chạy thử
 
@@ -51,21 +52,13 @@ Bản Steam đã được áp. Log BepInEx ghi Unity 2022.3.52f1, BepInEx 6.0.0-
 
 ## Font
 
-Không dùng fallback và không trỏ font hệ thống. Fallback trộn hai mặt chữ trong một câu. Tên font hệ thống cần TextMesh Pro 3.2.0, trong khi asset font của game là bản 1.1.0.
+Toàn bộ phần font nằm ở `docs/font.md`: font nào vẽ chữ gì, cách vá từng nhóm, lệnh chạy, và bẫy.
 
-Font chữ là TMP Font Asset gắn trong `sharedassets`. `tools/font/apply_vietnamese_font.py` nướng atlas SDF từ Be Vietnam Pro (thường cho TShinGo, đậm cho TTake) rồi ghi đè bảng glyph và atlas Alpha8. Padding 14, cỡ mẫu 64, gradient scale 15. Font Nhật, Hàn, Trung giữ nguyên. Unity Editor 2022.3.52f1 có trên máy nhưng chưa có license, nên atlas được nướng bằng FreeType thay vì Font Asset Creator. Bundle build bằng Unity 6 không dùng.
-
-Bộ chữ gồm ASCII, `tools/font/vietnamese-charset.txt`, và mọi ký tự trong cột `vi`. Ký tự Be Vietnam Pro không có (□○△♪…) lấy từ Segoe UI Symbol và Yu Gothic của Windows. Chữ Việt vẫn chỉ dùng một mặt chữ.
-
-Cần file TTF Be Vietnam Pro Regular và Bold. Font không nằm trong repo. Ghi đường dẫn vào `fonts.regular` và `fonts.bold` trong `config.json` của game. Thư mục cài lấy từ `installs` trong cùng file. Chưa có `config.json` thì script đọc `config.example.json`.
+Tóm tắt: font chữ thường (TShinGo, TTake) được thay bằng Be Vietnam Pro. Font kiểu Patapon (KakuPop, Londrina) giữ nét gốc, chữ Việt được ghép từ glyph của chính font đó. Không dùng font fallback và không trỏ font hệ thống. Danh sách font đã quét nằm ở `tools/font/fonts.json`.
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install freetype-py numpy scipy Pillow UnityPy
-.\.venv\Scripts\python.exe games\patapon12-replay\tools\font\bake_sdf.py
 .\.venv\Scripts\python.exe games\patapon12-replay\tools\font\apply_vietnamese_font.py
 ```
-
-`bake_sdf.py` chỉ nướng atlas, rồi ghi ảnh xem thử vào `build/font-preview/`. `apply_vietnamese_font.py` vá `sharedassets0`, `sharedassets1`, `sharedassets5` vào `patch/PATAPON12_REPLAY_Data/`, đọc lại để kiểm tra có chữ `ớ`, rồi gọi launcher áp lên bản cài. File `.assets` sinh ra không được commit.
 
 Bản mod Thái trên Nexus chỉ là tài liệu đóng gói. Không copy file của bản đó vào repo.
 

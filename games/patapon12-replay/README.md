@@ -6,7 +6,7 @@ Game dùng Unity IL2CPP và Addressables. Ngôn ngữ chính thức không có t
 
 ## Trạng thái
 
-Đã có bản tiếng Việt viết tay cho bảng chuỗi. Bản vá ghi các câu đó vào bốn bundle `LocalizeData`, và thay font Latin bằng Be Vietnam Pro. Menu tựa vẫn là ảnh.
+Đã có bản tiếng Việt viết tay cho bảng chuỗi. Bản vá ghi các câu đó vào bốn bundle `LocalizeData`. Font chữ thường được thay bằng Be Vietnam Pro, font kiểu Patapon được ghép thêm dấu từ glyph gốc. Menu tựa vẫn là ảnh.
 
 ## Trong thư mục này
 
@@ -21,7 +21,10 @@ Game dùng Unity IL2CPP và Addressables. Ngôn ngữ chính thức không có t
 | `tools/fetch_runtime.py` | Tải hai gói đó vào `patch/`. |
 | `tools/extract_strings.py` | Trích hết câu tiếng Anh từ `LocalizeData` vào CSV. |
 | `tools/translate_rhythm.py` | Ghi câu hướng dẫn nhịp viết tay vào CSV. |
-| `tools/font/` | Nướng atlas Be Vietnam Pro và vá font Latin trong `sharedassets`. |
+| `docs/font.md` | Font nào vẽ chữ gì, cách vá, lệnh, bẫy. |
+| `tools/font/fonts.json` | Danh sách TMP Font Asset đã quét. Đọc file này, không quét lại game. |
+| `tools/font/` | Quét font, vá font (Be Vietnam Pro hoặc ghép dấu), vẽ ảnh xem thử. |
+| `tools/game_config.py` | Đọc `config.json`, tìm file gốc trước khi vá. |
 | `tools/echo_translate.py` | Hook lúc chơi. Không dùng để thu thập câu. |
 
 ## Bắt đầu
