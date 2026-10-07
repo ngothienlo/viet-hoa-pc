@@ -2,11 +2,14 @@
 
 from __future__ import annotations
 
+import importlib.util
 import json
+import os
 import shutil
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
+from typing import Callable
 
 from launcher.catalog import Game, pack_files
 from launcher.store import Store
@@ -30,6 +33,43 @@ def install_error(game: Game, install: Path | None) -> str | None:
     return None
 
 
+def build_dir(game: Game, store: Store) -> Path:
+    return store.state_dir / "build" / game.id
+
+
+def pack_source(game: Game, store: Store) -> Path:
+    """Nơi lấy file để áp: thư mục build nếu game có bước build, không thì patch/."""
+    return build_dir(game, store) if game.build else game.patch_dir
+
+
+def run_build(game: Game, install: Path, store: Store, log: Callable[[str], None]) -> Result:
+    """Chạy script build của game trên bản cài, ghi file vá vào thư mục build.
+
+    Script nhận (thư mục cài, thư mục ra, hàm log) và đọc file gốc qua bản sao lưu
+    của launcher, nên chạy lại sau khi đã áp vẫn ra cùng kết quả.
+    """
+    if game.build is None:
+        return Result(True, "Game này không cần build.")
+    error = install_error(game, install)
+    if error:
+        return Result(False, error)
+    if not game.build.is_file():
+        return Result(False, f"Không thấy script build: {game.build.name}")
+    os.environ["VH_STATE_DIR"] = str(store.state_dir)
+    try:
+        spec = importlib.util.spec_from_file_location(f"vh_build_{game.id.replace('-', '_')}", game.build)
+        module = importlib.util.module_from_spec(spec)
+        assert spec.loader is not None
+        spec.loader.exec_module(module)
+        module.build(install, build_dir(game, store), log)
+    except SystemExit as exc:
+        return Result(False, str(exc) or "Không tạo được bản vá.")
+    except Exception as exc:  # noqa: BLE001 - lỗi nào cũng phải hiện lên cửa sổ
+        return Result(False, f"Không tạo được bản vá: {exc}")
+    count = len(pack_files(game, build_dir(game, store)))
+    return Result(True, f"Đã tạo {count} file vá.", count)
+
+
 def inside(root: Path, relative: Path) -> Path:
     if relative.is_absolute() or ".." in relative.parts:
         raise ValueError(f"Đường dẫn không hợp lệ: {relative}")
@@ -44,9 +84,9 @@ def apply_pack(game: Game, install: Path, store: Store) -> Result:
     error = install_error(game, install)
     if error:
         return Result(False, error)
-    files = pack_files(game)
+    files = pack_files(game, pack_source(game, store))
     if not files:
-        return Result(False, "Chưa có file trong patch/. Chưa áp gì vào thư mục cài.")
+        return Result(False, "Chưa có file vá. Chưa áp gì vào thư mục cài.")
     if store.applied_backup(game.id) is not None:
         removed = remove_pack(game, install, store)
         if not removed.ok:

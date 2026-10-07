@@ -3,13 +3,15 @@
 from __future__ import annotations
 
 import ctypes
+import queue
 import subprocess
+import threading
 from pathlib import Path
 
 import tkinter as tk
 from tkinter import filedialog
 
-from launcher.apply import apply_pack, install_error, remove_pack
+from launcher.apply import apply_pack, install_error, remove_pack, run_build
 from launcher.catalog import Game, load_games, pack_files
 from launcher.store import Store, default_state_dir
 
@@ -40,6 +42,7 @@ class Launcher:
         self.games = load_games(repo)
         self.selected: Game | None = None
         self.rows: dict[str, tk.Frame] = {}
+        self.busy = False
         self._build()
         if self.games:
             self.select(self.games[0].id)
@@ -235,15 +238,51 @@ class Launcher:
 
     def on_apply(self) -> None:
         game, install = self._pair()
-        if game is None or install is None:
+        if game is None or install is None or self.busy:
             return
-        result = apply_pack(game, install, self.store)
-        self.status_label.configure(text=result.message, fg=OK if result.ok else BAD)
-        self.refresh(keep_status=True)
+        if game.build is None:
+            result = apply_pack(game, install, self.store)
+            self.status_label.configure(text=result.message, fg=OK if result.ok else BAD)
+            self.refresh(keep_status=True)
+            return
+        # Build đọc bản cài và ghép font, mất khoảng một phút. Chạy nền để cửa sổ không treo.
+        self.busy = True
+        self._lock_actions()
+        self.status_label.configure(text="Đang tạo bản vá từ bản cài của ngươi...", fg=WARN)
+        events: queue.Queue = queue.Queue()
+
+        def work() -> None:
+            result = run_build(game, install, self.store, lambda line: events.put(("log", line)))
+            if result.ok:
+                events.put(("log", "Đang chép file vào thư mục cài..."))
+                result = apply_pack(game, install, self.store)
+            events.put(("done", result))
+
+        threading.Thread(target=work, daemon=True).start()
+        self._poll(events)
+
+    def _poll(self, events: queue.Queue) -> None:
+        while True:
+            try:
+                kind, value = events.get_nowait()
+            except queue.Empty:
+                break
+            if kind == "log":
+                self.status_label.configure(text=value, fg=WARN)
+            else:
+                self.busy = False
+                self.status_label.configure(text=value.message, fg=OK if value.ok else BAD)
+                self.refresh(keep_status=True)
+                return
+        self.root.after(150, self._poll, events)
+
+    def _lock_actions(self) -> None:
+        for button in (self.apply_button, self.remove_button, self.play_button, self.browse_button, self.hint_button):
+            self._set_enabled(button, False)
 
     def on_remove(self) -> None:
         game, install = self._pair()
-        if game is None or install is None:
+        if game is None or install is None or self.busy:
             return
         result = remove_pack(game, install, self.store)
         self.status_label.configure(text=result.message, fg=OK if result.ok else BAD)
@@ -264,6 +303,9 @@ class Launcher:
         game = self.selected
         if game is None:
             return
+        if self.busy:
+            self._lock_actions()
+            return
         self.title_label.configure(text=game.title)
         self.summary_label.configure(text=game.summary or "Chưa có mô tả.")
         install = self.current_install()
@@ -272,14 +314,19 @@ class Launcher:
         self._set_enabled(self.hint_button, hint is not None)
         error = install_error(game, install)
         ready = error is None
-        has_pack = bool(pack_files(game))
+        has_pack = self._has_pack(game)
         applied = self._applied_here(game, install)
+        self._set_enabled(self.browse_button, True)
         self._set_enabled(self.apply_button, ready and has_pack)
         self._set_enabled(self.remove_button, applied)
         self._set_enabled(self.play_button, ready and bool(game.exe))
         if keep_status:
             return
         self.status_label.configure(text=self._status_text(game, error, has_pack, applied), fg=self._status_color(error, has_pack, applied))
+
+    def _has_pack(self, game: Game) -> bool:
+        """Game có bước build thì luôn áp được: file vá tạo ngay trên máy."""
+        return game.build is not None or bool(pack_files(game))
 
     def _pair(self) -> tuple[Game | None, Path | None]:
         return self.selected, self.current_install()
@@ -310,6 +357,8 @@ class Launcher:
             return "Đang dùng bản dịch trên thư mục này."
         if not has_pack:
             return "Đường dẫn hợp lệ. patch/ chưa có file nên chưa áp được."
+        if game.build is not None:
+            return "Sẵn sàng. Áp dụng sẽ tạo bản vá từ chính bản cài này, mất khoảng một phút."
         return f"Sẵn sàng áp {count} file."
 
     def _status_color(self, error: str | None, has_pack: bool, applied: bool) -> str:
@@ -335,7 +384,7 @@ class Launcher:
                 text, color = "Sai thư mục", BAD
             elif self._applied_here(game, install):
                 text, color = "Đã áp dụng", OK
-            elif pack_files(game):
+            elif self._has_pack(game):
                 text, color = "Sẵn sàng", OK
             else:
                 text, color = "Chưa có gói", WARN

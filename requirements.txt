@@ -1,0 +1,10 @@
+# Thư viện cho script vá game và bản exe. Cài: .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+UnityPy==1.25.4
+TypeTreeGeneratorAPI==0.0.10
+pycryptodome==3.24.0
+numpy==2.5.3
+scipy==1.18.1
+Pillow==12.3.0
+freetype-py==2.5.1
+# Chỉ cần khi build exe.
+pyinstaller==6.22.3

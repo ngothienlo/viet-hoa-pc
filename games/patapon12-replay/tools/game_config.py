@@ -1,6 +1,7 @@
-"""Đường dẫn của máy này: thư mục cài, font, và file gốc trước khi vá.
+"""Đường dẫn của máy này: thư mục cài, thư mục ra, font, và file gốc trước khi vá.
 
-Đọc `config.json` của game. Chưa có thì đọc `config.example.json`.
+Launcher (và bản exe) đặt `VH_INSTALL_DIR`, `VH_PATCH_DIR`, `VH_STATE_DIR` trước khi gọi script vá.
+Không có biến môi trường thì đọc `config.json` của game, rồi `config.example.json`.
 """
 
 from __future__ import annotations
@@ -26,6 +27,9 @@ def load_config() -> dict:
 
 def install_dir() -> Path:
     """Thư mục cài đầu tiên có file exe. Không có thì trả đường dẫn đầu tiên đã điền."""
+    chosen = os.environ.get("VH_INSTALL_DIR", "").strip()
+    if chosen:
+        return Path(chosen)
     installs = load_config().get("installs") or {}
     filled = [Path(value) for value in installs.values() if isinstance(value, str) and value.strip()]
     for path in filled:
@@ -41,6 +45,12 @@ def require_install() -> Path:
     return path
 
 
+def patch_dir() -> Path:
+    """Nơi ghi file vá. Mặc định là `patch/` của game; launcher trỏ sang thư mục build."""
+    chosen = os.environ.get("VH_PATCH_DIR", "").strip()
+    return Path(chosen) if chosen else GAME_DIR / "patch"
+
+
 def font_path(kind: str) -> Path:
     raw = str((load_config().get("fonts") or {}).get(kind) or "").strip()
     if not raw or not Path(raw).is_file():
@@ -49,8 +59,10 @@ def font_path(kind: str) -> Path:
 
 
 def _applied_backup() -> Path | None:
+    chosen = os.environ.get("VH_STATE_DIR", "").strip()
     base = os.environ.get("LOCALAPPDATA")
-    state = (Path(base) if base else Path.home() / "AppData" / "Local") / "viet-hoa-pc" / "state.json"
+    state_dir = Path(chosen) if chosen else (Path(base) if base else Path.home() / "AppData" / "Local") / "viet-hoa-pc"
+    state = state_dir / "state.json"
     if not state.is_file():
         return None
     row = (json.loads(state.read_text(encoding="utf-8")).get("games") or {}).get(GAME_DIR.name) or {}

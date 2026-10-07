@@ -288,7 +288,7 @@ def patch_data_file(filename: str, items: list[dict], baked: dict, chars: list[s
     destination = PATCH / DATA_NAME / filename
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_bytes(assets.save())
-    print(f"  ghi {destination.relative_to(ROOT)} ({destination.stat().st_size / 1048576:.1f} MB)")
+    print(f"  ghi {destination.name} ({destination.stat().st_size / 1048576:.1f} MB)")
     return destination
 
 
@@ -302,7 +302,7 @@ def patch_bundle(filename: str, items: list[dict], baked: dict, chars: list[str]
     destination = PATCH / ex.BUNDLES.relative_to(install) / filename
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_bytes(ex.save_bundle(env, key))
-    print(f"  ghi {destination.relative_to(ROOT)} ({destination.stat().st_size / 1048576:.1f} MB)")
+    print(f"  ghi {destination.name} ({destination.stat().st_size / 1048576:.1f} MB)")
     return destination
 
 
@@ -318,12 +318,8 @@ def install_patch(install: Path) -> None:
         raise SystemExit(result.message)
 
 
-def main() -> int:
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
-    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--no-install", action="store_true", help="chỉ ghi patch/, không áp lên bản cài")
-    args = parser.parse_args()
-
+def build_fonts() -> None:
+    """Vá mọi font trong fonts.json, ghi vào patch_dir(), rồi kiểm tra. Không áp lên bản cài."""
     install = require_install()
     payload = load()
     targets = [item for item in payload["fonts"] if item["action"] != "keep"]
@@ -354,8 +350,16 @@ def main() -> int:
     print("kiểm tra bản vá")
     if check(vi_chars()):
         raise SystemExit("Còn font thiếu chữ. Xem danh sách ở trên.")
+
+
+def main() -> int:
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--no-install", action="store_true", help="chỉ ghi patch/, không áp lên bản cài")
+    args = parser.parse_args()
+    build_fonts()
     if not args.no_install:
-        install_patch(install)
+        install_patch(require_install())
     return 0
 
 

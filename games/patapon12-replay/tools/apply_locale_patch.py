@@ -12,15 +12,9 @@ from pathlib import Path
 import UnityPy
 
 import extract_strings as ex
+from game_config import patch_dir
 
-PATCH_DIR = (
-    ex.GAME
-    / "patch"
-    / "PATAPON12_REPLAY_Data"
-    / "StreamingAssets"
-    / "aa"
-    / "StandaloneWindows64"
-)
+PATCH_DIR = patch_dir() / ex.BUNDLES.relative_to(ex.INSTALL)
 
 
 def translations() -> dict[str, str]:

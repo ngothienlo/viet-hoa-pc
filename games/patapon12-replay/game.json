@@ -1,7 +1,10 @@
 {
   "id": "patapon12-replay",
   "title": "PATAPON 1+2 REPLAY",
-  "summary": "Bản PC Steam và Epic. Chữ nằm trong bundle Addressables.",
+  "summary": "Bản PC Steam và Epic. Bản vá được tạo ngay từ bản cài của ngươi, không kèm file game.",
   "exe": "PATAPON12_REPLAY.exe",
-  "detect": ["PATAPON12_REPLAY.exe"]
+  "detect": [
+    "PATAPON12_REPLAY.exe"
+  ],
+  "build": "tools/build_patch.py"
 }
