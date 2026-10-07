@@ -25,12 +25,18 @@ PATCH_DIR = (
 
 
 def translations() -> dict[str, str]:
+    """Chỉ đưa vào game câu viết tay. Bản dịch máy trả về tiếng Anh."""
     table: dict[str, str] = {}
     with ex.CSV_PATH.open(encoding="utf-8-sig", newline="") as handle:
         for row in csv.DictReader(handle):
-            vi = (row.get("vi") or "").strip()
-            if vi:
-                table[row["id"]] = row["vi"]
+            note = (row.get("note") or "").strip()
+            status = (row.get("status") or "").strip()
+            source = row.get("source") or ""
+            vi = row.get("vi") or ""
+            if note in {"viết tay", "giữ nguyên"} or status == "review":
+                table[row["id"]] = vi if vi else source
+            else:
+                table[row["id"]] = source
     return table
 
 
@@ -48,10 +54,12 @@ def key_for(path: Path, hashes: list[bytes]) -> bytes:
 
 def fill(messages: list, product: str, suffix: str, table: dict[str, str]) -> int:
     changed = 0
-    for index, _text in enumerate(messages):
-        vi = table.get(f"{product}.{suffix}.{index}")
-        if vi:
-            messages[index] = vi
+    for index, current in enumerate(messages):
+        key = f"{product}.{suffix}.{index}"
+        if key not in table:
+            continue
+        if table[key] != current:
+            messages[index] = table[key]
             changed += 1
     return changed
 

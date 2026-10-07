@@ -24599,31 +24599,31 @@ P1.colony.336,dialog,&H14O0#I'm Geitte!,&H14O0#I'm Geite!,draft,dịch máy
 P1.colony.337,dialog,"Sir, yes sir♪ You have my full attention♪/I'm Geitte the Gladiator, O Mighty Patapon./Glad you saved my life back there, Sir!","Vâng thưa ngài Tôi hoàn toàn chú ý/Tôi là Geite võ sĩ giác đấu, O Mighty Patapon./Rất vui vì ngài đã cứu mạng tôi!",draft,dịch máy
 P1.colony.338,dialog,"Punch and smash♪ Crunch and crash♪/When you need a little muscle, just say the word!/My life is yours, as long as I don't lose it.","Đấm và đập./Khi ngươi cần chút cơ bắp, cứ nói ra đi!/Cuộc đời tôi là của ngươi, miễn là tôi không mất nó.",draft,dịch máy
 P1.error.0,ui,Information,Thông tin,draft,
-P1.error.1,ui,This game has an auto-save feature./Do not remove the Memory Stick Duo™ /or turn off the console power while the /Memory Stick Duo™ access indicator /is flashing.,Trò chơi này có tính năng tự động./Đừng gỡ bỏ danh sách người dùng/hoặc tắt nguồn điều khiển trong khi/Chỉ thị truy cập bộ nhớ dính DuoTM/đang nhấp nháy.,draft,dịch máy
-P1.error.2,ui,Now loading./Do not remove the Memory Stick Duo™ /or turn off the console power.,Đang nạp đạn./Đừng gỡ bỏ danh sách người dùng/Hoặc tắt nguồn điều khiển.,draft,dịch máy
-P1.error.3,ui,No Memory Stick Duo™./At least ??KB of free space is required on the/Memory Stick Duo™ to save system data.,Không bộ nhớ Stick DuoTM./Ít nhất? KB khoảng trống là cần thiết trên các/Bộ nhớ Stick DuoTM để lưu dữ liệu hệ thống.,draft,dịch máy
-P1.error.4,ui,System data is saved using the auto-save feature./System data will not be saved without a Memory Stick Duo™.,Dữ liệu hệ thống được lưu bằng tính năng tự động lưu./Dữ liệu hệ thống sẽ không được lưu nếu không có bộ nhớ Stick DuoTM.,draft,dịch máy
-P1.error.5,ui,"Until a Memory Stick Duo™ is inserted into the /console, the auto-save will be skipped./Begin game anyway?","Cho đến khi một liên kết bộ nhớ được đưa vào/bàn điều khiển, máy tự động sẽ bị bỏ qua./Bắt đầu trò chơi chưa?",draft,dịch máy
-P1.error.6,ui,No save data found./The system data for this game is saved using the/auto-save feature. Create a new save file?,Không tìm thấy dữ liệu lưu./Các dữ liệu hệ thống cho trò chơi này được lưu bằng cách sử dụng/Tính năng tự động. Tạo một tập tin lưu mới?,draft,dịch máy
-P1.error.7,ui,Continue playing anyway?,Tiếp tục chơi?,draft,dịch máy
+P1.error.1,ui,This game has an auto-save feature./Do not remove the Memory Stick Duo™ /or turn off the console power while the /Memory Stick Duo™ access indicator /is flashing.,Game này tự lưu./Đừng rút Memory Stick Duo™/hay tắt nguồn khi đèn/truy cập Memory Stick Duo™/đang nhấp nháy.,review,viết tay
+P1.error.2,ui,Now loading./Do not remove the Memory Stick Duo™ /or turn off the console power.,Đang tải./Đừng rút Memory Stick Duo™/hay tắt nguồn.,review,viết tay
+P1.error.3,ui,No Memory Stick Duo™./At least ??KB of free space is required on the/Memory Stick Duo™ to save system data.,Không có Memory Stick Duo™./Cần ít nhất ??KB trống trên/Memory Stick Duo™ để lưu dữ liệu hệ thống.,review,viết tay
+P1.error.4,ui,System data is saved using the auto-save feature./System data will not be saved without a Memory Stick Duo™.,Dữ liệu hệ thống được tự lưu./Không có Memory Stick Duo™ thì không lưu được.,review,viết tay
+P1.error.5,ui,"Until a Memory Stick Duo™ is inserted into the /console, the auto-save will be skipped./Begin game anyway?",Chưa cắm Memory Stick Duo™ vào/máy thì sẽ bỏ qua tự lưu./Vẫn vào game?,review,viết tay
+P1.error.6,ui,No save data found./The system data for this game is saved using the/auto-save feature. Create a new save file?,Không thấy dữ liệu lưu./Dữ liệu hệ thống của game này được/tự lưu. Tạo file lưu mới?,review,viết tay
+P1.error.7,ui,Continue playing anyway?,Vẫn chơi tiếp?,review,viết tay
 P1.error.8,ui,Load complete.,Đã tải.,draft,
-P1.error.9,ui,Checking Memory Stick Duo™.,Kiểm tra bộ nhớ Stick DuoTM.,draft,dịch máy
-P1.error.10,ui,A save file containing a game with further progress /than this game was found. Overwrite it?,Name/Hơn trò chơi này đã được tìm thấy. Ghi đè?,draft,dịch máy
-P1.error.11,ui,A save file exists for this game./Overwrite it?,Một tập tin lưu tồn tại cho trò chơi này./Ghi đè?,draft,dịch máy
-P1.error.12,ui,System data will not be saved./Continue playing anyway?,Dữ liệu hệ thống sẽ không được lưu./Tiếp tục chơi?,draft,dịch máy
-P1.error.13,ui,Now saving./Do not remove the Memory Stick Duo™ /or turn off the console power.,Giờ đang tiết kiệm./Đừng gỡ bỏ danh sách người dùng/Hoặc tắt nguồn điều khiển.,draft,dịch máy
-P1.error.14,ui,No save data found./The system data for this game is saved using the/auto-save feature./Create a new save file?,Không tìm thấy dữ liệu lưu./Các dữ liệu hệ thống cho trò chơi này được lưu bằng cách sử dụng/Tính năng tự động./Tạo một tập tin lưu mới?,draft,dịch máy
-P1.error.15,ui,System data will not be saved until a new save /file is created. Continue playing anyway?,Dữ liệu hệ thống sẽ không được lưu cho đến khi lưu mới/Tập tin đã được tạo. Tiếp tục chơi?,draft,dịch máy
-P1.error.16,ui,Insufficient free space on Memory Stick Duo™./At least 160KB of free space is required to /save system data.,Không có chỗ trống trên máy ghi nhớ./Ít nhất 160KB không gian rảnh là cần thiết/lưu dữ liệu hệ thống.,draft,dịch máy
-P1.error.17,ui,Organize save data?,Quản lý việc lưu dữ liệu?,draft,dịch máy
-P1.error.18,ui,System data is saved using the auto-save /feature. A Memory Stick Duo™ with at least/160KB of free space must be inserted/to save system data./Continue playing anyway?,Dữ liệu hệ thống được lưu bằng tự động lưu/đặc điểm. Ít nhất cũng gắn kết trí nhớ với mục tiêu/160KB không gian rảnh phải được chèn vào/Để lưu dữ liệu hệ thống./Tiếp tục chơi?,draft,dịch máy
-P1.error.19,ui,No Memory Stick Duo™./A Memory Stick Duo™ with at least/160KB of free space is required to save.,Không bộ nhớ Stick DuoTM./Ít nhất cũng gắn kết trí nhớ với mục tiêu/Cần 160KB để tiết kiệm.,draft,dịch máy
-P1.error.20,ui,System data is saved using the auto-save feature./A Memory Stick Duo™ must be inserted to save game data.,Dữ liệu hệ thống được lưu bằng tính năng tự động lưu./Cần phải chèn bộ nhớ vào để lưu dữ liệu trò chơi.,draft,dịch máy
-P1.error.21,ui,"Until a Memory Stick Duo™ is inserted into the console,/the auto-save will be skipped. Continue playing anyway?","Cho đến khi một chiếc Stick DuoTM được đưa vào bảng điều khiển,/Máy tự động sẽ bị bỏ qua. Tiếp tục chơi?",draft,dịch máy
+P1.error.9,ui,Checking Memory Stick Duo™.,Đang kiểm Memory Stick Duo™.,review,viết tay
+P1.error.10,ui,A save file containing a game with further progress /than this game was found. Overwrite it?,Có file lưu tiến xa hơn/game này. Ghi đè?,review,viết tay
+P1.error.11,ui,A save file exists for this game./Overwrite it?,Đã có file lưu của game này./Ghi đè?,review,viết tay
+P1.error.12,ui,System data will not be saved./Continue playing anyway?,Sẽ không lưu dữ liệu hệ thống./Vẫn chơi tiếp?,review,viết tay
+P1.error.13,ui,Now saving./Do not remove the Memory Stick Duo™ /or turn off the console power.,Đang lưu./Đừng rút Memory Stick Duo™/hay tắt nguồn.,review,viết tay
+P1.error.14,ui,No save data found./The system data for this game is saved using the/auto-save feature./Create a new save file?,Không thấy dữ liệu lưu./Dữ liệu hệ thống của game này được/tự lưu./Tạo file lưu mới?,review,viết tay
+P1.error.15,ui,System data will not be saved until a new save /file is created. Continue playing anyway?,Chưa tạo file lưu mới thì/không lưu dữ liệu hệ thống. Vẫn chơi tiếp?,review,viết tay
+P1.error.16,ui,Insufficient free space on Memory Stick Duo™./At least 160KB of free space is required to /save system data.,Memory Stick Duo™ không đủ chỗ./Cần ít nhất 160KB trống để/lưu dữ liệu hệ thống.,review,viết tay
+P1.error.17,ui,Organize save data?,Sắp xếp dữ liệu lưu?,review,viết tay
+P1.error.18,ui,System data is saved using the auto-save /feature. A Memory Stick Duo™ with at least/160KB of free space must be inserted/to save system data./Continue playing anyway?,Dữ liệu hệ thống được tự lưu./Phải cắm Memory Stick Duo™ còn ít nhất/160KB trống/để lưu./Vẫn chơi tiếp?,review,viết tay
+P1.error.19,ui,No Memory Stick Duo™./A Memory Stick Duo™ with at least/160KB of free space is required to save.,Không có Memory Stick Duo™./Cần Memory Stick Duo™ còn ít nhất/160KB trống để lưu.,review,viết tay
+P1.error.20,ui,System data is saved using the auto-save feature./A Memory Stick Duo™ must be inserted to save game data.,Dữ liệu hệ thống được tự lưu./Phải cắm Memory Stick Duo™ để lưu dữ liệu game.,review,viết tay
+P1.error.21,ui,"Until a Memory Stick Duo™ is inserted into the console,/the auto-save will be skipped. Continue playing anyway?",Chưa cắm Memory Stick Duo™ vào máy/thì sẽ bỏ qua tự lưu. Vẫn chơi tiếp?,review,viết tay
 P1.error.22,ui,Save complete.,Đã lưu.,draft,
-P1.error.23,ui,Save during debug mode?,Lưu trong chế độ gỡ lỗi?,draft,dịch máy
-P1.error.24,ui,"Language setting and save data language setting do not/match. Please synchronize language settings, then load again.","Thiết lập ngôn ngữ và lưu dữ liệu ngôn ngữ không/phù hợp. Hãy đồng bộ hoá thiết lập ngôn ngữ, rồi nạp lại.",draft,dịch máy
-P1.error.25,ui,No Memory Stick Duo™./At least 320KB of free space is required to save game/data. Play game anyway?,Không bộ nhớ Stick DuoTM./Ít nhất 320KB không gian rảnh là cần thiết để lưu trò chơi/dữ liệu. Dù sao cũng chơi trò chơi?,draft,dịch máy
+P1.error.23,ui,Save during debug mode?,Lưu trong chế độ gỡ lỗi?,review,viết tay
+P1.error.24,ui,"Language setting and save data language setting do not/match. Please synchronize language settings, then load again.",Ngôn ngữ đang chọn và ngôn ngữ của file lưu/không khớp. Hãy chỉnh cho trùng rồi tải lại.,review,viết tay
+P1.error.25,ui,No Memory Stick Duo™./At least 320KB of free space is required to save game/data. Play game anyway?,Không có Memory Stick Duo™./Cần ít nhất 320KB trống để lưu dữ liệu/game. Vẫn chơi?,review,viết tay
 P1.item.0,item,(no translation needed),,todo,không dịch
 P1.item.1,item,The Bravery Drum./Obtained by agreeing to/become the Patapon god./Strike with ○ button.,Biểu tượng Dũng cảm./Thỏa thuận bằng cách đồng ý/trở thành vị thần Patapon./Phát hiện bằng nút  vội.,draft,dịch máy
 P1.item.2,item,The Strokes Drum./Hatapon guarded this drum/with his life./Strike with □ button.,Lũ rắn chuông./Hatapon bảo vệ trống này/với cuộc sống của mình./Nhấn nút □.,draft,dịch máy
@@ -25024,13 +25024,13 @@ P1.system.2,ui,Altar,Bàn thờ,draft,
 P1.system.3,ui,Ka-ching,Ka-ching,draft,giữ nguyên
 P1.system.4,ui,/,/,draft,giữ nguyên
 P1.system.5,ui,:,:,draft,giữ nguyên
-P1.system.6,ui,Give item?,Đưa hàng?,draft,dịch máy
+P1.system.6,ui,Give item?,Trao vật phẩm?,review,viết tay
 P1.system.7,ui,Stage,Màn,draft,
 P1.system.8,ui,Minutes,Phút,draft,
 P1.system.9,ui,Seconds,Giây,draft,
 P1.system.10,ui,Spoils,Chiến lợi phẩm,draft,
-P1.system.11,ui,Retrieved caps,Mũ đã lấy,draft,dịch máy
-P1.system.12,ui,Lost caps,Mũ bị mất,draft,dịch máy
+P1.system.11,ui,Retrieved caps,Mũ lấy lại,review,viết tay
+P1.system.12,ui,Lost caps,Mũ mất,review,viết tay
 P1.system.13,ui,Clear time,Thời gian vượt,draft,
 P1.system.14,ui,Casualties,Thương vong,draft,
 P1.system.15,ui,Metres,Mét,draft,
@@ -25038,39 +25038,39 @@ P1.system.16,ui,None,Không,draft,
 P1.system.17,ui,Default,Mặc định,draft,
 P1.system.18,ui,Type,Loại,draft,
 P1.system.19,ui,Number,Số,draft,
-P1.system.20,ui,Squad status,Trạng thái,draft,dịch máy
-P1.system.21,ui,Unit status,Trạng thái đơn vị,draft,dịch máy
-P1.system.22,ui,Reborn,Sinh lại,draft,dịch máy
+P1.system.20,ui,Squad status,Tình trạng đội,review,viết tay
+P1.system.21,ui,Unit status,Tình trạng đơn vị,review,viết tay
+P1.system.22,ui,Reborn,Tái sinh,review,viết tay
 P1.system.23,ui,Missions,Nhiệm vụ,draft,
-P1.system.24,ui,O Mighty <N0>!/Which unit do you/wish to deploy?,O Mighty <N0>!/Ngươi là đơn vị nào?/Muốn triển khai?,draft,dịch máy
-P1.system.25,ui,There are more units/ready and waiting/for deployment!,Name/Sẵn sàng và chờ đợi/để triển khai!,draft,dịch máy
-P1.system.26,ui,Equip done!/Ready to roll!,Trang bị xong!/Sẵn sàng quay!,draft,dịch máy
+P1.system.24,ui,O Mighty <N0>!/Which unit do you/wish to deploy?,Hỡi Người Chỉ Huy <N0>!/Ngươi muốn/điều đơn vị nào?,review,viết tay
+P1.system.25,ui,There are more units/ready and waiting/for deployment!,Còn đơn vị/đã sẵn sàng/chờ được điều đi!,review,viết tay
+P1.system.26,ui,Equip done!/Ready to roll!,Trang bị xong!/Sẵn sàng xuất phát!,review,viết tay
 P1.system.27,ui,<N0>'s army is/ready to/move out!,,todo,lệch placeholder
-P1.system.28,ui,Lord <No>!/No units to/place!,Chúa tể <No>!/Không có đơn vị tới/nơi!,draft,dịch máy
-P1.system.29,ui,Lord <N0>!/You can bring/a Miracle along!,Chúa tể Người Chỉ Huy <N0>!/Ngươi có thể mang theo./Một phép lạ!,draft,dịch máy
-P1.system.30,ui,Lord <N0>!/Which Miracle/do you need?,Chúa tể Người Chỉ Huy <N0>!/Phép lạ nào/Ngươi có cần không?,draft,dịch máy
-P1.system.31,ui,Lord <N0>!/You can take/stew with you!,Chúa tể Người Chỉ Huy <N0>!/Ngươi có thể chịu được./Thịt hầm với ngươi!,draft,dịch máy
-P1.system.32,ui,Lord <N0>!/Which stew/do you need?,Chúa tể Người Chỉ Huy <N0>!/Thịt hầm/Ngươi có cần không?,draft,dịch máy
-P1.system.33,ui,Unplaced squads remain./Begin mission anyway?,Các đội không được thay thế vẫn còn./Bắt đầu nhiệm vụ chưa?,draft,dịch máy
-P1.system.34,ui,Retiring selected unit. Are you sure?,Đang rút lui. Ngươi chắc chứ?,draft,dịch máy
-P1.system.35,ui,This cannot be undone. Are you sure?,Chuyện này không thể thay đổi được. Ngươi chắc chứ?,draft,dịch máy
-P1.system.36,ui,Optimizing army equip. Are you sure?,Trang bị cho quân đội. Ngươi chắc chứ?,draft,dịch máy
+P1.system.28,ui,Lord <No>!/No units to/place!,Người Chỉ Huy <No>!/Không còn đơn vị/để xếp!,review,viết tay
+P1.system.29,ui,Lord <N0>!/You can bring/a Miracle along!,Người Chỉ Huy <N0>!/Ngươi có thể mang/theo một Miracle!,review,viết tay
+P1.system.30,ui,Lord <N0>!/Which Miracle/do you need?,Người Chỉ Huy <N0>!/Ngươi cần/Miracle nào?,review,viết tay
+P1.system.31,ui,Lord <N0>!/You can take/stew with you!,Người Chỉ Huy <N0>!/Ngươi có thể mang/món hầm theo!,review,viết tay
+P1.system.32,ui,Lord <N0>!/Which stew/do you need?,Người Chỉ Huy <N0>!/Ngươi cần/món hầm nào?,review,viết tay
+P1.system.33,ui,Unplaced squads remain./Begin mission anyway?,Còn đội chưa xếp./Vẫn bắt đầu nhiệm vụ?,review,viết tay
+P1.system.34,ui,Retiring selected unit. Are you sure?,Cho đơn vị đang chọn nghỉ. Chắc chứ?,review,viết tay
+P1.system.35,ui,This cannot be undone. Are you sure?,Không hoàn tác được. Chắc chứ?,review,viết tay
+P1.system.36,ui,Optimizing army equip. Are you sure?,Tối ưu trang bị quân. Chắc chứ?,review,viết tay
 P1.system.37,ui,Return to Patapolis?,Về Patapolis?,draft,
 P1.system.38,ui,Legendary Memory,Ký ức huyền thoại,draft,
 P1.system.39,ui,New Patapon,Patapon mới,draft,
 P1.system.40,ui,Status,Trạng thái,draft,
-P1.system.41,ui,Death record,Ghi chép về cái chết,draft,dịch máy
+P1.system.41,ui,Death record,Sổ tử trận,review,viết tay
 P1.system.42,ui,Items,Vật phẩm,draft,
-P1.system.43,ui,Birth,Sinh ra,draft,dịch máy
-P1.system.44,ui,Insufficient Ka-ching.,Không đủ Ka-ching.,draft,dịch máy
-P1.system.45,ui,Cannot create with that/combination of items.,Không thể tạo ra với điều đó/kết hợp các mục.,draft,dịch máy
-P1.system.46,ui,Cannot register more soldiers.,Không thể đăng ký thêm quân.,draft,dịch máy
-P1.system.47,ui,Register two items!,Đăng ký hai món đồ!,draft,dịch máy
+P1.system.43,ui,Birth,Ra đời,review,viết tay
+P1.system.44,ui,Insufficient Ka-ching.,Không đủ Ka-ching.,review,viết tay
+P1.system.45,ui,Cannot create with that/combination of items.,Không tạo được với/cách ghép vật phẩm đó.,review,viết tay
+P1.system.46,ui,Cannot register more soldiers.,Không đăng ký thêm lính được.,review,viết tay
+P1.system.47,ui,Register two items!,Hãy đăng ký hai vật phẩm!,review,viết tay
 P1.system.48,ui,Unknown error,Lỗi không rõ,draft,
 P1.system.49,ui,Save the adventure?,Lưu cuộc phiêu lưu?,draft,
 P1.system.50,ui,Game data,Dữ liệu game,draft,
-P1.system.51,ui,Mighty One：,Người quyền năng:,draft,dịch máy
-P1.system.52,ui,Adventure：,Cuộc phiêu lưu:,draft,dịch máy
+P1.system.51,ui,Mighty One：,Người Chỉ Huy:,review,viết tay
+P1.system.52,ui,Adventure：,Cuộc phiêu lưu:,review,viết tay
 P1.system.53,ui,Language: English,Ngôn ngữ: English,draft,
 P1.system.54,ui,Play time：,Thời gian chơi：,draft,
 P1.system.55,ui,hours,giờ,draft,
@@ -25078,10 +25078,10 @@ P1.system.56,ui,Understood,Đã rõ,draft,
 P1.system.57,ui,No!,Không!,draft,
 P1.system.58,ui,Return to Patapolis?,Về Patapolis?,draft,
 P1.system.59,ui,Return to title screen?,Về màn hình tựa?,draft,
-P1.system.60,ui,Present play data will be lost/unless it has been saved./Are you sure?,Dữ liệu trò chơi hiện tại sẽ bị mất/trừ khi nó đã được cứu./Ngươi chắc chứ?,draft,dịch máy
-P1.system.61,ui,Is <N0> okay for your name?,<N0> được không?,draft,dịch máy
+P1.system.60,ui,Present play data will be lost/unless it has been saved./Are you sure?,Dữ liệu đang chơi sẽ mất/nếu chưa lưu./Chắc chứ?,review,viết tay
+P1.system.61,ui,Is <N0> okay for your name?,Lấy tên <N0> được chứ?,review,viết tay
 P1.system.62,ui,Kamipon,Kamipon,draft,giữ nguyên
-P1.system.63,ui,Is this the correct Patapon?,Có đúng Patapon không?,draft,dịch máy
+P1.system.63,ui,Is this the correct Patapon?,Đúng Patapon này chứ?,review,viết tay
 P1.title.0,ui,"&S0#Once upon a time,","&S0#Ngày xửa ngày xưa,",review,viết tay
 P1.title.1,ui,"&S0#the Patapon Ancients,/by the power of the Mighty One's drum,","&S0#dân Patapon cổ đại,/nhờ quyền năng chiếc trống của Người Chỉ Huy,",review,viết tay
 P1.title.2,ui,"&S0#gained Wisdom, Courage,/Strength and Secret Juju.","&S0#lĩnh hội Trí tuệ, Dũng khí,/Sức mạnh và Juju bí truyền.",review,viết tay
@@ -25173,56 +25173,56 @@ P1.key.4,ui,Optimize,Tối ưu,draft,
 P1.key.5,ui,Help,Trợ giúp,draft,
 P1.key.6,ui,Scroll,Cuộn,draft,
 P1.key.7,ui,Proceed,Tiếp tục,draft,
-P1.key.8,ui,Look,Nhìn kìa,draft,dịch máy
-P1.key.9,ui,Retire,Nghỉ,draft,dịch máy
-P1.key.10,ui,Switch,Chuyển đổi,draft,dịch máy
-P1.key.11,ui,Select,Chọn,draft,dịch máy
-P1.key.12,ui,Sort,Sắp xếp,draft,dịch máy
-P1.key.13,ui,Menu,Trình đơn,draft,dịch máy
-P1.key.14,ui,Delete screen,Xóa màn hình,draft,dịch máy
-P1.key.15,ui,Title screen,Màn hình tiêu đề,draft,dịch máy
-P1.key.16,ui,Confirm,Xác nhận,draft,dịch máy
-P1.key.17,ui,Command,Câu lệnh,draft,dịch máy
-P1.key.18,ui,Save,Lưu,draft,dịch máy
-P1.key.19,ui,Formation,Định dạng,draft,dịch máy
+P1.key.8,ui,Look,Xem,review,viết tay
+P1.key.9,ui,Retire,Cho nghỉ,review,viết tay
+P1.key.10,ui,Switch,Đổi,review,viết tay
+P1.key.11,ui,Select,Chọn,review,viết tay
+P1.key.12,ui,Sort,Sắp xếp,review,viết tay
+P1.key.13,ui,Menu,Menu,review,giữ nguyên
+P1.key.14,ui,Delete screen,Xóa màn hình,review,viết tay
+P1.key.15,ui,Title screen,Màn hình tựa,review,viết tay
+P1.key.16,ui,Confirm,Xác nhận,review,viết tay
+P1.key.17,ui,Command,Khẩu lệnh,review,viết tay
+P1.key.18,ui,Save,Lưu,review,viết tay
+P1.key.19,ui,Formation,Đội hình,review,viết tay
 P1.key.20,ui,Patapolis,Patapolis,draft,giữ nguyên
 P1.key.21,ui,Help,Trợ giúp,draft,
-P1.key.22,ui,Camera,Máy ảnh,draft,dịch máy
-P1.key.23,ui,Move,Chuyển,draft,dịch máy
-P1.key.24,ui,Start mission,Bắt đầu nhiệm vụ,draft,dịch máy
-P1.key.25,ui,Select mission,Chọn nhiệm vụ,draft,dịch máy
-P1.key.26,ui,Cursor,Con trỏ,draft,dịch máy
-P1.key.27,ui,Equip,Công cụ,draft,dịch máy
-P1.key.28,ui,Change,Thay đổi,draft,dịch máy
+P1.key.22,ui,Camera,Máy quay,review,viết tay
+P1.key.23,ui,Move,Di chuyển,review,viết tay
+P1.key.24,ui,Start mission,Bắt đầu nhiệm vụ,review,viết tay
+P1.key.25,ui,Select mission,Chọn nhiệm vụ,review,viết tay
+P1.key.26,ui,Cursor,Con trỏ,review,viết tay
+P1.key.27,ui,Equip,Trang bị,review,viết tay
+P1.key.28,ui,Change,Đổi,review,viết tay
 P1.titlecard.0,ui,"The ""Legend of the Patapons"" is a mysterious/ancient book that is now yours. Lead them, oh/Mighty Ruler and be the Patapon Supreme! Guide them through an endless rhythmic adventure!","«Huyền thoại Patapon» là cuốn cổ/bí ẩn, nay thuộc về ngươi. Hãy dẫn dắt họ,/hỡi Người Chỉ Huy, thành đấng tối cao của Patapon! Dẫn họ vào hành trình nhịp trống bất tận!",review,viết tay
 P1.titlecard.1,ui,New game,Chơi mới,review,viết tay
 P1.titlecard.2,ui,Continue,Tiếp tục,review,viết tay
 P1.help.title.0,help,HP,HP,draft,giữ nguyên
-P1.help.title.1,help,Strength,Độ mạnh,draft,dịch máy
-P1.help.title.2,help,Attack Speed,Tốc độ Tấn công,draft,dịch máy
+P1.help.title.1,help,Strength,Sức mạnh,review,viết tay
+P1.help.title.2,help,Attack Speed,Tốc đánh,review,viết tay
 P1.help.title.3,help,Defense vs. Tate＆Deka,,todo,lệch placeholder
-P1.help.title.4,help,Defense vs. Yumi,Phòng thủ với Yumi,draft,dịch máy
-P1.help.title.5,help,Defense vs. Yari,Phòng thủ với Yari,draft,dịch máy
-P1.help.title.6,help,Defense vs. Kiba,Phòng thủ với Kiba,draft,dịch máy
-P1.help.title.7,help,Critical Rate,Tỷ lệ nghiêm trọng,draft,dịch máy
-P1.help.title.8,help,Knockback Rate,Tỷ lệ gõ cửa ngược,draft,dịch máy
-P1.help.title.9,help,Stagger Rate,Tốc độ Stagger,draft,dịch máy
-P1.help.title.10,help,Critical Resist Rate,Tỷ lệ kháng cự nghiêm trọng,draft,dịch máy
-P1.help.title.11,help,Knockback Resist Rate,Kháng chiến,draft,dịch máy
-P1.help.title.12,help,Stagger Resist Rate,Name,draft,dịch máy
-P1.help.text.0,help,"Unit's Stamina./When the unit's HP/reaches 0, they are/defeated.","Đơn vị Stamina./Khi đơn vị là HP/đạt 0, họ đang/bị đánh bại.",draft,dịch máy
-P1.help.text.1,help,Base damage dealt to enemies./Shown as (Smallest Value) - /(Largest Value). Final damage/will be influenced by elemental/properties and enemy's defense.,Thiệt hại cơ bản đối với kẻ thù./Hiện như (giá trị nhỏ nhất)/( Giá trị phụ thuộc) Thiệt hại cuối cùng/sẽ bị ảnh hưởng bởi nguyên tố/Tài sản và phòng thủ của kẻ thù.,draft,dịch máy
-P1.help.text.2,help,"The amount of time in between/an attack finishing and when/the unit can strike again. The/smaller this number, the faster/they can cycle through attacks.","Thời gian ở giữa/một cuộc tấn công kết thúc và khi nào/Đơn vị có thể tấn công lần nữa. Hạt/số này nhỏ hơn, càng nhanh/chúng có thể quay vòng qua tấn công.",draft,dịch máy
+P1.help.title.4,help,Defense vs. Yumi,Thủ trước Yumi,review,viết tay
+P1.help.title.5,help,Defense vs. Yari,Thủ trước Yari,review,viết tay
+P1.help.title.6,help,Defense vs. Kiba,Thủ trước Kiba,review,viết tay
+P1.help.title.7,help,Critical Rate,Tỉ lệ chí mạng,review,viết tay
+P1.help.title.8,help,Knockback Rate,Tỉ lệ đẩy lùi,review,viết tay
+P1.help.title.9,help,Stagger Rate,Tỉ lệ choáng,review,viết tay
+P1.help.title.10,help,Critical Resist Rate,Kháng chí mạng,review,viết tay
+P1.help.title.11,help,Knockback Resist Rate,Kháng đẩy lùi,review,viết tay
+P1.help.title.12,help,Stagger Resist Rate,Kháng choáng,review,viết tay
+P1.help.text.0,help,"Unit's Stamina./When the unit's HP/reaches 0, they are/defeated.","Thể lực của đơn vị./Khi HP về/0, đơn vị/bị hạ.",review,viết tay
+P1.help.text.1,help,Base damage dealt to enemies./Shown as (Smallest Value) - /(Largest Value). Final damage/will be influenced by elemental/properties and enemy's defense.,Sát thương gốc gây lên địch./Ghi dạng (nhỏ nhất) -/(lớn nhất). Sát thương cuối/còn tùy thuộc tính nguyên tố/và thủ của địch.,review,viết tay
+P1.help.text.2,help,"The amount of time in between/an attack finishing and when/the unit can strike again. The/smaller this number, the faster/they can cycle through attacks.",Thời gian giữa/lúc đòn dứt và lúc/đánh lại được. Số/càng nhỏ thì càng/ra đòn nhanh.,review,viết tay
 P1.help.text.3,help,Defense vs. Tate＆Deka,,todo,lệch placeholder
-P1.help.text.4,help,Defense vs. Yumi,Phòng thủ với Yumi,draft,dịch máy
-P1.help.text.5,help,Defense vs. Yari,Phòng thủ với Yari,draft,dịch máy
-P1.help.text.6,help,Defense vs. Kiba,Phòng thủ với Kiba,draft,dịch máy
-P1.help.text.7,help,The rate at which criticals will/be dealt when dealing damage to/an enemy. The final critical rate/will be influenced by the enemy's/critical resistance.,Tỷ lệ mà chỉ số sẽ/Được xử lý khi đối phó thiệt hại với/một kẻ thù. Tỷ lệ quan trọng cuối cùng/sẽ bị ảnh hưởng bởi kẻ thù./Sự kháng cự nghiêm trọng.,draft,dịch máy
-P1.help.text.8,help,The rate at which knockback will/be dealt when dealing damage/to an enemy. The final knockback/rate will be influenced by the/enemy's knockback resistance.,Tỷ lệ sẽ giảm/được đối phó khi đối phó với thiệt hại/cho kẻ thù. Tiếng gõ cửa cuối cùng/tỷ lệ sẽ bị ảnh hưởng bởi/Kháng chiến của kẻ thù.,draft,dịch máy
-P1.help.text.9,help,The rate at which stagger will/be dealt when dealing damage/to an enemy. The final stagger/rate will be influenced by the/enemy's stagger resistance.,Tỷ lệ nghiêng sẽ/được đối phó khi đối phó với thiệt hại/cho kẻ thù. Sự khác nhau cuối cùng/tỷ lệ sẽ bị ảnh hưởng bởi/Sự kháng cự kỳ lạ của kẻ thù.,draft,dịch máy
-P1.help.text.10,help,Critical Resist Rate,Tỷ lệ kháng cự nghiêm trọng,draft,dịch máy
-P1.help.text.11,help,Knockback Resist Rate,Kháng chiến,draft,dịch máy
-P1.help.text.12,help,Stagger Resist Rate,Name,draft,dịch máy
+P1.help.text.4,help,Defense vs. Yumi,Thủ trước Yumi,review,viết tay
+P1.help.text.5,help,Defense vs. Yari,Thủ trước Yari,review,viết tay
+P1.help.text.6,help,Defense vs. Kiba,Thủ trước Kiba,review,viết tay
+P1.help.text.7,help,The rate at which criticals will/be dealt when dealing damage to/an enemy. The final critical rate/will be influenced by the enemy's/critical resistance.,Tỉ lệ ra chí mạng/khi gây sát thương lên/địch. Tỉ lệ cuối/còn tùy kháng chí mạng/của địch.,review,viết tay
+P1.help.text.8,help,The rate at which knockback will/be dealt when dealing damage/to an enemy. The final knockback/rate will be influenced by the/enemy's knockback resistance.,Tỉ lệ đẩy lùi/khi gây sát thương/lên địch. Tỉ lệ cuối/còn tùy kháng đẩy lùi/của địch.,review,viết tay
+P1.help.text.9,help,The rate at which stagger will/be dealt when dealing damage/to an enemy. The final stagger/rate will be influenced by the/enemy's stagger resistance.,Tỉ lệ gây choáng/khi gây sát thương/lên địch. Tỉ lệ cuối/còn tùy kháng choáng/của địch.,review,viết tay
+P1.help.text.10,help,Critical Resist Rate,Kháng chí mạng,review,viết tay
+P1.help.text.11,help,Knockback Resist Rate,Kháng đẩy lùi,review,viết tay
+P1.help.text.12,help,Stagger Resist Rate,Kháng choáng,review,viết tay
 P1.guide.0,tips,Tips Album,Tập ảnh mẹo,draft,dịch máy
 P1.guide.1,tips,Page,Trang,draft,dịch máy
 P1.guide.2,tips,Completion Rate,Tỷ lệ gõ xong,draft,dịch máy
@@ -49828,31 +49828,31 @@ P1S.colony.336,dialog,&H14O0#I'm Geitte!,&H14O0#I'm Geite!,draft,dịch máy
 P1S.colony.337,dialog,"Sir, yes sir♪ You have my full attention♪/I'm Geitte the Gladiator, O Mighty Patapon./Glad you saved my life back there, Sir!","Vâng thưa ngài Tôi hoàn toàn chú ý/Tôi là Geite võ sĩ giác đấu, O Mighty Patapon./Rất vui vì ngài đã cứu mạng tôi!",draft,dịch máy
 P1S.colony.338,dialog,"Punch and smash♪ Crunch and crash♪/When you need a little muscle, just say the word!/My life is yours, as long as I don't lose it.","Đấm và đập./Khi ngươi cần chút cơ bắp, cứ nói ra đi!/Cuộc đời tôi là của ngươi, miễn là tôi không mất nó.",draft,dịch máy
 P1S.error.0,ui,Information,Thông tin,draft,
-P1S.error.1,ui,This game has an auto-save feature./Do not remove the Memory Stick Duo™ /or turn off the console power while the /Memory Stick Duo™ access indicator /is flashing.,Trò chơi này có tính năng tự động./Đừng gỡ bỏ danh sách người dùng/hoặc tắt nguồn điều khiển trong khi/Chỉ thị truy cập bộ nhớ dính DuoTM/đang nhấp nháy.,draft,dịch máy
-P1S.error.2,ui,Now loading./Do not remove the Memory Stick Duo™ /or turn off the console power.,Đang nạp đạn./Đừng gỡ bỏ danh sách người dùng/Hoặc tắt nguồn điều khiển.,draft,dịch máy
-P1S.error.3,ui,No Memory Stick Duo™./At least ??KB of free space is required on the/Memory Stick Duo™ to save system data.,Không bộ nhớ Stick DuoTM./Ít nhất? KB khoảng trống là cần thiết trên các/Bộ nhớ Stick DuoTM để lưu dữ liệu hệ thống.,draft,dịch máy
-P1S.error.4,ui,System data is saved using the auto-save feature./System data will not be saved without a Memory Stick Duo™.,Dữ liệu hệ thống được lưu bằng tính năng tự động lưu./Dữ liệu hệ thống sẽ không được lưu nếu không có bộ nhớ Stick DuoTM.,draft,dịch máy
-P1S.error.5,ui,"Until a Memory Stick Duo™ is inserted into the /console, the auto-save will be skipped./Begin game anyway?","Cho đến khi một liên kết bộ nhớ được đưa vào/bàn điều khiển, máy tự động sẽ bị bỏ qua./Bắt đầu trò chơi chưa?",draft,dịch máy
-P1S.error.6,ui,No save data found./The system data for this game is saved using the/auto-save feature. Create a new save file?,Không tìm thấy dữ liệu lưu./Các dữ liệu hệ thống cho trò chơi này được lưu bằng cách sử dụng/Tính năng tự động. Tạo một tập tin lưu mới?,draft,dịch máy
-P1S.error.7,ui,Continue playing anyway?,Tiếp tục chơi?,draft,dịch máy
+P1S.error.1,ui,This game has an auto-save feature./Do not remove the Memory Stick Duo™ /or turn off the console power while the /Memory Stick Duo™ access indicator /is flashing.,Game này tự lưu./Đừng rút Memory Stick Duo™/hay tắt nguồn khi đèn/truy cập Memory Stick Duo™/đang nhấp nháy.,review,viết tay
+P1S.error.2,ui,Now loading./Do not remove the Memory Stick Duo™ /or turn off the console power.,Đang tải./Đừng rút Memory Stick Duo™/hay tắt nguồn.,review,viết tay
+P1S.error.3,ui,No Memory Stick Duo™./At least ??KB of free space is required on the/Memory Stick Duo™ to save system data.,Không có Memory Stick Duo™./Cần ít nhất ??KB trống trên/Memory Stick Duo™ để lưu dữ liệu hệ thống.,review,viết tay
+P1S.error.4,ui,System data is saved using the auto-save feature./System data will not be saved without a Memory Stick Duo™.,Dữ liệu hệ thống được tự lưu./Không có Memory Stick Duo™ thì không lưu được.,review,viết tay
+P1S.error.5,ui,"Until a Memory Stick Duo™ is inserted into the /console, the auto-save will be skipped./Begin game anyway?",Chưa cắm Memory Stick Duo™ vào/máy thì sẽ bỏ qua tự lưu./Vẫn vào game?,review,viết tay
+P1S.error.6,ui,No save data found./The system data for this game is saved using the/auto-save feature. Create a new save file?,Không thấy dữ liệu lưu./Dữ liệu hệ thống của game này được/tự lưu. Tạo file lưu mới?,review,viết tay
+P1S.error.7,ui,Continue playing anyway?,Vẫn chơi tiếp?,review,viết tay
 P1S.error.8,ui,Load complete.,Đã tải.,draft,
-P1S.error.9,ui,Checking Memory Stick Duo™.,Kiểm tra bộ nhớ Stick DuoTM.,draft,dịch máy
-P1S.error.10,ui,A save file containing a game with further progress /than this game was found. Overwrite it?,Name/Hơn trò chơi này đã được tìm thấy. Ghi đè?,draft,dịch máy
-P1S.error.11,ui,A save file exists for this game./Overwrite it?,Một tập tin lưu tồn tại cho trò chơi này./Ghi đè?,draft,dịch máy
-P1S.error.12,ui,System data will not be saved./Continue playing anyway?,Dữ liệu hệ thống sẽ không được lưu./Tiếp tục chơi?,draft,dịch máy
-P1S.error.13,ui,Now saving./Do not remove the Memory Stick Duo™ /or turn off the console power.,Giờ đang tiết kiệm./Đừng gỡ bỏ danh sách người dùng/Hoặc tắt nguồn điều khiển.,draft,dịch máy
-P1S.error.14,ui,No save data found./The system data for this game is saved using the/auto-save feature./Create a new save file?,Không tìm thấy dữ liệu lưu./Các dữ liệu hệ thống cho trò chơi này được lưu bằng cách sử dụng/Tính năng tự động./Tạo một tập tin lưu mới?,draft,dịch máy
-P1S.error.15,ui,System data will not be saved until a new save /file is created. Continue playing anyway?,Dữ liệu hệ thống sẽ không được lưu cho đến khi lưu mới/Tập tin đã được tạo. Tiếp tục chơi?,draft,dịch máy
-P1S.error.16,ui,Insufficient free space on Memory Stick Duo™./At least 160KB of free space is required to /save system data.,Không có chỗ trống trên máy ghi nhớ./Ít nhất 160KB không gian rảnh là cần thiết/lưu dữ liệu hệ thống.,draft,dịch máy
-P1S.error.17,ui,Organize save data?,Quản lý việc lưu dữ liệu?,draft,dịch máy
-P1S.error.18,ui,System data is saved using the auto-save /feature. A Memory Stick Duo™ with at least/160KB of free space must be inserted/to save system data./Continue playing anyway?,Dữ liệu hệ thống được lưu bằng tự động lưu/đặc điểm. Ít nhất cũng gắn kết trí nhớ với mục tiêu/160KB không gian rảnh phải được chèn vào/Để lưu dữ liệu hệ thống./Tiếp tục chơi?,draft,dịch máy
-P1S.error.19,ui,No Memory Stick Duo™./A Memory Stick Duo™ with at least/160KB of free space is required to save.,Không bộ nhớ Stick DuoTM./Ít nhất cũng gắn kết trí nhớ với mục tiêu/Cần 160KB để tiết kiệm.,draft,dịch máy
-P1S.error.20,ui,System data is saved using the auto-save feature./A Memory Stick Duo™ must be inserted to save game data.,Dữ liệu hệ thống được lưu bằng tính năng tự động lưu./Cần phải chèn bộ nhớ vào để lưu dữ liệu trò chơi.,draft,dịch máy
-P1S.error.21,ui,"Until a Memory Stick Duo™ is inserted into the console,/the auto-save will be skipped. Continue playing anyway?","Cho đến khi một chiếc Stick DuoTM được đưa vào bảng điều khiển,/Máy tự động sẽ bị bỏ qua. Tiếp tục chơi?",draft,dịch máy
+P1S.error.9,ui,Checking Memory Stick Duo™.,Đang kiểm Memory Stick Duo™.,review,viết tay
+P1S.error.10,ui,A save file containing a game with further progress /than this game was found. Overwrite it?,Có file lưu tiến xa hơn/game này. Ghi đè?,review,viết tay
+P1S.error.11,ui,A save file exists for this game./Overwrite it?,Đã có file lưu của game này./Ghi đè?,review,viết tay
+P1S.error.12,ui,System data will not be saved./Continue playing anyway?,Sẽ không lưu dữ liệu hệ thống./Vẫn chơi tiếp?,review,viết tay
+P1S.error.13,ui,Now saving./Do not remove the Memory Stick Duo™ /or turn off the console power.,Đang lưu./Đừng rút Memory Stick Duo™/hay tắt nguồn.,review,viết tay
+P1S.error.14,ui,No save data found./The system data for this game is saved using the/auto-save feature./Create a new save file?,Không thấy dữ liệu lưu./Dữ liệu hệ thống của game này được/tự lưu./Tạo file lưu mới?,review,viết tay
+P1S.error.15,ui,System data will not be saved until a new save /file is created. Continue playing anyway?,Chưa tạo file lưu mới thì/không lưu dữ liệu hệ thống. Vẫn chơi tiếp?,review,viết tay
+P1S.error.16,ui,Insufficient free space on Memory Stick Duo™./At least 160KB of free space is required to /save system data.,Memory Stick Duo™ không đủ chỗ./Cần ít nhất 160KB trống để/lưu dữ liệu hệ thống.,review,viết tay
+P1S.error.17,ui,Organize save data?,Sắp xếp dữ liệu lưu?,review,viết tay
+P1S.error.18,ui,System data is saved using the auto-save /feature. A Memory Stick Duo™ with at least/160KB of free space must be inserted/to save system data./Continue playing anyway?,Dữ liệu hệ thống được tự lưu./Phải cắm Memory Stick Duo™ còn ít nhất/160KB trống/để lưu./Vẫn chơi tiếp?,review,viết tay
+P1S.error.19,ui,No Memory Stick Duo™./A Memory Stick Duo™ with at least/160KB of free space is required to save.,Không có Memory Stick Duo™./Cần Memory Stick Duo™ còn ít nhất/160KB trống để lưu.,review,viết tay
+P1S.error.20,ui,System data is saved using the auto-save feature./A Memory Stick Duo™ must be inserted to save game data.,Dữ liệu hệ thống được tự lưu./Phải cắm Memory Stick Duo™ để lưu dữ liệu game.,review,viết tay
+P1S.error.21,ui,"Until a Memory Stick Duo™ is inserted into the console,/the auto-save will be skipped. Continue playing anyway?",Chưa cắm Memory Stick Duo™ vào máy/thì sẽ bỏ qua tự lưu. Vẫn chơi tiếp?,review,viết tay
 P1S.error.22,ui,Save complete.,Đã lưu.,draft,
-P1S.error.23,ui,Save during debug mode?,Lưu trong chế độ gỡ lỗi?,draft,dịch máy
-P1S.error.24,ui,"Language setting and save data language setting do not/match. Please synchronize language settings, then load again.","Thiết lập ngôn ngữ và lưu dữ liệu ngôn ngữ không/phù hợp. Hãy đồng bộ hoá thiết lập ngôn ngữ, rồi nạp lại.",draft,dịch máy
-P1S.error.25,ui,No Memory Stick Duo™./At least 320KB of free space is required to save game/data. Play game anyway?,Không bộ nhớ Stick DuoTM./Ít nhất 320KB không gian rảnh là cần thiết để lưu trò chơi/dữ liệu. Dù sao cũng chơi trò chơi?,draft,dịch máy
+P1S.error.23,ui,Save during debug mode?,Lưu trong chế độ gỡ lỗi?,review,viết tay
+P1S.error.24,ui,"Language setting and save data language setting do not/match. Please synchronize language settings, then load again.",Ngôn ngữ đang chọn và ngôn ngữ của file lưu/không khớp. Hãy chỉnh cho trùng rồi tải lại.,review,viết tay
+P1S.error.25,ui,No Memory Stick Duo™./At least 320KB of free space is required to save game/data. Play game anyway?,Không có Memory Stick Duo™./Cần ít nhất 320KB trống để lưu dữ liệu/game. Vẫn chơi?,review,viết tay
 P1S.item.0,item,(no translation needed),,todo,không dịch
 P1S.item.1,item,The Bravery Drum./Obtained by agreeing to/become the Patapon god./Strike with ○ button.,Biểu tượng Dũng cảm./Thỏa thuận bằng cách đồng ý/trở thành vị thần Patapon./Phát hiện bằng nút  vội.,draft,dịch máy
 P1S.item.2,item,The Strokes Drum./Hatapon guarded this drum/with his life./Strike with □ button.,Lũ rắn chuông./Hatapon bảo vệ trống này/với cuộc sống của mình./Nhấn nút □.,draft,dịch máy
@@ -50253,13 +50253,13 @@ P1S.system.2,ui,Altar,Bàn thờ,draft,
 P1S.system.3,ui,Ka-ching,Ka-ching,draft,giữ nguyên
 P1S.system.4,ui,/,/,draft,giữ nguyên
 P1S.system.5,ui,:,:,draft,giữ nguyên
-P1S.system.6,ui,Give item?,Đưa hàng?,draft,dịch máy
+P1S.system.6,ui,Give item?,Trao vật phẩm?,review,viết tay
 P1S.system.7,ui,Stage,Màn,draft,
 P1S.system.8,ui,Minutes,Phút,draft,
 P1S.system.9,ui,Seconds,Giây,draft,
 P1S.system.10,ui,Spoils,Chiến lợi phẩm,draft,
-P1S.system.11,ui,Retrieved caps,Mũ đã lấy,draft,dịch máy
-P1S.system.12,ui,Lost caps,Mũ bị mất,draft,dịch máy
+P1S.system.11,ui,Retrieved caps,Mũ lấy lại,review,viết tay
+P1S.system.12,ui,Lost caps,Mũ mất,review,viết tay
 P1S.system.13,ui,Clear time,Thời gian vượt,draft,
 P1S.system.14,ui,Casualties,Thương vong,draft,
 P1S.system.15,ui,Metres,Mét,draft,
@@ -50267,39 +50267,39 @@ P1S.system.16,ui,None,Không,draft,
 P1S.system.17,ui,Default,Mặc định,draft,
 P1S.system.18,ui,Type,Loại,draft,
 P1S.system.19,ui,Number,Số,draft,
-P1S.system.20,ui,Squad status,Trạng thái,draft,dịch máy
-P1S.system.21,ui,Unit status,Trạng thái đơn vị,draft,dịch máy
-P1S.system.22,ui,Reborn,Sinh lại,draft,dịch máy
+P1S.system.20,ui,Squad status,Tình trạng đội,review,viết tay
+P1S.system.21,ui,Unit status,Tình trạng đơn vị,review,viết tay
+P1S.system.22,ui,Reborn,Tái sinh,review,viết tay
 P1S.system.23,ui,Missions,Nhiệm vụ,draft,
-P1S.system.24,ui,O Mighty <N0>!/Which unit do you/wish to deploy?,O Mighty <N0>!/Ngươi là đơn vị nào?/Muốn triển khai?,draft,dịch máy
-P1S.system.25,ui,There are more units/ready and waiting/for deployment!,Name/Sẵn sàng và chờ đợi/để triển khai!,draft,dịch máy
-P1S.system.26,ui,Equip done!/Ready to roll!,Trang bị xong!/Sẵn sàng quay!,draft,dịch máy
+P1S.system.24,ui,O Mighty <N0>!/Which unit do you/wish to deploy?,Hỡi Người Chỉ Huy <N0>!/Ngươi muốn/điều đơn vị nào?,review,viết tay
+P1S.system.25,ui,There are more units/ready and waiting/for deployment!,Còn đơn vị/đã sẵn sàng/chờ được điều đi!,review,viết tay
+P1S.system.26,ui,Equip done!/Ready to roll!,Trang bị xong!/Sẵn sàng xuất phát!,review,viết tay
 P1S.system.27,ui,<N0>'s army is/ready to/move out!,,todo,lệch placeholder
-P1S.system.28,ui,Lord <No>!/No units to/place!,Chúa tể <No>!/Không có đơn vị tới/nơi!,draft,dịch máy
-P1S.system.29,ui,Lord <N0>!/You can bring/a Miracle along!,Chúa tể Người Chỉ Huy <N0>!/Ngươi có thể mang theo./Một phép lạ!,draft,dịch máy
-P1S.system.30,ui,Lord <N0>!/Which Miracle/do you need?,Chúa tể Người Chỉ Huy <N0>!/Phép lạ nào/Ngươi có cần không?,draft,dịch máy
-P1S.system.31,ui,Lord <N0>!/You can take/stew with you!,Chúa tể Người Chỉ Huy <N0>!/Ngươi có thể chịu được./Thịt hầm với ngươi!,draft,dịch máy
-P1S.system.32,ui,Lord <N0>!/Which stew/do you need?,Chúa tể Người Chỉ Huy <N0>!/Thịt hầm/Ngươi có cần không?,draft,dịch máy
-P1S.system.33,ui,Unplaced squads remain./Begin mission anyway?,Các đội không được thay thế vẫn còn./Bắt đầu nhiệm vụ chưa?,draft,dịch máy
-P1S.system.34,ui,Retiring selected unit. Are you sure?,Đang rút lui. Ngươi chắc chứ?,draft,dịch máy
-P1S.system.35,ui,This cannot be undone. Are you sure?,Chuyện này không thể thay đổi được. Ngươi chắc chứ?,draft,dịch máy
-P1S.system.36,ui,Optimizing army equip. Are you sure?,Trang bị cho quân đội. Ngươi chắc chứ?,draft,dịch máy
+P1S.system.28,ui,Lord <No>!/No units to/place!,Người Chỉ Huy <No>!/Không còn đơn vị/để xếp!,review,viết tay
+P1S.system.29,ui,Lord <N0>!/You can bring/a Miracle along!,Người Chỉ Huy <N0>!/Ngươi có thể mang/theo một Miracle!,review,viết tay
+P1S.system.30,ui,Lord <N0>!/Which Miracle/do you need?,Người Chỉ Huy <N0>!/Ngươi cần/Miracle nào?,review,viết tay
+P1S.system.31,ui,Lord <N0>!/You can take/stew with you!,Người Chỉ Huy <N0>!/Ngươi có thể mang/món hầm theo!,review,viết tay
+P1S.system.32,ui,Lord <N0>!/Which stew/do you need?,Người Chỉ Huy <N0>!/Ngươi cần/món hầm nào?,review,viết tay
+P1S.system.33,ui,Unplaced squads remain./Begin mission anyway?,Còn đội chưa xếp./Vẫn bắt đầu nhiệm vụ?,review,viết tay
+P1S.system.34,ui,Retiring selected unit. Are you sure?,Cho đơn vị đang chọn nghỉ. Chắc chứ?,review,viết tay
+P1S.system.35,ui,This cannot be undone. Are you sure?,Không hoàn tác được. Chắc chứ?,review,viết tay
+P1S.system.36,ui,Optimizing army equip. Are you sure?,Tối ưu trang bị quân. Chắc chứ?,review,viết tay
 P1S.system.37,ui,Return to Patapolis?,Về Patapolis?,draft,
 P1S.system.38,ui,Legendary Memory,Ký ức huyền thoại,draft,
 P1S.system.39,ui,New Patapon,Patapon mới,draft,
 P1S.system.40,ui,Status,Trạng thái,draft,
-P1S.system.41,ui,Death record,Ghi chép về cái chết,draft,dịch máy
+P1S.system.41,ui,Death record,Sổ tử trận,review,viết tay
 P1S.system.42,ui,Items,Vật phẩm,draft,
-P1S.system.43,ui,Birth,Sinh ra,draft,dịch máy
-P1S.system.44,ui,Insufficient Ka-ching.,Không đủ Ka-ching.,draft,dịch máy
-P1S.system.45,ui,Cannot create with that/combination of items.,Không thể tạo ra với điều đó/kết hợp các mục.,draft,dịch máy
-P1S.system.46,ui,Cannot register more soldiers.,Không thể đăng ký thêm quân.,draft,dịch máy
-P1S.system.47,ui,Register two items!,Đăng ký hai món đồ!,draft,dịch máy
+P1S.system.43,ui,Birth,Ra đời,review,viết tay
+P1S.system.44,ui,Insufficient Ka-ching.,Không đủ Ka-ching.,review,viết tay
+P1S.system.45,ui,Cannot create with that/combination of items.,Không tạo được với/cách ghép vật phẩm đó.,review,viết tay
+P1S.system.46,ui,Cannot register more soldiers.,Không đăng ký thêm lính được.,review,viết tay
+P1S.system.47,ui,Register two items!,Hãy đăng ký hai vật phẩm!,review,viết tay
 P1S.system.48,ui,Unknown error,Lỗi không rõ,draft,
 P1S.system.49,ui,Save the adventure?,Lưu cuộc phiêu lưu?,draft,
 P1S.system.50,ui,Game data,Dữ liệu game,draft,
-P1S.system.51,ui,Mighty One：,Người quyền năng:,draft,dịch máy
-P1S.system.52,ui,Adventure：,Cuộc phiêu lưu:,draft,dịch máy
+P1S.system.51,ui,Mighty One：,Người Chỉ Huy:,review,viết tay
+P1S.system.52,ui,Adventure：,Cuộc phiêu lưu:,review,viết tay
 P1S.system.53,ui,Language: English,Ngôn ngữ: English,draft,
 P1S.system.54,ui,Play time：,Thời gian chơi：,draft,
 P1S.system.55,ui,hours,giờ,draft,
@@ -50307,10 +50307,10 @@ P1S.system.56,ui,Understood,Đã rõ,draft,
 P1S.system.57,ui,No!,Không!,draft,
 P1S.system.58,ui,Return to Patapolis?,Về Patapolis?,draft,
 P1S.system.59,ui,Return to title screen?,Về màn hình tựa?,draft,
-P1S.system.60,ui,Present play data will be lost/unless it has been saved./Are you sure?,Dữ liệu trò chơi hiện tại sẽ bị mất/trừ khi nó đã được cứu./Ngươi chắc chứ?,draft,dịch máy
-P1S.system.61,ui,Is <N0> okay for your name?,<N0> được không?,draft,dịch máy
+P1S.system.60,ui,Present play data will be lost/unless it has been saved./Are you sure?,Dữ liệu đang chơi sẽ mất/nếu chưa lưu./Chắc chứ?,review,viết tay
+P1S.system.61,ui,Is <N0> okay for your name?,Lấy tên <N0> được chứ?,review,viết tay
 P1S.system.62,ui,Kamipon,Kamipon,draft,giữ nguyên
-P1S.system.63,ui,Is this the correct Patapon?,Có đúng Patapon không?,draft,dịch máy
+P1S.system.63,ui,Is this the correct Patapon?,Đúng Patapon này chứ?,review,viết tay
 P1S.title.0,ui,"&S0#Once upon a time,","&S0#Ngày xửa ngày xưa,",review,viết tay
 P1S.title.1,ui,"&S0#the Patapon Ancients,/by the power of the Mighty One's drum,","&S0#dân Patapon cổ đại,/nhờ quyền năng chiếc trống của Người Chỉ Huy,",review,viết tay
 P1S.title.2,ui,"&S0#gained Wisdom, Courage,/Strength and Secret Juju.","&S0#lĩnh hội Trí tuệ, Dũng khí,/Sức mạnh và Juju bí truyền.",review,viết tay
@@ -50402,56 +50402,56 @@ P1S.key.4,ui,Optimize,Tối ưu,draft,
 P1S.key.5,ui,Help,Trợ giúp,draft,
 P1S.key.6,ui,Scroll,Cuộn,draft,
 P1S.key.7,ui,Proceed,Tiếp tục,draft,
-P1S.key.8,ui,Look,Nhìn kìa,draft,dịch máy
-P1S.key.9,ui,Retire,Nghỉ,draft,dịch máy
-P1S.key.10,ui,Switch,Chuyển đổi,draft,dịch máy
-P1S.key.11,ui,Select,Chọn,draft,dịch máy
-P1S.key.12,ui,Sort,Sắp xếp,draft,dịch máy
-P1S.key.13,ui,Menu,Trình đơn,draft,dịch máy
-P1S.key.14,ui,Delete screen,Xóa màn hình,draft,dịch máy
-P1S.key.15,ui,Title screen,Màn hình tiêu đề,draft,dịch máy
-P1S.key.16,ui,Confirm,Xác nhận,draft,dịch máy
-P1S.key.17,ui,Command,Câu lệnh,draft,dịch máy
-P1S.key.18,ui,Save,Lưu,draft,dịch máy
-P1S.key.19,ui,Formation,Định dạng,draft,dịch máy
+P1S.key.8,ui,Look,Xem,review,viết tay
+P1S.key.9,ui,Retire,Cho nghỉ,review,viết tay
+P1S.key.10,ui,Switch,Đổi,review,viết tay
+P1S.key.11,ui,Select,Chọn,review,viết tay
+P1S.key.12,ui,Sort,Sắp xếp,review,viết tay
+P1S.key.13,ui,Menu,Menu,review,giữ nguyên
+P1S.key.14,ui,Delete screen,Xóa màn hình,review,viết tay
+P1S.key.15,ui,Title screen,Màn hình tựa,review,viết tay
+P1S.key.16,ui,Confirm,Xác nhận,review,viết tay
+P1S.key.17,ui,Command,Khẩu lệnh,review,viết tay
+P1S.key.18,ui,Save,Lưu,review,viết tay
+P1S.key.19,ui,Formation,Đội hình,review,viết tay
 P1S.key.20,ui,Patapolis,Patapolis,draft,giữ nguyên
 P1S.key.21,ui,Help,Trợ giúp,draft,
-P1S.key.22,ui,Camera,Máy ảnh,draft,dịch máy
-P1S.key.23,ui,Move,Chuyển,draft,dịch máy
-P1S.key.24,ui,Start mission,Bắt đầu nhiệm vụ,draft,dịch máy
-P1S.key.25,ui,Select mission,Chọn nhiệm vụ,draft,dịch máy
-P1S.key.26,ui,Cursor,Con trỏ,draft,dịch máy
-P1S.key.27,ui,Equip,Công cụ,draft,dịch máy
-P1S.key.28,ui,Change,Thay đổi,draft,dịch máy
+P1S.key.22,ui,Camera,Máy quay,review,viết tay
+P1S.key.23,ui,Move,Di chuyển,review,viết tay
+P1S.key.24,ui,Start mission,Bắt đầu nhiệm vụ,review,viết tay
+P1S.key.25,ui,Select mission,Chọn nhiệm vụ,review,viết tay
+P1S.key.26,ui,Cursor,Con trỏ,review,viết tay
+P1S.key.27,ui,Equip,Trang bị,review,viết tay
+P1S.key.28,ui,Change,Đổi,review,viết tay
 P1S.titlecard.0,ui,"The ""Legend of the Patapons"" is a mysterious/ancient book that is now yours. Lead them, oh/Mighty Ruler and be the Patapon Supreme! Guide them through an endless rhythmic adventure!","«Huyền thoại Patapon» là cuốn cổ/bí ẩn, nay thuộc về ngươi. Hãy dẫn dắt họ,/hỡi Người Chỉ Huy, thành đấng tối cao của Patapon! Dẫn họ vào hành trình nhịp trống bất tận!",review,viết tay
 P1S.titlecard.1,ui,New game,Chơi mới,review,viết tay
 P1S.titlecard.2,ui,Continue,Tiếp tục,review,viết tay
 P1S.help.title.0,help,HP,HP,draft,giữ nguyên
-P1S.help.title.1,help,Strength,Độ mạnh,draft,dịch máy
-P1S.help.title.2,help,Attack Speed,Tốc độ Tấn công,draft,dịch máy
+P1S.help.title.1,help,Strength,Sức mạnh,review,viết tay
+P1S.help.title.2,help,Attack Speed,Tốc đánh,review,viết tay
 P1S.help.title.3,help,Defense vs. Tate＆Deka,,todo,lệch placeholder
-P1S.help.title.4,help,Defense vs. Yumi,Phòng thủ với Yumi,draft,dịch máy
-P1S.help.title.5,help,Defense vs. Yari,Phòng thủ với Yari,draft,dịch máy
-P1S.help.title.6,help,Defense vs. Kiba,Phòng thủ với Kiba,draft,dịch máy
-P1S.help.title.7,help,Critical Rate,Tỷ lệ nghiêm trọng,draft,dịch máy
-P1S.help.title.8,help,Knockback Rate,Tỷ lệ gõ cửa ngược,draft,dịch máy
-P1S.help.title.9,help,Stagger Rate,Tốc độ Stagger,draft,dịch máy
-P1S.help.title.10,help,Critical Resist Rate,Tỷ lệ kháng cự nghiêm trọng,draft,dịch máy
-P1S.help.title.11,help,Knockback Resist Rate,Kháng chiến,draft,dịch máy
-P1S.help.title.12,help,Stagger Resist Rate,Name,draft,dịch máy
-P1S.help.text.0,help,"Unit's Stamina./When the unit's HP/reaches 0, they are/defeated.","Đơn vị Stamina./Khi đơn vị là HP/đạt 0, họ đang/bị đánh bại.",draft,dịch máy
-P1S.help.text.1,help,Base damage dealt to enemies./Shown as (Smallest Value) - /(Largest Value). Final damage/will be influenced by elemental/properties and enemy's defense.,Thiệt hại cơ bản đối với kẻ thù./Hiện như (giá trị nhỏ nhất)/( Giá trị phụ thuộc) Thiệt hại cuối cùng/sẽ bị ảnh hưởng bởi nguyên tố/Tài sản và phòng thủ của kẻ thù.,draft,dịch máy
-P1S.help.text.2,help,"The amount of time in between/an attack finishing and when/the unit can strike again. The/smaller this number, the faster/they can cycle through attacks.","Thời gian ở giữa/một cuộc tấn công kết thúc và khi nào/Đơn vị có thể tấn công lần nữa. Hạt/số này nhỏ hơn, càng nhanh/chúng có thể quay vòng qua tấn công.",draft,dịch máy
+P1S.help.title.4,help,Defense vs. Yumi,Thủ trước Yumi,review,viết tay
+P1S.help.title.5,help,Defense vs. Yari,Thủ trước Yari,review,viết tay
+P1S.help.title.6,help,Defense vs. Kiba,Thủ trước Kiba,review,viết tay
+P1S.help.title.7,help,Critical Rate,Tỉ lệ chí mạng,review,viết tay
+P1S.help.title.8,help,Knockback Rate,Tỉ lệ đẩy lùi,review,viết tay
+P1S.help.title.9,help,Stagger Rate,Tỉ lệ choáng,review,viết tay
+P1S.help.title.10,help,Critical Resist Rate,Kháng chí mạng,review,viết tay
+P1S.help.title.11,help,Knockback Resist Rate,Kháng đẩy lùi,review,viết tay
+P1S.help.title.12,help,Stagger Resist Rate,Kháng choáng,review,viết tay
+P1S.help.text.0,help,"Unit's Stamina./When the unit's HP/reaches 0, they are/defeated.","Thể lực của đơn vị./Khi HP về/0, đơn vị/bị hạ.",review,viết tay
+P1S.help.text.1,help,Base damage dealt to enemies./Shown as (Smallest Value) - /(Largest Value). Final damage/will be influenced by elemental/properties and enemy's defense.,Sát thương gốc gây lên địch./Ghi dạng (nhỏ nhất) -/(lớn nhất). Sát thương cuối/còn tùy thuộc tính nguyên tố/và thủ của địch.,review,viết tay
+P1S.help.text.2,help,"The amount of time in between/an attack finishing and when/the unit can strike again. The/smaller this number, the faster/they can cycle through attacks.",Thời gian giữa/lúc đòn dứt và lúc/đánh lại được. Số/càng nhỏ thì càng/ra đòn nhanh.,review,viết tay
 P1S.help.text.3,help,Defense vs. Tate＆Deka,,todo,lệch placeholder
-P1S.help.text.4,help,Defense vs. Yumi,Phòng thủ với Yumi,draft,dịch máy
-P1S.help.text.5,help,Defense vs. Yari,Phòng thủ với Yari,draft,dịch máy
-P1S.help.text.6,help,Defense vs. Kiba,Phòng thủ với Kiba,draft,dịch máy
-P1S.help.text.7,help,The rate at which criticals will/be dealt when dealing damage to/an enemy. The final critical rate/will be influenced by the enemy's/critical resistance.,Tỷ lệ mà chỉ số sẽ/Được xử lý khi đối phó thiệt hại với/một kẻ thù. Tỷ lệ quan trọng cuối cùng/sẽ bị ảnh hưởng bởi kẻ thù./Sự kháng cự nghiêm trọng.,draft,dịch máy
-P1S.help.text.8,help,The rate at which knockback will/be dealt when dealing damage/to an enemy. The final knockback/rate will be influenced by the/enemy's knockback resistance.,Tỷ lệ sẽ giảm/được đối phó khi đối phó với thiệt hại/cho kẻ thù. Tiếng gõ cửa cuối cùng/tỷ lệ sẽ bị ảnh hưởng bởi/Kháng chiến của kẻ thù.,draft,dịch máy
-P1S.help.text.9,help,The rate at which stagger will/be dealt when dealing damage/to an enemy. The final stagger/rate will be influenced by the/enemy's stagger resistance.,Tỷ lệ nghiêng sẽ/được đối phó khi đối phó với thiệt hại/cho kẻ thù. Sự khác nhau cuối cùng/tỷ lệ sẽ bị ảnh hưởng bởi/Sự kháng cự kỳ lạ của kẻ thù.,draft,dịch máy
-P1S.help.text.10,help,Critical Resist Rate,Tỷ lệ kháng cự nghiêm trọng,draft,dịch máy
-P1S.help.text.11,help,Knockback Resist Rate,Kháng chiến,draft,dịch máy
-P1S.help.text.12,help,Stagger Resist Rate,Name,draft,dịch máy
+P1S.help.text.4,help,Defense vs. Yumi,Thủ trước Yumi,review,viết tay
+P1S.help.text.5,help,Defense vs. Yari,Thủ trước Yari,review,viết tay
+P1S.help.text.6,help,Defense vs. Kiba,Thủ trước Kiba,review,viết tay
+P1S.help.text.7,help,The rate at which criticals will/be dealt when dealing damage to/an enemy. The final critical rate/will be influenced by the enemy's/critical resistance.,Tỉ lệ ra chí mạng/khi gây sát thương lên/địch. Tỉ lệ cuối/còn tùy kháng chí mạng/của địch.,review,viết tay
+P1S.help.text.8,help,The rate at which knockback will/be dealt when dealing damage/to an enemy. The final knockback/rate will be influenced by the/enemy's knockback resistance.,Tỉ lệ đẩy lùi/khi gây sát thương/lên địch. Tỉ lệ cuối/còn tùy kháng đẩy lùi/của địch.,review,viết tay
+P1S.help.text.9,help,The rate at which stagger will/be dealt when dealing damage/to an enemy. The final stagger/rate will be influenced by the/enemy's stagger resistance.,Tỉ lệ gây choáng/khi gây sát thương/lên địch. Tỉ lệ cuối/còn tùy kháng choáng/của địch.,review,viết tay
+P1S.help.text.10,help,Critical Resist Rate,Kháng chí mạng,review,viết tay
+P1S.help.text.11,help,Knockback Resist Rate,Kháng đẩy lùi,review,viết tay
+P1S.help.text.12,help,Stagger Resist Rate,Kháng choáng,review,viết tay
 P1S.guide.0,tips,Tips Album,Tập ảnh mẹo,draft,dịch máy
 P1S.guide.1,tips,Page,Trang,draft,dịch máy
 P1S.guide.2,tips,Completion Rate,Tỷ lệ gõ xong,draft,dịch máy
@@ -86612,37 +86612,37 @@ P2.colony.589,dialog,"That's right... everyone,/give praise to the Great/One!","
 P2.colony.590,dialog,"I just want to say,/this is our last battle...","Tôi chỉ muốn nói,/Đây là trận chiến cuối cùng của chúng ta...",draft,dịch máy
 P2.colony.591,dialog,"Great <N0>, lead/us to victory!!","Người Chỉ Huy <N0>, chì/Chúng ta chiến thắng!",draft,dịch máy
 P2.error.0,ui,Information,Thông tin,draft,
-P2.error.1,ui,This game has an auto-save feature./Do not remove the Memory Stick Duo™/or turn off the handheld entertainment/system while the Memory Stick Duo™/access indicator is flashing.,Trò chơi này có tính năng tự động./Đừng gỡ bỏ danh sách người dùng/hoặc tắt chương trình giải trí cầm tay/Hệ thống trong khi bộ nhớ dính DuoTM/Chỉ số truy cập đang nhấp nháy.,draft,dịch máy
-P2.error.2,ui,Now loading. Do not remove the Memory/Stick Duo™ or turn off the handheld/entertainment system.,Đang nạp đạn. Không gỡ bỏ bộ nhớ/Dính DuoTM hoặc tắt trình cầm tay/Hệ thống giải trí.,draft,dịch máy
-P2.error.3,ui,No Memory Stick Duo™./At least 160KB of free space is required on the/Memory Stick Duo™ to save system data.,Không bộ nhớ Stick DuoTM./Ít nhất 160KB không gian miễn phí là cần thiết trên các/Bộ nhớ Stick DuoTM để lưu dữ liệu hệ thống.,draft,dịch máy
-P2.error.4,ui,System data is saved using the auto-save feature./System data will not be saved without a /Memory Stick Duo™.,Dữ liệu hệ thống được lưu bằng tính năng tự động lưu./Dữ liệu hệ thống sẽ không được lưu nếu không có một/Bộ nhớ Stick DuoTM.,draft,dịch máy
-P2.error.5,ui,"Until a Memory Stick Duo™ is inserted into the/handheld entertainment system, the auto-save/feature be skipped. Begin game anyway?",Cho đến khi một liên kết bộ nhớ được đưa vào/Name/tính năng bị bỏ qua. Bắt đầu trò chơi chưa?,draft,dịch máy
-P2.error.6,ui,No system data found./The system data for this game is saved using the/auto-save feature. Create a new save file?,Không tìm thấy dữ liệu hệ thống./Các dữ liệu hệ thống cho trò chơi này được lưu bằng cách sử dụng/Tính năng tự động. Tạo một tập tin lưu mới?,draft,dịch máy
-P2.error.7,ui,Continue playing anyway?,Tiếp tục chơi?,draft,dịch máy
+P2.error.1,ui,This game has an auto-save feature./Do not remove the Memory Stick Duo™/or turn off the handheld entertainment/system while the Memory Stick Duo™/access indicator is flashing.,Game này tự lưu./Đừng rút Memory Stick Duo™/hay tắt máy cầm tay/khi đèn truy cập/Memory Stick Duo™ đang nhấp nháy.,review,viết tay
+P2.error.2,ui,Now loading. Do not remove the Memory/Stick Duo™ or turn off the handheld/entertainment system.,Đang tải. Đừng rút Memory/Stick Duo™ hay tắt máy/cầm tay.,review,viết tay
+P2.error.3,ui,No Memory Stick Duo™./At least 160KB of free space is required on the/Memory Stick Duo™ to save system data.,Không có Memory Stick Duo™./Cần ít nhất 160KB trống trên/Memory Stick Duo™ để lưu dữ liệu hệ thống.,review,viết tay
+P2.error.4,ui,System data is saved using the auto-save feature./System data will not be saved without a /Memory Stick Duo™.,Dữ liệu hệ thống được tự lưu./Không có/Memory Stick Duo™ thì không lưu được.,review,viết tay
+P2.error.5,ui,"Until a Memory Stick Duo™ is inserted into the/handheld entertainment system, the auto-save/feature be skipped. Begin game anyway?",Chưa cắm Memory Stick Duo™ vào/máy cầm tay thì tự lưu/sẽ bị bỏ qua. Vẫn vào game?,review,viết tay
+P2.error.6,ui,No system data found./The system data for this game is saved using the/auto-save feature. Create a new save file?,Không thấy dữ liệu hệ thống./Dữ liệu hệ thống của game này được/tự lưu. Tạo file lưu mới?,review,viết tay
+P2.error.7,ui,Continue playing anyway?,Vẫn chơi tiếp?,review,viết tay
 P2.error.8,ui,Load complete.,Đã tải.,draft,
-P2.error.9,ui,Checking Memory Stick Duo™.,Kiểm tra bộ nhớ Stick DuoTM.,draft,dịch máy
-P2.error.10,ui,System data containing a game with further progress /than this game was found. Overwrite it?,Dữ liệu hệ thống chứa một trò chơi có tiến bộ hơn/Hơn trò chơi này đã được tìm thấy. Ghi đè?,draft,dịch máy
-P2.error.11,ui,System data exists for this game. Overwrite it?,Dữ liệu hệ thống tồn tại cho trò chơi này. Ghi đè?,draft,dịch máy
-P2.error.12,ui,System data will not be saved./Continue playing anyway?,Dữ liệu hệ thống sẽ không được lưu./Tiếp tục chơi?,draft,dịch máy
-P2.error.13,ui,Now saving.Do not remove the/Memory Stick Duo™ or turn off the/handheld entertainment system.,Giờ đang tiết kiệm. Không được gỡ bỏ/Bộ nhớ dính DuoTM hoặc tắt/Hệ thống giải trí cầm tay.,draft,dịch máy
-P2.error.14,ui,System data not found. Unable to proceed with/auto-save feature. /Would you like to create a new save file?,Không tìm thấy dữ liệu hệ thống. Không thể tiếp tục với/Tính năng tự động./Ngươi có muốn tạo một tập tin lưu mới không?,draft,dịch máy
-P2.error.15,ui,System data will not be saved until new system/data is created./Continue playing anyway?,Dữ liệu hệ thống sẽ không được lưu cho đến khi hệ thống mới/dữ liệu được tạo ra./Tiếp tục chơi?,draft,dịch máy
-P2.error.16,ui,Insufficient free space on Memory Stick Duo™./At least 160KB of free space is required to /save system data.,Không có chỗ trống trên máy ghi nhớ./Ít nhất 160KB không gian rảnh là cần thiết/lưu dữ liệu hệ thống.,draft,dịch máy
-P2.error.17,ui,Organize save data?,Quản lý việc lưu dữ liệu?,draft,dịch máy
-P2.error.18,ui,System data is saved using the auto-save /feature. A Memory Stick Duo™ with at least/160KB of free space must be inserted/to save system data./Continue playing anyway?,Dữ liệu hệ thống được lưu bằng tự động lưu/đặc điểm. Ít nhất cũng gắn kết trí nhớ với mục tiêu/160KB không gian rảnh phải được chèn vào/Để lưu dữ liệu hệ thống./Tiếp tục chơi?,draft,dịch máy
-P2.error.19,ui,No Memory Stick Duo™. /A Memory Stick Duo™ with at least /160KB of free space is required to /save system data.,Không bộ nhớ Stick DuoTM./Ít nhất cũng gắn kết trí nhớ với mục tiêu/Cần 160KB chỗ trống/lưu dữ liệu hệ thống.,draft,dịch máy
-P2.error.20,ui,System data is saved using the auto-save feature./A Memory Stick Duo™ must be inserted to enable/auto-save feature.,Dữ liệu hệ thống được lưu bằng tính năng tự động lưu./Cần phải chèn bộ nhớ để bật/Tính năng tự động.,draft,dịch máy
-P2.error.21,ui,No Memory Stick Duo™ found. Auto-save feature/will be skipped. Continue playing anyway?,Không tìm thấy bộ nhớ Stick DuoTM. Tính năng tự động lưu/Sẽ bị bỏ qua. Tiếp tục chơi?,draft,dịch máy
+P2.error.9,ui,Checking Memory Stick Duo™.,Đang kiểm Memory Stick Duo™.,review,viết tay
+P2.error.10,ui,System data containing a game with further progress /than this game was found. Overwrite it?,Có dữ liệu hệ thống tiến xa hơn/game này. Ghi đè?,review,viết tay
+P2.error.11,ui,System data exists for this game. Overwrite it?,Đã có dữ liệu hệ thống của game này. Ghi đè?,review,viết tay
+P2.error.12,ui,System data will not be saved./Continue playing anyway?,Sẽ không lưu dữ liệu hệ thống./Vẫn chơi tiếp?,review,viết tay
+P2.error.13,ui,Now saving.Do not remove the/Memory Stick Duo™ or turn off the/handheld entertainment system.,Đang lưu. Đừng rút/Memory Stick Duo™ hay tắt/máy cầm tay.,review,viết tay
+P2.error.14,ui,System data not found. Unable to proceed with/auto-save feature. /Would you like to create a new save file?,Không thấy dữ liệu hệ thống. Không/tự lưu được./Tạo file lưu mới?,review,viết tay
+P2.error.15,ui,System data will not be saved until new system/data is created./Continue playing anyway?,Chưa tạo dữ liệu hệ thống mới thì/không lưu được./Vẫn chơi tiếp?,review,viết tay
+P2.error.16,ui,Insufficient free space on Memory Stick Duo™./At least 160KB of free space is required to /save system data.,Memory Stick Duo™ không đủ chỗ./Cần ít nhất 160KB trống để/lưu dữ liệu hệ thống.,review,viết tay
+P2.error.17,ui,Organize save data?,Sắp xếp dữ liệu lưu?,review,viết tay
+P2.error.18,ui,System data is saved using the auto-save /feature. A Memory Stick Duo™ with at least/160KB of free space must be inserted/to save system data./Continue playing anyway?,Dữ liệu hệ thống được tự lưu./Phải cắm Memory Stick Duo™ còn ít nhất/160KB trống/để lưu./Vẫn chơi tiếp?,review,viết tay
+P2.error.19,ui,No Memory Stick Duo™. /A Memory Stick Duo™ with at least /160KB of free space is required to /save system data.,Không có Memory Stick Duo™./Cần Memory Stick Duo™ còn ít nhất/160KB trống để/lưu dữ liệu hệ thống.,review,viết tay
+P2.error.20,ui,System data is saved using the auto-save feature./A Memory Stick Duo™ must be inserted to enable/auto-save feature.,Dữ liệu hệ thống được tự lưu./Phải cắm Memory Stick Duo™ để bật/tự lưu.,review,viết tay
+P2.error.21,ui,No Memory Stick Duo™ found. Auto-save feature/will be skipped. Continue playing anyway?,Không thấy Memory Stick Duo™. Tự lưu/sẽ bị bỏ qua. Vẫn chơi tiếp?,review,viết tay
 P2.error.22,ui,Save complete.,Đã lưu.,draft,
-P2.error.23,ui,Save during debug mode?,Lưu trong chế độ gỡ lỗi?,draft,dịch máy
-P2.error.24,ui,"Language setting and save data language setting/do not match. Please synchronize language settings,/then reload system data.","Name/không khớp. Hãy đồng bộ hoá thiết lập ngôn ngữ,/Sau đó nạp lại dữ liệu hệ thống.",draft,dịch máy
-P2.error.25,ui,No Memory Stick Duo™ found. At least 160KB/of free space is required to save system data./At least 224KB of free space is required to save/game data. Play game anyway?,Không tìm thấy bộ nhớ Stick DuoTM. Ít nhất 160KB/cần thiết không gian rảnh để lưu dữ liệu hệ thống./Ít nhất 224KB không gian miễn phí là cần thiết để lưu/Dữ liệu trò chơi. Dù sao cũng chơi trò chơi?,draft,dịch máy
-P2.error.26,ui,You have been disconnected from the network./Returning to Patapolis.,Ngươi đã bị ngắt kết nối với mạng./Trở về Patapolis.,draft,dịch máy
-P2.error.27,ui,You have been disconnected from the network./Returning to title screen.,Ngươi đã bị ngắt kết nối với mạng./Đang trở lại màn hình tựa.,draft,dịch máy
-P2.error.28,ui,Adventure canceled./Returning to Patapolis.,Cuộc phiêu lưu bị hủy bỏ./Trở về Patapolis.,draft,dịch máy
-P2.error.29,ui,Adventure canceled./Please insert the game disc./Returning to Patapolis.,Cuộc phiêu lưu bị hủy bỏ./Hãy thêm đĩa vào./Trở về Patapolis.,draft,dịch máy
-P2.error.30,ui,Adventure canceled./Returning to title screen.,Cuộc phiêu lưu bị hủy bỏ./Đang trở lại màn hình tựa.,draft,dịch máy
-P2.error.31,ui,Save data from the full game cannot be used/in demo versions. Please use this save data/only in the full version of Patapon™ 2.,Không thể lưu dữ liệu từ trò chơi đầy đủ/trong các phiên bản thử nghiệm. Xin hãy dùng dữ liệu này/Chỉ trong phiên bản đầy đủ của PataponTM 2.,draft,dịch máy
+P2.error.23,ui,Save during debug mode?,Lưu trong chế độ gỡ lỗi?,review,viết tay
+P2.error.24,ui,"Language setting and save data language setting/do not match. Please synchronize language settings,/then reload system data.","Ngôn ngữ đang chọn và ngôn ngữ file lưu/không khớp. Hãy chỉnh cho trùng,/rồi tải lại dữ liệu hệ thống.",review,viết tay
+P2.error.25,ui,No Memory Stick Duo™ found. At least 160KB/of free space is required to save system data./At least 224KB of free space is required to save/game data. Play game anyway?,Không thấy Memory Stick Duo™. Cần ít nhất 160KB/trống để lưu dữ liệu hệ thống./Cần ít nhất 224KB trống để lưu/dữ liệu game. Vẫn chơi?,review,viết tay
+P2.error.26,ui,You have been disconnected from the network./Returning to Patapolis.,Ngươi bị ngắt khỏi mạng./Đang về Patapolis.,review,viết tay
+P2.error.27,ui,You have been disconnected from the network./Returning to title screen.,Ngươi bị ngắt khỏi mạng./Đang về màn hình tựa.,review,viết tay
+P2.error.28,ui,Adventure canceled./Returning to Patapolis.,Cuộc phiêu lưu bị hủy./Đang về Patapolis.,review,viết tay
+P2.error.29,ui,Adventure canceled./Please insert the game disc./Returning to Patapolis.,Cuộc phiêu lưu bị hủy./Hãy đưa đĩa game vào./Đang về Patapolis.,review,viết tay
+P2.error.30,ui,Adventure canceled./Returning to title screen.,Cuộc phiêu lưu bị hủy./Đang về màn hình tựa.,review,viết tay
+P2.error.31,ui,Save data from the full game cannot be used/in demo versions. Please use this save data/only in the full version of Patapon™ 2.,Dữ liệu lưu của bản đầy đủ không dùng/trong bản demo. Chỉ dùng file này/ở bản đầy đủ của Patapon™ 2.,review,viết tay
 P2.item.0,item,(no translation needed),,todo,không dịch
 P2.item.1,item,The Bravery Drum./Obtained by agreeing to/become the Patapon god./Strike with the ○ button.,Biểu tượng Dũng cảm./Thỏa thuận bằng cách đồng ý/trở thành vị thần Patapon./Đánh vào nút  Gấp.,draft,dịch máy
 P2.item.2,item,The Strokes Drum./Hatapon guarded this drum/with his life./Strike with the □ button.,Lũ rắn chuông./Hatapon bảo vệ trống này/với cuộc sống của mình./Nhấn nút □.,draft,dịch máy
@@ -88536,13 +88536,13 @@ P2.system.2,ui,Altar,Bàn thờ,draft,
 P2.system.3,ui,Ka-ching,Ka-ching,draft,giữ nguyên
 P2.system.4,ui,/,/,draft,giữ nguyên
 P2.system.5,ui,:,:,draft,giữ nguyên
-P2.system.6,ui,Give item(s)?,Đưa mục?,draft,dịch máy
+P2.system.6,ui,Give item(s)?,Trao vật phẩm?,review,viết tay
 P2.system.7,ui,Stage,Màn,draft,
 P2.system.8,ui,Minutes,Phút,draft,
 P2.system.9,ui,Seconds,Giây,draft,
 P2.system.10,ui,Spoils,Chiến lợi phẩm,draft,
-P2.system.11,ui,Retrieved caps,Mũ đã lấy,draft,dịch máy
-P2.system.12,ui,Lost caps,Mũ bị mất,draft,dịch máy
+P2.system.11,ui,Retrieved caps,Mũ lấy lại,review,viết tay
+P2.system.12,ui,Lost caps,Mũ mất,review,viết tay
 P2.system.13,ui,Clear time,Thời gian vượt,draft,
 P2.system.14,ui,Casualties,Thương vong,draft,
 P2.system.15,ui,Metres,Mét,draft,
@@ -88550,43 +88550,43 @@ P2.system.16,ui,None,Không,draft,
 P2.system.17,ui,Default,Mặc định,draft,
 P2.system.18,ui,Type,Loại,draft,
 P2.system.19,ui,Number,Số,draft,
-P2.system.20,ui,Squad status,Trạng thái,draft,dịch máy
-P2.system.21,ui,Unit status,Trạng thái đơn vị,draft,dịch máy
-P2.system.22,ui,Reborn,Sinh lại,draft,dịch máy
+P2.system.20,ui,Squad status,Tình trạng đội,review,viết tay
+P2.system.21,ui,Unit status,Tình trạng đơn vị,review,viết tay
+P2.system.22,ui,Reborn,Tái sinh,review,viết tay
 P2.system.23,ui,Missions,Nhiệm vụ,draft,
-P2.system.24,ui,Useable Parachari,Dùng được,draft,dịch máy
-P2.system.25,ui,Do you want to change/Parachari into Ka-ching/and return to Patapolis?,Ngươi có muốn thay đổi/Parachari vào Ka-ching/và trở về Patapolis?,draft,dịch máy
-P2.system.26,ui,Returns you to Patapolis./Are you sure?,Đưa ngươi về Patapolis./Ngươi chắc chứ?,draft,dịch máy
-P2.system.27,ui,Mighty <N0>!/Which unit/do you wish/to deploy?,<N0> vĩ đại!/Đơn vị nào/Em ước gì/triển khai?,draft,dịch máy
-P2.system.28,ui,There are/more units/ready and /waiting for /deployment!,Có/thêm đơn vị/Sẵn sàng và/Đang đợi/Triển khai!,draft,dịch máy
-P2.system.29,ui,Troops ready!/Let's GO!,Sẵn sàng!/Đi thôi!,draft,dịch máy
+P2.system.24,ui,Useable Parachari,Parachari dùng được,review,viết tay
+P2.system.25,ui,Do you want to change/Parachari into Ka-ching/and return to Patapolis?,Đổi/Parachari thành Ka-ching/rồi về Patapolis?,review,viết tay
+P2.system.26,ui,Returns you to Patapolis./Are you sure?,Đưa ngươi về Patapolis./Chắc chứ?,review,viết tay
+P2.system.27,ui,Mighty <N0>!/Which unit/do you wish/to deploy?,Người Chỉ Huy <N0>!/Ngươi muốn/điều/đơn vị nào?,review,viết tay
+P2.system.28,ui,There are/more units/ready and /waiting for /deployment!,Còn/đơn vị/đã sẵn sàng/chờ được/điều đi!,review,viết tay
+P2.system.29,ui,Troops ready!/Let's GO!,Quân đã sẵn!/Xuất phát!,review,viết tay
 P2.system.30,ui,<N0>'s army is/ready to/move out!,,todo,lệch placeholder
-P2.system.31,ui,Lord <N0>!/No units to/place!,Chúa tể Người Chỉ Huy <N0>!/Không có đơn vị tới/nơi!,draft,dịch máy
-P2.system.32,ui,Lord <N0>!/You can bring/a Miracle/along!,Chúa tể Người Chỉ Huy <N0>!/Ngươi có thể mang theo./Một phép lạ/đi nào!,draft,dịch máy
-P2.system.33,ui,Lord <N0>!/Which Miracle/do you need?,Chúa tể Người Chỉ Huy <N0>!/Phép lạ nào/Ngươi có cần không?,draft,dịch máy
-P2.system.34,ui,Lord <N0>!/You can take/stew with you!,Chúa tể Người Chỉ Huy <N0>!/Ngươi có thể chịu được./Thịt hầm với ngươi!,draft,dịch máy
-P2.system.35,ui,Lord <N0>!/Which stew/do you need?,Chúa tể Người Chỉ Huy <N0>!/Thịt hầm/Ngươi có cần không?,draft,dịch máy
-P2.system.36,ui,Unplaced squads remain./Begin mission anyway?,Các đội không được thay thế vẫn còn./Bắt đầu nhiệm vụ chưa?,draft,dịch máy
-P2.system.37,ui,Retiring selected unit. Are you sure?,Đang rút lui. Ngươi chắc chứ?,draft,dịch máy
-P2.system.38,ui,This cannot be undone. Are you sure?,Chuyện này không thể thay đổi được. Ngươi chắc chứ?,draft,dịch máy
-P2.system.39,ui,Optimize squad equipment?,Thiết bị đặc biệt?,draft,dịch máy
+P2.system.31,ui,Lord <N0>!/No units to/place!,Người Chỉ Huy <N0>!/Không còn đơn vị/để xếp!,review,viết tay
+P2.system.32,ui,Lord <N0>!/You can bring/a Miracle/along!,Người Chỉ Huy <N0>!/Ngươi có thể mang/theo một/Miracle!,review,viết tay
+P2.system.33,ui,Lord <N0>!/Which Miracle/do you need?,Người Chỉ Huy <N0>!/Ngươi cần/Miracle nào?,review,viết tay
+P2.system.34,ui,Lord <N0>!/You can take/stew with you!,Người Chỉ Huy <N0>!/Ngươi có thể mang/món hầm theo!,review,viết tay
+P2.system.35,ui,Lord <N0>!/Which stew/do you need?,Người Chỉ Huy <N0>!/Ngươi cần/món hầm nào?,review,viết tay
+P2.system.36,ui,Unplaced squads remain./Begin mission anyway?,Còn đội chưa xếp./Vẫn bắt đầu nhiệm vụ?,review,viết tay
+P2.system.37,ui,Retiring selected unit. Are you sure?,Cho đơn vị đang chọn nghỉ. Chắc chứ?,review,viết tay
+P2.system.38,ui,This cannot be undone. Are you sure?,Không hoàn tác được. Chắc chứ?,review,viết tay
+P2.system.39,ui,Optimize squad equipment?,Tối ưu trang bị đội?,review,viết tay
 P2.system.40,ui,Return to Patapolis?,Về Patapolis?,draft,
 P2.system.41,ui,Legendary Memory,Ký ức huyền thoại,draft,
 P2.system.42,ui,New Patapon,Patapon mới,draft,
 P2.system.43,ui,Status,Trạng thái,draft,
-P2.system.44,ui,Death record,Ghi chép về cái chết,draft,dịch máy
+P2.system.44,ui,Death record,Sổ tử trận,review,viết tay
 P2.system.45,ui,Items,Vật phẩm,draft,
-P2.system.46,ui,Birth,Sinh ra,draft,dịch máy
-P2.system.47,ui,Insufficient Ka-ching.,Không đủ Ka-ching.,draft,dịch máy
-P2.system.48,ui,Cannot create with that/combination of items.,Không thể tạo ra với điều đó/kết hợp các mục.,draft,dịch máy
-P2.system.49,ui,Cannot register more soldiers.,Không thể đăng ký thêm quân.,draft,dịch máy
-P2.system.50,ui,Register two items!,Đăng ký hai món đồ!,draft,dịch máy
+P2.system.46,ui,Birth,Ra đời,review,viết tay
+P2.system.47,ui,Insufficient Ka-ching.,Không đủ Ka-ching.,review,viết tay
+P2.system.48,ui,Cannot create with that/combination of items.,Không tạo được với/cách ghép vật phẩm đó.,review,viết tay
+P2.system.49,ui,Cannot register more soldiers.,Không đăng ký thêm lính được.,review,viết tay
+P2.system.50,ui,Register two items!,Hãy đăng ký hai vật phẩm!,review,viết tay
 P2.system.51,ui,Unknown error,Lỗi không rõ,draft,
-P2.system.52,ui,No units in squadron,Không có đơn vị trong phi đội,draft,dịch máy
+P2.system.52,ui,No units in squadron,Đội không có đơn vị,review,viết tay
 P2.system.53,ui,Save the adventure?,Lưu cuộc phiêu lưu?,draft,
 P2.system.54,ui,Game data,Dữ liệu game,draft,
-P2.system.55,ui,Mighty One：,Người quyền năng:,draft,dịch máy
-P2.system.56,ui,Adventure：,Cuộc phiêu lưu:,draft,dịch máy
+P2.system.55,ui,Mighty One：,Người Chỉ Huy:,review,viết tay
+P2.system.56,ui,Adventure：,Cuộc phiêu lưu:,review,viết tay
 P2.system.57,ui,Language: English,Ngôn ngữ: English,draft,
 P2.system.58,ui,Play time：,Thời gian chơi：,draft,
 P2.system.59,ui,hours,giờ,draft,
@@ -88594,146 +88594,146 @@ P2.system.60,ui,Understood,Đã rõ,draft,
 P2.system.61,ui,No!,Không!,draft,
 P2.system.62,ui,Return to Patapolis?,Về Patapolis?,draft,
 P2.system.63,ui,Return to title screen?,Về màn hình tựa?,draft,
-P2.system.64,ui,Present play data will be lost/unless it has been saved./Are you sure?,Dữ liệu trò chơi hiện tại sẽ bị mất/trừ khi nó đã được cứu./Ngươi chắc chứ?,draft,dịch máy
-P2.system.65,ui,"Henceforth, you will be/known as <N0> the Mighty/One.","Từ giờ trở đi, ngươi sẽ là/được gọi là <N0> hùng mạnh/Một.",draft,dịch máy
-P2.system.66,ui,Is <N1> okay for a name?,<N1> được không?,draft,dịch máy
+P2.system.64,ui,Present play data will be lost/unless it has been saved./Are you sure?,Dữ liệu đang chơi sẽ mất/nếu chưa lưu./Chắc chứ?,review,viết tay
+P2.system.65,ui,"Henceforth, you will be/known as <N0> the Mighty/One.","Từ nay, ngươi được/gọi là <N0>,/Người Chỉ Huy.",review,viết tay
+P2.system.66,ui,Is <N1> okay for a name?,Lấy tên <N1> được chứ?,review,viết tay
 P2.system.67,ui,Kamipon,Kamipon,draft,giữ nguyên
-P2.system.68,ui,Hero,Anh hùng,draft,dịch máy
-P2.system.69,ui,Is this the correct Patapon?,Có đúng Patapon không?,draft,dịch máy
-P2.system.70,ui,Retry,Thử lại,draft,dịch máy
-P2.system.71,ui,Cannot connect to network because/Wireless LAN switch is OFF.,Không thể kết nối đến mạng vì/Công tắc LAN không dây bị ngắt.,draft,dịch máy
-P2.system.72,ui,"There are no mysterious eggs here,/so you can't play.","Không có quả trứng bí ẩn nào ở đây,/Vậy ngươi không thể chơi.",draft,dịch máy
-P2.system.73,ui,Select Paragate,Chọn Cửa sổ Thư mục,draft,dịch máy
-P2.system.74,ui,Play alone,Chơi một mình,draft,dịch máy
-P2.system.75,ui,<align=center>Bring mysterious eggs/<size=75>（Hosting local communication）,<align=center> mang trứng bí ẩn/<size=75> (Hốt kết nối cục cục bộ),draft,dịch máy
-P2.system.76,ui,<align=center>Join the adventure/<size=75>（Joining as a guest via local communication）,<align=center>Join cuộc phiêu lưu/<size=75> (hát như một vị khách thông qua giao tiếp cục bộ),draft,dịch máy
-P2.system.77,ui,Game sharing,Chia sẻ trò chơi,draft,dịch máy
-P2.system.78,ui,Won't you tell us your/name O Mighty One?,"Sao ngươi không nói cho chúng tôi biết/Hỡi Ðấng toàn năng, danh Ngài là gì?",draft,dịch máy
-P2.system.79,ui,Tell us your name,Nói tên đi,draft,dịch máy
-P2.system.80,ui,Transfer Patapon™ Save Data,Chuyển đổi dữ liệu Lưu trữ PataponTM,draft,dịch máy
-P2.system.81,ui,"Welcome to the world of Patapon, O/Great One! If this is your first time playing,/might we recommend you start off in /Easy Mode? What say ye?","Chào mừng đến với thế giới Patapon, O/Chúa thượng! Nếu đây là lần đầu tiên ngươi chơi,/chúng tôi khuyên ngươi nên bắt đầu từ đây./Chế độ dễ dãi? Ngươi nghĩ sao?",draft,dịch máy
-P2.system.82,ui,Requirements:,Yêu cầu:,draft,dịch máy
-P2.system.83,ui,New Data,Dữ liệu mới,draft,dịch máy
+P2.system.68,ui,Hero,Anh hùng,review,viết tay
+P2.system.69,ui,Is this the correct Patapon?,Đúng Patapon này chứ?,review,viết tay
+P2.system.70,ui,Retry,Thử lại,review,viết tay
+P2.system.71,ui,Cannot connect to network because/Wireless LAN switch is OFF.,Không vào mạng được vì/công tắc mạng không dây đang tắt.,review,viết tay
+P2.system.72,ui,"There are no mysterious eggs here,/so you can't play.","Ở đây không có trứng bí ẩn,/nên ngươi không chơi được.",review,viết tay
+P2.system.73,ui,Select Paragate,Chọn Paragate,review,viết tay
+P2.system.74,ui,Play alone,Chơi một mình,review,viết tay
+P2.system.75,ui,<align=center>Bring mysterious eggs/<size=75>（Hosting local communication）,<align=center>Mang trứng bí ẩn/<size=75>（Mở phòng chơi gần）,review,viết tay
+P2.system.76,ui,<align=center>Join the adventure/<size=75>（Joining as a guest via local communication）,"<align=center>Vào cuộc phiêu lưu/<size=75>（Vào với tư cách khách, chơi gần）",review,viết tay
+P2.system.77,ui,Game sharing,Chia sẻ game,review,viết tay
+P2.system.78,ui,Won't you tell us your/name O Mighty One?,"Ngươi không cho chúng tôi biết/tên sao, hỡi Người Chỉ Huy?",review,viết tay
+P2.system.79,ui,Tell us your name,Hãy nói tên ngươi,review,viết tay
+P2.system.80,ui,Transfer Patapon™ Save Data,Chuyển dữ liệu lưu Patapon™,review,viết tay
+P2.system.81,ui,"Welcome to the world of Patapon, O/Great One! If this is your first time playing,/might we recommend you start off in /Easy Mode? What say ye?","Chào mừng tới thế giới Patapon,/hỡi Người Chỉ Huy! Nếu đây là lần đầu,/xin hãy bắt đầu ở/chế độ Dễ. Ngươi thấy sao?",review,viết tay
+P2.system.82,ui,Requirements:,Điều kiện:,review,viết tay
+P2.system.83,ui,New Data,Dữ liệu mới,review,viết tay
 P2.system.84,ui,System Data,Dữ liệu hệ thống,draft,
 P2.system.85,ui,System Data,Dữ liệu hệ thống,draft,
 P2.system.86,ui,System Data,Dữ liệu hệ thống,draft,
-P2.system.87,ui,Systemdaten,Comment,draft,dịch máy
-P2.system.88,ui,Données système,Donées Système,draft,dịch máy
-P2.system.89,ui,Dati di sistema,Name,draft,dịch máy
+P2.system.87,ui,Systemdaten,Systemdaten,review,giữ nguyên
+P2.system.88,ui,Données système,Données système,review,giữ nguyên
+P2.system.89,ui,Dati di sistema,Dati di sistema,review,giữ nguyên
 P2.system.90,ui,Datos de sistema,Datos de sistema,draft,giữ nguyên
 P2.system.91,ui,System Data,Dữ liệu hệ thống,draft,
 P2.system.92,ui,System Data,Dữ liệu hệ thống,draft,
-P2.system.93,ui,Which level will you play?/Ka-ching <N2>,Ngươi sẽ chơi ở cấp độ nào?/Ka-ching <N2>,draft,dịch máy
-P2.system.94,ui,Level 1 <N3>,Trình độ 1 <N3>,draft,dịch máy
-P2.system.95,ui,Level 2 <N4>,Trình độ 2 <N4>,draft,dịch máy
-P2.system.96,ui,Level 3 <N5>,Trình độ 3 <N5>,draft,dịch máy
-P2.system.97,ui,Squadron Stats,Trạng thái Phi đội,draft,dịch máy
-P2.system.98,ui,# of Defeats,♪ Của thất bại ♪,draft,dịch máy
-P2.system.99,ui,# of Missions Participated,# Những nhiệm vụ được tham gia,draft,dịch máy
-P2.system.100,ui,Average Stamina,Trung bình,draft,dịch máy
-P2.system.101,ui,Average Strength,Sức mạnh trung bình,draft,dịch máy
-P2.system.102,ui,Average Attack Speed,Tốc độ tấn công trung bình,draft,dịch máy
+P2.system.93,ui,Which level will you play?/Ka-ching <N2>,Ngươi chơi mức nào?/Ka-ching <N2>,review,viết tay
+P2.system.94,ui,Level 1 <N3>,Mức 1 <N3>,review,viết tay
+P2.system.95,ui,Level 2 <N4>,Mức 2 <N4>,review,viết tay
+P2.system.96,ui,Level 3 <N5>,Mức 3 <N5>,review,viết tay
+P2.system.97,ui,Squadron Stats,Chỉ số đội,review,viết tay
+P2.system.98,ui,# of Defeats,Số lần bại,review,viết tay
+P2.system.99,ui,# of Missions Participated,Số nhiệm vụ đã tham gia,review,viết tay
+P2.system.100,ui,Average Stamina,Thể lực trung bình,review,viết tay
+P2.system.101,ui,Average Strength,Sức mạnh trung bình,review,viết tay
+P2.system.102,ui,Average Attack Speed,Tốc đánh trung bình,review,viết tay
 P2.system.103,ui,Average Defense vs. Tate＆Deka,,todo,lệch placeholder
-P2.system.104,ui,Average Defense vs. Yumi,Trung bình Phòng thủ chống lại Yumi,draft,dịch máy
-P2.system.105,ui,Average Defense vs. Yari,Trung bình Phòng thủ chống lại Yari,draft,dịch máy
-P2.system.106,ui,Aberage Defense vs. Kiba,Name,draft,dịch máy
-P2.system.107,ui,Average Critical Rate,Tỷ lệ trung bình,draft,dịch máy
-P2.system.108,ui,Average Knockback Rate,Tỷ lệ gõ cửa trung bình,draft,dịch máy
-P2.system.109,ui,Average Stagger Rate,Tốc độ Loger trung bình,draft,dịch máy
-P2.system.110,ui,Average Critical Resist Rate,Trung bình kháng cự nghiêm trọng,draft,dịch máy
-P2.system.111,ui,Average Knockback Resist Rate,Tỷ lệ chống trả trung bình,draft,dịch máy
-P2.system.112,ui,Average Stagger Resist Rate,Tốc độ trung bình của bác sĩ Stagg,draft,dịch máy
-P2.system.113,ui,Unit Abilities,Đơn vị Khả năng,draft,dịch máy
-P2.system.114,ui,# of Defeats,♪ Của thất bại ♪,draft,dịch máy
-P2.system.115,ui,# of Missions Participated,# Những nhiệm vụ được tham gia,draft,dịch máy
-P2.system.116,ui,"Unit's Stamina./When the unit's HP/reaches 0, they are/defeated.","Đơn vị Stamina./Khi đơn vị là HP/đạt 0, họ đang/bị đánh bại.",draft,dịch máy
-P2.system.117,ui,Base damage dealt to enemies./Shown as (Smallest Value) - /(Largest Value). Final damage/will be influenced by elemental/properties and enemy's defense.,Thiệt hại cơ bản đối với kẻ thù./Hiện như (giá trị nhỏ nhất)/( Giá trị phụ thuộc) Thiệt hại cuối cùng/sẽ bị ảnh hưởng bởi nguyên tố/Tài sản và phòng thủ của kẻ thù.,draft,dịch máy
-P2.system.118,ui,"The amount of time in between/an attack finishing and when/the unit can strike again. The/smaller this number, the faster/they can cycle through attacks.","Thời gian ở giữa/một cuộc tấn công kết thúc và khi nào/Đơn vị có thể tấn công lần nữa. Hạt/số này nhỏ hơn, càng nhanh/chúng có thể quay vòng qua tấn công.",draft,dịch máy
+P2.system.104,ui,Average Defense vs. Yumi,"Thủ trước Yumi, trung bình",review,viết tay
+P2.system.105,ui,Average Defense vs. Yari,"Thủ trước Yari, trung bình",review,viết tay
+P2.system.106,ui,Aberage Defense vs. Kiba,"Thủ trước Kiba, trung bình",review,viết tay
+P2.system.107,ui,Average Critical Rate,Chí mạng trung bình,review,viết tay
+P2.system.108,ui,Average Knockback Rate,Đẩy lùi trung bình,review,viết tay
+P2.system.109,ui,Average Stagger Rate,Choáng trung bình,review,viết tay
+P2.system.110,ui,Average Critical Resist Rate,Kháng chí mạng trung bình,review,viết tay
+P2.system.111,ui,Average Knockback Resist Rate,Kháng đẩy lùi trung bình,review,viết tay
+P2.system.112,ui,Average Stagger Resist Rate,Kháng choáng trung bình,review,viết tay
+P2.system.113,ui,Unit Abilities,Năng lực đơn vị,review,viết tay
+P2.system.114,ui,# of Defeats,Số lần bại,review,viết tay
+P2.system.115,ui,# of Missions Participated,Số nhiệm vụ đã tham gia,review,viết tay
+P2.system.116,ui,"Unit's Stamina./When the unit's HP/reaches 0, they are/defeated.","Thể lực của đơn vị./Khi HP về/0, đơn vị/bị hạ.",review,viết tay
+P2.system.117,ui,Base damage dealt to enemies./Shown as (Smallest Value) - /(Largest Value). Final damage/will be influenced by elemental/properties and enemy's defense.,Sát thương gốc gây lên địch./Ghi dạng (nhỏ nhất) -/(lớn nhất). Sát thương cuối/còn tùy thuộc tính nguyên tố/và thủ của địch.,review,viết tay
+P2.system.118,ui,"The amount of time in between/an attack finishing and when/the unit can strike again. The/smaller this number, the faster/they can cycle through attacks.",Thời gian giữa/lúc đòn dứt và lúc/đánh lại được. Số/càng nhỏ thì càng/ra đòn nhanh.,review,viết tay
 P2.system.119,ui,Defense vs. Tate＆Deka,,todo,lệch placeholder
-P2.system.120,ui,Defense vs. Yumi,Phòng thủ với Yumi,draft,dịch máy
-P2.system.121,ui,Defense vs. Yari,Phòng thủ với Yari,draft,dịch máy
-P2.system.122,ui,Defense vs. Kiba,Phòng thủ với Kiba,draft,dịch máy
-P2.system.123,ui,The rate at which criticals will/be dealt when dealing damage to/an enemy. The final critical rate/will be influenced by the enemy's/critical resistance.,Tỷ lệ mà chỉ số sẽ/Được xử lý khi đối phó thiệt hại với/một kẻ thù. Tỷ lệ quan trọng cuối cùng/sẽ bị ảnh hưởng bởi kẻ thù./Sự kháng cự nghiêm trọng.,draft,dịch máy
-P2.system.124,ui,The rate at which knockback will/be dealt when dealing damage/to an enemy. The final knockback/rate will be influenced by the/enemy's knockback resistance.,Tỷ lệ sẽ giảm/được đối phó khi đối phó với thiệt hại/cho kẻ thù. Tiếng gõ cửa cuối cùng/tỷ lệ sẽ bị ảnh hưởng bởi/Kháng chiến của kẻ thù.,draft,dịch máy
-P2.system.125,ui,The rate at which stagger will/be dealt when dealing damage/to an enemy. The final stagger/rate will be influenced by the/enemy's stagger resistance.,Tỷ lệ nghiêng sẽ/được đối phó khi đối phó với thiệt hại/cho kẻ thù. Sự khác nhau cuối cùng/tỷ lệ sẽ bị ảnh hưởng bởi/Sự kháng cự kỳ lạ của kẻ thù.,draft,dịch máy
-P2.system.126,ui,Critical Resist Rate,Tỷ lệ kháng cự nghiêm trọng,draft,dịch máy
-P2.system.127,ui,Knockback Resist Rate,Kháng chiến,draft,dịch máy
-P2.system.128,ui,Stagger Resist Rate,Name,draft,dịch máy
-P2.system.129,ui,Leaving Paragate. Are you sure?,Rời khỏi Paragate. Ngươi chắc chứ?,draft,dịch máy
-P2.system.130,ui,Are you sure you want to engage?,Ngươi có chắc là muốn tham gia không?,draft,dịch máy
-P2.system.131,ui,You need a total of 4 players!,Ngươi cần tổng cộng 4 người chơi!,draft,dịch máy
+P2.system.120,ui,Defense vs. Yumi,Thủ trước Yumi,review,viết tay
+P2.system.121,ui,Defense vs. Yari,Thủ trước Yari,review,viết tay
+P2.system.122,ui,Defense vs. Kiba,Thủ trước Kiba,review,viết tay
+P2.system.123,ui,The rate at which criticals will/be dealt when dealing damage to/an enemy. The final critical rate/will be influenced by the enemy's/critical resistance.,Tỉ lệ ra chí mạng/khi gây sát thương lên/địch. Tỉ lệ cuối/còn tùy kháng chí mạng/của địch.,review,viết tay
+P2.system.124,ui,The rate at which knockback will/be dealt when dealing damage/to an enemy. The final knockback/rate will be influenced by the/enemy's knockback resistance.,Tỉ lệ đẩy lùi/khi gây sát thương/lên địch. Tỉ lệ cuối/còn tùy kháng đẩy lùi/của địch.,review,viết tay
+P2.system.125,ui,The rate at which stagger will/be dealt when dealing damage/to an enemy. The final stagger/rate will be influenced by the/enemy's stagger resistance.,Tỉ lệ gây choáng/khi gây sát thương/lên địch. Tỉ lệ cuối/còn tùy kháng choáng/của địch.,review,viết tay
+P2.system.126,ui,Critical Resist Rate,Kháng chí mạng,review,viết tay
+P2.system.127,ui,Knockback Resist Rate,Kháng đẩy lùi,review,viết tay
+P2.system.128,ui,Stagger Resist Rate,Kháng choáng,review,viết tay
+P2.system.129,ui,Leaving Paragate. Are you sure?,Rời Paragate. Chắc chứ?,review,viết tay
+P2.system.130,ui,Are you sure you want to engage?,Ngươi chắc muốn giao chiến?,review,viết tay
+P2.system.131,ui,You need a total of 4 players!,Cần đủ 4 người chơi!,review,viết tay
 P2.system.132,ui,Tips Album,Tập ảnh mẹo,draft,dịch máy
 P2.system.133,ui,Page,Trang,draft,dịch máy
 P2.system.134,ui,Completion Rate,Tỷ lệ gõ xong,draft,dịch máy
-P2.system.135,ui,Is this level correct?,Trình độ này có đúng không?,draft,dịch máy
-P2.system.136,ui,Optimize volume for headphone-use only.,Chỉ dùng điện thoại đầu để làm lễ rửa tội.,draft,dịch máy
-P2.system.137,ui,Optimize volume for speaker-use only.,Chỉ dùng loa thôi.,draft,dịch máy
-P2.system.138,ui,Automatically adjust volume settings.,Tự động điều chỉnh thiết lập âm lượng.,draft,dịch máy
-P2.system.139,ui,Calling all first timers and the rhythmically impaired!,Gọi tất cả các đồng hồ đầu tiên và các nhịp điệu bị suy giảm!,draft,dịch máy
-P2.system.140,ui,Four on the floor! Let's kick it up a notch!,Bốn tên trên sàn! Hãy cho nó nổ tung!,draft,dịch máy
-P2.system.141,ui,Holy Jebus! You're braver than I thought!,Chúa ơi! Ngươi dũng cảm hơn tôi tưởng!,draft,dịch máy
-P2.system.142,ui,Battle preparations are incomplete.,Chuẩn bị chiến đấu không đầy đủ.,draft,dịch máy
-P2.system.143,ui,Don't be surprised if you get/a new rhythm next time!,Don không ngạc nhiên nếu ngươi nhận được/Một nhịp điệu mới lần tới!,draft,dịch máy
-P2.system.144,ui,Create?,Tạo ra?,draft,dịch máy
+P2.system.135,ui,Is this level correct?,Đúng mức này chứ?,review,viết tay
+P2.system.136,ui,Optimize volume for headphone-use only.,Chỉnh âm lượng cho tai nghe.,review,viết tay
+P2.system.137,ui,Optimize volume for speaker-use only.,Chỉnh âm lượng cho loa.,review,viết tay
+P2.system.138,ui,Automatically adjust volume settings.,Tự chỉnh âm lượng.,review,viết tay
+P2.system.139,ui,Calling all first timers and the rhythmically impaired!,Dành cho người mới và ai còn lệch nhịp!,review,viết tay
+P2.system.140,ui,Four on the floor! Let's kick it up a notch!,Bốn nhịp một ô! Siết nhịp lên!,review,viết tay
+P2.system.141,ui,Holy Jebus! You're braver than I thought!,Trời! Ngươi gan hơn ta tưởng!,review,viết tay
+P2.system.142,ui,Battle preparations are incomplete.,Chưa chuẩn bị trận xong.,review,viết tay
+P2.system.143,ui,Don't be surprised if you get/a new rhythm next time!,Đừng ngạc nhiên nếu lần sau/ngươi có nhịp mới!,review,viết tay
+P2.system.144,ui,Create?,Tạo?,review,viết tay
 P2.system.145,ui,Evolve?,Evolve?,draft,giữ nguyên
-P2.system.146,ui,Level Up?,Trình độ?,draft,dịch máy
-P2.system.147,ui,<N6> Ka-ching received.,Đã nhận được <N6> Ka-ching.,draft,dịch máy
-P2.system.148,ui,Cut off from host.,Bị cách ly khỏi vật chủ.,draft,dịch máy
-P2.system.149,ui,Disconnected due to connection error.,Đã ngắt kết nối do lỗi kết nối.,draft,dịch máy
-P2.system.150,ui,Are your battle preparations complete?,Ngươi đã chuẩn bị xong cuộc chiến chưa?,draft,dịch máy
-P2.system.151,ui,Average Burn Resistance,Kháng chiến trung bình,draft,dịch máy
-P2.system.152,ui,Average Freeze Resistance,Trung bình kháng cự đông lạnh,draft,dịch máy
-P2.system.153,ui,Average Sleep Resistance,Kháng chiến giấc ngủ trung bình,draft,dịch máy
-P2.system.154,ui,Average Burn,Đốt trung bình,draft,dịch máy
-P2.system.155,ui,Average Freeze,Đứng yên trung bình,draft,dịch máy
-P2.system.156,ui,Average Sleep,Ngủ trung bình,draft,dịch máy
-P2.system.157,ui,"The unit's ability to resist/burn effects. However, burn/rate cannot be lowered/below 5%.","Khả năng kháng cự của đơn vị/Hiệu ứng đốt. Tuy nhiên, cháy/không thể hạ cấp/dưới 5%.",draft,dịch máy
-P2.system.158,ui,"The unit's ability to resist/freeze effects. However,/freeze rate cannot be/lowered below 5%.","Khả năng kháng cự của đơn vị/tác dụng đóng băng. Tuy nhiên,/tốc độ đóng băng không thể/Hạ xuống dưới 5%.",draft,dịch máy
-P2.system.159,ui,"The unit's ability to resist/sleep effects. However, sleep/rate cannot be lowered/below 5%.","Khả năng kháng cự của đơn vị/Ảnh hưởng giấc ngủ. Tuy nhiên, ngủ đi./không thể hạ cấp/dưới 5%.",draft,dịch máy
-P2.system.160,ui,The rate at which burn will be/dealt when dealing damage to/an enemy. The final burn rate/will be influenced by the/enemy's burn resistance.,Tỷ lệ bị cháy sẽ là/xử lý khi đối phó thiệt hại với/một kẻ thù. Tỷ lệ cháy cuối cùng/sẽ bị ảnh hưởng bởi/Quân kháng chiến của kẻ thù.,draft,dịch máy
-P2.system.161,ui,The rate at which freeze will be/dealt when dealing damage to/an enemy. The final freeze rate/will be influenced by the/enemy's freeze resistance.,Tỷ lệ đóng băng sẽ là/xử lý khi đối phó thiệt hại với/một kẻ thù. Tỷ lệ đóng băng cuối cùng/sẽ bị ảnh hưởng bởi/Quân kháng chiến đông lạnh của kẻ thù.,draft,dịch máy
-P2.system.162,ui,The rate at which sleep will be/dealt when dealing damage to/an enemy. The final sleep rate/will be influenced by the/enemy's sleep resistance.,Tỷ lệ ngủ sẽ là/xử lý khi đối phó thiệt hại với/một kẻ thù. Tỷ lệ ngủ cuối cùng/sẽ bị ảnh hưởng bởi/Kháng chiến giấc ngủ của kẻ thù.,draft,dịch máy
+P2.system.146,ui,Level Up?,Lên cấp?,review,viết tay
+P2.system.147,ui,<N6> Ka-ching received.,Nhận <N6> Ka-ching.,review,viết tay
+P2.system.148,ui,Cut off from host.,Mất kết nối với chủ phòng.,review,viết tay
+P2.system.149,ui,Disconnected due to connection error.,Ngắt vì lỗi kết nối.,review,viết tay
+P2.system.150,ui,Are your battle preparations complete?,Ngươi chuẩn bị trận xong chưa?,review,viết tay
+P2.system.151,ui,Average Burn Resistance,Kháng bỏng trung bình,review,viết tay
+P2.system.152,ui,Average Freeze Resistance,Kháng đóng băng trung bình,review,viết tay
+P2.system.153,ui,Average Sleep Resistance,Kháng ngủ trung bình,review,viết tay
+P2.system.154,ui,Average Burn,Bỏng trung bình,review,viết tay
+P2.system.155,ui,Average Freeze,Đóng băng trung bình,review,viết tay
+P2.system.156,ui,Average Sleep,Ngủ trung bình,review,viết tay
+P2.system.157,ui,"The unit's ability to resist/burn effects. However, burn/rate cannot be lowered/below 5%.","Khả năng kháng/hiệu ứng bỏng. Dù vậy, tỉ lệ/bỏng không giảm/xuống dưới 5%.",review,viết tay
+P2.system.158,ui,"The unit's ability to resist/freeze effects. However,/freeze rate cannot be/lowered below 5%.","Khả năng kháng/hiệu ứng đóng băng. Dù vậy,/tỉ lệ đóng băng không/xuống dưới 5%.",review,viết tay
+P2.system.159,ui,"The unit's ability to resist/sleep effects. However, sleep/rate cannot be lowered/below 5%.","Khả năng kháng/hiệu ứng ngủ. Dù vậy, tỉ lệ/ngủ không giảm/xuống dưới 5%.",review,viết tay
+P2.system.160,ui,The rate at which burn will be/dealt when dealing damage to/an enemy. The final burn rate/will be influenced by the/enemy's burn resistance.,Tỉ lệ gây bỏng/khi gây sát thương lên/địch. Tỉ lệ cuối/còn tùy kháng bỏng/của địch.,review,viết tay
+P2.system.161,ui,The rate at which freeze will be/dealt when dealing damage to/an enemy. The final freeze rate/will be influenced by the/enemy's freeze resistance.,Tỉ lệ gây đóng băng/khi gây sát thương lên/địch. Tỉ lệ cuối/còn tùy kháng đóng băng/của địch.,review,viết tay
+P2.system.162,ui,The rate at which sleep will be/dealt when dealing damage to/an enemy. The final sleep rate/will be influenced by the/enemy's sleep resistance.,Tỉ lệ gây ngủ/khi gây sát thương lên/địch. Tỉ lệ cuối/còn tùy kháng ngủ/của địch.,review,viết tay
 P2.system.163,ui,HP,HP,draft,giữ nguyên
-P2.system.164,ui,Strength,Độ mạnh,draft,dịch máy
-P2.system.165,ui,Attack Speed,Tốc độ Tấn công,draft,dịch máy
-P2.system.166,ui,Burn Resistance,Kháng chiến dữ dội,draft,dịch máy
-P2.system.167,ui,Freeze Resistance,Kháng chiến,draft,dịch máy
-P2.system.168,ui,Sleep Resistance,Kháng chiến giấc ngủ,draft,dịch máy
-P2.system.169,ui,Critical Rate,Tỷ lệ nghiêm trọng,draft,dịch máy
-P2.system.170,ui,Knockback Rate,Tỷ lệ gõ cửa ngược,draft,dịch máy
-P2.system.171,ui,Stagger Rate,Tốc độ Stagger,draft,dịch máy
-P2.system.172,ui,Burn Rate,Tỷ lệ cháy,draft,dịch máy
-P2.system.173,ui,Freeze Rate,Đứng yên,draft,dịch máy
-P2.system.174,ui,Sleep Rate,Tốc độ Ngủ,draft,dịch máy
-P2.system.175,ui,Waiting for other heroes to finish.,Chờ những anh hùng khác kết thúc.,draft,dịch máy
+P2.system.164,ui,Strength,Sức mạnh,review,viết tay
+P2.system.165,ui,Attack Speed,Tốc đánh,review,viết tay
+P2.system.166,ui,Burn Resistance,Kháng bỏng,review,viết tay
+P2.system.167,ui,Freeze Resistance,Kháng đóng băng,review,viết tay
+P2.system.168,ui,Sleep Resistance,Kháng ngủ,review,viết tay
+P2.system.169,ui,Critical Rate,Tỉ lệ chí mạng,review,viết tay
+P2.system.170,ui,Knockback Rate,Tỉ lệ đẩy lùi,review,viết tay
+P2.system.171,ui,Stagger Rate,Tỉ lệ choáng,review,viết tay
+P2.system.172,ui,Burn Rate,Tỉ lệ bỏng,review,viết tay
+P2.system.173,ui,Freeze Rate,Tỉ lệ đóng băng,review,viết tay
+P2.system.174,ui,Sleep Rate,Tỉ lệ ngủ,review,viết tay
+P2.system.175,ui,Waiting for other heroes to finish.,Đang chờ các anh hùng khác xong.,review,viết tay
 P2.system.176,ui,NOW LOADING,ĐANG TẢI,review,viết tay
-P2.system.177,ui,PRESS ANY BUTTON,NHỮNG BAO GIỜ TRONG NHỮNG NGƯỜI,draft,dịch máy
-P2.system.178,ui,Null Critical,Comment,draft,dịch máy
-P2.system.179,ui,Null Knockback,Nell knockback,draft,dịch máy
-P2.system.180,ui,Null Stagger,Name,draft,dịch máy
-P2.system.181,ui,Null Burn,Chết cháy,draft,dịch máy
-P2.system.182,ui,Null Freeze,Đứng yên,draft,dịch máy
-P2.system.183,ui,Null Sleep,Ngủ thiếp đi,draft,dịch máy
-P2.system.184,ui,Nullifies criticals/so that you will never take critical /hits under any attack.,Làm rỗng các quan trọng/Để ngươi không bao giờ phê phán/bị tấn công.,draft,dịch máy
-P2.system.185,ui,Nullifies knockback/so that you will never take /knockback hits under any attack.,Tiếng gõ cửa lại từ trường/Để ngươi không bao giờ lấy đi/Bị đánh bất cứ lúc nào.,draft,dịch máy
-P2.system.186,ui,Nullifies stagger/so that you will never take /staggering hits under any attack.,Dập tắt/Để ngươi không bao giờ lấy đi/Tấn công bất ngờ khi bị tấn công.,draft,dịch máy
-P2.system.187,ui,Nullifies burn effect/so that you will never be burned /under any attack.,Hiệu ứng cháy dinh dưỡng/Để ngươi không bao giờ bị thiêu sống/dưới bất kỳ cuộc tấn công nào.,draft,dịch máy
-P2.system.188,ui,Nullifies freeze effect/so that you will never be frozen /under any attack.,Comment/Để ngươi không bao giờ bị đóng băng/dưới bất kỳ cuộc tấn công nào.,draft,dịch máy
-P2.system.189,ui,Nullifies sleep/so that you will never be put to /sleep under any attack.,Ngủ thoải mái/Để ngươi không bao giờ bị bỏ rơi/ngủ dưới bất kỳ cuộc tấn công nào.,draft,dịch máy
-P2.system.190,ui,Which level do you wish to play?,Ngươi muốn chơi ở cấp độ nào?,draft,dịch máy
-P2.system.191,ui,Level 1,Cấp 1,draft,dịch máy
-P2.system.192,ui,Level 2,Trình độ 2,draft,dịch máy
-P2.system.193,ui,Level 3,Trình độ 3,draft,dịch máy
-P2.system.194,ui,Open the treasure chest!,Mở rương kho báu ra!,draft,dịch máy
-P2.system.195,ui,Acquired <N6> Ka-ching!,Nhận được <N6> Ka-ching!,draft,dịch máy
-P2.system.196,ui,Preparing adventure./Press × to return to Patapolis.,Chuẩn bị phiêu lưu./Nhấn × để quay về Patapolis.,draft,dịch máy
-P2.system.197,ui,Preparing adventure./Press × to return to title screen.,Chuẩn bị phiêu lưu./Nhấn × để quay về màn hình tựa.,draft,dịch máy
+P2.system.177,ui,PRESS ANY BUTTON,NHẤN NÚT BẤT KỲ,review,viết tay
+P2.system.178,ui,Null Critical,Triệt chí mạng,review,viết tay
+P2.system.179,ui,Null Knockback,Triệt đẩy lùi,review,viết tay
+P2.system.180,ui,Null Stagger,Triệt choáng,review,viết tay
+P2.system.181,ui,Null Burn,Triệt bỏng,review,viết tay
+P2.system.182,ui,Null Freeze,Triệt đóng băng,review,viết tay
+P2.system.183,ui,Null Sleep,Triệt ngủ,review,viết tay
+P2.system.184,ui,Nullifies criticals/so that you will never take critical /hits under any attack.,Triệt chí mạng/để ngươi không nhận đòn chí mạng/dù đòn nào.,review,viết tay
+P2.system.185,ui,Nullifies knockback/so that you will never take /knockback hits under any attack.,Triệt đẩy lùi/để ngươi không bị đẩy lùi/dù đòn nào.,review,viết tay
+P2.system.186,ui,Nullifies stagger/so that you will never take /staggering hits under any attack.,Triệt choáng/để ngươi không bị choáng/dù đòn nào.,review,viết tay
+P2.system.187,ui,Nullifies burn effect/so that you will never be burned /under any attack.,Triệt bỏng/để ngươi không bị bỏng/dù đòn nào.,review,viết tay
+P2.system.188,ui,Nullifies freeze effect/so that you will never be frozen /under any attack.,Triệt đóng băng/để ngươi không bị đóng băng/dù đòn nào.,review,viết tay
+P2.system.189,ui,Nullifies sleep/so that you will never be put to /sleep under any attack.,Triệt ngủ/để ngươi không bị ru ngủ/dù đòn nào.,review,viết tay
+P2.system.190,ui,Which level do you wish to play?,Ngươi muốn chơi mức nào?,review,viết tay
+P2.system.191,ui,Level 1,Mức 1,review,viết tay
+P2.system.192,ui,Level 2,Mức 2,review,viết tay
+P2.system.193,ui,Level 3,Mức 3,review,viết tay
+P2.system.194,ui,Open the treasure chest!,Mở rương!,review,viết tay
+P2.system.195,ui,Acquired <N6> Ka-ching!,Nhận <N6> Ka-ching!,review,viết tay
+P2.system.196,ui,Preparing adventure./Press × to return to Patapolis.,Đang chuẩn bị./Nhấn × để về Patapolis.,review,viết tay
+P2.system.197,ui,Preparing adventure./Press × to return to title screen.,Đang chuẩn bị./Nhấn × để về màn hình tựa.,review,viết tay
 P2.system.198,ui,Parachari,Parachari,draft,giữ nguyên
-P2.system.199,ui,Preparing adventure./Press ○ to return to Patapolis.,Chuẩn bị phiêu lưu./Hãy bấm BAR để quay về Patapolis.,draft,dịch máy
-P2.system.200,ui,Preparing adventure./Press ○ to return to title screen.,Chuẩn bị phiêu lưu./Nhấn vào để quay lại màn hình tựa.,draft,dịch máy
-P2.system.201,ui,"You have no Parachari, so you can't open the chest./Returning to Patapolis.","Ngươi không có Parachari, nên ngươi không thể mở ngực./Trở về Patapolis.",draft,dịch máy
-P2.system.202,ui,You don't have enough Parachari to open the chest./Changing remaining Parachari into Ka-ching./Returning to Patapolis.,Ngươi không đủ Parachari để mở ngực./Biến Parachari còn lại thành Ka-ching./Trở về Patapolis.,draft,dịch máy
-P2.system.203,ui,Failed to find adventure. /Returning to Patapolis.,Không tìm thấy cuộc phiêu lưu./Trở về Patapolis.,draft,dịch máy
+P2.system.199,ui,Preparing adventure./Press ○ to return to Patapolis.,Đang chuẩn bị./Nhấn ○ để về Patapolis.,review,viết tay
+P2.system.200,ui,Preparing adventure./Press ○ to return to title screen.,Đang chuẩn bị./Nhấn ○ để về màn hình tựa.,review,viết tay
+P2.system.201,ui,"You have no Parachari, so you can't open the chest./Returning to Patapolis.","Ngươi không có Parachari, không mở rương được./Đang về Patapolis.",review,viết tay
+P2.system.202,ui,You don't have enough Parachari to open the chest./Changing remaining Parachari into Ka-ching./Returning to Patapolis.,Không đủ Parachari để mở rương./Đổi phần còn lại thành Ka-ching./Đang về Patapolis.,review,viết tay
+P2.system.203,ui,Failed to find adventure. /Returning to Patapolis.,Không tìm thấy cuộc phiêu lưu./Đang về Patapolis.,review,viết tay
 P2.title.0,ui,"&S0O2#As their ship neared completion, /Hatapon suddenly remembered an old story.","&S0O2#Khi thuyền sắp hoàn thành, /Hatapon chợt nhớ một chuyện xưa.",review,viết tay
 P2.title.1,ui,"&S0O2#O Mighty Leader, let's sail off into the dark unknown/as our search for Earthend continues. Please come/back to us soon.","&S0O2#Hỡi Người Chỉ Huy, hãy ra khơi vào miền tối/cuộc tìm Earthend vẫn tiếp. Xin hãy/sớm trở lại với chúng tôi.",review,viết tay
 P2.title.2,ui,"&S0O2#The Patapons bravely set off on their voyage, leaving behind/their loved ones, friends and the safety of their home island.","&S0O2#Patapon dũng cảm ra khơi, để lại/người thân, bạn hữu và đảo quê an toàn.",review,viết tay
@@ -89075,33 +89075,33 @@ P2.key.4,ui,Optimize,Tối ưu,draft,
 P2.key.5,ui,Help,Trợ giúp,draft,
 P2.key.6,ui,Scroll,Cuộn,draft,
 P2.key.7,ui,Proceed,Tiếp tục,draft,
-P2.key.8,ui,Look,Nhìn kìa,draft,dịch máy
-P2.key.9,ui,Retire,Nghỉ,draft,dịch máy
-P2.key.10,ui,Switch,Chuyển đổi,draft,dịch máy
-P2.key.11,ui,Select,Chọn,draft,dịch máy
-P2.key.12,ui,Sort,Sắp xếp,draft,dịch máy
-P2.key.13,ui,Menu,Trình đơn,draft,dịch máy
-P2.key.14,ui,Delete Save Data,Xoá dữ liệu,draft,dịch máy
-P2.key.15,ui,Title screen,Màn hình tiêu đề,draft,dịch máy
-P2.key.16,ui,Confirm,Xác nhận,draft,dịch máy
-P2.key.17,ui,Command,Câu lệnh,draft,dịch máy
-P2.key.18,ui,Save,Lưu,draft,dịch máy
-P2.key.19,ui,Formation,Định dạng,draft,dịch máy
+P2.key.8,ui,Look,Xem,review,viết tay
+P2.key.9,ui,Retire,Cho nghỉ,review,viết tay
+P2.key.10,ui,Switch,Đổi,review,viết tay
+P2.key.11,ui,Select,Chọn,review,viết tay
+P2.key.12,ui,Sort,Sắp xếp,review,viết tay
+P2.key.13,ui,Menu,Menu,review,giữ nguyên
+P2.key.14,ui,Delete Save Data,Xóa dữ liệu lưu,review,viết tay
+P2.key.15,ui,Title screen,Màn hình tựa,review,viết tay
+P2.key.16,ui,Confirm,Xác nhận,review,viết tay
+P2.key.17,ui,Command,Khẩu lệnh,review,viết tay
+P2.key.18,ui,Save,Lưu,review,viết tay
+P2.key.19,ui,Formation,Đội hình,review,viết tay
 P2.key.20,ui,Patapolis,Patapolis,draft,giữ nguyên
 P2.key.21,ui,Help,Trợ giúp,draft,
-P2.key.22,ui,Camera,Máy ảnh,draft,dịch máy
-P2.key.23,ui,Move,Chuyển,draft,dịch máy
-P2.key.24,ui,Start mission,Bắt đầu nhiệm vụ,draft,dịch máy
-P2.key.25,ui,Select mission,Chọn nhiệm vụ,draft,dịch máy
-P2.key.26,ui,Cursor,Con trỏ,draft,dịch máy
-P2.key.27,ui,Equip,Công cụ,draft,dịch máy
-P2.key.28,ui,Change,Thay đổi,draft,dịch máy
+P2.key.22,ui,Camera,Máy quay,review,viết tay
+P2.key.23,ui,Move,Di chuyển,review,viết tay
+P2.key.24,ui,Start mission,Bắt đầu nhiệm vụ,review,viết tay
+P2.key.25,ui,Select mission,Chọn nhiệm vụ,review,viết tay
+P2.key.26,ui,Cursor,Con trỏ,review,viết tay
+P2.key.27,ui,Equip,Trang bị,review,viết tay
+P2.key.28,ui,Change,Đổi,review,viết tay
 P2.key.29,ui,Turn page,Quay trang,draft,dịch máy
-P2.key.30,ui,Class,Hạng,draft,dịch máy
+P2.key.30,ui,Class,Lớp,review,viết tay
 P2.key.31,ui,Information,Thông tin,draft,
 P2.key.32,ui,Tips,Mẹo,draft,dịch máy
-P2.key.33,ui,Rile Up,Name,draft,dịch máy
-P2.key.34,ui,Jump,Nhảy,draft,dịch máy
+P2.key.33,ui,Rile Up,Kích nộ,review,viết tay
+P2.key.34,ui,Jump,Nhảy,review,viết tay
 P2.titlecard.0,ui,New game,Chơi mới,review,viết tay
 P2.titlecard.1,ui,Continue,Tiếp tục,review,viết tay
 P2.titlecard.2,ui,OPTIONS,TÙY CHỌN,review,viết tay
@@ -125285,37 +125285,37 @@ P2S.colony.589,dialog,"That's right... everyone,/give praise to the Great/One!",
 P2S.colony.590,dialog,"I just want to say,/this is our last battle...","Tôi chỉ muốn nói,/Đây là trận chiến cuối cùng của chúng ta...",draft,dịch máy
 P2S.colony.591,dialog,"Great <N0>, lead/us to victory!!","Người Chỉ Huy <N0>, chì/Chúng ta chiến thắng!",draft,dịch máy
 P2S.error.0,ui,Information,Thông tin,draft,
-P2S.error.1,ui,This game has an auto-save feature./Do not remove the Memory Stick Duo™/or turn off the handheld entertainment/system while the Memory Stick Duo™/access indicator is flashing.,Trò chơi này có tính năng tự động./Đừng gỡ bỏ danh sách người dùng/hoặc tắt chương trình giải trí cầm tay/Hệ thống trong khi bộ nhớ dính DuoTM/Chỉ số truy cập đang nhấp nháy.,draft,dịch máy
-P2S.error.2,ui,Now loading. Do not remove the Memory/Stick Duo™ or turn off the handheld/entertainment system.,Đang nạp đạn. Không gỡ bỏ bộ nhớ/Dính DuoTM hoặc tắt trình cầm tay/Hệ thống giải trí.,draft,dịch máy
-P2S.error.3,ui,No Memory Stick Duo™./At least 160KB of free space is required on the/Memory Stick Duo™ to save system data.,Không bộ nhớ Stick DuoTM./Ít nhất 160KB không gian miễn phí là cần thiết trên các/Bộ nhớ Stick DuoTM để lưu dữ liệu hệ thống.,draft,dịch máy
-P2S.error.4,ui,System data is saved using the auto-save feature./System data will not be saved without a /Memory Stick Duo™.,Dữ liệu hệ thống được lưu bằng tính năng tự động lưu./Dữ liệu hệ thống sẽ không được lưu nếu không có một/Bộ nhớ Stick DuoTM.,draft,dịch máy
-P2S.error.5,ui,"Until a Memory Stick Duo™ is inserted into the/handheld entertainment system, the auto-save/feature be skipped. Begin game anyway?",Cho đến khi một liên kết bộ nhớ được đưa vào/Name/tính năng bị bỏ qua. Bắt đầu trò chơi chưa?,draft,dịch máy
-P2S.error.6,ui,No system data found./The system data for this game is saved using the/auto-save feature. Create a new save file?,Không tìm thấy dữ liệu hệ thống./Các dữ liệu hệ thống cho trò chơi này được lưu bằng cách sử dụng/Tính năng tự động. Tạo một tập tin lưu mới?,draft,dịch máy
-P2S.error.7,ui,Continue playing anyway?,Tiếp tục chơi?,draft,dịch máy
+P2S.error.1,ui,This game has an auto-save feature./Do not remove the Memory Stick Duo™/or turn off the handheld entertainment/system while the Memory Stick Duo™/access indicator is flashing.,Game này tự lưu./Đừng rút Memory Stick Duo™/hay tắt máy cầm tay/khi đèn truy cập/Memory Stick Duo™ đang nhấp nháy.,review,viết tay
+P2S.error.2,ui,Now loading. Do not remove the Memory/Stick Duo™ or turn off the handheld/entertainment system.,Đang tải. Đừng rút Memory/Stick Duo™ hay tắt máy/cầm tay.,review,viết tay
+P2S.error.3,ui,No Memory Stick Duo™./At least 160KB of free space is required on the/Memory Stick Duo™ to save system data.,Không có Memory Stick Duo™./Cần ít nhất 160KB trống trên/Memory Stick Duo™ để lưu dữ liệu hệ thống.,review,viết tay
+P2S.error.4,ui,System data is saved using the auto-save feature./System data will not be saved without a /Memory Stick Duo™.,Dữ liệu hệ thống được tự lưu./Không có/Memory Stick Duo™ thì không lưu được.,review,viết tay
+P2S.error.5,ui,"Until a Memory Stick Duo™ is inserted into the/handheld entertainment system, the auto-save/feature be skipped. Begin game anyway?",Chưa cắm Memory Stick Duo™ vào/máy cầm tay thì tự lưu/sẽ bị bỏ qua. Vẫn vào game?,review,viết tay
+P2S.error.6,ui,No system data found./The system data for this game is saved using the/auto-save feature. Create a new save file?,Không thấy dữ liệu hệ thống./Dữ liệu hệ thống của game này được/tự lưu. Tạo file lưu mới?,review,viết tay
+P2S.error.7,ui,Continue playing anyway?,Vẫn chơi tiếp?,review,viết tay
 P2S.error.8,ui,Load complete.,Đã tải.,draft,
-P2S.error.9,ui,Checking Memory Stick Duo™.,Kiểm tra bộ nhớ Stick DuoTM.,draft,dịch máy
-P2S.error.10,ui,System data containing a game with further progress /than this game was found. Overwrite it?,Dữ liệu hệ thống chứa một trò chơi có tiến bộ hơn/Hơn trò chơi này đã được tìm thấy. Ghi đè?,draft,dịch máy
-P2S.error.11,ui,System data exists for this game. Overwrite it?,Dữ liệu hệ thống tồn tại cho trò chơi này. Ghi đè?,draft,dịch máy
-P2S.error.12,ui,System data will not be saved./Continue playing anyway?,Dữ liệu hệ thống sẽ không được lưu./Tiếp tục chơi?,draft,dịch máy
-P2S.error.13,ui,Now saving.Do not remove the/Memory Stick Duo™ or turn off the/handheld entertainment system.,Giờ đang tiết kiệm. Không được gỡ bỏ/Bộ nhớ dính DuoTM hoặc tắt/Hệ thống giải trí cầm tay.,draft,dịch máy
-P2S.error.14,ui,System data not found. Unable to proceed with/auto-save feature. /Would you like to create a new save file?,Không tìm thấy dữ liệu hệ thống. Không thể tiếp tục với/Tính năng tự động./Ngươi có muốn tạo một tập tin lưu mới không?,draft,dịch máy
-P2S.error.15,ui,System data will not be saved until new system/data is created./Continue playing anyway?,Dữ liệu hệ thống sẽ không được lưu cho đến khi hệ thống mới/dữ liệu được tạo ra./Tiếp tục chơi?,draft,dịch máy
-P2S.error.16,ui,Insufficient free space on Memory Stick Duo™./At least 160KB of free space is required to /save system data.,Không có chỗ trống trên máy ghi nhớ./Ít nhất 160KB không gian rảnh là cần thiết/lưu dữ liệu hệ thống.,draft,dịch máy
-P2S.error.17,ui,Organize save data?,Quản lý việc lưu dữ liệu?,draft,dịch máy
-P2S.error.18,ui,System data is saved using the auto-save /feature. A Memory Stick Duo™ with at least/160KB of free space must be inserted/to save system data./Continue playing anyway?,Dữ liệu hệ thống được lưu bằng tự động lưu/đặc điểm. Ít nhất cũng gắn kết trí nhớ với mục tiêu/160KB không gian rảnh phải được chèn vào/Để lưu dữ liệu hệ thống./Tiếp tục chơi?,draft,dịch máy
-P2S.error.19,ui,No Memory Stick Duo™. /A Memory Stick Duo™ with at least /160KB of free space is required to /save system data.,Không bộ nhớ Stick DuoTM./Ít nhất cũng gắn kết trí nhớ với mục tiêu/Cần 160KB chỗ trống/lưu dữ liệu hệ thống.,draft,dịch máy
-P2S.error.20,ui,System data is saved using the auto-save feature./A Memory Stick Duo™ must be inserted to enable/auto-save feature.,Dữ liệu hệ thống được lưu bằng tính năng tự động lưu./Cần phải chèn bộ nhớ để bật/Tính năng tự động.,draft,dịch máy
-P2S.error.21,ui,No Memory Stick Duo™ found. Auto-save feature/will be skipped. Continue playing anyway?,Không tìm thấy bộ nhớ Stick DuoTM. Tính năng tự động lưu/Sẽ bị bỏ qua. Tiếp tục chơi?,draft,dịch máy
+P2S.error.9,ui,Checking Memory Stick Duo™.,Đang kiểm Memory Stick Duo™.,review,viết tay
+P2S.error.10,ui,System data containing a game with further progress /than this game was found. Overwrite it?,Có dữ liệu hệ thống tiến xa hơn/game này. Ghi đè?,review,viết tay
+P2S.error.11,ui,System data exists for this game. Overwrite it?,Đã có dữ liệu hệ thống của game này. Ghi đè?,review,viết tay
+P2S.error.12,ui,System data will not be saved./Continue playing anyway?,Sẽ không lưu dữ liệu hệ thống./Vẫn chơi tiếp?,review,viết tay
+P2S.error.13,ui,Now saving.Do not remove the/Memory Stick Duo™ or turn off the/handheld entertainment system.,Đang lưu. Đừng rút/Memory Stick Duo™ hay tắt/máy cầm tay.,review,viết tay
+P2S.error.14,ui,System data not found. Unable to proceed with/auto-save feature. /Would you like to create a new save file?,Không thấy dữ liệu hệ thống. Không/tự lưu được./Tạo file lưu mới?,review,viết tay
+P2S.error.15,ui,System data will not be saved until new system/data is created./Continue playing anyway?,Chưa tạo dữ liệu hệ thống mới thì/không lưu được./Vẫn chơi tiếp?,review,viết tay
+P2S.error.16,ui,Insufficient free space on Memory Stick Duo™./At least 160KB of free space is required to /save system data.,Memory Stick Duo™ không đủ chỗ./Cần ít nhất 160KB trống để/lưu dữ liệu hệ thống.,review,viết tay
+P2S.error.17,ui,Organize save data?,Sắp xếp dữ liệu lưu?,review,viết tay
+P2S.error.18,ui,System data is saved using the auto-save /feature. A Memory Stick Duo™ with at least/160KB of free space must be inserted/to save system data./Continue playing anyway?,Dữ liệu hệ thống được tự lưu./Phải cắm Memory Stick Duo™ còn ít nhất/160KB trống/để lưu./Vẫn chơi tiếp?,review,viết tay
+P2S.error.19,ui,No Memory Stick Duo™. /A Memory Stick Duo™ with at least /160KB of free space is required to /save system data.,Không có Memory Stick Duo™./Cần Memory Stick Duo™ còn ít nhất/160KB trống để/lưu dữ liệu hệ thống.,review,viết tay
+P2S.error.20,ui,System data is saved using the auto-save feature./A Memory Stick Duo™ must be inserted to enable/auto-save feature.,Dữ liệu hệ thống được tự lưu./Phải cắm Memory Stick Duo™ để bật/tự lưu.,review,viết tay
+P2S.error.21,ui,No Memory Stick Duo™ found. Auto-save feature/will be skipped. Continue playing anyway?,Không thấy Memory Stick Duo™. Tự lưu/sẽ bị bỏ qua. Vẫn chơi tiếp?,review,viết tay
 P2S.error.22,ui,Save complete.,Đã lưu.,draft,
-P2S.error.23,ui,Save during debug mode?,Lưu trong chế độ gỡ lỗi?,draft,dịch máy
-P2S.error.24,ui,"Language setting and save data language setting/do not match. Please synchronize language settings,/then reload system data.","Name/không khớp. Hãy đồng bộ hoá thiết lập ngôn ngữ,/Sau đó nạp lại dữ liệu hệ thống.",draft,dịch máy
-P2S.error.25,ui,No Memory Stick Duo™ found. At least 160KB/of free space is required to save system data./At least 224KB of free space is required to save/game data. Play game anyway?,Không tìm thấy bộ nhớ Stick DuoTM. Ít nhất 160KB/cần thiết không gian rảnh để lưu dữ liệu hệ thống./Ít nhất 224KB không gian miễn phí là cần thiết để lưu/Dữ liệu trò chơi. Dù sao cũng chơi trò chơi?,draft,dịch máy
-P2S.error.26,ui,You have been disconnected from the network./Returning to Patapolis.,Ngươi đã bị ngắt kết nối với mạng./Trở về Patapolis.,draft,dịch máy
-P2S.error.27,ui,You have been disconnected from the network./Returning to title screen.,Ngươi đã bị ngắt kết nối với mạng./Đang trở lại màn hình tựa.,draft,dịch máy
-P2S.error.28,ui,Adventure canceled./Returning to Patapolis.,Cuộc phiêu lưu bị hủy bỏ./Trở về Patapolis.,draft,dịch máy
-P2S.error.29,ui,Adventure canceled./Please insert the game disc./Returning to Patapolis.,Cuộc phiêu lưu bị hủy bỏ./Hãy thêm đĩa vào./Trở về Patapolis.,draft,dịch máy
-P2S.error.30,ui,Adventure canceled./Returning to title screen.,Cuộc phiêu lưu bị hủy bỏ./Đang trở lại màn hình tựa.,draft,dịch máy
-P2S.error.31,ui,Save data from the full game cannot be used/in demo versions. Please use this save data/only in the full version of Patapon™ 2.,Không thể lưu dữ liệu từ trò chơi đầy đủ/trong các phiên bản thử nghiệm. Xin hãy dùng dữ liệu này/Chỉ trong phiên bản đầy đủ của PataponTM 2.,draft,dịch máy
+P2S.error.23,ui,Save during debug mode?,Lưu trong chế độ gỡ lỗi?,review,viết tay
+P2S.error.24,ui,"Language setting and save data language setting/do not match. Please synchronize language settings,/then reload system data.","Ngôn ngữ đang chọn và ngôn ngữ file lưu/không khớp. Hãy chỉnh cho trùng,/rồi tải lại dữ liệu hệ thống.",review,viết tay
+P2S.error.25,ui,No Memory Stick Duo™ found. At least 160KB/of free space is required to save system data./At least 224KB of free space is required to save/game data. Play game anyway?,Không thấy Memory Stick Duo™. Cần ít nhất 160KB/trống để lưu dữ liệu hệ thống./Cần ít nhất 224KB trống để lưu/dữ liệu game. Vẫn chơi?,review,viết tay
+P2S.error.26,ui,You have been disconnected from the network./Returning to Patapolis.,Ngươi bị ngắt khỏi mạng./Đang về Patapolis.,review,viết tay
+P2S.error.27,ui,You have been disconnected from the network./Returning to title screen.,Ngươi bị ngắt khỏi mạng./Đang về màn hình tựa.,review,viết tay
+P2S.error.28,ui,Adventure canceled./Returning to Patapolis.,Cuộc phiêu lưu bị hủy./Đang về Patapolis.,review,viết tay
+P2S.error.29,ui,Adventure canceled./Please insert the game disc./Returning to Patapolis.,Cuộc phiêu lưu bị hủy./Hãy đưa đĩa game vào./Đang về Patapolis.,review,viết tay
+P2S.error.30,ui,Adventure canceled./Returning to title screen.,Cuộc phiêu lưu bị hủy./Đang về màn hình tựa.,review,viết tay
+P2S.error.31,ui,Save data from the full game cannot be used/in demo versions. Please use this save data/only in the full version of Patapon™ 2.,Dữ liệu lưu của bản đầy đủ không dùng/trong bản demo. Chỉ dùng file này/ở bản đầy đủ của Patapon™ 2.,review,viết tay
 P2S.item.0,item,(no translation needed),,todo,không dịch
 P2S.item.1,item,The Bravery Drum./Obtained by agreeing to/become the Patapon god./Strike with the ○ button.,Biểu tượng Dũng cảm./Thỏa thuận bằng cách đồng ý/trở thành vị thần Patapon./Đánh vào nút  Gấp.,draft,dịch máy
 P2S.item.2,item,The Strokes Drum./Hatapon guarded this drum/with his life./Strike with the □ button.,Lũ rắn chuông./Hatapon bảo vệ trống này/với cuộc sống của mình./Nhấn nút □.,draft,dịch máy
@@ -127209,13 +127209,13 @@ P2S.system.2,ui,Altar,Bàn thờ,draft,
 P2S.system.3,ui,Ka-ching,Ka-ching,draft,giữ nguyên
 P2S.system.4,ui,/,/,draft,giữ nguyên
 P2S.system.5,ui,:,:,draft,giữ nguyên
-P2S.system.6,ui,Give item(s)?,Đưa mục?,draft,dịch máy
+P2S.system.6,ui,Give item(s)?,Trao vật phẩm?,review,viết tay
 P2S.system.7,ui,Stage,Màn,draft,
 P2S.system.8,ui,Minutes,Phút,draft,
 P2S.system.9,ui,Seconds,Giây,draft,
 P2S.system.10,ui,Spoils,Chiến lợi phẩm,draft,
-P2S.system.11,ui,Retrieved caps,Mũ đã lấy,draft,dịch máy
-P2S.system.12,ui,Lost caps,Mũ bị mất,draft,dịch máy
+P2S.system.11,ui,Retrieved caps,Mũ lấy lại,review,viết tay
+P2S.system.12,ui,Lost caps,Mũ mất,review,viết tay
 P2S.system.13,ui,Clear time,Thời gian vượt,draft,
 P2S.system.14,ui,Casualties,Thương vong,draft,
 P2S.system.15,ui,Metres,Mét,draft,
@@ -127223,43 +127223,43 @@ P2S.system.16,ui,None,Không,draft,
 P2S.system.17,ui,Default,Mặc định,draft,
 P2S.system.18,ui,Type,Loại,draft,
 P2S.system.19,ui,Number,Số,draft,
-P2S.system.20,ui,Squad status,Trạng thái,draft,dịch máy
-P2S.system.21,ui,Unit status,Trạng thái đơn vị,draft,dịch máy
-P2S.system.22,ui,Reborn,Sinh lại,draft,dịch máy
+P2S.system.20,ui,Squad status,Tình trạng đội,review,viết tay
+P2S.system.21,ui,Unit status,Tình trạng đơn vị,review,viết tay
+P2S.system.22,ui,Reborn,Tái sinh,review,viết tay
 P2S.system.23,ui,Missions,Nhiệm vụ,draft,
-P2S.system.24,ui,Useable Parachari,Dùng được,draft,dịch máy
-P2S.system.25,ui,Do you want to change/Parachari into Ka-ching/and return to Patapolis?,Ngươi có muốn thay đổi/Parachari vào Ka-ching/và trở về Patapolis?,draft,dịch máy
-P2S.system.26,ui,Returns you to Patapolis./Are you sure?,Đưa ngươi về Patapolis./Ngươi chắc chứ?,draft,dịch máy
-P2S.system.27,ui,Mighty <N0>!/Which unit/do you wish/to deploy?,<N0> vĩ đại!/Đơn vị nào/Em ước gì/triển khai?,draft,dịch máy
-P2S.system.28,ui,There are/more units/ready and /waiting for /deployment!,Có/thêm đơn vị/Sẵn sàng và/Đang đợi/Triển khai!,draft,dịch máy
-P2S.system.29,ui,Troops ready!/Let's GO!,Sẵn sàng!/Đi thôi!,draft,dịch máy
+P2S.system.24,ui,Useable Parachari,Parachari dùng được,review,viết tay
+P2S.system.25,ui,Do you want to change/Parachari into Ka-ching/and return to Patapolis?,Đổi/Parachari thành Ka-ching/rồi về Patapolis?,review,viết tay
+P2S.system.26,ui,Returns you to Patapolis./Are you sure?,Đưa ngươi về Patapolis./Chắc chứ?,review,viết tay
+P2S.system.27,ui,Mighty <N0>!/Which unit/do you wish/to deploy?,Người Chỉ Huy <N0>!/Ngươi muốn/điều/đơn vị nào?,review,viết tay
+P2S.system.28,ui,There are/more units/ready and /waiting for /deployment!,Còn/đơn vị/đã sẵn sàng/chờ được/điều đi!,review,viết tay
+P2S.system.29,ui,Troops ready!/Let's GO!,Quân đã sẵn!/Xuất phát!,review,viết tay
 P2S.system.30,ui,<N0>'s army is/ready to/move out!,,todo,lệch placeholder
-P2S.system.31,ui,Lord <N0>!/No units to/place!,Chúa tể Người Chỉ Huy <N0>!/Không có đơn vị tới/nơi!,draft,dịch máy
-P2S.system.32,ui,Lord <N0>!/You can bring/a Miracle/along!,Chúa tể Người Chỉ Huy <N0>!/Ngươi có thể mang theo./Một phép lạ/đi nào!,draft,dịch máy
-P2S.system.33,ui,Lord <N0>!/Which Miracle/do you need?,Chúa tể Người Chỉ Huy <N0>!/Phép lạ nào/Ngươi có cần không?,draft,dịch máy
-P2S.system.34,ui,Lord <N0>!/You can take/stew with you!,Chúa tể Người Chỉ Huy <N0>!/Ngươi có thể chịu được./Thịt hầm với ngươi!,draft,dịch máy
-P2S.system.35,ui,Lord <N0>!/Which stew/do you need?,Chúa tể Người Chỉ Huy <N0>!/Thịt hầm/Ngươi có cần không?,draft,dịch máy
-P2S.system.36,ui,Unplaced squads remain./Begin mission anyway?,Các đội không được thay thế vẫn còn./Bắt đầu nhiệm vụ chưa?,draft,dịch máy
-P2S.system.37,ui,Retiring selected unit. Are you sure?,Đang rút lui. Ngươi chắc chứ?,draft,dịch máy
-P2S.system.38,ui,This cannot be undone. Are you sure?,Chuyện này không thể thay đổi được. Ngươi chắc chứ?,draft,dịch máy
-P2S.system.39,ui,Optimize squad equipment?,Thiết bị đặc biệt?,draft,dịch máy
+P2S.system.31,ui,Lord <N0>!/No units to/place!,Người Chỉ Huy <N0>!/Không còn đơn vị/để xếp!,review,viết tay
+P2S.system.32,ui,Lord <N0>!/You can bring/a Miracle/along!,Người Chỉ Huy <N0>!/Ngươi có thể mang/theo một/Miracle!,review,viết tay
+P2S.system.33,ui,Lord <N0>!/Which Miracle/do you need?,Người Chỉ Huy <N0>!/Ngươi cần/Miracle nào?,review,viết tay
+P2S.system.34,ui,Lord <N0>!/You can take/stew with you!,Người Chỉ Huy <N0>!/Ngươi có thể mang/món hầm theo!,review,viết tay
+P2S.system.35,ui,Lord <N0>!/Which stew/do you need?,Người Chỉ Huy <N0>!/Ngươi cần/món hầm nào?,review,viết tay
+P2S.system.36,ui,Unplaced squads remain./Begin mission anyway?,Còn đội chưa xếp./Vẫn bắt đầu nhiệm vụ?,review,viết tay
+P2S.system.37,ui,Retiring selected unit. Are you sure?,Cho đơn vị đang chọn nghỉ. Chắc chứ?,review,viết tay
+P2S.system.38,ui,This cannot be undone. Are you sure?,Không hoàn tác được. Chắc chứ?,review,viết tay
+P2S.system.39,ui,Optimize squad equipment?,Tối ưu trang bị đội?,review,viết tay
 P2S.system.40,ui,Return to Patapolis?,Về Patapolis?,draft,
 P2S.system.41,ui,Legendary Memory,Ký ức huyền thoại,draft,
 P2S.system.42,ui,New Patapon,Patapon mới,draft,
 P2S.system.43,ui,Status,Trạng thái,draft,
-P2S.system.44,ui,Death record,Ghi chép về cái chết,draft,dịch máy
+P2S.system.44,ui,Death record,Sổ tử trận,review,viết tay
 P2S.system.45,ui,Items,Vật phẩm,draft,
-P2S.system.46,ui,Birth,Sinh ra,draft,dịch máy
-P2S.system.47,ui,Insufficient Ka-ching.,Không đủ Ka-ching.,draft,dịch máy
-P2S.system.48,ui,Cannot create with that/combination of items.,Không thể tạo ra với điều đó/kết hợp các mục.,draft,dịch máy
-P2S.system.49,ui,Cannot register more soldiers.,Không thể đăng ký thêm quân.,draft,dịch máy
-P2S.system.50,ui,Register two items!,Đăng ký hai món đồ!,draft,dịch máy
+P2S.system.46,ui,Birth,Ra đời,review,viết tay
+P2S.system.47,ui,Insufficient Ka-ching.,Không đủ Ka-ching.,review,viết tay
+P2S.system.48,ui,Cannot create with that/combination of items.,Không tạo được với/cách ghép vật phẩm đó.,review,viết tay
+P2S.system.49,ui,Cannot register more soldiers.,Không đăng ký thêm lính được.,review,viết tay
+P2S.system.50,ui,Register two items!,Hãy đăng ký hai vật phẩm!,review,viết tay
 P2S.system.51,ui,Unknown error,Lỗi không rõ,draft,
-P2S.system.52,ui,No units in squadron,Không có đơn vị trong phi đội,draft,dịch máy
+P2S.system.52,ui,No units in squadron,Đội không có đơn vị,review,viết tay
 P2S.system.53,ui,Save the adventure?,Lưu cuộc phiêu lưu?,draft,
 P2S.system.54,ui,Game data,Dữ liệu game,draft,
-P2S.system.55,ui,Mighty One：,Người quyền năng:,draft,dịch máy
-P2S.system.56,ui,Adventure：,Cuộc phiêu lưu:,draft,dịch máy
+P2S.system.55,ui,Mighty One：,Người Chỉ Huy:,review,viết tay
+P2S.system.56,ui,Adventure：,Cuộc phiêu lưu:,review,viết tay
 P2S.system.57,ui,Language: English,Ngôn ngữ: English,draft,
 P2S.system.58,ui,Play time：,Thời gian chơi：,draft,
 P2S.system.59,ui,hours,giờ,draft,
@@ -127267,146 +127267,146 @@ P2S.system.60,ui,Understood,Đã rõ,draft,
 P2S.system.61,ui,No!,Không!,draft,
 P2S.system.62,ui,Return to Patapolis?,Về Patapolis?,draft,
 P2S.system.63,ui,Return to title screen?,Về màn hình tựa?,draft,
-P2S.system.64,ui,Present play data will be lost/unless it has been saved./Are you sure?,Dữ liệu trò chơi hiện tại sẽ bị mất/trừ khi nó đã được cứu./Ngươi chắc chứ?,draft,dịch máy
-P2S.system.65,ui,"Henceforth, you will be/known as <N0> the Mighty/One.","Từ giờ trở đi, ngươi sẽ là/được gọi là <N0> hùng mạnh/Một.",draft,dịch máy
-P2S.system.66,ui,Is <N1> okay for a name?,<N1> được không?,draft,dịch máy
+P2S.system.64,ui,Present play data will be lost/unless it has been saved./Are you sure?,Dữ liệu đang chơi sẽ mất/nếu chưa lưu./Chắc chứ?,review,viết tay
+P2S.system.65,ui,"Henceforth, you will be/known as <N0> the Mighty/One.","Từ nay, ngươi được/gọi là <N0>,/Người Chỉ Huy.",review,viết tay
+P2S.system.66,ui,Is <N1> okay for a name?,Lấy tên <N1> được chứ?,review,viết tay
 P2S.system.67,ui,Kamipon,Kamipon,draft,giữ nguyên
-P2S.system.68,ui,Hero,Anh hùng,draft,dịch máy
-P2S.system.69,ui,Is this the correct Patapon?,Có đúng Patapon không?,draft,dịch máy
-P2S.system.70,ui,Retry,Thử lại,draft,dịch máy
-P2S.system.71,ui,Cannot connect to network because/Wireless LAN switch is OFF.,Không thể kết nối đến mạng vì/Công tắc LAN không dây bị ngắt.,draft,dịch máy
-P2S.system.72,ui,"There are no mysterious eggs here,/so you can't play.","Không có quả trứng bí ẩn nào ở đây,/Vậy ngươi không thể chơi.",draft,dịch máy
-P2S.system.73,ui,Select Paragate,Chọn Cửa sổ Thư mục,draft,dịch máy
-P2S.system.74,ui,Play alone,Chơi một mình,draft,dịch máy
-P2S.system.75,ui,<align=center>Bring mysterious eggs/<size=75>（Hosting local communication）,<align=center> mang trứng bí ẩn/<size=75> (Hốt kết nối cục cục bộ),draft,dịch máy
-P2S.system.76,ui,<align=center>Join the adventure/<size=75>（Joining as a guest via local communication）,<align=center>Join cuộc phiêu lưu/<size=75> (hát như một vị khách thông qua giao tiếp cục bộ),draft,dịch máy
-P2S.system.77,ui,Game sharing,Chia sẻ trò chơi,draft,dịch máy
-P2S.system.78,ui,Won't you tell us your/name O Mighty One?,"Sao ngươi không nói cho chúng tôi biết/Hỡi Ðấng toàn năng, danh Ngài là gì?",draft,dịch máy
-P2S.system.79,ui,Tell us your name,Nói tên đi,draft,dịch máy
-P2S.system.80,ui,Transfer Patapon™ Save Data,Chuyển đổi dữ liệu Lưu trữ PataponTM,draft,dịch máy
-P2S.system.81,ui,"Welcome to the world of Patapon, O/Great One! If this is your first time playing,/might we recommend you start off in /Easy Mode? What say ye?","Chào mừng đến với thế giới Patapon, O/Chúa thượng! Nếu đây là lần đầu tiên ngươi chơi,/chúng tôi khuyên ngươi nên bắt đầu từ đây./Chế độ dễ dãi? Ngươi nghĩ sao?",draft,dịch máy
-P2S.system.82,ui,Requirements:,Yêu cầu:,draft,dịch máy
-P2S.system.83,ui,New Data,Dữ liệu mới,draft,dịch máy
+P2S.system.68,ui,Hero,Anh hùng,review,viết tay
+P2S.system.69,ui,Is this the correct Patapon?,Đúng Patapon này chứ?,review,viết tay
+P2S.system.70,ui,Retry,Thử lại,review,viết tay
+P2S.system.71,ui,Cannot connect to network because/Wireless LAN switch is OFF.,Không vào mạng được vì/công tắc mạng không dây đang tắt.,review,viết tay
+P2S.system.72,ui,"There are no mysterious eggs here,/so you can't play.","Ở đây không có trứng bí ẩn,/nên ngươi không chơi được.",review,viết tay
+P2S.system.73,ui,Select Paragate,Chọn Paragate,review,viết tay
+P2S.system.74,ui,Play alone,Chơi một mình,review,viết tay
+P2S.system.75,ui,<align=center>Bring mysterious eggs/<size=75>（Hosting local communication）,<align=center>Mang trứng bí ẩn/<size=75>（Mở phòng chơi gần）,review,viết tay
+P2S.system.76,ui,<align=center>Join the adventure/<size=75>（Joining as a guest via local communication）,"<align=center>Vào cuộc phiêu lưu/<size=75>（Vào với tư cách khách, chơi gần）",review,viết tay
+P2S.system.77,ui,Game sharing,Chia sẻ game,review,viết tay
+P2S.system.78,ui,Won't you tell us your/name O Mighty One?,"Ngươi không cho chúng tôi biết/tên sao, hỡi Người Chỉ Huy?",review,viết tay
+P2S.system.79,ui,Tell us your name,Hãy nói tên ngươi,review,viết tay
+P2S.system.80,ui,Transfer Patapon™ Save Data,Chuyển dữ liệu lưu Patapon™,review,viết tay
+P2S.system.81,ui,"Welcome to the world of Patapon, O/Great One! If this is your first time playing,/might we recommend you start off in /Easy Mode? What say ye?","Chào mừng tới thế giới Patapon,/hỡi Người Chỉ Huy! Nếu đây là lần đầu,/xin hãy bắt đầu ở/chế độ Dễ. Ngươi thấy sao?",review,viết tay
+P2S.system.82,ui,Requirements:,Điều kiện:,review,viết tay
+P2S.system.83,ui,New Data,Dữ liệu mới,review,viết tay
 P2S.system.84,ui,System Data,Dữ liệu hệ thống,draft,
 P2S.system.85,ui,System Data,Dữ liệu hệ thống,draft,
 P2S.system.86,ui,System Data,Dữ liệu hệ thống,draft,
-P2S.system.87,ui,Systemdaten,Comment,draft,dịch máy
-P2S.system.88,ui,Données système,Donées Système,draft,dịch máy
-P2S.system.89,ui,Dati di sistema,Name,draft,dịch máy
+P2S.system.87,ui,Systemdaten,Systemdaten,review,giữ nguyên
+P2S.system.88,ui,Données système,Données système,review,giữ nguyên
+P2S.system.89,ui,Dati di sistema,Dati di sistema,review,giữ nguyên
 P2S.system.90,ui,Datos de sistema,Datos de sistema,draft,giữ nguyên
 P2S.system.91,ui,System Data,Dữ liệu hệ thống,draft,
 P2S.system.92,ui,System Data,Dữ liệu hệ thống,draft,
-P2S.system.93,ui,Which level will you play?/Ka-ching <N2>,Ngươi sẽ chơi ở cấp độ nào?/Ka-ching <N2>,draft,dịch máy
-P2S.system.94,ui,Level 1 <N3>,Trình độ 1 <N3>,draft,dịch máy
-P2S.system.95,ui,Level 2 <N4>,Trình độ 2 <N4>,draft,dịch máy
-P2S.system.96,ui,Level 3 <N5>,Trình độ 3 <N5>,draft,dịch máy
-P2S.system.97,ui,Squadron Stats,Trạng thái Phi đội,draft,dịch máy
-P2S.system.98,ui,# of Defeats,♪ Của thất bại ♪,draft,dịch máy
-P2S.system.99,ui,# of Missions Participated,# Những nhiệm vụ được tham gia,draft,dịch máy
-P2S.system.100,ui,Average Stamina,Trung bình,draft,dịch máy
-P2S.system.101,ui,Average Strength,Sức mạnh trung bình,draft,dịch máy
-P2S.system.102,ui,Average Attack Speed,Tốc độ tấn công trung bình,draft,dịch máy
+P2S.system.93,ui,Which level will you play?/Ka-ching <N2>,Ngươi chơi mức nào?/Ka-ching <N2>,review,viết tay
+P2S.system.94,ui,Level 1 <N3>,Mức 1 <N3>,review,viết tay
+P2S.system.95,ui,Level 2 <N4>,Mức 2 <N4>,review,viết tay
+P2S.system.96,ui,Level 3 <N5>,Mức 3 <N5>,review,viết tay
+P2S.system.97,ui,Squadron Stats,Chỉ số đội,review,viết tay
+P2S.system.98,ui,# of Defeats,Số lần bại,review,viết tay
+P2S.system.99,ui,# of Missions Participated,Số nhiệm vụ đã tham gia,review,viết tay
+P2S.system.100,ui,Average Stamina,Thể lực trung bình,review,viết tay
+P2S.system.101,ui,Average Strength,Sức mạnh trung bình,review,viết tay
+P2S.system.102,ui,Average Attack Speed,Tốc đánh trung bình,review,viết tay
 P2S.system.103,ui,Average Defense vs. Tate＆Deka,,todo,lệch placeholder
-P2S.system.104,ui,Average Defense vs. Yumi,Trung bình Phòng thủ chống lại Yumi,draft,dịch máy
-P2S.system.105,ui,Average Defense vs. Yari,Trung bình Phòng thủ chống lại Yari,draft,dịch máy
-P2S.system.106,ui,Aberage Defense vs. Kiba,Name,draft,dịch máy
-P2S.system.107,ui,Average Critical Rate,Tỷ lệ trung bình,draft,dịch máy
-P2S.system.108,ui,Average Knockback Rate,Tỷ lệ gõ cửa trung bình,draft,dịch máy
-P2S.system.109,ui,Average Stagger Rate,Tốc độ Loger trung bình,draft,dịch máy
-P2S.system.110,ui,Average Critical Resist Rate,Trung bình kháng cự nghiêm trọng,draft,dịch máy
-P2S.system.111,ui,Average Knockback Resist Rate,Tỷ lệ chống trả trung bình,draft,dịch máy
-P2S.system.112,ui,Average Stagger Resist Rate,Tốc độ trung bình của bác sĩ Stagg,draft,dịch máy
-P2S.system.113,ui,Unit Abilities,Đơn vị Khả năng,draft,dịch máy
-P2S.system.114,ui,# of Defeats,♪ Của thất bại ♪,draft,dịch máy
-P2S.system.115,ui,# of Missions Participated,# Những nhiệm vụ được tham gia,draft,dịch máy
-P2S.system.116,ui,"Unit's Stamina./When the unit's HP/reaches 0, they are/defeated.","Đơn vị Stamina./Khi đơn vị là HP/đạt 0, họ đang/bị đánh bại.",draft,dịch máy
-P2S.system.117,ui,Base damage dealt to enemies./Shown as (Smallest Value) - /(Largest Value). Final damage/will be influenced by elemental/properties and enemy's defense.,Thiệt hại cơ bản đối với kẻ thù./Hiện như (giá trị nhỏ nhất)/( Giá trị phụ thuộc) Thiệt hại cuối cùng/sẽ bị ảnh hưởng bởi nguyên tố/Tài sản và phòng thủ của kẻ thù.,draft,dịch máy
-P2S.system.118,ui,"The amount of time in between/an attack finishing and when/the unit can strike again. The/smaller this number, the faster/they can cycle through attacks.","Thời gian ở giữa/một cuộc tấn công kết thúc và khi nào/Đơn vị có thể tấn công lần nữa. Hạt/số này nhỏ hơn, càng nhanh/chúng có thể quay vòng qua tấn công.",draft,dịch máy
+P2S.system.104,ui,Average Defense vs. Yumi,"Thủ trước Yumi, trung bình",review,viết tay
+P2S.system.105,ui,Average Defense vs. Yari,"Thủ trước Yari, trung bình",review,viết tay
+P2S.system.106,ui,Aberage Defense vs. Kiba,"Thủ trước Kiba, trung bình",review,viết tay
+P2S.system.107,ui,Average Critical Rate,Chí mạng trung bình,review,viết tay
+P2S.system.108,ui,Average Knockback Rate,Đẩy lùi trung bình,review,viết tay
+P2S.system.109,ui,Average Stagger Rate,Choáng trung bình,review,viết tay
+P2S.system.110,ui,Average Critical Resist Rate,Kháng chí mạng trung bình,review,viết tay
+P2S.system.111,ui,Average Knockback Resist Rate,Kháng đẩy lùi trung bình,review,viết tay
+P2S.system.112,ui,Average Stagger Resist Rate,Kháng choáng trung bình,review,viết tay
+P2S.system.113,ui,Unit Abilities,Năng lực đơn vị,review,viết tay
+P2S.system.114,ui,# of Defeats,Số lần bại,review,viết tay
+P2S.system.115,ui,# of Missions Participated,Số nhiệm vụ đã tham gia,review,viết tay
+P2S.system.116,ui,"Unit's Stamina./When the unit's HP/reaches 0, they are/defeated.","Thể lực của đơn vị./Khi HP về/0, đơn vị/bị hạ.",review,viết tay
+P2S.system.117,ui,Base damage dealt to enemies./Shown as (Smallest Value) - /(Largest Value). Final damage/will be influenced by elemental/properties and enemy's defense.,Sát thương gốc gây lên địch./Ghi dạng (nhỏ nhất) -/(lớn nhất). Sát thương cuối/còn tùy thuộc tính nguyên tố/và thủ của địch.,review,viết tay
+P2S.system.118,ui,"The amount of time in between/an attack finishing and when/the unit can strike again. The/smaller this number, the faster/they can cycle through attacks.",Thời gian giữa/lúc đòn dứt và lúc/đánh lại được. Số/càng nhỏ thì càng/ra đòn nhanh.,review,viết tay
 P2S.system.119,ui,Defense vs. Tate＆Deka,,todo,lệch placeholder
-P2S.system.120,ui,Defense vs. Yumi,Phòng thủ với Yumi,draft,dịch máy
-P2S.system.121,ui,Defense vs. Yari,Phòng thủ với Yari,draft,dịch máy
-P2S.system.122,ui,Defense vs. Kiba,Phòng thủ với Kiba,draft,dịch máy
-P2S.system.123,ui,The rate at which criticals will/be dealt when dealing damage to/an enemy. The final critical rate/will be influenced by the enemy's/critical resistance.,Tỷ lệ mà chỉ số sẽ/Được xử lý khi đối phó thiệt hại với/một kẻ thù. Tỷ lệ quan trọng cuối cùng/sẽ bị ảnh hưởng bởi kẻ thù./Sự kháng cự nghiêm trọng.,draft,dịch máy
-P2S.system.124,ui,The rate at which knockback will/be dealt when dealing damage/to an enemy. The final knockback/rate will be influenced by the/enemy's knockback resistance.,Tỷ lệ sẽ giảm/được đối phó khi đối phó với thiệt hại/cho kẻ thù. Tiếng gõ cửa cuối cùng/tỷ lệ sẽ bị ảnh hưởng bởi/Kháng chiến của kẻ thù.,draft,dịch máy
-P2S.system.125,ui,The rate at which stagger will/be dealt when dealing damage/to an enemy. The final stagger/rate will be influenced by the/enemy's stagger resistance.,Tỷ lệ nghiêng sẽ/được đối phó khi đối phó với thiệt hại/cho kẻ thù. Sự khác nhau cuối cùng/tỷ lệ sẽ bị ảnh hưởng bởi/Sự kháng cự kỳ lạ của kẻ thù.,draft,dịch máy
-P2S.system.126,ui,Critical Resist Rate,Tỷ lệ kháng cự nghiêm trọng,draft,dịch máy
-P2S.system.127,ui,Knockback Resist Rate,Kháng chiến,draft,dịch máy
-P2S.system.128,ui,Stagger Resist Rate,Name,draft,dịch máy
-P2S.system.129,ui,Leaving Paragate. Are you sure?,Rời khỏi Paragate. Ngươi chắc chứ?,draft,dịch máy
-P2S.system.130,ui,Are you sure you want to engage?,Ngươi có chắc là muốn tham gia không?,draft,dịch máy
-P2S.system.131,ui,You need a total of 4 players!,Ngươi cần tổng cộng 4 người chơi!,draft,dịch máy
+P2S.system.120,ui,Defense vs. Yumi,Thủ trước Yumi,review,viết tay
+P2S.system.121,ui,Defense vs. Yari,Thủ trước Yari,review,viết tay
+P2S.system.122,ui,Defense vs. Kiba,Thủ trước Kiba,review,viết tay
+P2S.system.123,ui,The rate at which criticals will/be dealt when dealing damage to/an enemy. The final critical rate/will be influenced by the enemy's/critical resistance.,Tỉ lệ ra chí mạng/khi gây sát thương lên/địch. Tỉ lệ cuối/còn tùy kháng chí mạng/của địch.,review,viết tay
+P2S.system.124,ui,The rate at which knockback will/be dealt when dealing damage/to an enemy. The final knockback/rate will be influenced by the/enemy's knockback resistance.,Tỉ lệ đẩy lùi/khi gây sát thương/lên địch. Tỉ lệ cuối/còn tùy kháng đẩy lùi/của địch.,review,viết tay
+P2S.system.125,ui,The rate at which stagger will/be dealt when dealing damage/to an enemy. The final stagger/rate will be influenced by the/enemy's stagger resistance.,Tỉ lệ gây choáng/khi gây sát thương/lên địch. Tỉ lệ cuối/còn tùy kháng choáng/của địch.,review,viết tay
+P2S.system.126,ui,Critical Resist Rate,Kháng chí mạng,review,viết tay
+P2S.system.127,ui,Knockback Resist Rate,Kháng đẩy lùi,review,viết tay
+P2S.system.128,ui,Stagger Resist Rate,Kháng choáng,review,viết tay
+P2S.system.129,ui,Leaving Paragate. Are you sure?,Rời Paragate. Chắc chứ?,review,viết tay
+P2S.system.130,ui,Are you sure you want to engage?,Ngươi chắc muốn giao chiến?,review,viết tay
+P2S.system.131,ui,You need a total of 4 players!,Cần đủ 4 người chơi!,review,viết tay
 P2S.system.132,ui,Tips Album,Tập ảnh mẹo,draft,dịch máy
 P2S.system.133,ui,Page,Trang,draft,dịch máy
 P2S.system.134,ui,Completion Rate,Tỷ lệ gõ xong,draft,dịch máy
-P2S.system.135,ui,Is this level correct?,Trình độ này có đúng không?,draft,dịch máy
-P2S.system.136,ui,Optimize volume for headphone-use only.,Chỉ dùng điện thoại đầu để làm lễ rửa tội.,draft,dịch máy
-P2S.system.137,ui,Optimize volume for speaker-use only.,Chỉ dùng loa thôi.,draft,dịch máy
-P2S.system.138,ui,Automatically adjust volume settings.,Tự động điều chỉnh thiết lập âm lượng.,draft,dịch máy
-P2S.system.139,ui,Calling all first timers and the rhythmically impaired!,Gọi tất cả các đồng hồ đầu tiên và các nhịp điệu bị suy giảm!,draft,dịch máy
-P2S.system.140,ui,Four on the floor! Let's kick it up a notch!,Bốn tên trên sàn! Hãy cho nó nổ tung!,draft,dịch máy
-P2S.system.141,ui,Holy Jebus! You're braver than I thought!,Chúa ơi! Ngươi dũng cảm hơn tôi tưởng!,draft,dịch máy
-P2S.system.142,ui,Battle preparations are incomplete.,Chuẩn bị chiến đấu không đầy đủ.,draft,dịch máy
-P2S.system.143,ui,Don't be surprised if you get/a new rhythm next time!,Don không ngạc nhiên nếu ngươi nhận được/Một nhịp điệu mới lần tới!,draft,dịch máy
-P2S.system.144,ui,Create?,Tạo ra?,draft,dịch máy
+P2S.system.135,ui,Is this level correct?,Đúng mức này chứ?,review,viết tay
+P2S.system.136,ui,Optimize volume for headphone-use only.,Chỉnh âm lượng cho tai nghe.,review,viết tay
+P2S.system.137,ui,Optimize volume for speaker-use only.,Chỉnh âm lượng cho loa.,review,viết tay
+P2S.system.138,ui,Automatically adjust volume settings.,Tự chỉnh âm lượng.,review,viết tay
+P2S.system.139,ui,Calling all first timers and the rhythmically impaired!,Dành cho người mới và ai còn lệch nhịp!,review,viết tay
+P2S.system.140,ui,Four on the floor! Let's kick it up a notch!,Bốn nhịp một ô! Siết nhịp lên!,review,viết tay
+P2S.system.141,ui,Holy Jebus! You're braver than I thought!,Trời! Ngươi gan hơn ta tưởng!,review,viết tay
+P2S.system.142,ui,Battle preparations are incomplete.,Chưa chuẩn bị trận xong.,review,viết tay
+P2S.system.143,ui,Don't be surprised if you get/a new rhythm next time!,Đừng ngạc nhiên nếu lần sau/ngươi có nhịp mới!,review,viết tay
+P2S.system.144,ui,Create?,Tạo?,review,viết tay
 P2S.system.145,ui,Evolve?,Evolve?,draft,giữ nguyên
-P2S.system.146,ui,Level Up?,Trình độ?,draft,dịch máy
-P2S.system.147,ui,<N6> Ka-ching received.,Đã nhận được <N6> Ka-ching.,draft,dịch máy
-P2S.system.148,ui,Cut off from host.,Bị cách ly khỏi vật chủ.,draft,dịch máy
-P2S.system.149,ui,Disconnected due to connection error.,Đã ngắt kết nối do lỗi kết nối.,draft,dịch máy
-P2S.system.150,ui,Are your battle preparations complete?,Ngươi đã chuẩn bị xong cuộc chiến chưa?,draft,dịch máy
-P2S.system.151,ui,Average Burn Resistance,Kháng chiến trung bình,draft,dịch máy
-P2S.system.152,ui,Average Freeze Resistance,Trung bình kháng cự đông lạnh,draft,dịch máy
-P2S.system.153,ui,Average Sleep Resistance,Kháng chiến giấc ngủ trung bình,draft,dịch máy
-P2S.system.154,ui,Average Burn,Đốt trung bình,draft,dịch máy
-P2S.system.155,ui,Average Freeze,Đứng yên trung bình,draft,dịch máy
-P2S.system.156,ui,Average Sleep,Ngủ trung bình,draft,dịch máy
-P2S.system.157,ui,"The unit's ability to resist/burn effects. However, burn/rate cannot be lowered/below 5%.","Khả năng kháng cự của đơn vị/Hiệu ứng đốt. Tuy nhiên, cháy/không thể hạ cấp/dưới 5%.",draft,dịch máy
-P2S.system.158,ui,"The unit's ability to resist/freeze effects. However,/freeze rate cannot be/lowered below 5%.","Khả năng kháng cự của đơn vị/tác dụng đóng băng. Tuy nhiên,/tốc độ đóng băng không thể/Hạ xuống dưới 5%.",draft,dịch máy
-P2S.system.159,ui,"The unit's ability to resist/sleep effects. However, sleep/rate cannot be lowered/below 5%.","Khả năng kháng cự của đơn vị/Ảnh hưởng giấc ngủ. Tuy nhiên, ngủ đi./không thể hạ cấp/dưới 5%.",draft,dịch máy
-P2S.system.160,ui,The rate at which burn will be/dealt when dealing damage to/an enemy. The final burn rate/will be influenced by the/enemy's burn resistance.,Tỷ lệ bị cháy sẽ là/xử lý khi đối phó thiệt hại với/một kẻ thù. Tỷ lệ cháy cuối cùng/sẽ bị ảnh hưởng bởi/Quân kháng chiến của kẻ thù.,draft,dịch máy
-P2S.system.161,ui,The rate at which freeze will be/dealt when dealing damage to/an enemy. The final freeze rate/will be influenced by the/enemy's freeze resistance.,Tỷ lệ đóng băng sẽ là/xử lý khi đối phó thiệt hại với/một kẻ thù. Tỷ lệ đóng băng cuối cùng/sẽ bị ảnh hưởng bởi/Quân kháng chiến đông lạnh của kẻ thù.,draft,dịch máy
-P2S.system.162,ui,The rate at which sleep will be/dealt when dealing damage to/an enemy. The final sleep rate/will be influenced by the/enemy's sleep resistance.,Tỷ lệ ngủ sẽ là/xử lý khi đối phó thiệt hại với/một kẻ thù. Tỷ lệ ngủ cuối cùng/sẽ bị ảnh hưởng bởi/Kháng chiến giấc ngủ của kẻ thù.,draft,dịch máy
+P2S.system.146,ui,Level Up?,Lên cấp?,review,viết tay
+P2S.system.147,ui,<N6> Ka-ching received.,Nhận <N6> Ka-ching.,review,viết tay
+P2S.system.148,ui,Cut off from host.,Mất kết nối với chủ phòng.,review,viết tay
+P2S.system.149,ui,Disconnected due to connection error.,Ngắt vì lỗi kết nối.,review,viết tay
+P2S.system.150,ui,Are your battle preparations complete?,Ngươi chuẩn bị trận xong chưa?,review,viết tay
+P2S.system.151,ui,Average Burn Resistance,Kháng bỏng trung bình,review,viết tay
+P2S.system.152,ui,Average Freeze Resistance,Kháng đóng băng trung bình,review,viết tay
+P2S.system.153,ui,Average Sleep Resistance,Kháng ngủ trung bình,review,viết tay
+P2S.system.154,ui,Average Burn,Bỏng trung bình,review,viết tay
+P2S.system.155,ui,Average Freeze,Đóng băng trung bình,review,viết tay
+P2S.system.156,ui,Average Sleep,Ngủ trung bình,review,viết tay
+P2S.system.157,ui,"The unit's ability to resist/burn effects. However, burn/rate cannot be lowered/below 5%.","Khả năng kháng/hiệu ứng bỏng. Dù vậy, tỉ lệ/bỏng không giảm/xuống dưới 5%.",review,viết tay
+P2S.system.158,ui,"The unit's ability to resist/freeze effects. However,/freeze rate cannot be/lowered below 5%.","Khả năng kháng/hiệu ứng đóng băng. Dù vậy,/tỉ lệ đóng băng không/xuống dưới 5%.",review,viết tay
+P2S.system.159,ui,"The unit's ability to resist/sleep effects. However, sleep/rate cannot be lowered/below 5%.","Khả năng kháng/hiệu ứng ngủ. Dù vậy, tỉ lệ/ngủ không giảm/xuống dưới 5%.",review,viết tay
+P2S.system.160,ui,The rate at which burn will be/dealt when dealing damage to/an enemy. The final burn rate/will be influenced by the/enemy's burn resistance.,Tỉ lệ gây bỏng/khi gây sát thương lên/địch. Tỉ lệ cuối/còn tùy kháng bỏng/của địch.,review,viết tay
+P2S.system.161,ui,The rate at which freeze will be/dealt when dealing damage to/an enemy. The final freeze rate/will be influenced by the/enemy's freeze resistance.,Tỉ lệ gây đóng băng/khi gây sát thương lên/địch. Tỉ lệ cuối/còn tùy kháng đóng băng/của địch.,review,viết tay
+P2S.system.162,ui,The rate at which sleep will be/dealt when dealing damage to/an enemy. The final sleep rate/will be influenced by the/enemy's sleep resistance.,Tỉ lệ gây ngủ/khi gây sát thương lên/địch. Tỉ lệ cuối/còn tùy kháng ngủ/của địch.,review,viết tay
 P2S.system.163,ui,HP,HP,draft,giữ nguyên
-P2S.system.164,ui,Strength,Độ mạnh,draft,dịch máy
-P2S.system.165,ui,Attack Speed,Tốc độ Tấn công,draft,dịch máy
-P2S.system.166,ui,Burn Resistance,Kháng chiến dữ dội,draft,dịch máy
-P2S.system.167,ui,Freeze Resistance,Kháng chiến,draft,dịch máy
-P2S.system.168,ui,Sleep Resistance,Kháng chiến giấc ngủ,draft,dịch máy
-P2S.system.169,ui,Critical Rate,Tỷ lệ nghiêm trọng,draft,dịch máy
-P2S.system.170,ui,Knockback Rate,Tỷ lệ gõ cửa ngược,draft,dịch máy
-P2S.system.171,ui,Stagger Rate,Tốc độ Stagger,draft,dịch máy
-P2S.system.172,ui,Burn Rate,Tỷ lệ cháy,draft,dịch máy
-P2S.system.173,ui,Freeze Rate,Đứng yên,draft,dịch máy
-P2S.system.174,ui,Sleep Rate,Tốc độ Ngủ,draft,dịch máy
-P2S.system.175,ui,Waiting for other heroes to finish.,Chờ những anh hùng khác kết thúc.,draft,dịch máy
+P2S.system.164,ui,Strength,Sức mạnh,review,viết tay
+P2S.system.165,ui,Attack Speed,Tốc đánh,review,viết tay
+P2S.system.166,ui,Burn Resistance,Kháng bỏng,review,viết tay
+P2S.system.167,ui,Freeze Resistance,Kháng đóng băng,review,viết tay
+P2S.system.168,ui,Sleep Resistance,Kháng ngủ,review,viết tay
+P2S.system.169,ui,Critical Rate,Tỉ lệ chí mạng,review,viết tay
+P2S.system.170,ui,Knockback Rate,Tỉ lệ đẩy lùi,review,viết tay
+P2S.system.171,ui,Stagger Rate,Tỉ lệ choáng,review,viết tay
+P2S.system.172,ui,Burn Rate,Tỉ lệ bỏng,review,viết tay
+P2S.system.173,ui,Freeze Rate,Tỉ lệ đóng băng,review,viết tay
+P2S.system.174,ui,Sleep Rate,Tỉ lệ ngủ,review,viết tay
+P2S.system.175,ui,Waiting for other heroes to finish.,Đang chờ các anh hùng khác xong.,review,viết tay
 P2S.system.176,ui,NOW LOADING,ĐANG TẢI,review,viết tay
-P2S.system.177,ui,PRESS ANY BUTTON,NHỮNG BAO GIỜ TRONG NHỮNG NGƯỜI,draft,dịch máy
-P2S.system.178,ui,Null Critical,Comment,draft,dịch máy
-P2S.system.179,ui,Null Knockback,Nell knockback,draft,dịch máy
-P2S.system.180,ui,Null Stagger,Name,draft,dịch máy
-P2S.system.181,ui,Null Burn,Chết cháy,draft,dịch máy
-P2S.system.182,ui,Null Freeze,Đứng yên,draft,dịch máy
-P2S.system.183,ui,Null Sleep,Ngủ thiếp đi,draft,dịch máy
-P2S.system.184,ui,Nullifies criticals/so that you will never take critical /hits under any attack.,Làm rỗng các quan trọng/Để ngươi không bao giờ phê phán/bị tấn công.,draft,dịch máy
-P2S.system.185,ui,Nullifies knockback/so that you will never take /knockback hits under any attack.,Tiếng gõ cửa lại từ trường/Để ngươi không bao giờ lấy đi/Bị đánh bất cứ lúc nào.,draft,dịch máy
-P2S.system.186,ui,Nullifies stagger/so that you will never take /staggering hits under any attack.,Dập tắt/Để ngươi không bao giờ lấy đi/Tấn công bất ngờ khi bị tấn công.,draft,dịch máy
-P2S.system.187,ui,Nullifies burn effect/so that you will never be burned /under any attack.,Hiệu ứng cháy dinh dưỡng/Để ngươi không bao giờ bị thiêu sống/dưới bất kỳ cuộc tấn công nào.,draft,dịch máy
-P2S.system.188,ui,Nullifies freeze effect/so that you will never be frozen /under any attack.,Comment/Để ngươi không bao giờ bị đóng băng/dưới bất kỳ cuộc tấn công nào.,draft,dịch máy
-P2S.system.189,ui,Nullifies sleep/so that you will never be put to /sleep under any attack.,Ngủ thoải mái/Để ngươi không bao giờ bị bỏ rơi/ngủ dưới bất kỳ cuộc tấn công nào.,draft,dịch máy
-P2S.system.190,ui,Which level do you wish to play?,Ngươi muốn chơi ở cấp độ nào?,draft,dịch máy
-P2S.system.191,ui,Level 1,Cấp 1,draft,dịch máy
-P2S.system.192,ui,Level 2,Trình độ 2,draft,dịch máy
-P2S.system.193,ui,Level 3,Trình độ 3,draft,dịch máy
-P2S.system.194,ui,Open the treasure chest!,Mở rương kho báu ra!,draft,dịch máy
-P2S.system.195,ui,Acquired <N6> Ka-ching!,Nhận được <N6> Ka-ching!,draft,dịch máy
-P2S.system.196,ui,Preparing adventure./Press × to return to Patapolis.,Chuẩn bị phiêu lưu./Nhấn × để quay về Patapolis.,draft,dịch máy
-P2S.system.197,ui,Preparing adventure./Press × to return to title screen.,Chuẩn bị phiêu lưu./Nhấn × để quay về màn hình tựa.,draft,dịch máy
+P2S.system.177,ui,PRESS ANY BUTTON,NHẤN NÚT BẤT KỲ,review,viết tay
+P2S.system.178,ui,Null Critical,Triệt chí mạng,review,viết tay
+P2S.system.179,ui,Null Knockback,Triệt đẩy lùi,review,viết tay
+P2S.system.180,ui,Null Stagger,Triệt choáng,review,viết tay
+P2S.system.181,ui,Null Burn,Triệt bỏng,review,viết tay
+P2S.system.182,ui,Null Freeze,Triệt đóng băng,review,viết tay
+P2S.system.183,ui,Null Sleep,Triệt ngủ,review,viết tay
+P2S.system.184,ui,Nullifies criticals/so that you will never take critical /hits under any attack.,Triệt chí mạng/để ngươi không nhận đòn chí mạng/dù đòn nào.,review,viết tay
+P2S.system.185,ui,Nullifies knockback/so that you will never take /knockback hits under any attack.,Triệt đẩy lùi/để ngươi không bị đẩy lùi/dù đòn nào.,review,viết tay
+P2S.system.186,ui,Nullifies stagger/so that you will never take /staggering hits under any attack.,Triệt choáng/để ngươi không bị choáng/dù đòn nào.,review,viết tay
+P2S.system.187,ui,Nullifies burn effect/so that you will never be burned /under any attack.,Triệt bỏng/để ngươi không bị bỏng/dù đòn nào.,review,viết tay
+P2S.system.188,ui,Nullifies freeze effect/so that you will never be frozen /under any attack.,Triệt đóng băng/để ngươi không bị đóng băng/dù đòn nào.,review,viết tay
+P2S.system.189,ui,Nullifies sleep/so that you will never be put to /sleep under any attack.,Triệt ngủ/để ngươi không bị ru ngủ/dù đòn nào.,review,viết tay
+P2S.system.190,ui,Which level do you wish to play?,Ngươi muốn chơi mức nào?,review,viết tay
+P2S.system.191,ui,Level 1,Mức 1,review,viết tay
+P2S.system.192,ui,Level 2,Mức 2,review,viết tay
+P2S.system.193,ui,Level 3,Mức 3,review,viết tay
+P2S.system.194,ui,Open the treasure chest!,Mở rương!,review,viết tay
+P2S.system.195,ui,Acquired <N6> Ka-ching!,Nhận <N6> Ka-ching!,review,viết tay
+P2S.system.196,ui,Preparing adventure./Press × to return to Patapolis.,Đang chuẩn bị./Nhấn × để về Patapolis.,review,viết tay
+P2S.system.197,ui,Preparing adventure./Press × to return to title screen.,Đang chuẩn bị./Nhấn × để về màn hình tựa.,review,viết tay
 P2S.system.198,ui,Parachari,Parachari,draft,giữ nguyên
-P2S.system.199,ui,Preparing adventure./Press ○ to return to Patapolis.,Chuẩn bị phiêu lưu./Hãy bấm BAR để quay về Patapolis.,draft,dịch máy
-P2S.system.200,ui,Preparing adventure./Press ○ to return to title screen.,Chuẩn bị phiêu lưu./Nhấn vào để quay lại màn hình tựa.,draft,dịch máy
-P2S.system.201,ui,"You have no Parachari, so you can't open the chest./Returning to Patapolis.","Ngươi không có Parachari, nên ngươi không thể mở ngực./Trở về Patapolis.",draft,dịch máy
-P2S.system.202,ui,You don't have enough Parachari to open the chest./Changing remaining Parachari into Ka-ching./Returning to Patapolis.,Ngươi không đủ Parachari để mở ngực./Biến Parachari còn lại thành Ka-ching./Trở về Patapolis.,draft,dịch máy
-P2S.system.203,ui,Failed to find adventure. /Returning to Patapolis.,Không tìm thấy cuộc phiêu lưu./Trở về Patapolis.,draft,dịch máy
+P2S.system.199,ui,Preparing adventure./Press ○ to return to Patapolis.,Đang chuẩn bị./Nhấn ○ để về Patapolis.,review,viết tay
+P2S.system.200,ui,Preparing adventure./Press ○ to return to title screen.,Đang chuẩn bị./Nhấn ○ để về màn hình tựa.,review,viết tay
+P2S.system.201,ui,"You have no Parachari, so you can't open the chest./Returning to Patapolis.","Ngươi không có Parachari, không mở rương được./Đang về Patapolis.",review,viết tay
+P2S.system.202,ui,You don't have enough Parachari to open the chest./Changing remaining Parachari into Ka-ching./Returning to Patapolis.,Không đủ Parachari để mở rương./Đổi phần còn lại thành Ka-ching./Đang về Patapolis.,review,viết tay
+P2S.system.203,ui,Failed to find adventure. /Returning to Patapolis.,Không tìm thấy cuộc phiêu lưu./Đang về Patapolis.,review,viết tay
 P2S.title.0,ui,"&S0O2#As their ship neared completion, /Hatapon suddenly remembered an old story.","&S0O2#Khi thuyền sắp hoàn thành, /Hatapon chợt nhớ một chuyện xưa.",review,viết tay
 P2S.title.1,ui,"&S0O2#O Mighty Leader, let's sail off into the dark unknown/as our search for Earthend continues. Please come/back to us soon.","&S0O2#Hỡi Người Chỉ Huy, hãy ra khơi vào miền tối/cuộc tìm Earthend vẫn tiếp. Xin hãy/sớm trở lại với chúng tôi.",review,viết tay
 P2S.title.2,ui,"&S0O2#The Patapons bravely set off on their voyage, leaving behind/their loved ones, friends and the safety of their home island.","&S0O2#Patapon dũng cảm ra khơi, để lại/người thân, bạn hữu và đảo quê an toàn.",review,viết tay
@@ -127748,33 +127748,33 @@ P2S.key.4,ui,Optimize,Tối ưu,draft,
 P2S.key.5,ui,Help,Trợ giúp,draft,
 P2S.key.6,ui,Scroll,Cuộn,draft,
 P2S.key.7,ui,Proceed,Tiếp tục,draft,
-P2S.key.8,ui,Look,Nhìn kìa,draft,dịch máy
-P2S.key.9,ui,Retire,Nghỉ,draft,dịch máy
-P2S.key.10,ui,Switch,Chuyển đổi,draft,dịch máy
-P2S.key.11,ui,Select,Chọn,draft,dịch máy
-P2S.key.12,ui,Sort,Sắp xếp,draft,dịch máy
-P2S.key.13,ui,Menu,Trình đơn,draft,dịch máy
-P2S.key.14,ui,Delete Save Data,Xoá dữ liệu,draft,dịch máy
-P2S.key.15,ui,Title screen,Màn hình tiêu đề,draft,dịch máy
-P2S.key.16,ui,Confirm,Xác nhận,draft,dịch máy
-P2S.key.17,ui,Command,Câu lệnh,draft,dịch máy
-P2S.key.18,ui,Save,Lưu,draft,dịch máy
-P2S.key.19,ui,Formation,Định dạng,draft,dịch máy
+P2S.key.8,ui,Look,Xem,review,viết tay
+P2S.key.9,ui,Retire,Cho nghỉ,review,viết tay
+P2S.key.10,ui,Switch,Đổi,review,viết tay
+P2S.key.11,ui,Select,Chọn,review,viết tay
+P2S.key.12,ui,Sort,Sắp xếp,review,viết tay
+P2S.key.13,ui,Menu,Menu,review,giữ nguyên
+P2S.key.14,ui,Delete Save Data,Xóa dữ liệu lưu,review,viết tay
+P2S.key.15,ui,Title screen,Màn hình tựa,review,viết tay
+P2S.key.16,ui,Confirm,Xác nhận,review,viết tay
+P2S.key.17,ui,Command,Khẩu lệnh,review,viết tay
+P2S.key.18,ui,Save,Lưu,review,viết tay
+P2S.key.19,ui,Formation,Đội hình,review,viết tay
 P2S.key.20,ui,Patapolis,Patapolis,draft,giữ nguyên
 P2S.key.21,ui,Help,Trợ giúp,draft,
-P2S.key.22,ui,Camera,Máy ảnh,draft,dịch máy
-P2S.key.23,ui,Move,Chuyển,draft,dịch máy
-P2S.key.24,ui,Start mission,Bắt đầu nhiệm vụ,draft,dịch máy
-P2S.key.25,ui,Select mission,Chọn nhiệm vụ,draft,dịch máy
-P2S.key.26,ui,Cursor,Con trỏ,draft,dịch máy
-P2S.key.27,ui,Equip,Công cụ,draft,dịch máy
-P2S.key.28,ui,Change,Thay đổi,draft,dịch máy
+P2S.key.22,ui,Camera,Máy quay,review,viết tay
+P2S.key.23,ui,Move,Di chuyển,review,viết tay
+P2S.key.24,ui,Start mission,Bắt đầu nhiệm vụ,review,viết tay
+P2S.key.25,ui,Select mission,Chọn nhiệm vụ,review,viết tay
+P2S.key.26,ui,Cursor,Con trỏ,review,viết tay
+P2S.key.27,ui,Equip,Trang bị,review,viết tay
+P2S.key.28,ui,Change,Đổi,review,viết tay
 P2S.key.29,ui,Turn page,Quay trang,draft,dịch máy
-P2S.key.30,ui,Class,Hạng,draft,dịch máy
+P2S.key.30,ui,Class,Lớp,review,viết tay
 P2S.key.31,ui,Information,Thông tin,draft,
 P2S.key.32,ui,Tips,Mẹo,draft,dịch máy
-P2S.key.33,ui,Rile Up,Name,draft,dịch máy
-P2S.key.34,ui,Jump,Nhảy,draft,dịch máy
+P2S.key.33,ui,Rile Up,Kích nộ,review,viết tay
+P2S.key.34,ui,Jump,Nhảy,review,viết tay
 P2S.titlecard.0,ui,New game,Chơi mới,review,viết tay
 P2S.titlecard.1,ui,Continue,Tiếp tục,review,viết tay
 P2S.titlecard.2,ui,OPTIONS,TÙY CHỌN,review,viết tay
