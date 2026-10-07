@@ -30,13 +30,14 @@ Bản nháp tiếng Việt do một lô dịch: câu lệnh và nút chính đư
 
 ## Áp vào game
 
-Hook BepInEx chỉ để hiện bản dịch sau này, không phải để thu thập câu. Gói là Thunderstore `BepInExPack_Patapon` 6.0.75301 và XUnity.AutoTranslator IL2CPP 5.6.2. Binary không commit.
+Bản dịch ghi đè tiếng Anh trong `LocalizeData.asset`, rồi mã hóa lại đúng bốn bundle. Launcher chép các bundle đó lên bản cài. Không dùng BepInEx.
 
 ```powershell
-.\.venv\Scripts\python.exe games\patapon12-replay\tools\fetch_runtime.py
+.\.venv\Scripts\python.exe games\patapon12-replay\tools\apply_locale_patch.py
+python -m launcher.app
 ```
 
-Rồi mở launcher và bấm Áp dụng. `Endpoint` để trống nên game không gửi câu thoại đi máy dịch. Font tiếng Việt vẫn chưa có, nên chữ Việt có thể thành ô vuông.
+Menu tựa, logo và tips vẽ sẵn vẫn là ảnh tiếng Anh. Chữ hội thoại và menu chữ nằm trong asset. Font game chưa có dấu tiếng Việt, nên một số chữ có thể thành ô vuông.
 
 ## Đã chạy thử
 
