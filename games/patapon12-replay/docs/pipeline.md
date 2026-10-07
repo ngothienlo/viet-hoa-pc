@@ -33,7 +33,14 @@ Câu viết tay có note `viết tay` và `status` là `review`. Script giữ c�
 .\.venv\Scripts\python.exe games\patapon12-replay\tools\translate_rhythm.py
 ```
 
-Dòng note `dịch máy`, `không dịch`, `nguồn tiếng Nhật` hoặc `lệch placeholder` không vào bundle. Game hiện tiếng Anh ở các dòng đó. Chưa dòng nào lên `done`, vì chưa chơi thử từng màn.
+Rà soát hàng loạt (#11) đi qua `tools/apply_fixes.py`. Mỗi file sửa là một mảng JSON `{"source", "vi", "reason"}`. Script loại câu lệch số `/`, mã `&H…#`, placeholder hay ký hiệu nút, báo xung đột khi hai file sửa cùng câu gốc, rồi ghi câu mới cho mọi dòng cùng câu gốc với `status` là `review`.
+
+```powershell
+.\.venv\Scripts\python.exe games\patapon12-replay\tools\apply_fixes.py --dry-run fixes1.json fixes2.json
+.\.venv\Scripts\python.exe games\patapon12-replay\tools\apply_fixes.py fixes1.json fixes2.json
+```
+
+Dòng note `dịch máy`, `không dịch`, `nguồn tiếng Nhật` hoặc `lệch placeholder` không vào bundle. Game hiện tiếng Anh ở các dòng đó. Sau lần rà #11, mọi câu có bản dịch đều ở `review`. Chưa dòng nào lên `done`, vì chưa chơi thử từng màn.
 
 ## Áp vào game
 
