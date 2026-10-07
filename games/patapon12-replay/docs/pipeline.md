@@ -44,12 +44,18 @@ Dòng note `dịch máy`, `không dịch`, `nguồn tiếng Nhật` hoặc `lệ
 
 ## Áp vào game
 
-Bản dịch ghi đè tiếng Anh trong `LocalizeData.asset`, rồi mã hóa lại đúng bốn bundle. Launcher chép các bundle đó lên bản cài. Không dùng BepInEx.
+Bản dịch ghi đè tiếng Anh trong `LocalizeData.asset`, rồi mã hóa lại đúng bốn bundle. Không dùng BepInEx.
+
+Từ #17, `game.json` có `"build": "tools/build_patch.py"`. Bấm Áp dụng trong launcher (hoặc `VietHoa.exe`) thì launcher tạo bản vá ngay từ bản cài của người chơi: 4 bundle `LocalizeData`, rồi các font đã ghép chữ Việt. Mất khoảng một phút. File ghi vào `%LOCALAPPDATA%\viet-hoa-pc\build\patapon12-replay\`, rồi mới chép lên bản cài. Repo và bản exe không chứa file nào của game.
+
+Chạy tay, không qua launcher:
 
 ```powershell
-.\.venv\Scripts\python.exe games\patapon12-replay\tools\apply_locale_patch.py
+.\.venv\Scripts\python.exe games\patapon12-replay\tools\build_patch.py "<thư mục cài>" "<thư mục ra>"
 python -m launcher.app
 ```
+
+`apply_locale_patch.py` và `font\apply_vietnamese_font.py` vẫn chạy riêng được. Khi đó file ghi vào `patch/` của game, hoặc vào `VH_PATCH_DIR` nếu biến này có giá trị.
 
 Menu tựa, logo và tips vẽ sẵn vẫn là ảnh tiếng Anh. Chữ hội thoại và menu chữ nằm trong asset. Font chữ được vá để chữ Việt hiện đủ dấu và cùng một mặt chữ (xem `docs/font.md`).
 

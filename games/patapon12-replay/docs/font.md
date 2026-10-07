@@ -9,6 +9,7 @@ Không cần quét lại game để biết font. Danh sách đầy đủ nằm t
 1. **#8:** thay TShinGo và TTake trong `sharedassets` bằng Be Vietnam Pro.
 2. **#9, lần một.** Ảnh chụp lúc đó có hai lỗi: một câu lẫn hai font (nét Patapon và nét sans mảnh), và `ẳ` thành ô vuông. Mình đoán font kiểu Patapon là DF-KakuPop-W5, nên ghép dấu cho KakuPop, Londrina, và thay thêm các font TShinGo, TTake trong bundle bằng Be Vietnam Pro. Kết quả: chữ đồng nhất, nhưng lời thoại mất nét Patapon.
 3. **#9, lần hai.** Font kiểu Patapon của lời thoại thực ra là **TTakeStd-Bold**. Vẽ thử atlas gốc thì thấy đúng chữ `g` và nét vuông như trong ảnh chụp. Thay TTake bằng Be Vietnam Pro là làm mất nét gốc. Vì vậy mọi font Latin chuyển sang ghép dấu, giữ nét gốc. Be Vietnam Pro chỉ còn dùng cho `_savewindow`.
+4. **#17.** `_savewindow` cũng chuyển sang ghép dấu, mượn chữ gốc, số đo và dấu của `TShinGoPr6-Medium SDF`. Không font nào còn dùng Be Vietnam Pro, nên bản exe không phải mang theo file TTF nào.
 
 Bài học: trước khi chọn cách vá, vẽ atlas gốc của font ra ảnh rồi so với ảnh chụp trong game (`preview.py`, hoặc đoạn đọc atlas trong `compose_glyphs.py`). Không đoán font theo tên.
 
@@ -31,7 +32,7 @@ Font cần vá:
 | `DF-KakuPop-W5_hcs_sc`, `_name_sc` | bundle `f7cd5c4c` (bản Trung giản thể) | Ghép dấu |
 | `DF-KakuPop-W5_hcs_tc` | bundle `064a729a` (bản Trung phồn thể) | Ghép dấu |
 | `LondrinaSolid_hcs` | bundle `91aca73a`, prefab tips tiếng Anh dùng | Ghép dấu |
-| `TShinGoPr6-Medium_savewindow` | `sharedassets0` | Thay bằng Be Vietnam Pro Regular. Font chỉ có 18 chữ hoa, không đủ chữ gốc để ghép. |
+| `TShinGoPr6-Medium_savewindow` | `sharedassets0` | Ghép dấu. Font chỉ có 18 chữ hoa, nên mượn cả chữ gốc của TShinGo. |
 
 Font giữ nguyên, kèm lý do:
 
@@ -86,7 +87,7 @@ Font nhỏ (bản `_hcs`, chỉ có chữ và số) không có dấu để mư�
 
 ### Thay bằng Be Vietnam Pro
 
-Chỉ dùng khi font thiếu chữ gốc để ghép; hiện chỉ có `_savewindow`. `bake_sdf.py` nướng atlas SDF bằng FreeType (padding 14, cỡ mẫu 64, gradient scale 15). Cần file TTF Be Vietnam Pro, khai trong `config.json` (`fonts.regular`, `fonts.bold`).
+Hiện không font nào dùng cách này. Đường code vẫn giữ cho game sau, khi có font thiếu chữ gốc mà cũng không mượn được của font cùng họ. `bake_sdf.py` nướng atlas SDF bằng FreeType (padding 14, cỡ mẫu 64, gradient scale 15). Cần file TTF Be Vietnam Pro, khai trong `config.json` (`fonts.regular`, `fonts.bold`).
 
 ### Chữ nào phải có
 
@@ -96,17 +97,17 @@ Câu dịch mà thêm ký tự mới, ví dụ `—`, thì `--check` sẽ báo t
 
 ## Lệnh
 
-Chạy từ gốc repo. Cần `config.json` của game có `installs` và `fonts` (xem `config.example.json`).
+Người chơi chỉ cần bấm Áp dụng trong launcher hoặc `VietHoa.exe`: launcher gọi `tools/build_patch.py`, script này chạy cả bản vá câu thoại lẫn bản vá font (xem `docs/technical/launcher.md`). Các lệnh dưới đây để chạy tay từ gốc repo; cần `config.json` của game có `installs`.
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install UnityPy pycryptodome freetype-py numpy scipy Pillow
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe games\patapon12-replay\tools\font\apply_vietnamese_font.py
 ```
 
 `apply_vietnamese_font.py` làm theo thứ tự:
 
 1. Đọc `fonts.json`. Dừng nếu `catalog.json` khác lần quét trước.
-2. Nướng atlas Be Vietnam Pro, nếu còn font cần thay.
+2. Nướng atlas Be Vietnam Pro, chỉ khi `fonts.json` còn font `replace-*` (hiện không có).
 3. Vá từng `sharedassets` và từng bundle, ghi vào `patch/`.
 4. Kiểm tra bằng `inventory.py --check`. Dừng nếu còn font thiếu chữ.
 5. Áp lên bản cài qua launcher. Thêm `--no-install` để bỏ bước này.
