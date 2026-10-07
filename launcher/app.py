@@ -3,13 +3,16 @@
 from __future__ import annotations
 
 import ctypes
+import queue
 import subprocess
+import threading
 from pathlib import Path
 
 import tkinter as tk
 from tkinter import filedialog
 
-from launcher.apply import apply_pack, install_error, remove_pack
+from launcher import __version__
+from launcher.apply import apply_pack, install_error, remove_pack, run_build
 from launcher.catalog import Game, load_games, pack_files
 from launcher.store import Store, default_state_dir
 
@@ -40,12 +43,13 @@ class Launcher:
         self.games = load_games(repo)
         self.selected: Game | None = None
         self.rows: dict[str, tk.Frame] = {}
+        self.busy = False
         self._build()
         if self.games:
             self.select(self.games[0].id)
 
     def _build(self) -> None:
-        self.root.title("Việt hóa")
+        self.root.title(f"Việt hóa {__version__}")
         self.root.configure(bg=BG)
         self.root.minsize(860, 560)
         self.root.geometry("980x640")
@@ -235,15 +239,51 @@ class Launcher:
 
     def on_apply(self) -> None:
         game, install = self._pair()
-        if game is None or install is None:
+        if game is None or install is None or self.busy:
             return
-        result = apply_pack(game, install, self.store)
-        self.status_label.configure(text=result.message, fg=OK if result.ok else BAD)
-        self.refresh(keep_status=True)
+        if game.build is None:
+            result = apply_pack(game, install, self.store)
+            self.status_label.configure(text=result.message, fg=OK if result.ok else BAD)
+            self.refresh(keep_status=True)
+            return
+        # Build đọc bản cài và ghép font, mất khoảng một phút. Chạy nền để cửa sổ không treo.
+        self.busy = True
+        self._lock_actions()
+        self.status_label.configure(text="Đang tạo bản vá từ bản cài của ngươi...", fg=WARN)
+        events: queue.Queue = queue.Queue()
+
+        def work() -> None:
+            result = run_build(game, install, self.store, lambda line: events.put(("log", line)))
+            if result.ok:
+                events.put(("log", "Đang chép file vào thư mục cài..."))
+                result = apply_pack(game, install, self.store)
+            events.put(("done", result))
+
+        threading.Thread(target=work, daemon=True).start()
+        self._poll(events)
+
+    def _poll(self, events: queue.Queue) -> None:
+        while True:
+            try:
+                kind, value = events.get_nowait()
+            except queue.Empty:
+                break
+            if kind == "log":
+                self.status_label.configure(text=value, fg=WARN)
+            else:
+                self.busy = False
+                self.status_label.configure(text=value.message, fg=OK if value.ok else BAD)
+                self.refresh(keep_status=True)
+                return
+        self.root.after(150, self._poll, events)
+
+    def _lock_actions(self) -> None:
+        for button in (self.apply_button, self.remove_button, self.play_button, self.browse_button, self.hint_button):
+            self._set_enabled(button, False)
 
     def on_remove(self) -> None:
         game, install = self._pair()
-        if game is None or install is None:
+        if game is None or install is None or self.busy:
             return
         result = remove_pack(game, install, self.store)
         self.status_label.configure(text=result.message, fg=OK if result.ok else BAD)
@@ -264,6 +304,9 @@ class Launcher:
         game = self.selected
         if game is None:
             return
+        if self.busy:
+            self._lock_actions()
+            return
         self.title_label.configure(text=game.title)
         self.summary_label.configure(text=game.summary or "Chưa có mô tả.")
         install = self.current_install()
@@ -272,14 +315,19 @@ class Launcher:
         self._set_enabled(self.hint_button, hint is not None)
         error = install_error(game, install)
         ready = error is None
-        has_pack = bool(pack_files(game))
+        has_pack = self._has_pack(game)
         applied = self._applied_here(game, install)
+        self._set_enabled(self.browse_button, True)
         self._set_enabled(self.apply_button, ready and has_pack)
         self._set_enabled(self.remove_button, applied)
         self._set_enabled(self.play_button, ready and bool(game.exe))
         if keep_status:
             return
         self.status_label.configure(text=self._status_text(game, error, has_pack, applied), fg=self._status_color(error, has_pack, applied))
+
+    def _has_pack(self, game: Game) -> bool:
+        """Game có bước build thì luôn áp được: file vá tạo ngay trên máy."""
+        return game.build is not None or bool(pack_files(game))
 
     def _pair(self) -> tuple[Game | None, Path | None]:
         return self.selected, self.current_install()
@@ -310,6 +358,8 @@ class Launcher:
             return "Đang dùng bản dịch trên thư mục này."
         if not has_pack:
             return "Đường dẫn hợp lệ. patch/ chưa có file nên chưa áp được."
+        if game.build is not None:
+            return "Sẵn sàng. Áp dụng sẽ tạo bản vá từ chính bản cài này, mất khoảng một phút."
         return f"Sẵn sàng áp {count} file."
 
     def _status_color(self, error: str | None, has_pack: bool, applied: bool) -> str:
@@ -335,11 +385,118 @@ class Launcher:
                 text, color = "Sai thư mục", BAD
             elif self._applied_here(game, install):
                 text, color = "Đã áp dụng", OK
-            elif pack_files(game):
+            elif self._has_pack(game):
                 text, color = "Sẵn sàng", OK
             else:
                 text, color = "Chưa có gói", WARN
             row.badge.configure(text=text, fg=color)  # type: ignore[attr-defined]
+
+
+def build_only(repo: Path | None = None) -> int:
+    """Tạo bản vá cho mọi game đã chọn thư mục cài, không mở cửa sổ, không áp lên game.
+
+    Dùng để kiểm tra bản exe, hoặc để người chơi gửi log khi báo lỗi.
+    Log ghi vào `%LOCALAPPDATA%/viet-hoa-pc/build.log`.
+    """
+    store = Store(default_state_dir())
+    store.state_dir.mkdir(parents=True, exist_ok=True)
+    log_path = store.state_dir / "build.log"
+    failed = 0
+    with log_path.open("w", encoding="utf-8") as handle:
+
+        def log(line: str) -> None:
+            handle.write(line + "\n")
+            handle.flush()
+
+        for game in load_games(repo or Path(__file__).resolve().parents[1]):
+            if game.build is None:
+                continue
+            raw = store.install_path(game.id).strip()
+            log(f"== {game.title}: {raw or 'chưa chọn thư mục cài'}")
+            if not raw:
+                continue
+            result = run_build(game, Path(raw), store, log)
+            log(result.message)
+            failed += not result.ok
+    return 1 if failed else 0
+
+
+def ui_test(repo: Path | None = None) -> int:
+    """Mở cửa sổ thật, bấm nút Áp dụng của game có bước build, chờ xong, chụp cửa sổ.
+
+    Kiểm tra đúng đường người chơi đi trong bản exe: nút, luồng nền, tiến độ, kết quả.
+    Ghi `ui-test.log` và `ui-test.png` vào thư mục state. Mã thoát 0 khi áp thành công.
+    """
+    try:
+        ctypes.windll.shcore.SetProcessDpiAwareness(1)
+    except (AttributeError, OSError):
+        pass
+    store = Store(default_state_dir())
+    store.state_dir.mkdir(parents=True, exist_ok=True)
+    root = tk.Tk()
+    app = Launcher(root, repo or Path(__file__).resolve().parents[1])
+    lines: list[str] = []
+    outcome = {"ok": False}
+
+    def note(text: str) -> None:
+        if not lines or lines[-1] != text:
+            lines.append(text)
+
+    target = next(
+        (
+            game
+            for game in app.games
+            if game.build is not None
+            and install_error(game, Path(app.store.install_path(game.id) or ".")) is None
+        ),
+        None,
+    )
+    if target is None:
+        note("Không có game nào có bước build và thư mục cài hợp lệ.")
+        root.destroy()
+    else:
+        app.select(target.id)
+        root.attributes("-topmost", True)
+
+        def finish() -> None:
+            status = app.status_label.cget("text")
+            note(f"kết thúc: {status}")
+            note(f"nhãn game: {app.rows[target.id].badge.cget('text')}")  # type: ignore[attr-defined]
+            outcome["ok"] = app.status_label.cget("fg") == OK and status.startswith("Đã áp")
+            try:
+                from PIL import ImageGrab
+
+                root.update()
+                x, y = root.winfo_rootx(), root.winfo_rooty()
+                box = (x, y, x + root.winfo_width(), y + root.winfo_height())
+                ImageGrab.grab(bbox=box).save(store.state_dir / "ui-test.png")
+            except Exception as exc:  # noqa: BLE001 - ảnh chỉ để xem, không quyết định kết quả
+                note(f"không chụp được cửa sổ: {exc}")
+            root.destroy()
+
+        def wait() -> None:
+            note(app.status_label.cget("text"))
+            if app.busy:
+                root.after(200, wait)
+            else:
+                root.after(500, finish)
+
+        def press() -> None:
+            note(f"game: {target.title}")
+            note(f"trước khi bấm: {app.status_label.cget('text')}")
+            if str(app.apply_button.cget("state")) != "normal":
+                note("nút Áp dụng đang tắt")
+                root.destroy()
+                return
+            app.apply_button.invoke()
+            if not app.busy:
+                note("bấm nút nhưng không có build chạy")
+            root.after(200, wait)
+
+        root.after(1500, press)
+        root.mainloop()
+    (store.state_dir / "ui-test.log").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return 0 if outcome["ok"] else 1
 
 
 def run(repo: Path | None = None) -> None:

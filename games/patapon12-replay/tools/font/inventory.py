@@ -32,12 +32,12 @@ sys.path.insert(0, str(TOOLS))
 
 import extract_strings as ex  # noqa: E402
 from apply_locale_patch import translations  # noqa: E402
-from game_config import DATA_NAME, GAME_DIR, original, require_install  # noqa: E402
+from game_config import DATA_NAME, GAME_DIR, original, patch_dir, require_install  # noqa: E402
 
 UNITY = "2022.3.52f1"
 OUT = Path(__file__).with_name("fonts.json")
 CSV_PATH = GAME_DIR / "locale" / "vi" / "strings.csv"
-PATCH = GAME_DIR / "patch"
+PATCH = patch_dir()
 LANGUAGE = re.compile(r"/Localize/([A-Za-z]+)/")
 
 # Cách vá theo tên font. Thứ tự có nghĩa: luật đầu tiên khớp thì dùng.
@@ -58,8 +58,8 @@ RULES: list[tuple[str, str, str]] = [
 
 def action_for(name: str, latin: bool) -> tuple[str, str]:
     if name.endswith("_savewindow"):
-        # Chỉ có 18 chữ hoa Latin, không đủ chữ gốc để ghép. Thay hẳn bằng Be Vietnam Pro.
-        return "replace-regular", "chữ hoa của khung lưu game, thiếu chữ gốc để ghép"
+        # Chỉ có 18 chữ hoa Latin. Ghép dấu, mượn chữ gốc và dấu của TShinGo cùng họ.
+        return "compose", "chữ hoa của khung lưu game, mượn chữ gốc của TShinGo"
     if not latin:
         return "keep", "không có chữ Latin"
     for pattern, action, why in RULES:

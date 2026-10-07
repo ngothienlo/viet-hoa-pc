@@ -17,16 +17,14 @@ Game dùng Unity IL2CPP và Addressables. Ngôn ngữ chính thức không có t
 | `docs/thuat-ngu.md` | Tên riêng và nhịp trống. |
 | `docs/van-phong.md` | Văn phong tiếng Việt của game này. |
 | `config.example.json` | Mẫu đường dẫn Steam / Epic và file font. |
-| `runtime.lock.json` | URL và sha256 của BepInEx và AutoTranslator. |
-| `tools/fetch_runtime.py` | Tải hai gói đó vào `patch/`. |
 | `tools/extract_strings.py` | Trích hết câu tiếng Anh từ `LocalizeData` vào CSV. |
 | `tools/translate_rhythm.py` | Ghi câu hướng dẫn nhịp viết tay vào CSV. |
+| `tools/build_patch.py` | Tạo bản vá từ bản cài của người chơi. Launcher gọi script này khi bấm Áp dụng. |
 | `tools/apply_fixes.py` | Gộp file sửa bản dịch (JSON) vào CSV, có kiểm tra `/`, mã màu, placeholder. |
 | `docs/font.md` | Font nào vẽ chữ gì, cách vá, lệnh, bẫy. |
 | `tools/font/fonts.json` | Danh sách TMP Font Asset đã quét. Đọc file này, không quét lại game. |
-| `tools/font/` | Quét font, vá font (ghép dấu, hoặc Be Vietnam Pro khi thiếu chữ gốc), vẽ ảnh xem thử. |
+| `tools/font/` | Quét font, vá font (ghép dấu từ glyph gốc), vẽ ảnh xem thử. |
 | `tools/game_config.py` | Đọc `config.json`, tìm file gốc trước khi vá. |
-| `tools/echo_translate.py` | Hook lúc chơi. Không dùng để thu thập câu. |
 
 ## Bắt đầu
 
@@ -42,7 +40,7 @@ python tools\validate_locale.py games\patapon12-replay
 ```
 
 4. Dịch cột `vi` trong `locale/vi/strings.csv`. Giữ nguyên `id` và `source`.
-5. Vá bundle rồi mở launcher để áp bản dịch:
+5. Mở launcher rồi bấm Áp dụng. Launcher tạo bản vá từ bản cài của ngươi rồi chép vào game:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
@@ -50,7 +48,7 @@ python tools\validate_locale.py games\patapon12-replay
 python -m launcher.app
 ```
 
-File đè để trong `patch/`. Config AutoTranslator nằm sẵn trong đó. Binary chỉ có sau khi chạy `fetch_runtime.py`. Áp dụng trước khi fetch thì game chỉ nhận file config, chưa có BepInEx.
+Game này không dùng BepInEx. Bản vá ghi thẳng vào asset của game (xem `docs/pipeline.md`).
 
 ## Bản quyền
 

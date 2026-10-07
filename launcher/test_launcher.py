@@ -9,7 +9,7 @@ from pathlib import Path
 
 import tkinter as tk
 
-from launcher.apply import apply_pack, inside, install_error, remove_pack
+from launcher.apply import apply_pack, build_dir, inside, install_error, remove_pack, run_build
 from launcher.app import Launcher
 from launcher.catalog import load_games, pack_files
 from launcher.store import Store
@@ -40,6 +40,75 @@ def write_game(root: Path, files: dict[str, str]) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(text, encoding="utf-8")
     (patch / ".gitkeep").write_text("", encoding="utf-8")
+
+
+BUILDER = """
+from pathlib import Path
+
+
+def build(install, out, log):
+    if (install / "broken.flag").exists():
+        raise SystemExit("Bản cài không khớp.")
+    log("đang build")
+    (out / "data").mkdir(parents=True, exist_ok=True)
+    original = (install / "data" / "old.txt").read_text(encoding="utf-8")
+    (out / "data" / "old.txt").write_text(original + "+vi", encoding="utf-8")
+"""
+
+
+class BuildTests(unittest.TestCase):
+    """Game có khóa build: file vá được tạo từ bản cài, không lấy từ patch/."""
+
+    def setUp(self) -> None:
+        self.tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self.tmp.name)
+        write_game(self.root, {"data/stale.txt": "không được áp"})
+        game_dir = self.root / "games" / "demo"
+        manifest = json.loads((game_dir / "game.json").read_text(encoding="utf-8"))
+        manifest["build"] = "build.py"
+        (game_dir / "game.json").write_text(json.dumps(manifest), encoding="utf-8")
+        (game_dir / "build.py").write_text(BUILDER, encoding="utf-8")
+        self.install = self.root / "install"
+        (self.install / "data").mkdir(parents=True)
+        (self.install / "Game.exe").write_text("exe", encoding="utf-8")
+        (self.install / "data" / "old.txt").write_text("old", encoding="utf-8")
+        self.store = Store(self.root / "state")
+        self.game = load_games(self.root)[0]
+
+    def tearDown(self) -> None:
+        self.tmp.cleanup()
+
+    def test_build_then_apply_uses_build_output(self) -> None:
+        lines: list[str] = []
+        result = run_build(self.game, self.install, self.store, lines.append)
+        self.assertTrue(result.ok, result.message)
+        self.assertEqual(lines, ["đang build"])
+        self.assertTrue((build_dir(self.game, self.store) / "data" / "old.txt").is_file())
+        applied = apply_pack(self.game, self.install, self.store)
+        self.assertTrue(applied.ok, applied.message)
+        self.assertEqual((self.install / "data" / "old.txt").read_text(encoding="utf-8"), "old+vi")
+        self.assertFalse((self.install / "data" / "stale.txt").exists())
+        removed = remove_pack(self.game, self.install, self.store)
+        self.assertTrue(removed.ok)
+        self.assertEqual((self.install / "data" / "old.txt").read_text(encoding="utf-8"), "old")
+
+    def test_build_error_is_reported(self) -> None:
+        (self.install / "broken.flag").write_text("", encoding="utf-8")
+        result = run_build(self.game, self.install, self.store, lambda _line: None)
+        self.assertFalse(result.ok)
+        self.assertIn("không khớp", result.message)
+
+    def test_build_restores_environment(self) -> None:
+        import os
+
+        os.environ.pop("VH_STATE_DIR", None)
+        result = run_build(self.game, self.install, self.store, lambda _line: None)
+        self.assertTrue(result.ok, result.message)
+        self.assertNotIn("VH_STATE_DIR", os.environ)
+
+    def test_build_refuses_wrong_install(self) -> None:
+        result = run_build(self.game, self.root / "nowhere", self.store, lambda _line: None)
+        self.assertFalse(result.ok)
 
 
 class ApplyTests(unittest.TestCase):
@@ -105,9 +174,10 @@ class ApplyTests(unittest.TestCase):
         games = load_games(repo)
         patapon = next(game for game in games if game.id == "patapon12-replay")
         self.assertEqual(patapon.exe, "PATAPON12_REPLAY.exe")
-        names = {relative.as_posix() for _, relative in pack_files(patapon)}
-        self.assertIn("BepInEx/config/AutoTranslatorConfig.ini", names)
-        self.assertNotIn(".gitkeep", names)
+        # Patapon tạo bản vá trên máy người chơi, không lấy từ patch/.
+        self.assertIsNotNone(patapon.build)
+        self.assertTrue(patapon.build.is_file())
+        self.assertEqual(patapon.build.name, "build_patch.py")
         self.assertTrue(any("PATAPON12_REPLAY" in str(hint) for hint in patapon.hints))
 
 

@@ -16,6 +16,7 @@ class Game:
     exe: str | None
     detect: tuple[str, ...]
     hints: tuple[Path, ...]
+    build: Path | None = None
 
     @property
     def patch_dir(self) -> Path:
@@ -33,6 +34,7 @@ def load_games(repo: Path) -> list[Game]:
         game_id = str(data.get("id") or root.name).strip()
         detect = tuple(str(item) for item in data.get("detect") or [] if str(item).strip())
         exe = data.get("exe")
+        build = str(data.get("build") or "").strip()
         found.append(
             Game(
                 id=game_id,
@@ -42,6 +44,7 @@ def load_games(repo: Path) -> list[Game]:
                 exe=str(exe).strip() if exe else None,
                 detect=detect,
                 hints=tuple(_hints(root)),
+                build=root / build if build else None,
             )
         )
     return found
@@ -65,9 +68,12 @@ def _hints(root: Path) -> list[Path]:
 _PACK_DOTFILES = {".doorstop_version"}
 
 
-def pack_files(game: Game) -> list[tuple[Path, Path]]:
-    """File trong patch/. Trả (nguồn, đường dẫn tương đối)."""
-    patch = game.patch_dir
+def pack_files(game: Game, source: Path | None = None) -> list[tuple[Path, Path]]:
+    """File đè lên bản cài. Trả (nguồn, đường dẫn tương đối).
+
+    Mặc định đọc patch/ của game. Game có bước build thì đọc thư mục build truyền vào.
+    """
+    patch = source or game.patch_dir
     if not patch.is_dir():
         return []
     files: list[tuple[Path, Path]] = []

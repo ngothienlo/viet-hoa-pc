@@ -157,6 +157,15 @@ class ComposerTest(unittest.TestCase):
         self.assertGreaterEqual(mark.bottom, native.shape("a").top - 0.5)
         self.assertLess(mark.width, accented.width)
 
+    def test_uppercase_only_font_borrows_base_letters(self) -> None:
+        """Như _savewindow: chỉ có vài chữ hoa, mượn chữ gốc, số đo và dấu của donor."""
+        donor = Composer(self.tree, self.atlas)
+        tree, atlas = fake_font("ACDEGHILMNOPRSTUVW")
+        composer = Composer(tree, atlas, donor)
+        result = composer.build(["Ư", "Đ", "Ý", "ư"])
+        self.assertEqual(result["skipped"], [])
+        self.assertEqual(sorted(result["added"]), sorted(["Ư", "Đ", "Ý", "ư"]))
+
     def test_nfc_output(self) -> None:
         for ch in vietnamese_letters():
             self.assertEqual(unicodedata.normalize("NFC", ch), ch)

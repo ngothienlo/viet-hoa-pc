@@ -124,17 +124,29 @@ class Composer:
             for item in tree["m_CharacterTable"]
             if item["m_GlyphIndex"] in glyphs
         }
-        x_height = self.by_char["x"]["m_Metrics"]["m_HorizontalBearingY"]
-        cap = self.by_char["H"]["m_Metrics"]["m_HorizontalBearingY"]
-        self.x_height = float(x_height)
-        self.cap = float(cap)
+        self.x_height = float(self.metrics("x")["m_HorizontalBearingY"])
+        self.cap = float(self.metrics("H")["m_HorizontalBearingY"])
+
+    def has(self, ch: str) -> bool:
+        """Font có chữ này, hoặc mượn được của donor."""
+        return ch in self.by_char or (self.donor is not None and ch in self.donor.by_char)
+
+    def metrics(self, ch: str) -> dict:
+        """Số đo của chữ, mượn của donor (đã co theo cỡ mẫu) nếu font không có."""
+        if ch in self.by_char:
+            return dict(self.by_char[ch]["m_Metrics"])
+        if self.donor is not None and ch in self.donor.by_char:
+            ratio = self.point / self.donor.point
+            return {key: value * ratio for key, value in self.donor.by_char[ch]["m_Metrics"].items()}
+        raise KeyError(ch)
 
     # Đọc hình từ atlas -------------------------------------------------
 
     def shape(self, ch: str) -> Shape:
         if ch not in self.by_char and self.donor is not None and ch in self.donor.by_char:
+            ratio = self.point / self.donor.point
             borrowed = self.donor.shape(ch)
-            return borrowed.scaled(self.point / self.donor.point)
+            return Shape(borrowed.scaled(ratio).mask, borrowed.left * ratio, borrowed.top * ratio)
         glyph = self.by_char[ch]
         rect = glyph["m_GlyphRect"]
         metrics = glyph["m_Metrics"]
@@ -208,14 +220,14 @@ class Composer:
         if name == GRAVE:
             return self.shape("`")
         if name == ACUTE:
-            if "´" in self.by_char or (self.donor is not None and "´" in self.donor.by_char):
+            if self.has("´"):
                 return self.shape("´")
             grave = self.shape("`")
             return Shape(np.fliplr(grave.mask), grave.left, grave.top)
         if name == CIRCUMFLEX:
             return self.shape("^").scaled(0.72)
         if name == TILDE:
-            tilde = self.shape("~" if self._has("~") else "˜")
+            tilde = self.shape("~" if self.has("~") else "˜")
             return tilde.scaled(20 * u / tilde.width, 9 * u / tilde.height)
         if name == HOOK:
             hook = self.shape("?")
@@ -250,9 +262,6 @@ class Composer:
 
     # Ghép -------------------------------------------------------------
 
-    def _has(self, ch: str) -> bool:
-        return ch in self.by_char or (self.donor is not None and ch in self.donor.by_char)
-
     def above(self, name: str, upper: bool, shrink: float) -> Shape:
         """Dấu trên đầu chữ. Có dấu gốc của font thì dùng, khỏi co."""
         native = self.native_mark(name, upper)
@@ -269,8 +278,7 @@ class Composer:
         first = angle.moved(left, top)
         second = angle.moved(left + angle.width * 0.8, top)
         merged = _union([first, second])
-        source = self.by_char.get(GUILLEMETS[ch]) or self.by_char["a"]
-        metrics = dict(source["m_Metrics"])
+        metrics = self.metrics(GUILLEMETS[ch] if self.has(GUILLEMETS[ch]) else "a")
         metrics["m_HorizontalAdvance"] = max(metrics["m_HorizontalAdvance"], merged.right + 2 * u)
         return merged, metrics
 
@@ -281,7 +289,7 @@ class Composer:
         if steps is None:
             return None
         base_ch, marks = steps
-        if base_ch not in self.by_char:
+        if not self.has(base_ch):
             return None
         u = self.unit
         upper = base_ch.isupper()
@@ -329,7 +337,7 @@ class Composer:
                 parts.append(sign.moved(shelf.right - 1.0 * u, shelf.top + sign.height * 0.55))
 
         merged = _union(parts)
-        metrics = dict(self.by_char[base_ch]["m_Metrics"])
+        metrics = self.metrics(base_ch)
         if HORN in marks:
             # Râu chìa ra phải. Nới bước chữ để không đè chữ sau.
             metrics["m_HorizontalAdvance"] = max(metrics["m_HorizontalAdvance"], merged.right + 1.0 * u)
