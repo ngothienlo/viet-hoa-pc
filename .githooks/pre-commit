@@ -1,0 +1,9 @@
+#!/bin/sh
+# Chặn commit khi đang đứng trên nhánh được bảo vệ.
+. "$(dirname "$0")/protected-branches.sh"
+
+branch=$(git symbolic-ref --short -q HEAD) || exit 0
+if is_protected "$branch"; then
+  refuse "không commit thẳng lên '$branch'."
+fi
+exit 0

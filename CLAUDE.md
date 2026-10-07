@@ -5,6 +5,7 @@
 ## Quick Reference
 
 ```powershell
+git config core.hooksPath .githooks
 .\.venv\Scripts\Activate.ps1
 python tools\validate_locale.py
 python tools\validate_locale.py games\patapon12-replay
@@ -52,7 +53,7 @@ Việc làm theo nhu cầu nằm trong `.grok/skills/`. Không chép checklist �
 
 ### Luật
 
-1. **Không commit thẳng lên `main`.** Mọi thay đổi đi qua nhánh và PR.
+1. **Không commit thẳng lên `main`.** Mọi thay đổi đi qua nhánh và PR. Hook trong `.githooks/` chặn commit và push thẳng lên `main`, `master`, `staging`; bật bằng `git config core.hooksPath .githooks`. Không dùng `--no-verify`. Chi tiết: `docs/technical/git-hooks.md`.
 2. **Một game một thư mục** `games/<id>/`. Không để chuỗi, thuật ngữ, hoặc config của game này trong thư mục game kia.
 3. **Không commit** thư mục cài game, `*.bundle`, `*.assets`, `*.usme`, `global-metadata.dat`, `GameAssembly.dll`, `extract/`, `build/`, `dist/`, `config.json`, `.venv/`.
 4. Trước `checkout --`, `reset --hard`, `clean -fd`, hoặc `stash drop`: chạy `git status`. Không xóa `extract/` hoặc `config.json` đang chưa commit.
@@ -89,6 +90,8 @@ Khi đổi CSV hoặc `tools/validate_locale.py`, lệnh này phải qua trướ
 ```powershell
 .\.venv\Scripts\python.exe tools\validate_locale.py
 ```
+
+Khi đổi `.githooks/`, chạy thêm `.\.venv\Scripts\python.exe tools\test_git_hooks.py`.
 
 Khi đổi `launcher/`, chạy thêm:
 

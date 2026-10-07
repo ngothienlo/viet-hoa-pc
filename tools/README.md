@@ -23,3 +23,5 @@ Script báo:
 - lệch placeholder, thẻ rich text hoặc `\n` giữa câu gốc và câu Việt
 
 Dòng có `id` bắt đầu bằng `EXAMPLE` được bỏ qua. Mã thoát 0 khi mọi game được chỉ định đều hợp lệ, mã 1 khi có lỗi.
+
+`test_git_hooks.py` kiểm tra hook trong `.githooks/` bằng repo tạm. Xem `docs/technical/git-hooks.md`.
