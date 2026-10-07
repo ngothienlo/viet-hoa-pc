@@ -68,24 +68,36 @@ def build(install: Path, out: Path, log: Callable[[str], None] | None = None) ->
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
-    os.environ["VH_INSTALL_DIR"] = str(install)
-    os.environ["VH_PATCH_DIR"] = str(out)
-    for name in MODULES:
-        sys.modules.pop(name, None)
     for folder in (FONT_TOOLS, TOOLS):
         if str(folder) not in sys.path:
             sys.path.insert(0, str(folder))
 
     stream = _Lines(log)
-    with contextlib.redirect_stdout(stream):
-        import apply_locale_patch
-        import apply_vietnamese_font
+    saved = {key: os.environ.get(key) for key in ("VH_INSTALL_DIR", "VH_PATCH_DIR")}
+    os.environ["VH_INSTALL_DIR"] = str(install)
+    os.environ["VH_PATCH_DIR"] = str(out)
+    try:
+        # Module của game đọc đường dẫn lúc import, nên nạp lại sau khi đặt biến môi trường.
+        for name in MODULES:
+            sys.modules.pop(name, None)
+        with contextlib.redirect_stdout(stream):
+            import apply_locale_patch
+            import apply_vietnamese_font
 
-        log("Ghi câu tiếng Việt vào LocalizeData...")
-        apply_locale_patch.main()
-        log("Ghép chữ Việt vào font của game...")
-        apply_vietnamese_font.build_fonts()
-    stream.flush()
+            log("Ghi câu tiếng Việt vào LocalizeData...")
+            apply_locale_patch.main()
+            log("Ghép chữ Việt vào font của game...")
+            apply_vietnamese_font.build_fonts()
+    finally:
+        stream.flush()
+        for key, old in saved.items():
+            if old is None:
+                os.environ.pop(key, None)
+            else:
+                os.environ[key] = old
+        # Không để module mang đường dẫn của lần build này cho lần sau.
+        for name in MODULES:
+            sys.modules.pop(name, None)
 
 
 def main() -> int:

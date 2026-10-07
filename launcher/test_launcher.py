@@ -98,6 +98,14 @@ class BuildTests(unittest.TestCase):
         self.assertFalse(result.ok)
         self.assertIn("không khớp", result.message)
 
+    def test_build_restores_environment(self) -> None:
+        import os
+
+        os.environ.pop("VH_STATE_DIR", None)
+        result = run_build(self.game, self.install, self.store, lambda _line: None)
+        self.assertTrue(result.ok, result.message)
+        self.assertNotIn("VH_STATE_DIR", os.environ)
+
     def test_build_refuses_wrong_install(self) -> None:
         result = run_build(self.game, self.root / "nowhere", self.store, lambda _line: None)
         self.assertFalse(result.ok)
@@ -166,9 +174,10 @@ class ApplyTests(unittest.TestCase):
         games = load_games(repo)
         patapon = next(game for game in games if game.id == "patapon12-replay")
         self.assertEqual(patapon.exe, "PATAPON12_REPLAY.exe")
-        names = {relative.as_posix() for _, relative in pack_files(patapon)}
-        self.assertIn("BepInEx/config/AutoTranslatorConfig.ini", names)
-        self.assertNotIn(".gitkeep", names)
+        # Patapon tạo bản vá trên máy người chơi, không lấy từ patch/.
+        self.assertIsNotNone(patapon.build)
+        self.assertTrue(patapon.build.is_file())
+        self.assertEqual(patapon.build.name, "build_patch.py")
         self.assertTrue(any("PATAPON12_REPLAY" in str(hint) for hint in patapon.hints))
 
 

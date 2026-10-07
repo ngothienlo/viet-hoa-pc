@@ -11,6 +11,7 @@ from pathlib import Path
 import tkinter as tk
 from tkinter import filedialog
 
+from launcher import __version__
 from launcher.apply import apply_pack, install_error, remove_pack, run_build
 from launcher.catalog import Game, load_games, pack_files
 from launcher.store import Store, default_state_dir
@@ -48,7 +49,7 @@ class Launcher:
             self.select(self.games[0].id)
 
     def _build(self) -> None:
-        self.root.title("Việt hóa")
+        self.root.title(f"Việt hóa {__version__}")
         self.root.configure(bg=BG)
         self.root.minsize(860, 560)
         self.root.geometry("980x640")
@@ -418,6 +419,84 @@ def build_only(repo: Path | None = None) -> int:
             log(result.message)
             failed += not result.ok
     return 1 if failed else 0
+
+
+def ui_test(repo: Path | None = None) -> int:
+    """Mở cửa sổ thật, bấm nút Áp dụng của game có bước build, chờ xong, chụp cửa sổ.
+
+    Kiểm tra đúng đường người chơi đi trong bản exe: nút, luồng nền, tiến độ, kết quả.
+    Ghi `ui-test.log` và `ui-test.png` vào thư mục state. Mã thoát 0 khi áp thành công.
+    """
+    try:
+        ctypes.windll.shcore.SetProcessDpiAwareness(1)
+    except (AttributeError, OSError):
+        pass
+    store = Store(default_state_dir())
+    store.state_dir.mkdir(parents=True, exist_ok=True)
+    root = tk.Tk()
+    app = Launcher(root, repo or Path(__file__).resolve().parents[1])
+    lines: list[str] = []
+    outcome = {"ok": False}
+
+    def note(text: str) -> None:
+        if not lines or lines[-1] != text:
+            lines.append(text)
+
+    target = next(
+        (
+            game
+            for game in app.games
+            if game.build is not None
+            and install_error(game, Path(app.store.install_path(game.id) or ".")) is None
+        ),
+        None,
+    )
+    if target is None:
+        note("Không có game nào có bước build và thư mục cài hợp lệ.")
+        root.destroy()
+    else:
+        app.select(target.id)
+        root.attributes("-topmost", True)
+
+        def finish() -> None:
+            status = app.status_label.cget("text")
+            note(f"kết thúc: {status}")
+            note(f"nhãn game: {app.rows[target.id].badge.cget('text')}")  # type: ignore[attr-defined]
+            outcome["ok"] = app.status_label.cget("fg") == OK and status.startswith("Đã áp")
+            try:
+                from PIL import ImageGrab
+
+                root.update()
+                x, y = root.winfo_rootx(), root.winfo_rooty()
+                box = (x, y, x + root.winfo_width(), y + root.winfo_height())
+                ImageGrab.grab(bbox=box).save(store.state_dir / "ui-test.png")
+            except Exception as exc:  # noqa: BLE001 - ảnh chỉ để xem, không quyết định kết quả
+                note(f"không chụp được cửa sổ: {exc}")
+            root.destroy()
+
+        def wait() -> None:
+            note(app.status_label.cget("text"))
+            if app.busy:
+                root.after(200, wait)
+            else:
+                root.after(500, finish)
+
+        def press() -> None:
+            note(f"game: {target.title}")
+            note(f"trước khi bấm: {app.status_label.cget('text')}")
+            if str(app.apply_button.cget("state")) != "normal":
+                note("nút Áp dụng đang tắt")
+                root.destroy()
+                return
+            app.apply_button.invoke()
+            if not app.busy:
+                note("bấm nút nhưng không có build chạy")
+            root.after(200, wait)
+
+        root.after(1500, press)
+        root.mainloop()
+    (store.state_dir / "ui-test.log").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return 0 if outcome["ok"] else 1
 
 
 def run(repo: Path | None = None) -> None:

@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
+import contextlib
 import importlib.util
 import json
 import os
 import shutil
+import threading
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -33,6 +35,25 @@ def install_error(game: Game, install: Path | None) -> str | None:
     return None
 
 
+# Mỗi lần chỉ một build: script build đặt biến môi trường và nạp lại module của game.
+_BUILD_LOCK = threading.Lock()
+
+
+@contextlib.contextmanager
+def scoped_env(values: dict[str, str]):
+    """Đặt biến môi trường trong khối with, rồi trả lại giá trị cũ."""
+    saved = {key: os.environ.get(key) for key in values}
+    os.environ.update(values)
+    try:
+        yield
+    finally:
+        for key, old in saved.items():
+            if old is None:
+                os.environ.pop(key, None)
+            else:
+                os.environ[key] = old
+
+
 def build_dir(game: Game, store: Store) -> Path:
     return store.state_dir / "build" / game.id
 
@@ -55,13 +76,13 @@ def run_build(game: Game, install: Path, store: Store, log: Callable[[str], None
         return Result(False, error)
     if not game.build.is_file():
         return Result(False, f"Không thấy script build: {game.build.name}")
-    os.environ["VH_STATE_DIR"] = str(store.state_dir)
     try:
-        spec = importlib.util.spec_from_file_location(f"vh_build_{game.id.replace('-', '_')}", game.build)
-        module = importlib.util.module_from_spec(spec)
-        assert spec.loader is not None
-        spec.loader.exec_module(module)
-        module.build(install, build_dir(game, store), log)
+        with _BUILD_LOCK, scoped_env({"VH_STATE_DIR": str(store.state_dir)}):
+            spec = importlib.util.spec_from_file_location(f"vh_build_{game.id.replace('-', '_')}", game.build)
+            module = importlib.util.module_from_spec(spec)
+            assert spec.loader is not None
+            spec.loader.exec_module(module)
+            module.build(install, build_dir(game, store), log)
     except SystemExit as exc:
         return Result(False, str(exc) or "Không tạo được bản vá.")
     except Exception as exc:  # noqa: BLE001 - lỗi nào cũng phải hiện lên cửa sổ
