@@ -6,7 +6,7 @@ Game dùng Unity IL2CPP và Addressables. Ngôn ngữ chính thức không có t
 
 ## Trạng thái
 
-Đã có bản nháp tiếng Việt cho phần lớn 127804 câu, `status` là `draft`. Bản vá ghi các câu đó vào bốn bundle `LocalizeData`. Menu tựa vẫn là ảnh. Chưa có font nên dấu tiếng Việt có thể thành ô vuông.
+Đã có bản tiếng Việt viết tay cho bảng chuỗi. Bản vá ghi các câu đó vào bốn bundle `LocalizeData`, và thay font Latin bằng Be Vietnam Pro. Menu tựa vẫn là ảnh.
 
 ## Trong thư mục này
 
@@ -16,10 +16,12 @@ Game dùng Unity IL2CPP và Addressables. Ngôn ngữ chính thức không có t
 | `docs/pipeline.md` | Chữ nằm ở đâu, trích và đóng gói trên máy. |
 | `docs/thuat-ngu.md` | Tên riêng và nhịp trống. |
 | `docs/van-phong.md` | Văn phong tiếng Việt của game này. |
-| `config.example.json` | Mẫu đường dẫn Steam / Epic. |
+| `config.example.json` | Mẫu đường dẫn Steam / Epic và file font. |
 | `runtime.lock.json` | URL và sha256 của BepInEx và AutoTranslator. |
 | `tools/fetch_runtime.py` | Tải hai gói đó vào `patch/`. |
 | `tools/extract_strings.py` | Trích hết câu tiếng Anh từ `LocalizeData` vào CSV. |
+| `tools/translate_rhythm.py` | Ghi câu hướng dẫn nhịp viết tay vào CSV. |
+| `tools/font/` | Nướng atlas Be Vietnam Pro và vá font Latin trong `sharedassets`. |
 | `tools/echo_translate.py` | Hook lúc chơi. Không dùng để thu thập câu. |
 
 ## Bắt đầu
