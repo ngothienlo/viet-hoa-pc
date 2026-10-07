@@ -21,6 +21,7 @@ Game dùng Unity IL2CPP và Addressables. Ngôn ngữ chính thức không có t
 | `tools/fetch_runtime.py` | Tải hai gói đó vào `patch/`. |
 | `tools/extract_strings.py` | Trích hết câu tiếng Anh từ `LocalizeData` vào CSV. |
 | `tools/translate_rhythm.py` | Ghi câu hướng dẫn nhịp viết tay vào CSV. |
+| `tools/apply_fixes.py` | Gộp file sửa bản dịch (JSON) vào CSV, có kiểm tra `/`, mã màu, placeholder. |
 | `docs/font.md` | Font nào vẽ chữ gì, cách vá, lệnh, bẫy. |
 | `tools/font/fonts.json` | Danh sách TMP Font Asset đã quét. Đọc file này, không quét lại game. |
 | `tools/font/` | Quét font, vá font (ghép dấu, hoặc Be Vietnam Pro khi thiếu chữ gốc), vẽ ảnh xem thử. |
