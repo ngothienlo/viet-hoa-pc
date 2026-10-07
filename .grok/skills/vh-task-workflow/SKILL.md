@@ -67,4 +67,11 @@ Thân PR gồm Problem, Technical Solution, Files Changed, Testing. Dùng `.gith
 
 Đăng review lên PR, không chỉ ghi trong chat. Nói đúng chỗ nào, chỗ dễ lệch, và test nào đã chạy. Tách lỗi do PR này với lỗi có sẵn từ trước.
 
+Việc phát sinh sau khi đã đăng review:
+
+- Lỗi do chính PR này gây ra: sửa trên PR này, rồi comment lên PR nói đã sửa gì.
+- Lỗi có sẵn từ trước, hoặc việc mở rộng phạm vi: không đẩy thêm vào PR đã review, kể cả khi người dùng bảo «sửa luôn». Tạo issue mới, nhánh mới từ `main`, PR mới, rồi đi lại từ bước 1. Ghi trong issue mới là việc này phát sinh từ review của PR nào.
+
 ## 9. Hỏi trước khi merge
+
+Trước khi merge, xem trạng thái PR (`gh pr view`). Nếu PR có commit mới sau lần review, hoặc sau lần người dùng đồng ý merge, thì hỏi lại người dùng.
