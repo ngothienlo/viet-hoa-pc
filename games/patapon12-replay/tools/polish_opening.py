@@ -10,9 +10,9 @@ CSV_PATH = Path(__file__).resolve().parents[1] / "locale" / "vi" / "strings.csv"
 # Khóa là câu gốc, đúng từng ký tự.
 HAND = {
     "&S0#Once upon a time,": "&S0#Ngày xửa ngày xưa,",
-    "&S0#the Patapon Ancients,/by the power of the Mighty One's drum,": "&S0#tổ tiên Patapon,/nhờ sức trống của Người Chỉ Huy,",
-    "&S0#gained Wisdom, Courage,/Strength and Secret Juju.": "&S0#đạt được Trí tuệ, Dũng khí,/Sức mạnh và Juju bí mật.",
-    "&S0#The Patapon Ancients,/guided by Great Mighty Patapon,": "&S0#tổ tiên Patapon,/được Người Chỉ Huy dẫn đường,",
+    "&S0#the Patapon Ancients,/by the power of the Mighty One's drum,": "&S0#dân Patapon cổ đại,/nhờ quyền năng chiếc trống của Người Chỉ Huy,",
+    "&S0#gained Wisdom, Courage,/Strength and Secret Juju.": "&S0#lĩnh hội Trí tuệ, Dũng khí,/Sức mạnh và Juju bí truyền.",
+    "&S0#The Patapon Ancients,/guided by Great Mighty Patapon,": "&S0#dân Patapon cổ đại ấy,/được Người Chỉ Huy dẫn dắt,",
     "&S0#ventured to Earthend,/in search of IT.": "&S0#tiến tới Earthend,/đi tìm IT.",
     "&S0#For the all powerful Patapons,/no foe was too mighty,": "&S0#Patapon toàn năng ấy,/không kẻ thù nào quá mạnh,",
     "&S0#no treasure out of reach,/and no land unconquerable.": "&S0#không báu vật nào ngoài tầm,/không vùng đất nào không chinh phục.",
