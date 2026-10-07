@@ -1,42 +1,58 @@
 # Pipeline
 
-Thư mục game này là `games/patapon12-replay/`. Đường dẫn CSV và docs bên dưới tính từ đó. Lệnh kiểm tra chạy từ thư mục gốc repo.
+Thư mục game này là `games/patapon12-replay/`. Lệnh chạy từ thư mục gốc repo.
 
-Làm trên bản cài hợp pháp. Steam và Epic dùng cùng cấu trúc thư mục cài. Đường dẫn ghi trong `config.json`.
+Làm trên bản cài hợp pháp. Steam và Epic dùng cùng cấu trúc thư mục cài.
 
 ## Chữ nằm ở đâu
 
 - Catalog Addressables: `PATAPON12_REPLAY_Data/StreamingAssets/aa/catalog.json`
 - Bundle: `PATAPON12_REPLAY_Data/StreamingAssets/aa/StandaloneWindows64/`
-- Catalog khai báo provider bundle đã mã hóa và provider CRIWARE. Vì vậy không sửa chuỗi bằng cách mở file text.
-- Bản dịch fan đã có (Nga, Bồ Đào Nha Brazil) thay một số bundle trong `StandaloneWindows64`, rồi chọn một ngôn ngữ có sẵn trong game để chữ mới hiện ra.
-- Phim mở đầu và staff roll nằm ở `StreamingAssets/P1/Movie` và `StreamingAssets/P2/Movie` dạng `.usme`. Để sau.
+- Hội thoại, menu, tips và trợ giúp nằm trong `LocalizeData.asset` của P1, P1S, P2, P2S. `TipsData.asset` chỉ là tên sprite, không có câu.
+- Bundle bị mã hóa bằng AES. Mật khẩu là `m_Hash` trong catalog. Salt là tên file bundle, bỏ đuôi. Giải xong thì UnityPy đọc được typetree của `LocalizeData`.
+- Mục `Localize/<ngôn ngữ>` trên catalog chủ yếu là ảnh title, tips và logo. Những ảnh đó để sau.
+- Phim `.usme` để sau.
 
-## Việc làm trên máy
+## Trích câu
 
-1. Copy `config.example.json` thành `config.json`.
-2. Trích chuỗi từ bản cài bằng công cụ đọc asset Unity (UABEA hoặc AssetStudio). Để kết quả thô trong `extract/`. Thư mục này bị git bỏ qua.
-3. Nguồn dịch là tiếng Anh. Đối chiếu tiếng Nhật khi câu Anh tối nghĩa.
-4. Đưa từng khóa vào `locale/vi/strings.csv`.
-5. Từ thư mục gốc repo, chạy `python tools/validate_locale.py games/patapon12-replay`.
-6. Đặt file đè vào `patch/`, giữ đường dẫn tương đối với thư mục cài. Mở `python -m launcher.app`, chọn game này và bấm Áp dụng. Không commit bundle. Gỡ cũng từ launcher.
+Không chơi game để bắt câu. Một lệnh đọc hết bảng tiếng Anh:
 
-## Cột trong `strings.csv`
+```powershell
+.\.venv\Scripts\python.exe -m pip install UnityPy pycryptodome
+.\.venv\Scripts\python.exe games\patapon12-replay\tools\extract_strings.py
+```
 
-| Cột | Ý nghĩa |
-| --- | --- |
-| `id` | Khóa ổn định, duy nhất. Giữ nguyên khóa của game khi trích được. |
-| `context` | Màn hình hoặc nhóm: `ui`, `item`, `dialog`, `help`. |
-| `source` | Câu gốc tiếng Anh. |
-| `vi` | Câu tiếng Việt. Để trống khi chưa dịch. |
-| `status` | `todo`, `draft`, `review`, `done`. |
-| `note` | Giới hạn chữ, biến số, chỗ câu dễ lệch nghĩa. |
+Script ghi `locale/vi/strings.csv`. Cột `source` là tiếng Anh. `vi` để trống, `status` là `todo`. Id có dạng `P1.mission.missionid_0010.line.0`, `P2.colony.3`, `P1.system.0`. P1 và P1S dùng chung số câu. P2 và P2S cũng vậy, nhưng id khác nhau vì game tải riêng.
 
-Dòng có `id` bắt đầu bằng `EXAMPLE` chỉ để minh họa định dạng. Xóa trước khi dịch thật.
+Bản trích có 127804 câu. Câu gốc khác nhau chỉ 4691, vì P1S trùng P1, P2S trùng P2, và nhiều khẩu lệnh lặp lại.
+
+Bản nháp tiếng Việt do một lô dịch: câu lệnh và nút chính được chốt tay, phần còn lại dịch một lần rồi gắn cho mọi dòng trùng. `status` là `draft`. Câu trong bảng EN mà thực ra là tiếng Nhật vẫn `todo`. Chưa đọc trên màn hình game, nên chưa lên `review`.
+
+## Áp vào game
+
+Bản dịch ghi đè tiếng Anh trong `LocalizeData.asset`, rồi mã hóa lại đúng bốn bundle. Launcher chép các bundle đó lên bản cài. Không dùng BepInEx.
+
+```powershell
+.\.venv\Scripts\python.exe games\patapon12-replay\tools\apply_locale_patch.py
+python -m launcher.app
+```
+
+Menu tựa, logo và tips vẽ sẵn vẫn là ảnh tiếng Anh. Chữ hội thoại và menu chữ nằm trong asset. Font game chưa có dấu tiếng Việt, nên một số chữ có thể thành ô vuông.
+
+## Đã chạy thử
+
+Bản Steam đã được áp. Log BepInEx ghi Unity 2022.3.52f1, BepInEx 6.0.0-be.738, AutoTranslator 5.6.2. Chainloader chạy xong. Plugin báo TextMesh Pro 1.4.0. Hook `TMP_Text.set_text` và `SetText` gắn được. Một overload `SetCharArray` không có trong game. Quét lúc đổi scene báo lỗi; chữ đi qua `set_text` vẫn vào hook.
+
+## Font
+
+`OverrideFontTextMeshPro` và `FallbackFontTextMeshPro` để trống. Không điền đường dẫn TTF. Không dùng fallback, vì dấu tiếng Việt sẽ trộn hai font trong một câu. Tên font hệ thống chỉ dùng được từ TextMesh Pro 3.2.0, còn plugin đang báo 1.4.0, nên không đi đường đó. Font dùng được là TMP FontAsset trong asset bundle build bằng Unity 2022.3.52f1. Máy làm việc hiện chưa có Unity Editor đó, nên chữ Việt có thể thành ô vuông cho đến khi có bundle. Bundle build bằng Unity 6 không dùng.
+
+Bản mod Thái trên Nexus chỉ là tài liệu đóng gói. Không copy file của bản đó vào repo.
 
 ## Không commit
 
 - Thư mục cài game, `*.bundle`, `*.assets`, `*.usme`, `global-metadata.dat`, `GameAssembly.dll`
+- Binary đã tải trong `patch/`: `*.dll`, `winhttp.dll`, `doorstop_config.ini`, `dotnet/`
 - `extract/`, `build/`, `dist/`, `config.json`
 
-Bản vá gửi cho máy khác chỉ gồm file đã sửa và hướng dẫn cài. Giữ nguyên file gốc trong một bản sao lưu ngoài git trước khi ghi đè.
+File commit trong `patch/` là config AutoTranslator và thư mục `BepInEx/Translation/`.

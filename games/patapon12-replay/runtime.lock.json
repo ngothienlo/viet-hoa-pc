@@ -1,0 +1,14 @@
+{
+  "archives": [
+    {
+      "id": "bepinex-pack",
+      "url": "https://thunderstore.io/package/download/BepInEx/BepInExPack_Patapon/6.0.75301/",
+      "sha256": "bc23eb69edb164a5ee4c31020642209d38c4b785fd6d9607d9fe9ed9b87b10ae"
+    },
+    {
+      "id": "autotranslator",
+      "url": "https://github.com/bbepis/XUnity.AutoTranslator/releases/download/v5.6.2/XUnity.AutoTranslator-BepInEx-IL2CPP-5.6.2.zip",
+      "sha256": "639392d3ee3c7542cca98c6c04b384deee4961fe965f3d80a4d9c8413884a0f3"
+    }
+  ]
+}

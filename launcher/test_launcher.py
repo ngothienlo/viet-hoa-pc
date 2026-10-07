@@ -92,12 +92,22 @@ class ApplyTests(unittest.TestCase):
         result = apply_pack(self.game, empty, self.store)
         self.assertFalse(result.ok)
 
-    def test_real_repo_lists_patapon_without_pack_files(self) -> None:
+    def test_pack_keeps_doorstop_marker(self) -> None:
+        marker = self.game.patch_dir / ".doorstop_version"
+        marker.write_text("4.3.0", encoding="utf-8")
+        names = {relative.as_posix() for _, relative in pack_files(self.game)}
+        self.assertIn(".doorstop_version", names)
+        self.assertIn("data/old.txt", names)
+        self.assertNotIn(".gitkeep", names)
+
+    def test_real_repo_lists_patapon(self) -> None:
         repo = Path(__file__).resolve().parents[1]
         games = load_games(repo)
         patapon = next(game for game in games if game.id == "patapon12-replay")
         self.assertEqual(patapon.exe, "PATAPON12_REPLAY.exe")
-        self.assertEqual(pack_files(patapon), [])
+        names = {relative.as_posix() for _, relative in pack_files(patapon)}
+        self.assertIn("BepInEx/config/AutoTranslatorConfig.ini", names)
+        self.assertNotIn(".gitkeep", names)
         self.assertTrue(any("PATAPON12_REPLAY" in str(hint) for hint in patapon.hints))
 
 

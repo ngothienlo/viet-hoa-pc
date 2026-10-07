@@ -76,7 +76,8 @@ def check(game_dir: Path) -> int:
                     f"Dòng {line_no} ({key}): placeholder lệch. "
                     f"Gốc {tokens(source)} / Việt {tokens(vi)}"
                 )
-            if vi.strip() and source.strip() == vi.strip():
+            note = (row.get("note") or "").strip()
+            if vi.strip() and source.strip() == vi.strip() and note != "giữ nguyên":
                 warnings.append(f"Dòng {line_no} ({key}): bản dịch giống chuỗi gốc")
 
     shown = csv_path
