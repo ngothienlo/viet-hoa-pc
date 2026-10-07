@@ -15,6 +15,8 @@ Grok nạp skill khi người dùng gõ `/<tên>` hoặc khi câu khớp `descri
 | `vh-add-game` | Tạo `games/<id>/` mới |
 | `vh-font` | Sửa font của một game: ô vuông, lẫn font, thiếu dấu. Đọc `fonts.json` thay vì quét lại game |
 
+`vh-task-workflow` bước 8 và 9 (#13): lỗi có sẵn từ trước và việc mở rộng phạm vi phát sinh sau review đi qua issue, nhánh và PR mới, không đẩy thêm vào PR đã review. PR có commit mới sau lần review, hoặc sau lần người dùng đồng ý merge, thì phải hỏi lại trước khi merge. Lý do: ở PR #12, hai lỗi có từ trước được sửa thẳng trên PR rồi merge luôn.
+
 Skill `pp-task-workflow` và `pp-translate` đã bỏ. Hai skill đó gắn repo với Patapon.
 
 Skill trỏ tới docs của đúng game. Không chép bảng tên riêng, không chép nguyên luật git trong `CLAUDE.md`.
