@@ -37,9 +37,13 @@ Patapon dùng `tools/build_patch.py`. Script đó cần UnityPy và các thư vi
 
 `VietHoa.exe --build-only` (hoặc gọi `launcher.app.build_only()`) chỉ tạo bản vá cho mọi game đã chọn thư mục cài, không mở cửa sổ, không áp lên game, rồi ghi log vào `%LOCALAPPDATA%\viet-hoa-pc\build.log`. Dùng để kiểm tra bản exe, hoặc để người chơi gửi log khi báo lỗi.
 
+`VietHoa.exe --ui-test` (hoặc `launcher.app.ui_test()`) mở cửa sổ thật, chọn game có bước build, bấm nút Áp dụng qua `invoke()`, chờ luồng nền xong, chụp cửa sổ. Ghi `ui-test.log` và `ui-test.png` vào thư mục state. Mã thoát 0 khi trạng thái cuối là «Đã áp …». Lệnh này áp thật lên game.
+
+Biến môi trường `VH_STATE_DIR` (launcher đặt) và `VH_INSTALL_DIR`, `VH_PATCH_DIR` (script build đặt) chỉ tồn tại trong lúc build, xong thì trả lại giá trị cũ. Mỗi lần chỉ một build chạy (khóa trong `launcher/apply.py`), vì script build nạp lại module của game.
+
 ## Ảnh hưởng
 
-Patapon có `game.json` với `build`. `patch/` của Patapon không còn được áp: config AutoTranslator trong đó là di sản của cách dùng BepInEx cũ.
+Patapon có `game.json` với `build`, nên `patch/` của Patapon không được áp. Config BepInEx cũ trong đó đã xóa ở #17.
 
 Game không có `build` vẫn áp `patch/` như cũ.
 

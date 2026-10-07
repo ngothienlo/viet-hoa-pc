@@ -61,13 +61,15 @@ Menu tựa, logo và tips vẽ sẵn vẫn là ảnh tiếng Anh. Chữ hội th
 
 ## Đã chạy thử
 
-Bản Steam đã được áp. Log BepInEx ghi Unity 2022.3.52f1, BepInEx 6.0.0-be.738, AutoTranslator 5.6.2. Chainloader chạy xong. Plugin báo TextMesh Pro 1.4.0. Hook `TMP_Text.set_text` và `SetText` gắn được. Một overload `SetCharArray` không có trong game. Quét lúc đổi scene báo lỗi; chữ đi qua `set_text` vẫn vào hook.
+Bản Steam: Unity 2022.3.52f1, TextMesh Pro 1.4.0. Bản vá ghi thẳng vào asset; người dùng đã chơi thử lời thoại và lời dẫn.
+
+Cách cũ dùng BepInEx và XUnity.AutoTranslator để bắt chữ lúc chơi. Cách đó đã bỏ ở #17: `runtime.lock.json`, `fetch_runtime.py`, `echo_translate.py` và config AutoTranslator trong `patch/` đã xóa khỏi repo. Bản cài từng áp cách cũ có thể còn thư mục `BepInEx/` và `dotnet/`. Không có `winhttp.dll` thì BepInEx không chạy, nhưng có thể xóa hai thư mục đó.
 
 ## Font
 
 Toàn bộ phần font nằm ở `docs/font.md`: font nào vẽ chữ gì, cách vá từng nhóm, lệnh chạy, và bẫy.
 
-Tóm tắt: mọi font Latin (TTake là font kiểu Patapon của lời thoại, TShinGo, KakuPop, Londrina) giữ nét gốc; chữ Việt được ghép từ glyph của chính font đó. Riêng `_savewindow` được thay bằng Be Vietnam Pro vì thiếu chữ gốc để ghép. Không dùng font fallback và không trỏ font hệ thống. Danh sách font đã quét nằm ở `tools/font/fonts.json`.
+Tóm tắt: mọi font Latin (TTake là font kiểu Patapon của lời thoại, TShinGo, KakuPop, Londrina) giữ nét gốc; chữ Việt được ghép từ glyph của chính font đó. Riêng `_savewindow` chỉ có 18 chữ hoa, nên mượn cả chữ gốc của TShinGo. Không dùng font fallback và không trỏ font hệ thống. Danh sách font đã quét nằm ở `tools/font/fonts.json`.
 
 ```powershell
 .\.venv\Scripts\python.exe games\patapon12-replay\tools\font\apply_vietnamese_font.py
@@ -78,7 +80,6 @@ Bản mod Thái trên Nexus chỉ là tài liệu đóng gói. Không copy file 
 ## Không commit
 
 - Thư mục cài game, `*.bundle`, `*.assets`, `*.usme`, `global-metadata.dat`, `GameAssembly.dll`
-- Binary đã tải trong `patch/`: `*.dll`, `winhttp.dll`, `doorstop_config.ini`, `dotnet/`
 - `extract/`, `build/`, `dist/`, `config.json`
 
-File commit trong `patch/` là config AutoTranslator và thư mục `BepInEx/Translation/`.
+`patch/` của game này chỉ còn `.gitkeep`. File vá sinh ra (khi chạy script tay) nằm trong đó nhưng không được commit.
