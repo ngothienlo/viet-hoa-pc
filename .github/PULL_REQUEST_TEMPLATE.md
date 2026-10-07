@@ -27,7 +27,7 @@
 
 - [ ] `.\.venv\Scripts\python.exe tools\validate_locale.py`
 - [ ] `.\.venv\Scripts\python.exe -m launcher.test_launcher` khi đụng `launcher/`
-- [ ] `.\.venv\Scripts\python.exe tools	est_git_hooks.py` khi đụng `.githooks/`
+- [ ] `.\.venv\Scripts\python.exe tools\test_git_hooks.py` khi đụng `.githooks/`
 - [ ] Không đụng CSV hay script kiểm tra; vẫn chạy lệnh trên và ghi kết quả
 
 ## Notes
