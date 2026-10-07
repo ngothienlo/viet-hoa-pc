@@ -12,10 +12,13 @@ from __future__ import annotations
 import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-STAGE = ROOT / "build" / "exe-stage"
+# Stage và thư mục làm việc để ngoài repo: repo có thể nằm trong OneDrive, OneDrive khóa file lúc đồng bộ.
+WORK = Path(tempfile.gettempdir()) / "viet-hoa-pc-build"
+STAGE = WORK / "stage"
 NAME = "VietHoa"
 
 # Script vá của từng game được nạp lúc chạy, nên PyInstaller không tự thấy thư viện
@@ -32,16 +35,32 @@ from Crypto.Cipher import AES  # noqa: F401
 from PIL import Image  # noqa: F401
 '''
 
-ENTRY = '''"""Điểm vào của VietHoa.exe."""
+ENTRY = '''"""Điểm vào của VietHoa.exe. `VietHoa.exe --build-only` chỉ tạo bản vá và ghi build.log."""
+import sys
+
 import vh_deps  # noqa: F401
 
-from launcher.app import run
+from launcher.app import build_only, run
 
+if "--build-only" in sys.argv:
+    sys.exit(build_only())
 run()
 '''
 
 # Gói kèm cả file dữ liệu và DLL của các thư viện có phần native.
-COLLECT = ("UnityPy", "TypeTreeGeneratorAPI", "texture2ddecoder", "etcpak", "astc_encoder", "freetype")
+COLLECT = (
+    "UnityPy",
+    "TypeTreeGeneratorAPI",
+    "texture2ddecoder",
+    "etcpak",
+    "astc_encoder",
+    "freetype",
+    "fmod_toolkit",
+    "pyfmodex",
+    "archspec",
+)
+# Thư viện nặng có thể nằm sẵn trong .venv nhưng không dùng. Loại để exe khỏi phình.
+EXCLUDE = ("torch", "torchvision", "sympy", "matplotlib", "pandas", "IPython", "pytest", "tensorboard")
 
 
 def tracked_game_files() -> list[str]:
@@ -80,9 +99,9 @@ def main() -> int:
         "--distpath",
         str(ROOT / "dist"),
         "--workpath",
-        str(ROOT / "build" / "pyinstaller"),
+        str(WORK / "pyinstaller"),
         "--specpath",
-        str(ROOT / "build"),
+        str(WORK),
         "--paths",
         str(ROOT),
         "--paths",
@@ -92,6 +111,8 @@ def main() -> int:
     ]
     for package in COLLECT:
         args += ["--collect-all", package]
+    for module in EXCLUDE:
+        args += ["--exclude-module", module]
     args.append(str(STAGE / f"{NAME}.py"))
     subprocess.run(args, cwd=ROOT, check=True)
     exe = ROOT / "dist" / f"{NAME}.exe"

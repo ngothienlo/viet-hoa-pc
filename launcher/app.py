@@ -391,6 +391,35 @@ class Launcher:
             row.badge.configure(text=text, fg=color)  # type: ignore[attr-defined]
 
 
+def build_only(repo: Path | None = None) -> int:
+    """Tạo bản vá cho mọi game đã chọn thư mục cài, không mở cửa sổ, không áp lên game.
+
+    Dùng để kiểm tra bản exe, hoặc để người chơi gửi log khi báo lỗi.
+    Log ghi vào `%LOCALAPPDATA%/viet-hoa-pc/build.log`.
+    """
+    store = Store(default_state_dir())
+    store.state_dir.mkdir(parents=True, exist_ok=True)
+    log_path = store.state_dir / "build.log"
+    failed = 0
+    with log_path.open("w", encoding="utf-8") as handle:
+
+        def log(line: str) -> None:
+            handle.write(line + "\n")
+            handle.flush()
+
+        for game in load_games(repo or Path(__file__).resolve().parents[1]):
+            if game.build is None:
+                continue
+            raw = store.install_path(game.id).strip()
+            log(f"== {game.title}: {raw or 'chưa chọn thư mục cài'}")
+            if not raw:
+                continue
+            result = run_build(game, Path(raw), store, log)
+            log(result.message)
+            failed += not result.ok
+    return 1 if failed else 0
+
+
 def run(repo: Path | None = None) -> None:
     try:
         ctypes.windll.shcore.SetProcessDpiAwareness(1)
