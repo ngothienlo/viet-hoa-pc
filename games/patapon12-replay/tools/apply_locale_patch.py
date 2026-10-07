@@ -10,7 +10,6 @@ import sys
 from pathlib import Path
 
 import UnityPy
-from Crypto.Cipher import AES
 
 import extract_strings as ex
 
@@ -39,18 +38,6 @@ def translations() -> dict[str, str]:
             else:
                 table[row["id"]] = source
     return table
-
-
-def key_for(path: Path, hashes: list[bytes]) -> bytes:
-    data = path.read_bytes()[:16]
-    stem = path.stem.encode("ascii")
-    for password in hashes:
-        key = ex.derive_key(password, stem)
-        nonce = (1).to_bytes(8, "little") + b"\x00" * 8
-        head = bytes(a ^ b for a, b in zip(data[:7], AES.new(key, AES.MODE_ECB).encrypt(nonce)))
-        if head == b"UnityFS":
-            return key
-    raise RuntimeError(f"Không giải được {path.name}")
 
 
 def fill(messages: list, product: str, suffix: str, table: dict[str, str]) -> int:
@@ -110,21 +97,17 @@ def fill_english(product: str, english: dict, table: dict[str, str]) -> int:
 
 
 def patch_one(product: str, filename: str, table: dict[str, str], hashes: list[bytes]) -> int:
-    source = ex.BUNDLES / filename
-    cipher = source.read_bytes()
-    key = key_for(source, hashes)
-    env = UnityPy.load(ex.decrypt(cipher, key))
+    source = ex.original_bundle(filename)
+    key = ex.bundle_key(source, hashes)
+    env = ex.open_bundle(source, hashes)
     obj = env.container[ex.ASSETS[product]].deref()
     tree = obj.read_typetree()
     items = tree["items"]
     english = items["m_Values"][items["m_Keys"].index("EN")]
     changed = fill_english(product, english, table)
     obj.save_typetree(tree)
-    plain = next(iter(env.files.values())).save(packer="original")
-    if not plain.startswith(b"UnityFS"):
-        raise RuntimeError(f"{product}: bundle sau khi ghi không phải UnityFS")
-    patched = ex.decrypt(plain, key)
-    check = UnityPy.load(ex.decrypt(patched, key))
+    patched = ex.save_bundle(env, key)
+    check = UnityPy.load(patched if key is None else ex.decrypt(patched, key))
     if ex.ASSETS[product] not in check.container:
         raise RuntimeError(f"{product}: không đọc lại được LocalizeData")
     destination = PATCH_DIR / filename

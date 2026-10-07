@@ -26,6 +26,7 @@ Việc làm theo nhu cầu nằm trong `.grok/skills/`. Không chép checklist �
 | `/vh-task-workflow` | Issue → nhánh → docs → kiểm tra → commit → hỏi trước khi push → PR → review → hỏi trước khi merge |
 | `/vh-translate` | Sửa CSV của một game trong `games/<id>/` |
 | `/vh-add-game` | Thêm `games/<id>/` cho một game mới |
+| `/vh-font` | Sửa ô vuông, lẫn font, thiếu dấu trong font của một game |
 
 ## Git Workflow (MANDATORY)
 
@@ -66,6 +67,7 @@ Sự thật của từng game nằm trong thư mục game đó:
 - Chữ nằm ở đâu: `games/<id>/docs/pipeline.md`
 - Tên riêng: `games/<id>/docs/thuat-ngu.md`
 - Văn phong: `games/<id>/docs/van-phong.md`
+- Font: `games/<id>/docs/font.md`, cách làm chung ở `docs/technical/unity-tmp-font.md`
 - Chuỗi: `games/<id>/locale/vi/strings.csv`
 
 Công cụ dùng chung nằm ở `tools/validate_locale.py` và `launcher/`. Launcher đọc `games/<id>/game.json`, áp file trong `games/<id>/patch/`. Chi tiết: `docs/technical/launcher.md`.

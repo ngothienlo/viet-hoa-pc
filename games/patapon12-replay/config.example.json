@@ -6,5 +6,9 @@
   "installs": {
     "steam": "C:/Program Files (x86)/Steam/steamapps/common/PATAPON12_REPLAY",
     "epic": ""
+  },
+  "fonts": {
+    "regular": "",
+    "bold": ""
   }
 }

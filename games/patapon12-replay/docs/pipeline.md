@@ -9,7 +9,8 @@ Làm trên bản cài hợp pháp. Steam và Epic dùng cùng cấu trúc thư m
 - Catalog Addressables: `PATAPON12_REPLAY_Data/StreamingAssets/aa/catalog.json`
 - Bundle: `PATAPON12_REPLAY_Data/StreamingAssets/aa/StandaloneWindows64/`
 - Hội thoại, menu, tips và trợ giúp nằm trong `LocalizeData.asset` của P1, P1S, P2, P2S. `TipsData.asset` chỉ là tên sprite, không có câu.
-- Bundle bị mã hóa bằng AES. Mật khẩu là `m_Hash` trong catalog. Salt là tên file bundle, bỏ đuôi. Giải xong thì UnityPy đọc được typetree của `LocalizeData`.
+- Bundle bị mã hóa bằng AES. Mật khẩu là `m_Hash` trong catalog. Salt là tên file bundle, bỏ đuôi. Giải xong thì UnityPy đọc được typetree của `LocalizeData`. `extract_strings.py` có `open_bundle` và `save_bundle` để đọc và ghi lại đúng khóa.
+- Script luôn đọc bundle gốc. Launcher đã áp bản vá thì bản gốc nằm trong thư mục sao lưu của launcher (`original()` trong `tools/game_config.py`).
 - Mục `Localize/<ngôn ngữ>` trên catalog chủ yếu là ảnh title, tips và logo. Những ảnh đó để sau.
 - Phim `.usme` để sau.
 
@@ -26,7 +27,13 @@ Script ghi `locale/vi/strings.csv`. Cột `source` là tiếng Anh. `vi` để t
 
 Bản trích có 127804 câu. Câu gốc khác nhau chỉ 4691, vì P1S trùng P1, P2S trùng P2, và nhiều khẩu lệnh lặp lại.
 
-Bản nháp tiếng Việt do một lô dịch: câu lệnh và nút chính được chốt tay, phần còn lại dịch một lần rồi gắn cho mọi dòng trùng. `status` là `draft`. Câu trong bảng EN mà thực ra là tiếng Nhật vẫn `todo`. Chưa đọc trên màn hình game, nên chưa lên `review`.
+Câu viết tay có note `viết tay` và `status` là `review`. Script giữ câu viết tay theo nhóm: `polish_opening.py` cho lời mở đầu và menu, `translate_rhythm.py` cho câu hướng dẫn nhịp trống. Khóa là câu gốc, đúng từng ký tự. Script dừng nếu số dấu `/` lệch, hoặc câu gốc không còn trong CSV. Chạy lại không đổi gì nếu CSV đã có bản dịch đó.
+
+```powershell
+.\.venv\Scripts\python.exe games\patapon12-replay\tools\translate_rhythm.py
+```
+
+Dòng note `dịch máy`, `không dịch`, `nguồn tiếng Nhật` hoặc `lệch placeholder` không vào bundle. Game hiện tiếng Anh ở các dòng đó. Chưa dòng nào lên `done`, vì chưa chơi thử từng màn.
 
 ## Áp vào game
 
@@ -37,7 +44,7 @@ Bản dịch ghi đè tiếng Anh trong `LocalizeData.asset`, rồi mã hóa l�
 python -m launcher.app
 ```
 
-Menu tựa, logo và tips vẽ sẵn vẫn là ảnh tiếng Anh. Chữ hội thoại và menu chữ nằm trong asset. Font game chưa có dấu tiếng Việt, nên một số chữ có thể thành ô vuông.
+Menu tựa, logo và tips vẽ sẵn vẫn là ảnh tiếng Anh. Chữ hội thoại và menu chữ nằm trong asset. Font chữ được vá để chữ Việt hiện đủ dấu và cùng một mặt chữ (xem `docs/font.md`).
 
 ## Đã chạy thử
 
@@ -45,7 +52,13 @@ Bản Steam đã được áp. Log BepInEx ghi Unity 2022.3.52f1, BepInEx 6.0.0-
 
 ## Font
 
-`OverrideFontTextMeshPro` và `FallbackFontTextMeshPro` để trống. Không điền đường dẫn TTF. Không dùng fallback, vì dấu tiếng Việt sẽ trộn hai font trong một câu. Tên font hệ thống chỉ dùng được từ TextMesh Pro 3.2.0, còn plugin đang báo 1.4.0, nên không đi đường đó. Font dùng được là TMP FontAsset trong asset bundle build bằng Unity 2022.3.52f1. Máy làm việc hiện chưa có Unity Editor đó, nên chữ Việt có thể thành ô vuông cho đến khi có bundle. Bundle build bằng Unity 6 không dùng.
+Toàn bộ phần font nằm ở `docs/font.md`: font nào vẽ chữ gì, cách vá từng nhóm, lệnh chạy, và bẫy.
+
+Tóm tắt: mọi font Latin (TTake là font kiểu Patapon của lời thoại, TShinGo, KakuPop, Londrina) giữ nét gốc; chữ Việt được ghép từ glyph của chính font đó. Riêng `_savewindow` được thay bằng Be Vietnam Pro vì thiếu chữ gốc để ghép. Không dùng font fallback và không trỏ font hệ thống. Danh sách font đã quét nằm ở `tools/font/fonts.json`.
+
+```powershell
+.\.venv\Scripts\python.exe games\patapon12-replay\tools\font\apply_vietnamese_font.py
+```
 
 Bản mod Thái trên Nexus chỉ là tài liệu đóng gói. Không copy file của bản đó vào repo.
 

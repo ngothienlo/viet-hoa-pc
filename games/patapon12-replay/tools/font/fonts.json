@@ -1,0 +1,2639 @@
+{
+ "game": "patapon12-replay",
+ "unity": "2022.3.52f1",
+ "catalogSha1": "93e7de7255f5288a5a47658b43da0a560c2472b1",
+ "scanned": "2026-10-07",
+ "note": "Sinh bởi tools/font/inventory.py. Không sửa tay.",
+ "fonts": [
+  {
+   "name": "DF-KakuPop-W5_hcs_tc",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": 1940816920845398973,
+   "chars": 73,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:-3125954323135810627",
+    "width": 1024,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "compose",
+   "why": "font kiểu Patapon, ghép dấu từ glyph gốc",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Regular SDF",
+   "bundle": "88a48bd1ff8c3d05c36234dd5fb30f9c.bundle",
+   "serialized": "CAB-5c2c8949eba27b95193c3ef28fcd6686",
+   "pathId": -2779923817781384253,
+   "chars": 726,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-5c2c8949eba27b95193c3ef28fcd6686:6716478038224481219",
+    "width": 4096,
+    "height": 2048,
+    "padding": 14
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5 SDF_onpu_padding14"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "assetPath": null,
+   "usedBy": {
+    "DE": 1
+   }
+  },
+  {
+   "name": "DF-KakuPop-W5_hcs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 5954931345442982398,
+   "chars": 73,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-2892722555129050626",
+    "width": 1024,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "compose",
+   "why": "font kiểu Patapon, ghép dấu từ glyph gốc",
+   "assetPath": "Assets/Fonts/TextMeshPro/Tips/DF-KakuPop-W5_hcs.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_name",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -5619588427791427792,
+   "chars": 259,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:9034919972705703728",
+    "width": 1024,
+    "height": 1024,
+    "padding": 6
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "compose",
+   "why": "font kiểu Patapon, ghép dấu từ glyph gốc",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/DF-KakuPop-W5_name.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "LondrinaSolid_hcs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -2835810941036657029,
+   "chars": 178,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:6318745894260901499",
+    "width": 1024,
+    "height": 1024,
+    "padding": 12
+   },
+   "fallbacks": [
+    "LondrinaSolid-Regular_tips",
+    "DF-KakuPop-W5_fs",
+    "DF-KakuPop-W5_hcs"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font kiểu Patapon, ghép dấu từ glyph gốc",
+   "assetPath": "Assets/Fonts/TextMeshPro/Tips/LondrinaSolid_hcs.asset",
+   "usedBy": {
+    "FR": 1,
+    "DE": 1,
+    "IT": 1,
+    "ES": 1,
+    "EN": 1
+   }
+  },
+  {
+   "name": "TShinGoPr6-Medium_hcs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -8904045154548630092,
+   "chars": 181,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:8580786170855898548",
+    "width": 1024,
+    "height": 1024,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "assetPath": "Assets/Fonts/TextMeshPro/Common/TShinGoPr6-Medium_hcs.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Regular SDF",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -1143001169658998545,
+   "chars": 726,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-7223677737768218385",
+    "width": 4096,
+    "height": 2048,
+    "padding": 14
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5 SDF_onpu_padding14"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "assetPath": "Assets/Fonts/FontAssets/FR/TShinGoPr6-Regular SDF.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Regular_hcs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 7159630308555411010,
+   "chars": 174,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:8271139557133831746",
+    "width": 1024,
+    "height": 1024,
+    "padding": 14
+   },
+   "fallbacks": [],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "assetPath": "Assets/Fonts/TextMeshPro/Common/TShinGoPr6-Regular_hcs.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "TTakeStd-Bold_hcs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 334604200135147691,
+   "chars": 178,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-3882341611451334485",
+    "width": 1024,
+    "height": 1024,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font kiểu Patapon của lời thoại, ghép dấu từ glyph gốc",
+   "assetPath": "Assets/Fonts/TextMeshPro/Common/TTakeStd-Bold_hcs.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_hcs_sc",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": 4964603605945761520,
+   "chars": 73,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:1275712427279269616",
+    "width": 1024,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "compose",
+   "why": "font kiểu Patapon, ghép dấu từ glyph gốc",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_name_sc",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": -61547311393008822,
+   "chars": 259,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:1549673700096807754",
+    "width": 1024,
+    "height": 1024,
+    "padding": 6
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "compose",
+   "why": "font kiểu Patapon, ghép dấu từ glyph gốc",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Medium SDF_mission",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 373,
+   "chars": 991,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets0.assets:54",
+    "width": 2048,
+    "height": 1024,
+    "padding": 1
+   },
+   "fallbacks": [
+    "DFPGB_Y5 SDF_mission",
+    "DFT_R5 SDF_mission",
+    "NotoSansKR-Medium SDF_mission"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "usedBy": {
+    "common": 1
+   }
+  },
+  {
+   "name": "TShinGoPr6-Medium_launcher_hcs",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 381,
+   "chars": 181,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets0.assets:61",
+    "width": 1024,
+    "height": 512,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "usedBy": {}
+  },
+  {
+   "name": "TTakeStd-Bold_hcs",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 376,
+   "chars": 178,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets0.assets:37",
+    "width": 1024,
+    "height": 1024,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font kiểu Patapon của lời thoại, ghép dấu từ glyph gốc",
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5 SDF_Padding14_Take",
+   "file": "sharedassets1.assets",
+   "serialized": "sharedassets1.assets",
+   "pathId": 832,
+   "chars": 391,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets1.assets:8",
+    "width": 2048,
+    "height": 1024,
+    "padding": 14
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "compose",
+   "why": "font kiểu Patapon, ghép dấu từ glyph gốc",
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Medium SDF",
+   "file": "sharedassets1.assets",
+   "serialized": "sharedassets1.assets",
+   "pathId": 834,
+   "chars": 1600,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets1.assets:50",
+    "width": 4096,
+    "height": 4096,
+    "padding": 14
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5 SDF_onpu_padding14",
+    "DF-KakuPop-W5 SDF_Padding14_Take"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "usedBy": {
+    "common": 8
+   }
+  },
+  {
+   "name": "TTakeStd-Bold SDF",
+   "file": "sharedassets5.assets",
+   "serialized": "sharedassets5.assets",
+   "pathId": 46,
+   "chars": 712,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets5.assets:5",
+    "width": 4096,
+    "height": 2048,
+    "padding": 14
+   },
+   "fallbacks": [
+    "TTakeStd-Bold SDF_fullwidth_number",
+    "DF-KakuPop-W5 SDF_onpu_padding14",
+    "DF-KakuPop-W5 SDF_Padding14_Take"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font kiểu Patapon của lời thoại, ghép dấu từ glyph gốc",
+   "usedBy": {
+    "common": 22
+   }
+  },
+  {
+   "name": "DF-KakuPop-W5_fs_tc",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": 1515008817899174391,
+   "chars": 50,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:-6558332507473577481",
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_padding12_tc1",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": 5291739016380231660,
+   "chars": 42,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:-5484365571460878356",
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_padding4",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": -6142063601724312607,
+   "chars": 42,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:-7264855584340593695",
+    "width": 512,
+    "height": 256,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_padding8",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": -309833090794606324,
+   "chars": 42,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:3519135919496278284",
+    "width": 512,
+    "height": 256,
+    "padding": 8
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_P5_fc_tc",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": 524619536233810574,
+   "chars": 971,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:-8944447903619331442",
+    "width": 4096,
+    "height": 2048,
+    "padding": 12
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5_hcs_tc",
+    "DF-KakuPop-W5_fs_tc",
+    "DF-KakuPop-W5_padding12_tc1",
+    "TShinGoPr6-Medium_launcher_sp"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "TC": 1
+   }
+  },
+  {
+   "name": "DFT_P5_fc_tc_padding4",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": 72610394121072129,
+   "chars": 2021,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:4891018286404890113",
+    "width": 4096,
+    "height": 4096,
+    "padding": 4
+   },
+   "fallbacks": [
+    "DFT_P5_fs_padding4",
+    "DFT_P5_hcs_padding4",
+    "DF-KakuPop-W5_padding4",
+    "DFT_R5_mission_name_star_Asia",
+    "DFT_R5_mission_name_sp_Asia",
+    "DF-KakuPop-W5_name"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "TC": 2
+   }
+  },
+  {
+   "name": "DFT_P5_fc_tc_padding6",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": -2842994714512978507,
+   "chars": 2021,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:7796017532590296501",
+    "width": 4096,
+    "height": 4096,
+    "padding": 6
+   },
+   "fallbacks": [
+    "DFT_P5_fs_padding6",
+    "DFT_P5_hcs_padding6",
+    "DF-KakuPop-W5_padding6",
+    "DFT_R5_mission_name_sp_Asia",
+    "DFT_R5_mission_name_star_Asia",
+    "DF-KakuPop-W5_name"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "TC": 3
+   }
+  },
+  {
+   "name": "DFT_P5_fs_padding4",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": -7291373136508026859,
+   "chars": 90,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:6456444733100326933",
+    "width": 512,
+    "height": 512,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_P5_fs_padding6",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": 1880992572615981892,
+   "chars": 90,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:-2828252400038544572",
+    "width": 1024,
+    "height": 512,
+    "padding": 6
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_P5_hcs_padding4",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": -1631058632695877677,
+   "chars": 89,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:-1666608808910655533",
+    "width": 512,
+    "height": 512,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "chưa có luật, xem lại khi chữ Việt hiện sai",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_P5_hcs_padding6",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": 7225685554406854923,
+   "chars": 89,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:4797291631551877387",
+    "width": 512,
+    "height": 512,
+    "padding": 6
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "chưa có luật, xem lại khi chữ Việt hiện sai",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R3_fc_tc",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": 2133984965599339936,
+   "chars": 2021,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:-2146248079934904928",
+    "width": 4096,
+    "height": 4096,
+    "padding": 8
+   },
+   "fallbacks": [
+    "DFT_R5_mission_name_sp_Asia",
+    "GothicA1-Regular_heart_kr",
+    "DFT_R3_fs",
+    "DFT_R3_hcs",
+    "DF-KakuPop-W5_padding8"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "TC": 1
+   }
+  },
+  {
+   "name": "DFT_R3_fs",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": 6762564190089150287,
+   "chars": 90,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:-3670757986511323313",
+    "width": 1024,
+    "height": 512,
+    "padding": 8
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R3_hcs",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": 4165214768662869362,
+   "chars": 89,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:3886921252687934834",
+    "width": 512,
+    "height": 512,
+    "padding": 8
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "chưa có luật, xem lại khi chữ Việt hiện sai",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R5_fc_tc",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": -4924114045374919249,
+   "chars": 2021,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:-5121760034095657553",
+    "width": 4096,
+    "height": 2048,
+    "padding": 2
+   },
+   "fallbacks": [
+    "DFT_R5_fs",
+    "DF-KakuPop-W5_padding2"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "TC": 1
+   }
+  },
+  {
+   "name": "DFT_R5_fs",
+   "bundle": "064a729a7276a054fe3cf6692141f56f.bundle",
+   "serialized": "CAB-5d125c5f970787d70261d2b7d226430c",
+   "pathId": 5482850848579079893,
+   "chars": 2,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-5d125c5f970787d70261d2b7d226430c:5378702622980198101",
+    "width": 128,
+    "height": 64,
+    "padding": 2
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5 SDF_onpu_padding14",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 7495477188712337905,
+   "chars": 1,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:6063231288779674097",
+    "width": 128,
+    "height": 128,
+    "padding": 14
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/FontAssets/Common/DF-KakuPop-W5 SDF_onpu_padding14.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_fs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -3480229428878105648,
+   "chars": 52,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:1272890633268896720",
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/Tips/DF-KakuPop-W5_fs.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_kr",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 5275207602316611346,
+   "chars": 1,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:1719320208539160338",
+    "width": 64,
+    "height": 64,
+    "padding": 2
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/DF-KakuPop-W5_kr.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_padding12",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 6104303136604493690,
+   "chars": 42,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-1015890463947221126",
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/DF-KakuPop-W5_padding12.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_padding14",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 8290627374803930507,
+   "chars": 42,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-8509434635524485749",
+    "width": 512,
+    "height": 512,
+    "padding": 14
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/DF-KakuPop-W5_padding14.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_padding2",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -7382046588277084298,
+   "chars": 42,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-1429839812705374346",
+    "width": 256,
+    "height": 256,
+    "padding": 2
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/DF-KakuPop-W5_padding2.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_padding6",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -5250072256517500726,
+   "chars": 42,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-7606109651905933110",
+    "width": 512,
+    "height": 256,
+    "padding": 6
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/DF-KakuPop-W5_padding6.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R5_mission_name_sp",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -328122509940037215,
+   "chars": 3,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-1568261456402912863",
+    "width": 256,
+    "height": 128,
+    "padding": 14
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/DFT_R5_mission_name_sp.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R5_mission_name_sp_Asia",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -7719517246703217923,
+   "chars": 2,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-3591749867531480323",
+    "width": 128,
+    "height": 128,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/DFT_R5_mission_name_sp_Asia.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R5_mission_name_star_Asia",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -9219910402847819060,
+   "chars": 1,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:7117826977601141452",
+    "width": 128,
+    "height": 128,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/DFT_R5_mission_name_star_Asia.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "GothicA1-Regular_heart_kr",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 5633456630572045020,
+   "chars": 2,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:5684755172269085404",
+    "width": 128,
+    "height": 64,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/GothicA1-Regular_heart_kr.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "LondrinaSolid-Regular_tips",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 1820267258393071803,
+   "chars": 13,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:6775838816478695611",
+    "width": 256,
+    "height": 256,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/LondrinaSolid-Regular_tips.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Medium_fc_ja",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 1149468729012896473,
+   "chars": 1299,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-6553872348218277159",
+    "width": 4096,
+    "height": 4096,
+    "padding": 14
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/Common/TShinGoPr6-Medium_fc_ja.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Medium_fs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -4576388427419297196,
+   "chars": 93,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:1234016148199692884",
+    "width": 1024,
+    "height": 512,
+    "padding": 14
+   },
+   "fallbacks": [
+    "TTakeStd-Bold SDF_symbol",
+    "DFT_R5_mission_name_sp_Asia",
+    "DF-KakuPop-W5_padding14",
+    "TTakeStd-Bold SDF_symbol",
+    "TShinGoPr6-Medium_hcs",
+    "TShinGoPr6-Medium_fc_ja"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/Common/TShinGoPr6-Medium_fs.asset",
+   "usedBy": {
+    "FR": 1,
+    "DE": 1,
+    "JA": 2,
+    "IT": 1,
+    "ES": 1,
+    "EN": 2
+   }
+  },
+  {
+   "name": "TShinGoPr6-Medium_launcher_sp",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 1266922342689560330,
+   "chars": 45,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:354828973687658250",
+    "width": 256,
+    "height": 128,
+    "padding": 1
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/TShinGoPr6-Medium_launcher_sp.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Regular_fs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 4425819392673738505,
+   "chars": 93,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-1002316412875542775",
+    "width": 1024,
+    "height": 512,
+    "padding": 14
+   },
+   "fallbacks": [
+    "TShinGoPr6-Regular_hcs",
+    "DF-KakuPop-W5_padding14",
+    "DFT_R5_mission_name_sp_Asia"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/Common/TShinGoPr6-Regular_fs.asset",
+   "usedBy": {
+    "FR": 1,
+    "IT": 1,
+    "ES": 1
+   }
+  },
+  {
+   "name": "TTakeStd-Bold SDF_symbol",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -4238827281891661933,
+   "chars": 6,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:863789126083798931",
+    "width": 256,
+    "height": 128,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/SpecialSupport/TTakeStd-Bold SDF_symbol.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "TTakeStd-Bold_fc_ja",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 2798807866979869774,
+   "chars": 1292,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-3040353314501467058",
+    "width": 4096,
+    "height": 4096,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/Common/TTakeStd-Bold_fc_ja.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "TTakeStd-Bold_fs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 6926461445503287574,
+   "chars": 86,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:8187914028734972182",
+    "width": 1024,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [
+    "TTakeStd-Bold SDF_symbol",
+    "TTakeStd-Bold_fc_ja",
+    "TTakeStd-Bold_hcs",
+    "DFT_R5_mission_name_sp",
+    "DF-KakuPop-W5_padding12",
+    "DFT_R5_mission_name_sp"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": "Assets/Fonts/TextMeshPro/Common/TTakeStd-Bold_fs.asset",
+   "usedBy": {
+    "FR": 5,
+    "DE": 5,
+    "JA": 5,
+    "IT": 5,
+    "ES": 5,
+    "EN": 5
+   }
+  },
+  {
+   "name": "TTakeStd-Bold_tips_fc",
+   "bundle": "a7ea44fea6113b767037006366109e83.bundle",
+   "serialized": "CAB-7deffa9819c730f196d37f93d6a8a70c",
+   "pathId": -7600823382648512768,
+   "chars": 717,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-7deffa9819c730f196d37f93d6a8a70c:896395084715499264",
+    "width": 4096,
+    "height": 2048,
+    "padding": 12
+   },
+   "fallbacks": [
+    "TTakeStd-Bold SDF_symbol",
+    "DF-KakuPop-W5_fs",
+    "DF-KakuPop-W5_hcs",
+    "DF-KakuPop-W5_padding12"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "JA": 1
+   }
+  },
+  {
+   "name": "TTakeStd-Bold_staffroll",
+   "bundle": "c712d05de91ce2a48a1ac270ece098f2.bundle",
+   "serialized": "CAB-c7d67311a28122c69df1ea9e8b80f5cc",
+   "pathId": -7852286440773223501,
+   "chars": 163,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-c7d67311a28122c69df1ea9e8b80f5cc:-1483531626212983885",
+    "width": 1024,
+    "height": 1024,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 79,
+   "missingSample": "«»ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞở",
+   "action": "keep",
+   "why": "chữ chạy cuối game không dịch",
+   "assetPath": null,
+   "usedBy": {
+    "common": 1
+   }
+  },
+  {
+   "name": "DF-KakuPop-W5_fs_padding6",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": -2755127461355215856,
+   "chars": 91,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:-2697954132553391088",
+    "width": 512,
+    "height": 512,
+    "padding": 6
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_number",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": 6106783497447364615,
+   "chars": 20,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:-2581076312581711865",
+    "width": 512,
+    "height": 256,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R5_mission_name_star_kr",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": 5307436633861031173,
+   "chars": 1,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:6322699704695686405",
+    "width": 128,
+    "height": 128,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "GothicA1-Regular_fc_kr",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": 1476863476674214114,
+   "chars": 1048,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:-2943920466625873694",
+    "width": 4096,
+    "height": 2048,
+    "padding": 6
+   },
+   "fallbacks": [
+    "GothicA1-Regular_fs",
+    "GothicA1-Regular_hcs",
+    "DF-KakuPop-W5_padding6",
+    "DF-KakuPop-W5_name"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "KR": 1
+   }
+  },
+  {
+   "name": "GothicA1-Regular_fs",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": -3496467095769155675,
+   "chars": 91,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:3355315329188263845",
+    "width": 512,
+    "height": 512,
+    "padding": 6
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "GothicA1-Regular_hcs",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": 5984978188010571862,
+   "chars": 107,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:-2735320195238999978",
+    "width": 512,
+    "height": 512,
+    "padding": 6
+   },
+   "fallbacks": [],
+   "missingVi": 101,
+   "missingSample": "ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄ",
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "NanumGothicCoding-Bold_fs_kr",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": 7272016000195687427,
+   "chars": 594,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:304145130804605955",
+    "width": 2048,
+    "height": 2048,
+    "padding": 12
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5_fs",
+    "DF-KakuPop-W5_hcs",
+    "DF-KakuPop-W5_padding12"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "KR": 1
+   }
+  },
+  {
+   "name": "NotoSansKR-Medium_fc_kr",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": -9157125742352167301,
+   "chars": 1048,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:-7169431498305925509",
+    "width": 2048,
+    "height": 2048,
+    "padding": 3
+   },
+   "fallbacks": [
+    "NotoSansKR-Medium_fs",
+    "NotoSansKR-Medium_hcs",
+    "DF-KakuPop-W5_padding2"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "KR": 1
+   }
+  },
+  {
+   "name": "NotoSansKR-Medium_fs",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": 4384538762320405024,
+   "chars": 91,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:1540981775910232608",
+    "width": 512,
+    "height": 512,
+    "padding": 3
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "NotoSansKR-Medium_hcs",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": -2979301013089052212,
+   "chars": 112,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:1698870627339049420",
+    "width": 512,
+    "height": 512,
+    "padding": 3
+   },
+   "fallbacks": [],
+   "missingVi": 101,
+   "missingSample": "ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄ",
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "PoorStory-Regular_fc_kr_padding14",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": 5952171824043242738,
+   "chars": 1048,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:8354304623286596850",
+    "width": 4096,
+    "height": 2048,
+    "padding": 14
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5_number",
+    "DF-KakuPop-W5_padding14",
+    "DF-KakuPop-W5_kr",
+    "DF-KakuPop-W5_kr",
+    "DFT_R5_mission_name_sp_Asia",
+    "DF-KakuPop-W5_kr"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "KR": 1
+   }
+  },
+  {
+   "name": "PoorStory-Regular_fc_kr_padding6",
+   "bundle": "e03ac0faf567ff912ed6ba0080e5eda2.bundle",
+   "serialized": "CAB-3c51b4dc9d56be26cc807608f09b8b77",
+   "pathId": -2290888237800890803,
+   "chars": 1048,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-3c51b4dc9d56be26cc807608f09b8b77:6110658244259536461",
+    "width": 2048,
+    "height": 2048,
+    "padding": 6
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5_fs_padding6",
+    "DF-KakuPop-W5_padding6",
+    "DF-KakuPop-W5_name",
+    "DFT_R5_mission_name_sp_Asia",
+    "DF-KakuPop-W5_kr",
+    "GothicA1-Regular_heart_kr",
+    "DFT_R5_mission_name_star_kr"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "KR": 4
+   }
+  },
+  {
+   "name": "DF-KakuPop-W5_fs_sc",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": 6080388617590816443,
+   "chars": 50,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:8281546281300541115",
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_sc",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": 285970993210494388,
+   "chars": 1,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:8854960774228118964",
+    "width": 128,
+    "height": 128,
+    "padding": 6
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFGBBDC_fc_sc",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": 5045985946464207520,
+   "chars": 962,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:9014135127320806048",
+    "width": 4096,
+    "height": 2048,
+    "padding": 12
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5_hcs_sc",
+    "DF-KakuPop-W5_fs_sc",
+    "DF-KakuPop-W5_padding12"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "SC": 1
+   }
+  },
+  {
+   "name": "DFGBBDC_fc_sc_padding2",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": -3891826091207642628,
+   "chars": 1955,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:-8090471765812989444",
+    "width": 4096,
+    "height": 2048,
+    "padding": 2
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5_sc",
+    "DF-KakuPop-W5_name_sc",
+    "DFGBBDC_fs_padding2",
+    "DFGBBDC_hcs_padding2",
+    "DF-KakuPop-W5_padding2",
+    "DFT_R5_mission_name_sp_Asia",
+    "DFT_R5_mission_name_star_Asia"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "SC": 2
+   }
+  },
+  {
+   "name": "DFGBBDC_fc_sc_padding4",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": -5371352732436822329,
+   "chars": 1955,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:-965429748528675129",
+    "width": 4096,
+    "height": 4096,
+    "padding": 4
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5_kr",
+    "DFGBBDC_fs_padding4",
+    "DFGBBDC_hcs_padding4",
+    "DF-KakuPop-W5_padding6",
+    "DFT_R5_mission_name_sp_Asia",
+    "DF-KakuPop-W5_name"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "SC": 1
+   }
+  },
+  {
+   "name": "DFGBBDC_fc_sc_padding6",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": 449504271313028840,
+   "chars": 1955,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:8323017691660961512",
+    "width": 4096,
+    "height": 4096,
+    "padding": 6
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5_kr",
+    "DFGBBDC_fs_padding8",
+    "DFGBBDC_hcs_padding8",
+    "DF-KakuPop-W5_name",
+    "DF-KakuPop-W5_padding6",
+    "DFT_R5_mission_name_sp_Asia"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "SC": 2
+   }
+  },
+  {
+   "name": "DFGBBDC_fs_padding2",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": -3658061902838283345,
+   "chars": 90,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:2103039548006548399",
+    "width": 512,
+    "height": 512,
+    "padding": 2
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFGBBDC_fs_padding4",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": 2286823892114579385,
+   "chars": 90,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:-3348301442813747271",
+    "width": 512,
+    "height": 512,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFGBBDC_fs_padding8",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": -2645363615822792991,
+   "chars": 90,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:-3085153948020656415",
+    "width": 1024,
+    "height": 512,
+    "padding": 7
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFGBBDC_hcs_padding2",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": -9145733909493578433,
+   "chars": 90,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:-7137374699373460161",
+    "width": 512,
+    "height": 512,
+    "padding": 2
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "chưa có luật, xem lại khi chữ Việt hiện sai",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFGBBDC_hcs_padding4",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": 7742304706045752780,
+   "chars": 90,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:7778732900453332428",
+    "width": 512,
+    "height": 512,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "chưa có luật, xem lại khi chữ Việt hiện sai",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFGBBDC_hcs_padding8",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": 2277448839669855868,
+   "chars": 90,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:2620717127496218236",
+    "width": 512,
+    "height": 512,
+    "padding": 7
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "chưa có luật, xem lại khi chữ Việt hiện sai",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFGB_H5_fc_sc",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": 4174338392687298027,
+   "chars": 1955,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:2166977386223945195",
+    "width": 4096,
+    "height": 4096,
+    "padding": 12
+   },
+   "fallbacks": [
+    "DFT_R5_mission_name_sp_Asia",
+    "DFGB_H5_fs",
+    "DFGB_H5_hcs",
+    "DF-KakuPop-W5_padding12",
+    "DF-KakuPop-W5_name",
+    "DF-KakuPop-W5_kr"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "SC": 1
+   }
+  },
+  {
+   "name": "DFGB_H5_fs",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": -6709361721649588742,
+   "chars": 90,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:3320818364828227066",
+    "width": 1024,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFGB_H5_hcs",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": -2905342256982702910,
+   "chars": 90,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:7291769674236839106",
+    "width": 1024,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "chưa có luật, xem lại khi chữ Việt hiện sai",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFPGB_Y5_fc_sc",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": -1476085129778646909,
+   "chars": 1955,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:-6164671397738008445",
+    "width": 4096,
+    "height": 2048,
+    "padding": 2
+   },
+   "fallbacks": [
+    "DFPGB_Y5_fs",
+    "DFPGB_Y5_hcs",
+    "DF-KakuPop-W5_padding2",
+    "TShinGoPr6-Medium_launcher_sp",
+    "DFT_R5_mission_name_sp_Asia"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {
+    "SC": 1
+   }
+  },
+  {
+   "name": "DFPGB_Y5_fs",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": 8720713655596995812,
+   "chars": 90,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:-3446212917890198300",
+    "width": 512,
+    "height": 512,
+    "padding": 2
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "DFPGB_Y5_hcs",
+   "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
+   "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
+   "pathId": 407878829041642117,
+   "chars": 90,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-8cc0f8a9df5a320c53c79db7d1eab075:437056821147265669",
+    "width": 512,
+    "height": 512,
+    "padding": 2
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung",
+   "assetPath": null,
+   "usedBy": {}
+  },
+  {
+   "name": "LiberationSans SDF",
+   "file": "resources.assets",
+   "serialized": "resources.assets",
+   "pathId": 955,
+   "chars": 250,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "resources.assets:17",
+    "width": 1024,
+    "height": 1024,
+    "padding": 9
+   },
+   "fallbacks": [
+    "LiberationSans SDF - Fallback"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "keep",
+   "why": "font mặc định của TMP, chỉ là dự phòng",
+   "usedBy": {
+    "common": 13
+   }
+  },
+  {
+   "name": "LiberationSans SDF - Fallback",
+   "file": "resources.assets",
+   "serialized": "resources.assets",
+   "pathId": 954,
+   "chars": 0,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "resources.assets:16",
+    "width": 512,
+    "height": 512,
+    "padding": 9
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "DF-KakuPop-W5_padding12",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 383,
+   "chars": 42,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:68",
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "DFPGB_Y5 SDF_bossrush",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 384,
+   "chars": 36,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:58",
+    "width": 512,
+    "height": 512,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "DFPGB_Y5 SDF_launcher",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 377,
+   "chars": 561,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:69",
+    "width": 2048,
+    "height": 2048,
+    "padding": 4
+   },
+   "fallbacks": [
+    "DFPGB_Y5 SDF_bossrush",
+    "TShinGoPr6-Medium_launcher_fs",
+    "TShinGoPr6-Medium_launcher_hcs",
+    "TShinGoPr6-Medium_launcher_sp",
+    "DFT_R5_mission_name_sp_Asia",
+    "TShinGoPr6-Medium_launcher_fc_bossrush"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "DFPGB_Y5 SDF_mission",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 369,
+   "chars": 818,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets0.assets:57",
+    "width": 1024,
+    "height": 1024,
+    "padding": 1
+   },
+   "fallbacks": [],
+   "missingVi": 95,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝâãôõýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌ",
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung",
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R5 SDF_bossrush",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 385,
+   "chars": 35,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:70",
+    "width": 512,
+    "height": 512,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R5 SDF_launcher",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 378,
+   "chars": 611,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:63",
+    "width": 2048,
+    "height": 2048,
+    "padding": 4
+   },
+   "fallbacks": [
+    "DFT_R5 SDF_bossrush",
+    "TShinGoPr6-Medium_launcher_fs",
+    "TShinGoPr6-Medium_launcher_hcs",
+    "TShinGoPr6-Medium_launcher_sp",
+    "DFT_R5_mission_name_sp_Asia"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R5 SDF_mission",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 370,
+   "chars": 854,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets0.assets:53",
+    "width": 1024,
+    "height": 1024,
+    "padding": 1
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung",
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R5_mission_name_sp",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 386,
+   "chars": 3,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:65",
+    "width": 256,
+    "height": 128,
+    "padding": 14
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "DFT_R5_mission_name_sp_Asia",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 387,
+   "chars": 2,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:66",
+    "width": 128,
+    "height": 128,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "NotoSansKR-Medium SDF_mission",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 371,
+   "chars": 1271,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets0.assets:34",
+    "width": 2048,
+    "height": 1024,
+    "padding": 1
+   },
+   "fallbacks": [
+    "NotoSansKR-Medium SDF_mission_add"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung",
+   "usedBy": {}
+  },
+  {
+   "name": "NotoSansKR-Medium SDF_mission_add",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 372,
+   "chars": 2,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:59",
+    "width": 128,
+    "height": 64,
+    "padding": 1
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "NotoSansKR-Medium_bossrush",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 388,
+   "chars": 10,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:56",
+    "width": 256,
+    "height": 256,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "NotoSansKR-Medium_launcher",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 379,
+   "chars": 362,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:33",
+    "width": 2048,
+    "height": 1024,
+    "padding": 4
+   },
+   "fallbacks": [
+    "NotoSansKR-Medium_bossrush",
+    "TShinGoPr6-Medium_launcher_fs",
+    "TShinGoPr6-Medium_launcher_hcs",
+    "TShinGoPr6-Medium_launcher_sp",
+    "DFT_R5_mission_name_sp_Asia",
+    "TShinGoPr6-Medium_launcher_fc_bossrush"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Medium_launcher_fc_bossrush",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 389,
+   "chars": 14,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:60",
+    "width": 512,
+    "height": 256,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Medium_launcher_fs",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 380,
+   "chars": 88,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:62",
+    "width": 512,
+    "height": 512,
+    "padding": 4
+   },
+   "fallbacks": [
+    "TShinGoPr6-Medium_launcher_ja",
+    "TShinGoPr6-Medium_launcher_hcs",
+    "DFPGB_Y5 SDF_launcher",
+    "DFT_R5 SDF_launcher",
+    "NotoSansKR-Medium_launcher",
+    "DFT_R5_mission_name_sp",
+    "TShinGoPr6-Medium_launcher_sp"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {
+    "common": 14
+   }
+  },
+  {
+   "name": "TShinGoPr6-Medium_launcher_ja",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 382,
+   "chars": 850,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:52",
+    "width": 2048,
+    "height": 2048,
+    "padding": 4
+   },
+   "fallbacks": [
+    "TShinGoPr6-Medium_launcher_fs",
+    "TShinGoPr6-Medium_launcher_fc_bossrush",
+    "TShinGoPr6-Medium_launcher_hcs",
+    "DFPGB_Y5 SDF_launcher",
+    "NotoSansKR-Medium_launcher",
+    "DFT_R5 SDF_launcher",
+    "DFT_R5_mission_name_sp_Asia",
+    "TShinGoPr6-Medium_launcher_sp"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {
+    "common": 291
+   }
+  },
+  {
+   "name": "TShinGoPr6-Medium_launcher_sp",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 390,
+   "chars": 45,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:55",
+    "width": 256,
+    "height": 128,
+    "padding": 1
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "TTakeStd-Bold SDF_symbol",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 392,
+   "chars": 6,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:35",
+    "width": 256,
+    "height": 128,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "TTakeStd-Bold_fc_ja",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 374,
+   "chars": 1292,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:64",
+    "width": 4096,
+    "height": 4096,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "TTakeStd-Bold_fs",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 375,
+   "chars": 86,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets0.assets:36",
+    "width": 1024,
+    "height": 512,
+    "padding": 12
+   },
+   "fallbacks": [
+    "TTakeStd-Bold SDF_symbol",
+    "TTakeStd-Bold_fc_ja",
+    "TTakeStd-Bold_hcs",
+    "DFT_R5_mission_name_sp",
+    "DF-KakuPop-W5_padding12",
+    "DFT_R5_mission_name_sp"
+   ],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {
+    "common": 4
+   }
+  },
+  {
+   "name": "DF-KakuPop-W5 SDF_onpu_padding14",
+   "file": "sharedassets1.assets",
+   "serialized": "sharedassets1.assets",
+   "pathId": 833,
+   "chars": 1,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets1.assets:49",
+    "width": 128,
+    "height": 128,
+    "padding": 14
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "TTakeStd-Bold SDF_fullwidth_number",
+   "file": "sharedassets5.assets",
+   "serialized": "sharedassets5.assets",
+   "pathId": 45,
+   "chars": 10,
+   "latin": false,
+   "asciiLetters": "",
+   "atlas": {
+    "texture": "sharedassets5.assets:6",
+    "width": 256,
+    "height": 256,
+    "padding": 14
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "keep",
+   "why": "không có chữ Latin",
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Medium_savewindow",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 391,
+   "chars": 20,
+   "latin": false,
+   "asciiLetters": "ACDEGHILMNOPRSTUVW",
+   "atlas": {
+    "texture": "sharedassets0.assets:67",
+    "width": 512,
+    "height": 512,
+    "padding": 32
+   },
+   "fallbacks": [],
+   "missingVi": 103,
+   "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
+   "action": "replace-regular",
+   "why": "chữ hoa của khung lưu game, thiếu chữ gốc để ghép",
+   "usedBy": {
+    "common": 1
+   }
+  }
+ ]
+}

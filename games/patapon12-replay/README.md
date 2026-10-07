@@ -6,7 +6,7 @@ Game dùng Unity IL2CPP và Addressables. Ngôn ngữ chính thức không có t
 
 ## Trạng thái
 
-Đã có bản nháp tiếng Việt cho phần lớn 127804 câu, `status` là `draft`. Bản vá ghi các câu đó vào bốn bundle `LocalizeData`. Menu tựa vẫn là ảnh. Chưa có font nên dấu tiếng Việt có thể thành ô vuông.
+Đã có bản tiếng Việt viết tay cho bảng chuỗi. Bản vá ghi các câu đó vào bốn bundle `LocalizeData`. Font chữ giữ nét gốc của game; chữ Việt được ghép từ glyph của chính font đó. Menu tựa vẫn là ảnh.
 
 ## Trong thư mục này
 
@@ -16,10 +16,15 @@ Game dùng Unity IL2CPP và Addressables. Ngôn ngữ chính thức không có t
 | `docs/pipeline.md` | Chữ nằm ở đâu, trích và đóng gói trên máy. |
 | `docs/thuat-ngu.md` | Tên riêng và nhịp trống. |
 | `docs/van-phong.md` | Văn phong tiếng Việt của game này. |
-| `config.example.json` | Mẫu đường dẫn Steam / Epic. |
+| `config.example.json` | Mẫu đường dẫn Steam / Epic và file font. |
 | `runtime.lock.json` | URL và sha256 của BepInEx và AutoTranslator. |
 | `tools/fetch_runtime.py` | Tải hai gói đó vào `patch/`. |
 | `tools/extract_strings.py` | Trích hết câu tiếng Anh từ `LocalizeData` vào CSV. |
+| `tools/translate_rhythm.py` | Ghi câu hướng dẫn nhịp viết tay vào CSV. |
+| `docs/font.md` | Font nào vẽ chữ gì, cách vá, lệnh, bẫy. |
+| `tools/font/fonts.json` | Danh sách TMP Font Asset đã quét. Đọc file này, không quét lại game. |
+| `tools/font/` | Quét font, vá font (ghép dấu, hoặc Be Vietnam Pro khi thiếu chữ gốc), vẽ ảnh xem thử. |
+| `tools/game_config.py` | Đọc `config.json`, tìm file gốc trước khi vá. |
 | `tools/echo_translate.py` | Hook lúc chơi. Không dùng để thu thập câu. |
 
 ## Bắt đầu
