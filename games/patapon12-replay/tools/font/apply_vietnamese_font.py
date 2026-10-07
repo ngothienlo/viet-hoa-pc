@@ -1,10 +1,23 @@
-"""Ghi atlas Be Vietnam Pro vào font Latin của PATAPON 1+2 REPLAY.
+"""Vá font của PATAPON 1+2 REPLAY để chữ Việt hiện đủ và cùng một mặt chữ.
 
+Danh sách font cần vá lấy từ `fonts.json` (sinh bởi `inventory.py`):
+
+- `replace-regular` / `replace-bold`: thay cả bảng glyph và atlas bằng Be Vietnam Pro.
+- `compose`: giữ nét gốc (KakuPop, Londrina), ghép thêm chữ Việt bằng `compose_glyphs.py`.
+
+Luôn đọc file gốc (qua `original()`), kể cả khi launcher đã áp bản vá cũ.
+File vá ghi vào `patch/`, giữ đúng đường dẫn tương đối với thư mục cài.
 Không thêm font fallback. Không đụng font Nhật, Hàn, Trung.
+
+    python games/patapon12-replay/tools/font/apply_vietnamese_font.py
+    python games/patapon12-replay/tools/font/apply_vietnamese_font.py --no-install
 """
 
 from __future__ import annotations
 
+import argparse
+import gc
+import io
 import sys
 from pathlib import Path
 
@@ -13,46 +26,47 @@ import UnityPy
 from PIL import Image
 from UnityPy.helpers.TypeTreeGenerator import TypeTreeGenerator
 
-from bake_sdf import POINT, bake, collect_codepoints, font_path, install_dir
+from bake_sdf import PADDING, POINT, bake, collect_codepoints
+from compose_glyphs import Composer, vietnamese_letters
+from inventory import PATCH, UNITY, check, load, vi_chars
 
-ROOT = Path(__file__).resolve().parents[4]
+TOOLS = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(TOOLS))
+
+import extract_strings as ex  # noqa: E402
+from game_config import DATA_NAME, ROOT, font_path, original, require_install  # noqa: E402
+
 sys.path.insert(0, str(ROOT))
 
-GAME = install_dir()
-DATA = GAME / "PATAPON12_REPLAY_Data"
-PATCH = ROOT / "games" / "patapon12-replay" / "patch" / "PATAPON12_REPLAY_Data"
-
-REGULAR_NAMES = {
-    "TShinGoPr6-Medium SDF",
-    "TShinGoPr6-Medium SDF_mission",
-    "TShinGoPr6-Medium_launcher_fs",
-    "TShinGoPr6-Medium_launcher_hcs",
-    "TShinGoPr6-Medium_launcher_sp",
-    "TShinGoPr6-Medium_savewindow",
-    "TShinGoPr6-Medium_launcher_fc_bossrush",
-}
-BOLD_NAMES = {
-    "TTakeStd-Bold SDF",
-    "TTakeStd-Bold_fs",
-    "TTakeStd-Bold_hcs",
-    "TTakeStd-Bold SDF_fullwidth_number",
-    "TTakeStd-Bold SDF_symbol",
-}
+# Font làm chủ atlas chung khi nhiều font trong một file cùng được thay.
 HOST_PREFER = {
-    "regular": ("TShinGoPr6-Medium SDF", "TShinGoPr6-Medium SDF_mission"),
-    "bold": ("TTakeStd-Bold SDF", "TTakeStd-Bold_hcs", "TTakeStd-Bold_fs"),
+    "regular": ("TShinGoPr6-Medium SDF", "TShinGoPr6-Medium SDF_mission", "TShinGoPr6-Regular SDF"),
+    "bold": ("TTakeStd-Bold SDF", "TTakeStd-Bold_hcs"),
 }
-FILES = ("sharedassets0.assets", "sharedassets1.assets", "sharedassets5.assets")
+# Font KakuPop đủ dấu nhất. Font KakuPop nhỏ mượn dấu của font này.
+DONOR = ("sharedassets1.assets", "DF-KakuPop-W5 SDF_Padding14_Take")
+ALPHA8 = 1
+TMP_SDFAA = 4165
 
 
-def _kind(name: str) -> str | None:
-    if "_ja" in name:
-        return None
-    if name in REGULAR_NAMES:
-        return "regular"
-    if name in BOLD_NAMES:
-        return "bold"
-    return None
+# Đọc và ghi atlas -------------------------------------------------------
+
+
+def read_alpha(texture_obj) -> np.ndarray:
+    tex = texture_obj.read()
+    return np.array(tex.image.convert("RGBA"))[..., 3].copy()
+
+
+def write_alpha(texture_obj, alpha: np.ndarray) -> None:
+    tex = texture_obj.read()
+    rgba = np.zeros((alpha.shape[0], alpha.shape[1], 4), np.uint8)
+    rgba[..., 0:3] = 255
+    rgba[..., 3] = alpha
+    tex.set_image(Image.fromarray(rgba, "RGBA"), target_format=ALPHA8)
+    tex.save()
+
+
+# Thay bằng Be Vietnam Pro ----------------------------------------------
 
 
 def _fill_face(tree: dict, baked: dict) -> None:
@@ -74,7 +88,8 @@ def _fill_face(tree: dict, baked: dict) -> None:
     face["m_TabWidth"] = src["tabWidth"]
 
 
-def _apply_font(tree: dict, baked: dict, atlas_pid: int) -> int:
+def replace_font(tree: dict, baked: dict, atlas_pid: int) -> int:
+    """Ghi bảng glyph Be Vietnam Pro vào font. Trả path id của atlas cũ."""
     old = int(tree["m_AtlasTextures"][0]["m_PathID"])
     _fill_face(tree, baked)
     tree["m_GlyphTable"] = baked["glyphs"]
@@ -85,7 +100,7 @@ def _apply_font(tree: dict, baked: dict, atlas_pid: int) -> int:
     tree["m_AtlasWidth"] = baked["width"]
     tree["m_AtlasHeight"] = baked["height"]
     tree["m_AtlasPadding"] = baked["padding"]
-    tree["m_AtlasRenderMode"] = 4165
+    tree["m_AtlasRenderMode"] = TMP_SDFAA
     tree["m_AtlasPopulationMode"] = 0
     tree["m_AtlasTextureIndex"] = 0
     tree["m_IsMultiAtlasTexturesEnabled"] = False
@@ -101,11 +116,14 @@ def _apply_font(tree: dict, baked: dict, atlas_pid: int) -> int:
     settings["padding"] = baked["padding"]
     settings["atlasWidth"] = baked["width"]
     settings["atlasHeight"] = baked["height"]
-    settings["renderMode"] = 4165
+    settings["renderMode"] = TMP_SDFAA
     return old
 
 
-def _tex_name_info(item):
+# Material --------------------------------------------------------------
+
+
+def _pair(item):
     if isinstance(item, dict) and "first" in item:
         return item["first"], item["second"]
     if isinstance(item, (list, tuple)) and len(item) == 2:
@@ -113,192 +131,214 @@ def _tex_name_info(item):
     return None, None
 
 
-def _retarget_materials(env, filename: str, redirect: dict[int, tuple[int, int, int]]) -> int:
+def retarget_materials(env, owners: set[str], redirect: dict[tuple[str, int], tuple[int, int, int, float | None]]) -> int:
+    """Trỏ material sang atlas mới và sửa kích thước atlas trong material.
+
+    redirect: (file, path id atlas cũ) -> (path id atlas mới, rộng, cao, gradient scale hoặc None).
+    """
     changed = 0
     for obj in env.objects:
-        if obj.type.name != "Material" or not obj.assets_file.name.endswith(filename):
+        if obj.type.name != "Material" or obj.assets_file.name not in owners:
             continue
         tree = obj.read_typetree()
         saved = tree.get("m_SavedProperties") or {}
-        new_size = None
+        target = None
         for item in saved.get("m_TexEnvs") or []:
-            name, info = _tex_name_info(item)
+            name, info = _pair(item)
             if name != "_MainTex" or not isinstance(info, dict):
                 continue
             tex = info["m_Texture"]
             if tex.get("m_FileID"):
                 continue
-            found = redirect.get(int(tex.get("m_PathID") or 0))
-            if not found:
-                continue
-            tex["m_PathID"] = found[0]
-            new_size = found
-        if new_size is None:
+            found = redirect.get((obj.assets_file.name, int(tex.get("m_PathID") or 0)))
+            if found:
+                tex["m_PathID"] = found[0]
+                target = found
+        if target is None:
             continue
-        _, width, height = new_size
-        updates = {
-            "_TextureWidth": float(width),
-            "_TextureHeight": float(height),
-            "_GradientScale": 15.0,
-        }
+        _pid, width, height, gradient = target
+        updates = {"_TextureWidth": float(width), "_TextureHeight": float(height)}
+        if gradient is not None:
+            updates["_GradientScale"] = gradient
         floats = []
         for item in saved.get("m_Floats") or []:
-            if isinstance(item, dict) and item.get("first") in updates:
-                item["second"] = updates[item["first"]]
+            name, _value = _pair(item)
+            if name in updates and isinstance(item, dict):
+                item["second"] = updates[name]
                 floats.append(item)
-            elif isinstance(item, tuple) and item[0] in updates:
-                floats.append((item[0], updates[item[0]]))
+            elif name in updates:
+                floats.append((name, updates[name]))
             else:
                 floats.append(item)
         saved["m_Floats"] = floats
         obj.save_typetree(tree)
         changed += 1
-        print(f"  material {tree.get('m_Name')} -> {width}x{height}")
     return changed
 
 
-def _write_atlas(env, filename: str, path_id: int, baked: dict) -> None:
-    obj = next(
-        item
-        for item in env.objects
-        if item.type.name == "Texture2D"
-        and item.path_id == path_id
-        and item.assets_file.name.endswith(filename)
-    )
-    tex = obj.read()
-    alpha = baked["atlas"]
-    rgba = np.zeros((alpha.shape[0], alpha.shape[1], 4), np.uint8)
-    rgba[..., 0:3] = 255
-    rgba[..., 3] = alpha
-    tex.set_image(Image.fromarray(rgba, "RGBA"), target_format=1)
-    tex.save()
+# Vá một file -----------------------------------------------------------
 
 
-def patch_file(filename: str, regular: dict, bold: dict, gen: TypeTreeGenerator) -> Path:
+def patch_fonts(env, items: list[dict], baked: dict[str, dict], chars: list[str], donor: Composer | None) -> int:
+    """Vá các font trong `items`. Mọi font của một lần gọi nằm trong cùng env."""
+    objects = {(obj.assets_file.name, obj.path_id): obj for obj in env.objects}
+    owners = {item["serialized"] for item in items}
+    redirect: dict[tuple[str, int], tuple[int, int, int, float | None]] = {}
+    patched = 0
+
+    for kind in ("regular", "bold"):
+        for owner in sorted(owners):
+            group = [item for item in items if item["action"] == f"replace-{kind}" and item["serialized"] == owner]
+            if not group:
+                continue
+            host = next((item for name in HOST_PREFER[kind] for item in group if item["name"] == name), group[0])
+            host_tree = objects[(owner, host["pathId"])].read_typetree()
+            host_pid = int(host_tree["m_AtlasTextures"][0]["m_PathID"])
+            write_alpha(objects[(owner, host_pid)], baked[kind]["atlas"])
+            for item in group:
+                obj = objects[(owner, item["pathId"])]
+                tree = obj.read_typetree()
+                old = replace_font(tree, baked[kind], host_pid)
+                obj.save_typetree(tree)
+                redirect[(owner, old)] = (host_pid, baked[kind]["width"], baked[kind]["height"], float(PADDING + 1))
+                print(f"  {item['name']}: Be Vietnam Pro {kind}")
+                patched += 1
+
+    for item in items:
+        if item["action"] != "compose":
+            continue
+        owner = item["serialized"]
+        obj = objects[(owner, item["pathId"])]
+        tree = obj.read_typetree()
+        atlas_pid = int(tree["m_AtlasTextures"][0]["m_PathID"])
+        texture = objects[(owner, atlas_pid)]
+        composer = Composer(tree, read_alpha(texture), donor)
+        result = composer.build(chars)
+        if not result["added"]:
+            continue
+        atlas = result["atlas"]
+        write_alpha(texture, atlas)
+        tree["m_GlyphTable"] = result["glyphs"]
+        tree["m_CharacterTable"] = result["characters"]
+        tree["m_UsedGlyphRects"] = result["used"]
+        tree["m_FreeGlyphRects"] = []
+        tree["m_AtlasHeight"] = int(atlas.shape[0])
+        settings = tree.get("m_CreationSettings") or {}
+        settings["atlasHeight"] = int(atlas.shape[0])
+        obj.save_typetree(tree)
+        redirect[(owner, atlas_pid)] = (atlas_pid, int(atlas.shape[1]), int(atlas.shape[0]), None)
+        skipped = "".join(result["skipped"])
+        print(f"  {item['name']}: ghép {len(result['added'])} chữ" + (f", không ghép được {skipped!r}" if skipped else ""))
+        patched += 1
+
+    materials = retarget_materials(env, owners, redirect)
+    print(f"  material: {materials}")
+    if redirect and materials == 0:
+        raise SystemExit("Không sửa được material nào. Atlas mới sẽ không hiện.")
+    return patched
+
+
+def open_data_file(filename: str, gen, install: Path):
+    """Mở file gốc của bản build, kèm globalgamemanagers và resS để đọc atlas."""
+    data = install / DATA_NAME
     env = UnityPy.Environment()
     env.typetree_generator = gen
-    env.load_file(str(DATA / "globalgamemanagers.assets"))
-    env.load_file(str(DATA / "globalgamemanagers"))
-    env.load_file(str(DATA / filename))
-    baked_for = {"regular": regular, "bold": bold}
-    found = []
-    for obj in env.objects:
-        if obj.type.name != "MonoBehaviour" or not obj.assets_file.name.endswith(filename):
-            continue
-        try:
-            head = obj.parse_monobehaviour_head()
-            script = head.m_Script.deref_parse_as_object()
-        except Exception:
-            continue
-        if script.m_ClassName != "TMP_FontAsset":
-            continue
-        tree = obj.read_typetree()
-        kind = _kind(tree.get("m_Name") or "")
-        if kind is None:
-            continue
-        found.append((obj, tree, kind, tree["m_Name"]))
-    if not found:
-        raise SystemExit(f"{filename} không có font Latin cần vá")
+    for extra in ("globalgamemanagers.assets", "globalgamemanagers"):
+        env.load_file(str(data / extra))
+    env.load_file(str(original(Path(DATA_NAME) / filename)), name=filename)
+    stream = data / f"{filename}.resS"
+    if stream.is_file():
+        env.load_file(str(stream), name=stream.name)
+    return env
 
-    redirect: dict[int, tuple[int, int, int]] = {}
-    for kind in ("regular", "bold"):
-        group = [item for item in found if item[2] == kind]
-        if not group:
-            continue
-        host = group[0]
-        for prefer in HOST_PREFER[kind]:
-            match = [item for item in group if item[3] == prefer]
-            if match:
-                host = match[0]
-                break
-        host_pid = int(host[1]["m_AtlasTextures"][0]["m_PathID"])
-        baked = baked_for[kind]
-        _write_atlas(env, filename, host_pid, baked)
-        for obj, tree, _kind_name, name in group:
-            old = _apply_font(tree, baked, host_pid)
-            obj.save_typetree(tree)
-            redirect[old] = (host_pid, baked["width"], baked["height"])
-            print(f"  {name} -> texture {host_pid}")
-    materials = _retarget_materials(env, filename, redirect)
-    print(f"  material {materials}")
-    if materials == 0:
-        raise SystemExit(f"{filename} không sửa material nào")
-    assets = next(obj.assets_file for obj, *_rest in found)
-    blob = assets.save()
-    destination = PATCH / filename
+
+def load_donor(fonts: list[dict], gen, install: Path) -> Composer:
+    filename, name = DONOR
+    item = next(row for row in fonts if row.get("file") == filename and row["name"] == name)
+    env = open_data_file(filename, gen, install)
+    objects = {(obj.assets_file.name, obj.path_id): obj for obj in env.objects}
+    tree = objects[(filename, item["pathId"])].read_typetree()
+    atlas = objects[(filename, int(tree["m_AtlasTextures"][0]["m_PathID"]))]
+    return Composer(tree, read_alpha(atlas))
+
+
+def patch_data_file(filename: str, items: list[dict], baked: dict, chars: list[str], donor: Composer, gen, install: Path) -> Path:
+    env = open_data_file(filename, gen, install)
+    patch_fonts(env, items, baked, chars, donor)
+    assets = next(obj.assets_file for obj in env.objects if obj.assets_file.name == filename)
+    destination = PATCH / DATA_NAME / filename
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_bytes(blob)
-    print(f"  ghi {destination} ({len(blob) / 1048576:.1f} MB)")
+    destination.write_bytes(assets.save())
+    print(f"  ghi {destination.relative_to(ROOT)} ({destination.stat().st_size / 1048576:.1f} MB)")
     return destination
 
 
-def verify(path: Path, gen: TypeTreeGenerator) -> None:
-    env = UnityPy.Environment()
-    env.typetree_generator = gen
-    env.load_file(str(DATA / "globalgamemanagers.assets"))
-    env.load_file(str(DATA / "globalgamemanagers"))
-    env.load_file(str(path))
-    wanted = 0x1EDB  # ớ
-    hits = []
-    for obj in env.objects:
-        if obj.type.name != "MonoBehaviour" or obj.assets_file.name != path.name:
-            continue
-        try:
-            head = obj.parse_monobehaviour_head()
-            script = head.m_Script.deref_parse_as_object()
-        except Exception:
-            continue
-        if script.m_ClassName != "TMP_FontAsset":
-            continue
-        tree = obj.read_typetree()
-        if _kind(tree.get("m_Name") or "") is None:
-            continue
-        codes = {item["m_Unicode"] for item in tree["m_CharacterTable"]}
-        if wanted not in codes:
-            raise SystemExit(f"{path.name} {tree['m_Name']} không có ớ")
-        atlas_pid = tree["m_AtlasTextures"][0]["m_PathID"]
-        tex = next(
-            item.read()
-            for item in env.objects
-            if item.type.name == "Texture2D" and item.path_id == atlas_pid and item.assets_file.name == path.name
-        )
-        if tex.m_StreamData and tex.m_StreamData.size:
-            raise SystemExit(f"{tree['m_Name']} vẫn trỏ atlas cũ trong resS")
-        if (tex.m_Width, tex.m_Height) != (tree["m_AtlasWidth"], tree["m_AtlasHeight"]):
-            raise SystemExit(f"{tree['m_Name']} lệch kích thước atlas")
-        hits.append(tree["m_Name"])
-    if not hits:
-        raise SystemExit(f"{path.name} không đọc lại được font")
-    print("  đọc lại", ", ".join(hits))
+def patch_bundle(filename: str, items: list[dict], baked: dict, chars: list[str], donor: Composer, hashes: list[bytes], install: Path) -> Path:
+    if filename in ex.HINTS.values():
+        raise SystemExit(f"{filename} cũng là bundle LocalizeData. Cần gộp hai bản vá trước khi ghi.")
+    source = ex.original_bundle(filename)
+    key = ex.bundle_key(source, hashes)
+    env = ex.open_bundle(source, hashes)
+    patch_fonts(env, items, baked, chars, donor)
+    destination = PATCH / ex.BUNDLES.relative_to(install) / filename
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_bytes(ex.save_bundle(env, key))
+    print(f"  ghi {destination.relative_to(ROOT)} ({destination.stat().st_size / 1048576:.1f} MB)")
+    return destination
 
 
-def install_patch() -> None:
+def install_patch(install: Path) -> None:
     from launcher.apply import apply_pack
     from launcher.catalog import load_games
     from launcher.store import Store, default_state_dir
 
     game = next(item for item in load_games(ROOT) if item.id == "patapon12-replay")
-    result = apply_pack(game, GAME, Store(default_state_dir()))
+    result = apply_pack(game, install, Store(default_state_dir()))
     print(result.message)
     if not result.ok:
         raise SystemExit(result.message)
 
 
-def main() -> None:
-    codes = collect_codepoints()
-    print("nướng atlas", len(codes), "mã")
-    regular = bake(font_path("regular"), codes, 4096, 4096, bold=False)
-    bold = bake(font_path("bold"), codes, 4096, 2048, bold=True)
-    gen = TypeTreeGenerator("2022.3.52f1", "AssetStudio")
-    gen.load_local_game(str(GAME))
-    written = []
-    for filename in FILES:
-        print(filename)
-        written.append(patch_file(filename, regular, bold, gen))
-    for path in written:
-        verify(path, gen)
-    install_patch()
+def main() -> int:
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--no-install", action="store_true", help="chỉ ghi patch/, không áp lên bản cài")
+    args = parser.parse_args()
+
+    install = require_install()
+    payload = load()
+    targets = [item for item in payload["fonts"] if item["action"] != "keep"]
+    groups: dict[str, list[dict]] = {}
+    for item in targets:
+        groups.setdefault(item.get("file") or item["bundle"], []).append(item)
+
+    baked: dict[str, dict] = {}
+    if any(item["action"].startswith("replace-") for item in targets):
+        codes = collect_codepoints()
+        print("nướng atlas Be Vietnam Pro,", len(codes), "mã")
+        baked["regular"] = bake(font_path("regular"), codes, 4096, 4096, bold=False)
+        baked["bold"] = bake(font_path("bold"), codes, 4096, 2048, bold=True)
+    chars = sorted(set(vietnamese_letters()) | vi_chars())
+
+    gen = TypeTreeGenerator(UNITY, "AssetStudio")
+    gen.load_local_game(str(install))
+    hashes = ex.load_hashes()
+    donor = load_donor(payload["fonts"], gen, install)
+    for where, items in sorted(groups.items()):
+        print(where)
+        if where.endswith(".bundle"):
+            patch_bundle(where, items, baked, chars, donor, hashes, install)
+        else:
+            patch_data_file(where, items, baked, chars, donor, gen, install)
+        gc.collect()
+
+    print("kiểm tra bản vá")
+    if check(vi_chars()):
+        raise SystemExit("Còn font thiếu chữ. Xem danh sách ở trên.")
+    if not args.no_install:
+        install_patch(install)
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
