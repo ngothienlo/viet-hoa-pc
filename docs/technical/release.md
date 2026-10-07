@@ -4,35 +4,56 @@
 
 Bản phát hành là một file `VietHoa.exe` trên GitHub Release (#17). Exe chứa launcher, file đã commit trong `games/` (CSV, `fonts.json`, script vá) và thư viện Python. Exe không chứa file nào của game: bản vá được tạo trên máy người chơi lúc bấm Áp dụng (xem `docs/technical/launcher.md`).
 
+Số phiên bản nằm ở `launcher/__init__.py` (`__version__`). Số này hiện trên thanh tiêu đề cửa sổ và trong thông tin file của exe.
+
 ## Build exe
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe tools\build_exe.py
+.\.venv\Scripts\python.exe tools\build_exe.py --ui-test
 ```
 
-- Exe ghi ra `dist/VietHoa.exe`. `dist/` không được commit.
-- Chỉ file `git ls-files games` được gói vào exe, nên phải commit trước khi build.
-- Stage và thư mục làm việc của PyInstaller nằm trong thư mục tạm của Windows, ngoài repo. Repo nằm trong OneDrive, mà OneDrive khóa file lúc đồng bộ.
-- Script vá được nạp lúc chạy, nên PyInstaller không tự thấy thư viện của chúng. `tools/build_exe.py` sinh `vh_deps.py` import sẵn các thư viện đó, rồi `--collect-all` cho thư viện có DLL hoặc file dữ liệu: UnityPy, TypeTreeGeneratorAPI, texture2ddecoder, etcpak, astc_encoder, freetype, fmod_toolkit, pyfmodex, archspec. Thiếu một gói thì exe chạy được nửa chừng rồi báo thiếu DLL.
-- Thư viện nặng không dùng (torch, sympy…) bị loại bằng `--exclude-module`. Không loại thì exe vượt 200 MB.
+`tools/build_exe.py` làm theo thứ tự:
+
+1. Dò cả cây phụ thuộc của UnityPy, TypeTreeGeneratorAPI, freetype-py, pycryptodome (đọc metadata của từng gói), rồi `--collect-all` mọi package trong cây đó. Script vá được nạp lúc chạy, nên PyInstaller không tự thấy các thư viện này. Danh sách gõ tay từng thiếu `fmod_toolkit`, `pyfmodex`, `archspec`; dò tự động thì nâng phiên bản UnityPy không phải sửa tay.
+2. Chép file `git ls-files games` vào stage. Phải commit trước khi build.
+3. Chạy PyInstaller một file, kèm thông tin phiên bản. Stage và thư mục làm việc nằm trong thư mục tạm của Windows, ngoài repo, vì OneDrive khóa file lúc đồng bộ.
+4. Ký số nếu có chứng chỉ (xem mục Ký số).
+5. Ghi `dist/VietHoa.exe.sha256`.
+6. Chạy `VietHoa.exe --build-only` trên bản cài đã chọn trong launcher. Mã thoát khác 0 thì dừng và in cuối `build.log`.
+7. Có `--ui-test` thì chạy thêm `VietHoa.exe --ui-test`: mở cửa sổ thật, bấm nút Áp dụng, chờ build và chép xong, chụp `ui-test.png`. Bước này áp thật lên game.
+
+`--skip-check` bỏ bước 6 và 7, dùng khi máy build không có bản cài game.
+
+Thư viện nặng không dùng (torch, sympy…) bị loại bằng `--exclude-module`. Không loại thì exe vượt 200 MB.
 
 ## Kiểm tra trước khi phát hành
 
-1. `validate_locale.py`, `launcher.test_launcher`, test của game.
-2. `dist\VietHoa.exe --build-only`, rồi đọc `%LOCALAPPDATA%\viet-hoa-pc\build.log`. Mã thoát phải là 0, và mọi font phải báo «đủ».
-3. So file trong `%LOCALAPPDATA%\viet-hoa-pc\build\<id>\` với bản build bằng Python (`games\<id>\tools\build_patch.py <cài> <ra>`). Hai bản phải giống từng byte.
-4. Mở exe, xem cửa sổ «Việt hóa» hiện lên.
+- `validate_locale.py`, `launcher.test_launcher`, test của game.
+- `tools\build_exe.py --ui-test` chạy qua hết. Xem `%LOCALAPPDATA%\viet-hoa-pc\ui-test.png`: trạng thái «Đã áp … file», nhãn game «Đã áp dụng».
+- Muốn so với bản Python: chạy `games\<id>\tools\build_patch.py <cài> <ra>`, rồi so từng file với `%LOCALAPPDATA%\viet-hoa-pc\build\<id>\`. Hai bản phải giống từng byte.
+
+## Ký số
+
+Exe chưa ký thì Windows SmartScreen cảnh báo lần đầu mở («Windows protected your PC» → More info → Run anyway). Muốn hết cảnh báo cần chứng chỉ code signing (OV hoặc EV, hoặc dịch vụ như Azure Trusted Signing). Chứng chỉ tự ký không giúp gì.
+
+Có chứng chỉ thì đặt hai biến môi trường trước khi build, `build_exe.py` sẽ gọi `signtool` (Windows SDK):
+
+```powershell
+$env:VH_SIGN_PFX = "C:\duong\dan\chung-chi.pfx"
+$env:VH_SIGN_PASSWORD = "<mật khẩu của chứng chỉ>"
+```
+
+Không commit file `.pfx` hay mật khẩu. Chưa ký thì release ghi kèm SHA-256 để người chơi tự kiểm file.
 
 ## Tạo release
 
 ```powershell
-gh release create v1.0.0 dist\VietHoa.exe --title "v1.0" --notes-file <ghi chú>
+gh release create v1.0.0 dist\VietHoa.exe dist\VietHoa.exe.sha256 --title "v1.0" --notes-file <ghi chú>
 ```
 
 Tag tạo trên `main`, sau khi PR đã merge. Hook `pre-push` chỉ chặn nhánh, không chặn tag.
 
 ## Giới hạn
 
-- `fonts.json` gắn với một bản game (sha1 của `catalog.json`). Game cập nhật thì exe báo không khớp, không vá. Khi đó quét lại font, rồi build và phát hành bản mới.
-- Exe chưa ký số, nên Windows SmartScreen có thể cảnh báo lần đầu mở.
+- `fonts.json` gắn với một bản game (sha1 của `catalog.json`). Game cập nhật thì exe báo không khớp, không vá. Khi đó quét lại font, build và phát hành bản mới.
