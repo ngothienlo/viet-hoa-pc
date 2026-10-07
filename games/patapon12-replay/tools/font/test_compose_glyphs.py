@@ -11,7 +11,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from compose_glyphs import BREVE, DOT, GUILLEMETS, Composer, plan, vietnamese_letters  # noqa: E402
+from compose_glyphs import ACUTE, BREVE, DOT, GUILLEMETS, Composer, plan, vietnamese_letters  # noqa: E402
 
 PADDING = 6
 CELL = 48
@@ -137,6 +137,25 @@ class ComposerTest(unittest.TestCase):
         result = Composer(tree, atlas, donor).build(vietnamese_letters())
         self.assertEqual(result["skipped"], [])
         self.assertIn("ẫ", result["added"])
+
+    def test_horn_sticks_out_right(self) -> None:
+        composer = Composer(self.tree, self.atlas)
+        shape, metrics = composer.compose("ư")
+        self.assertGreater(shape.right, composer.shape("u").right)
+        self.assertGreaterEqual(metrics["m_HorizontalAdvance"], shape.right)
+
+    def test_native_mark_is_taken_from_latin1_letter(self) -> None:
+        tree, atlas = fake_font(ASCII)
+        composer = Composer(tree, atlas)
+        # Ghép tay một chữ á giả: khối a cộng một khối dấu phía trên, rồi đưa vào font.
+        accented, _ = composer.compose("á")
+        self.assertIsNone(composer.native_mark(ACUTE, upper=False))
+        result = composer.build(["á"])
+        native = Composer({**tree, "m_GlyphTable": result["glyphs"], "m_CharacterTable": result["characters"]}, result["atlas"])
+        mark = native.native_mark(ACUTE, upper=False)
+        self.assertIsNotNone(mark)
+        self.assertGreaterEqual(mark.bottom, native.shape("a").top - 0.5)
+        self.assertLess(mark.width, accented.width)
 
     def test_nfc_output(self) -> None:
         for ch in vietnamese_letters():

@@ -41,23 +41,25 @@ PATCH = GAME_DIR / "patch"
 LANGUAGE = re.compile(r"/Localize/([A-Za-z]+)/")
 
 # Cách vá theo tên font. Thứ tự có nghĩa: luật đầu tiên khớp thì dùng.
-# replace-regular / replace-bold: thay cả atlas bằng Be Vietnam Pro.
-# compose: giữ nét gốc, ghép chữ Việt từ glyph của chính font đó.
+# compose: giữ nét gốc, ghép chữ Việt từ glyph của chính font đó. Mặc định cho font Latin.
+# replace-regular / replace-bold: thay cả atlas bằng Be Vietnam Pro. Chỉ dùng khi font
+#   gốc thiếu chữ để ghép. Bản đầu (#8) thay TTake bằng Be Vietnam Pro và mất nét
+#   Patapon của lời thoại, nên đã đổi sang compose (#9).
 # keep: không vá.
 RULES: list[tuple[str, str, str]] = [
     (r"_ja\b|_ja_|_kr\b|_kr_|NotoSansKR|GothicA1|PoorStory|DFPGB|DFT_R5|DF-KakuPop-W5_kr", "keep", "font Nhật, Hàn, Trung"),
     (r"_staffroll", "keep", "chữ chạy cuối game không dịch"),
     (r"^LiberationSans", "keep", "font mặc định của TMP, chỉ là dự phòng"),
-    (r"^TShinGoPr6", "replace-regular", "font chữ thường, thay bằng Be Vietnam Pro Regular"),
-    (r"^TTakeStd", "replace-bold", "font chữ đậm, thay bằng Be Vietnam Pro Bold"),
+    (r"^TTakeStd", "compose", "font kiểu Patapon của lời thoại, ghép dấu từ glyph gốc"),
+    (r"^TShinGoPr6", "compose", "font chữ thường của game, ghép dấu từ glyph gốc"),
     (r"^DF-KakuPop|^LondrinaSolid", "compose", "font kiểu Patapon, ghép dấu từ glyph gốc"),
 ]
 
 
 def action_for(name: str, latin: bool) -> tuple[str, str]:
     if name.endswith("_savewindow"):
-        # Chỉ có chữ hoa Latin nhưng vẫn vẽ chữ của khung lưu game.
-        return "replace-regular", "chữ hoa của khung lưu game, thay bằng Be Vietnam Pro Regular"
+        # Chỉ có 18 chữ hoa Latin, không đủ chữ gốc để ghép. Thay hẳn bằng Be Vietnam Pro.
+        return "replace-regular", "chữ hoa của khung lưu game, thiếu chữ gốc để ghép"
     if not latin:
         return "keep", "không có chữ Latin"
     for pattern, action, why in RULES:

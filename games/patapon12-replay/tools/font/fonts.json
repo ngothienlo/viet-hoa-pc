@@ -28,6 +28,32 @@
    "usedBy": {}
   },
   {
+   "name": "TShinGoPr6-Regular SDF",
+   "bundle": "88a48bd1ff8c3d05c36234dd5fb30f9c.bundle",
+   "serialized": "CAB-5c2c8949eba27b95193c3ef28fcd6686",
+   "pathId": -2779923817781384253,
+   "chars": 726,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-5c2c8949eba27b95193c3ef28fcd6686:6716478038224481219",
+    "width": 4096,
+    "height": 2048,
+    "padding": 14
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5 SDF_onpu_padding14"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "assetPath": null,
+   "usedBy": {
+    "DE": 1
+   }
+  },
+  {
    "name": "DF-KakuPop-W5_hcs",
    "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
    "serialized": "CAB-74762da342881dc91f70cfda1631370a",
@@ -104,6 +130,96 @@
    }
   },
   {
+   "name": "TShinGoPr6-Medium_hcs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -8904045154548630092,
+   "chars": 181,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:8580786170855898548",
+    "width": 1024,
+    "height": 1024,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "assetPath": "Assets/Fonts/TextMeshPro/Common/TShinGoPr6-Medium_hcs.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Regular SDF",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": -1143001169658998545,
+   "chars": 726,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-7223677737768218385",
+    "width": 4096,
+    "height": 2048,
+    "padding": 14
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5 SDF_onpu_padding14"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "assetPath": "Assets/Fonts/FontAssets/FR/TShinGoPr6-Regular SDF.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Regular_hcs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 7159630308555411010,
+   "chars": 174,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:8271139557133831746",
+    "width": 1024,
+    "height": 1024,
+    "padding": 14
+   },
+   "fallbacks": [],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "assetPath": "Assets/Fonts/TextMeshPro/Common/TShinGoPr6-Regular_hcs.asset",
+   "usedBy": {}
+  },
+  {
+   "name": "TTakeStd-Bold_hcs",
+   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
+   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
+   "pathId": 334604200135147691,
+   "chars": 178,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "CAB-74762da342881dc91f70cfda1631370a:-3882341611451334485",
+    "width": 1024,
+    "height": 1024,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font kiểu Patapon của lời thoại, ghép dấu từ glyph gốc",
+   "assetPath": "Assets/Fonts/TextMeshPro/Common/TTakeStd-Bold_hcs.asset",
+   "usedBy": {}
+  },
+  {
    "name": "DF-KakuPop-W5_hcs_sc",
    "bundle": "f7cd5c4c8610e1db0258ea257a984b6b.bundle",
    "serialized": "CAB-8cc0f8a9df5a320c53c79db7d1eab075",
@@ -148,6 +264,75 @@
    "usedBy": {}
   },
   {
+   "name": "TShinGoPr6-Medium SDF_mission",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 373,
+   "chars": 991,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets0.assets:54",
+    "width": 2048,
+    "height": 1024,
+    "padding": 1
+   },
+   "fallbacks": [
+    "DFPGB_Y5 SDF_mission",
+    "DFT_R5 SDF_mission",
+    "NotoSansKR-Medium SDF_mission"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "usedBy": {
+    "common": 1
+   }
+  },
+  {
+   "name": "TShinGoPr6-Medium_launcher_hcs",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 381,
+   "chars": 181,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets0.assets:61",
+    "width": 1024,
+    "height": 512,
+    "padding": 4
+   },
+   "fallbacks": [],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "usedBy": {}
+  },
+  {
+   "name": "TTakeStd-Bold_hcs",
+   "file": "sharedassets0.assets",
+   "serialized": "sharedassets0.assets",
+   "pathId": 376,
+   "chars": 178,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets0.assets:37",
+    "width": 1024,
+    "height": 1024,
+    "padding": 12
+   },
+   "fallbacks": [],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font kiểu Patapon của lời thoại, ghép dấu từ glyph gốc",
+   "usedBy": {}
+  },
+  {
    "name": "DF-KakuPop-W5 SDF_Padding14_Take",
    "file": "sharedassets1.assets",
    "serialized": "sharedassets1.assets",
@@ -167,6 +352,59 @@
    "action": "compose",
    "why": "font kiểu Patapon, ghép dấu từ glyph gốc",
    "usedBy": {}
+  },
+  {
+   "name": "TShinGoPr6-Medium SDF",
+   "file": "sharedassets1.assets",
+   "serialized": "sharedassets1.assets",
+   "pathId": 834,
+   "chars": 1600,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets1.assets:50",
+    "width": 4096,
+    "height": 4096,
+    "padding": 14
+   },
+   "fallbacks": [
+    "DF-KakuPop-W5 SDF_onpu_padding14",
+    "DF-KakuPop-W5 SDF_Padding14_Take"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font chữ thường của game, ghép dấu từ glyph gốc",
+   "usedBy": {
+    "common": 8
+   }
+  },
+  {
+   "name": "TTakeStd-Bold SDF",
+   "file": "sharedassets5.assets",
+   "serialized": "sharedassets5.assets",
+   "pathId": 46,
+   "chars": 712,
+   "latin": true,
+   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+   "atlas": {
+    "texture": "sharedassets5.assets:5",
+    "width": 4096,
+    "height": 2048,
+    "padding": 14
+   },
+   "fallbacks": [
+    "TTakeStd-Bold SDF_fullwidth_number",
+    "DF-KakuPop-W5 SDF_onpu_padding14",
+    "DF-KakuPop-W5 SDF_Padding14_Take"
+   ],
+   "missingVi": 77,
+   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
+   "action": "compose",
+   "why": "font kiểu Patapon của lời thoại, ghép dấu từ glyph gốc",
+   "usedBy": {
+    "common": 22
+   }
   },
   {
    "name": "DF-KakuPop-W5_fs_tc",
@@ -2375,218 +2613,6 @@
    "usedBy": {}
   },
   {
-   "name": "TTakeStd-Bold_hcs",
-   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
-   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
-   "pathId": 334604200135147691,
-   "chars": 178,
-   "latin": true,
-   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-   "atlas": {
-    "texture": "CAB-74762da342881dc91f70cfda1631370a:-3882341611451334485",
-    "width": 1024,
-    "height": 1024,
-    "padding": 12
-   },
-   "fallbacks": [],
-   "missingVi": 77,
-   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
-   "action": "replace-bold",
-   "why": "font chữ đậm, thay bằng Be Vietnam Pro Bold",
-   "assetPath": "Assets/Fonts/TextMeshPro/Common/TTakeStd-Bold_hcs.asset",
-   "usedBy": {}
-  },
-  {
-   "name": "TTakeStd-Bold_hcs",
-   "file": "sharedassets0.assets",
-   "serialized": "sharedassets0.assets",
-   "pathId": 376,
-   "chars": 178,
-   "latin": true,
-   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-   "atlas": {
-    "texture": "sharedassets0.assets:37",
-    "width": 1024,
-    "height": 1024,
-    "padding": 12
-   },
-   "fallbacks": [],
-   "missingVi": 77,
-   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
-   "action": "replace-bold",
-   "why": "font chữ đậm, thay bằng Be Vietnam Pro Bold",
-   "usedBy": {}
-  },
-  {
-   "name": "TTakeStd-Bold SDF",
-   "file": "sharedassets5.assets",
-   "serialized": "sharedassets5.assets",
-   "pathId": 46,
-   "chars": 712,
-   "latin": true,
-   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-   "atlas": {
-    "texture": "sharedassets5.assets:5",
-    "width": 4096,
-    "height": 2048,
-    "padding": 14
-   },
-   "fallbacks": [
-    "TTakeStd-Bold SDF_fullwidth_number",
-    "DF-KakuPop-W5 SDF_onpu_padding14",
-    "DF-KakuPop-W5 SDF_Padding14_Take"
-   ],
-   "missingVi": 77,
-   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
-   "action": "replace-bold",
-   "why": "font chữ đậm, thay bằng Be Vietnam Pro Bold",
-   "usedBy": {
-    "common": 22
-   }
-  },
-  {
-   "name": "TShinGoPr6-Regular SDF",
-   "bundle": "88a48bd1ff8c3d05c36234dd5fb30f9c.bundle",
-   "serialized": "CAB-5c2c8949eba27b95193c3ef28fcd6686",
-   "pathId": -2779923817781384253,
-   "chars": 726,
-   "latin": true,
-   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-   "atlas": {
-    "texture": "CAB-5c2c8949eba27b95193c3ef28fcd6686:6716478038224481219",
-    "width": 4096,
-    "height": 2048,
-    "padding": 14
-   },
-   "fallbacks": [
-    "DF-KakuPop-W5 SDF_onpu_padding14"
-   ],
-   "missingVi": 77,
-   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
-   "action": "replace-regular",
-   "why": "font chữ thường, thay bằng Be Vietnam Pro Regular",
-   "assetPath": null,
-   "usedBy": {
-    "DE": 1
-   }
-  },
-  {
-   "name": "TShinGoPr6-Medium_hcs",
-   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
-   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
-   "pathId": -8904045154548630092,
-   "chars": 181,
-   "latin": true,
-   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-   "atlas": {
-    "texture": "CAB-74762da342881dc91f70cfda1631370a:8580786170855898548",
-    "width": 1024,
-    "height": 1024,
-    "padding": 12
-   },
-   "fallbacks": [],
-   "missingVi": 77,
-   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
-   "action": "replace-regular",
-   "why": "font chữ thường, thay bằng Be Vietnam Pro Regular",
-   "assetPath": "Assets/Fonts/TextMeshPro/Common/TShinGoPr6-Medium_hcs.asset",
-   "usedBy": {}
-  },
-  {
-   "name": "TShinGoPr6-Regular SDF",
-   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
-   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
-   "pathId": -1143001169658998545,
-   "chars": 726,
-   "latin": true,
-   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-   "atlas": {
-    "texture": "CAB-74762da342881dc91f70cfda1631370a:-7223677737768218385",
-    "width": 4096,
-    "height": 2048,
-    "padding": 14
-   },
-   "fallbacks": [
-    "DF-KakuPop-W5 SDF_onpu_padding14"
-   ],
-   "missingVi": 77,
-   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
-   "action": "replace-regular",
-   "why": "font chữ thường, thay bằng Be Vietnam Pro Regular",
-   "assetPath": "Assets/Fonts/FontAssets/FR/TShinGoPr6-Regular SDF.asset",
-   "usedBy": {}
-  },
-  {
-   "name": "TShinGoPr6-Regular_hcs",
-   "bundle": "91aca73acb86d6607f0efa1f803348be.bundle",
-   "serialized": "CAB-74762da342881dc91f70cfda1631370a",
-   "pathId": 7159630308555411010,
-   "chars": 174,
-   "latin": true,
-   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-   "atlas": {
-    "texture": "CAB-74762da342881dc91f70cfda1631370a:8271139557133831746",
-    "width": 1024,
-    "height": 1024,
-    "padding": 14
-   },
-   "fallbacks": [],
-   "missingVi": 77,
-   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
-   "action": "replace-regular",
-   "why": "font chữ thường, thay bằng Be Vietnam Pro Regular",
-   "assetPath": "Assets/Fonts/TextMeshPro/Common/TShinGoPr6-Regular_hcs.asset",
-   "usedBy": {}
-  },
-  {
-   "name": "TShinGoPr6-Medium SDF_mission",
-   "file": "sharedassets0.assets",
-   "serialized": "sharedassets0.assets",
-   "pathId": 373,
-   "chars": 991,
-   "latin": true,
-   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-   "atlas": {
-    "texture": "sharedassets0.assets:54",
-    "width": 2048,
-    "height": 1024,
-    "padding": 1
-   },
-   "fallbacks": [
-    "DFPGB_Y5 SDF_mission",
-    "DFT_R5 SDF_mission",
-    "NotoSansKR-Medium SDF_mission"
-   ],
-   "missingVi": 77,
-   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
-   "action": "replace-regular",
-   "why": "font chữ thường, thay bằng Be Vietnam Pro Regular",
-   "usedBy": {
-    "common": 1
-   }
-  },
-  {
-   "name": "TShinGoPr6-Medium_launcher_hcs",
-   "file": "sharedassets0.assets",
-   "serialized": "sharedassets0.assets",
-   "pathId": 381,
-   "chars": 181,
-   "latin": true,
-   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-   "atlas": {
-    "texture": "sharedassets0.assets:61",
-    "width": 1024,
-    "height": 512,
-    "padding": 4
-   },
-   "fallbacks": [],
-   "missingVi": 77,
-   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
-   "action": "replace-regular",
-   "why": "font chữ thường, thay bằng Be Vietnam Pro Regular",
-   "usedBy": {}
-  },
-  {
    "name": "TShinGoPr6-Medium_savewindow",
    "file": "sharedassets0.assets",
    "serialized": "sharedassets0.assets",
@@ -2604,35 +2630,9 @@
    "missingVi": 103,
    "missingSample": "«»ÀÁÂÊÍÒÓÔÙÚÝáâãêìíòóôõùúýĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếề",
    "action": "replace-regular",
-   "why": "chữ hoa của khung lưu game, thay bằng Be Vietnam Pro Regular",
+   "why": "chữ hoa của khung lưu game, thiếu chữ gốc để ghép",
    "usedBy": {
     "common": 1
-   }
-  },
-  {
-   "name": "TShinGoPr6-Medium SDF",
-   "file": "sharedassets1.assets",
-   "serialized": "sharedassets1.assets",
-   "pathId": 834,
-   "chars": 1600,
-   "latin": true,
-   "asciiLetters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-   "atlas": {
-    "texture": "sharedassets1.assets:50",
-    "width": 4096,
-    "height": 4096,
-    "padding": 14
-   },
-   "fallbacks": [
-    "DF-KakuPop-W5 SDF_onpu_padding14",
-    "DF-KakuPop-W5 SDF_Padding14_Take"
-   ],
-   "missingVi": 77,
-   "missingSample": "ĂăĐđĩũƠơƯưẠạẢảẤấầẩẫẬậẮắằẳẵẶặẹẻẽẾếềểỄễỆệỉịỌọỏỐốỒồổỗỘộỚớỜờỞởỡợ",
-   "action": "replace-regular",
-   "why": "font chữ thường, thay bằng Be Vietnam Pro Regular",
-   "usedBy": {
-    "common": 8
    }
   }
  ]

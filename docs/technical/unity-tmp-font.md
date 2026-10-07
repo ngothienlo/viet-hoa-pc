@@ -18,14 +18,15 @@ Kết luận: font nào có thể vẽ chữ của bản dịch thì phải tự
 ## Quy trình cho một game mới
 
 1. **Kiểm kê một lần, ghi lại.** Viết `inventory.py` cho game đó. Ghi mọi TMP Font Asset vào `games/<id>/tools/font/fonts.json`: tên, file hoặc bundle, số chữ, atlas, padding, fallback, prefab nào dùng, và chữ của bản dịch mà font còn thiếu. Ghi kèm dấu vân tay của bản game (Patapon dùng sha1 của `catalog.json`). Session sau đọc file này thay vì quét lại.
-2. **Chọn cách vá cho từng font** bằng luật theo tên, đặt trong code (`RULES`), không làm tay:
-   - Font chữ thường của game (kiểu Gothic, Sans) → thay cả atlas bằng một font có đủ tiếng Việt, ví dụ Be Vietnam Pro.
-   - Font mang bản sắc của game, không có TTF gốc → ghép dấu từ chính glyph của font.
+2. **Vẽ atlas gốc của từng font Latin ra ảnh, rồi so với ảnh chụp trong game.** Không đoán font theo tên. Ở Patapon, font kiểu Patapon của lời thoại là `TTakeStd-Bold`, không phải `DF-KakuPop` như tên gợi ý. Đoán sai thì thay mất nét gốc.
+3. **Chọn cách vá cho từng font** bằng luật theo tên, đặt trong code (`RULES`), không làm tay:
+   - Mặc định là ghép dấu từ chính glyph của font, để giữ nét gốc của game. Áp dụng cho cả font chữ thường lẫn font trang trí.
+   - Thay cả atlas bằng một font có đủ tiếng Việt (ví dụ Be Vietnam Pro) chỉ khi font gốc thiếu chữ cái để ghép, ví dụ font chỉ có vài chữ hoa.
    - Font Nhật, Hàn, Trung, font chỉ có số hay ký hiệu → giữ nguyên.
-3. **Chữ bắt buộc** là chữ có trong câu sẽ đưa vào game mà không có trong câu gốc. Đừng bắt font có đủ mọi ký tự của cột `vi`: kana hay chữ toàn khổ vốn đã được game vẽ qua fallback.
-4. **Vá từ file gốc**, không vá chồng lên bản đã vá. Launcher giữ bản sao lưu trong `%LOCALAPPDATA%\viet-hoa-pc\backups`.
-5. **Kiểm tra trước khi áp**: đọc lại file đã vá, đối chiếu chữ bắt buộc, vẽ ảnh xem thử.
-6. **Chơi thử** những chỗ có chữ kiểu riêng của game: lời thoại, tên, tips, menu.
+4. **Chữ bắt buộc** là chữ có trong câu sẽ đưa vào game mà không có trong câu gốc. Đừng bắt font có đủ mọi ký tự của cột `vi`: kana hay chữ toàn khổ vốn đã được game vẽ qua fallback.
+5. **Vá từ file gốc**, không vá chồng lên bản đã vá. Launcher giữ bản sao lưu trong `%LOCALAPPDATA%\viet-hoa-pc\backups`.
+6. **Kiểm tra trước khi áp**: đọc lại file đã vá, đối chiếu chữ bắt buộc, vẽ ảnh xem thử.
+7. **Chơi thử** những chỗ có chữ kiểu riêng của game: lời thoại, tên, tips, menu.
 
 ## Kỹ thuật
 
@@ -40,13 +41,17 @@ Kết luận: font nào có thể vẽ chữ của bản dịch thì phải tự
 
 - TMP dùng Alpha8. Cạnh chữ ở 0.5. Khoảng cách được chuẩn hóa: `alpha = 0.5 + d / (2 * padding)`.
 - `_GradientScale` của material bằng padding cộng 1.
-- `m_GlyphRect` tính `m_Y` từ đáy ảnh. Nới atlas lên phía trên (giữ ảnh cũ ở đáy) thì rect cũ không đổi.
+- `m_GlyphRect` tính `m_Y` từ đáy ảnh. Nới atlas lên phía trên (giữ ảnh cũ ở đáy) thì rect cũ không đổi. Nới vừa đủ (Patapon dùng bước 64 hàng); gấp đôi một atlas 4096 sẽ tốn bộ nhớ vô ích.
 - Font của game thường để rect khít nét chữ, padding nằm ngoài rect. Phải chừa đủ padding và khoảng hở quanh mỗi glyph mới.
 
 ### Ghép dấu từ glyph có sẵn
 
 1. Cắt vùng glyph trong atlas, phóng lên (Patapon dùng 4 lần), cắt ở mức 0.5 để có hình chữ.
-2. Dấu lấy từ glyph sẵn có: `´ ` ^ ~ . ? o - < >`. Font nhỏ không có dấu thì mượn của font cùng họ.
+2. Dấu lấy theo thứ tự ưu tiên:
+   - Dấu của chữ Latin-1 có sẵn (`á à â ã`, bản hoa cho chữ hoa): lấy các mảnh nằm cao hơn đỉnh chữ gốc. Đây là dấu do người vẽ font làm, đúng nét và đúng cỡ.
+   - Ký tự rời: `´ ` ^ ~ ˜`. Hỏi lấy phần trên của `?`, nặng lấy `.`, trăng lấy nửa dưới của `o`, gạch của đ lấy `-`.
+   - Râu của ư, ơ: dựng theo hình học, dày bằng nét chữ đo trên `l`. Thu nhỏ cung của `o` thì nét quá mảnh, còn với font nét vuông, góc của `o` chỉ là một cạnh chéo.
+   - Font nhỏ không có dấu thì mượn của font lớn cùng họ (TTake mượn TTake), co theo tỉ lệ cỡ chữ mẫu. Đừng mượn chéo họ.
 3. Ghép bằng phép hợp hình, rồi tính lại SDF bằng biến đổi khoảng cách (`scipy.ndimage.distance_transform_edt`) với đúng padding.
 4. Kiểm tra quy ước: dựng lại trường của một chữ có sẵn rồi so với atlas gốc. Lệch khoảng 1% là đúng quy ước.
 

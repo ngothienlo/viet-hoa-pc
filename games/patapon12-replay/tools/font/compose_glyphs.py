@@ -163,6 +163,46 @@ class Composer:
 
     # Dấu --------------------------------------------------------------
 
+    def stroke(self) -> float:
+        """Độ dày nét đứng, đo trên thân chữ `l`."""
+        if not hasattr(self, "_stroke"):
+            mask = self.shape("l").mask
+            runs = mask.sum(axis=1)
+            runs = runs[runs > 0]
+            self._stroke = float(np.median(runs)) / SCALE if runs.size else 6.0 * self.unit
+        return self._stroke
+
+    def native_mark(self, name: str, upper: bool) -> Shape | None:
+        """Dấu do người vẽ font làm, tách từ chữ Latin-1 có sẵn (á, À, â, ñ…).
+
+        Lấy các mảnh nằm cao hơn đỉnh chữ gốc. Dấu này đúng nét và đúng cỡ,
+        nên dùng trước dấu dựng từ ký tự rời.
+        """
+        sources = {
+            GRAVE: ("À", "à"),
+            ACUTE: ("Á", "á"),
+            CIRCUMFLEX: ("Â", "â"),
+            TILDE: ("Ã", "ã", "Ñ", "ñ"),
+        }.get(name, ())
+        for letter in sources:
+            if letter.isupper() != upper or letter not in self.by_char:
+                continue
+            base_ch = unicodedata.normalize("NFD", letter)[0]
+            if base_ch not in self.by_char:
+                continue
+            whole = self.shape(letter)
+            base_top = self.shape(base_ch).top
+            labels, count = label(whole.mask)
+            keep = np.zeros_like(whole.mask)
+            for index in range(1, count + 1):
+                rows = np.where(labels == index)[0]
+                bottom = whole.top - (rows.max() + 1) / SCALE
+                if bottom >= base_top - 0.5 * self.unit:
+                    keep |= labels == index
+            if keep.any():
+                return _crop_to_ink(keep, whole.left, whole.top)
+        return None
+
     def mark(self, name: str) -> Shape:
         u = self.unit
         if name == GRAVE:
@@ -175,7 +215,7 @@ class Composer:
         if name == CIRCUMFLEX:
             return self.shape("^").scaled(0.72)
         if name == TILDE:
-            tilde = self.shape("~")
+            tilde = self.shape("~" if self._has("~") else "˜")
             return tilde.scaled(20 * u / tilde.width, 9 * u / tilde.height)
         if name == HOOK:
             hook = self.shape("?")
@@ -194,18 +234,31 @@ class Composer:
             cup = _crop_to_ink(ring.mask[rows // 2 :, :], ring.left, ring.top)
             return cup.scaled(19 * u / cup.width, 8 * u / cup.height)
         if name == HORN:
-            # Cung trên phải của `o`, lật dọc: nét ngang bám thân chữ rồi cong lên.
-            ring = self.shape("o")
-            rows, cols = ring.mask.shape
-            arc = ring.mask[: rows // 2, cols // 2 :][::-1, :]
-            horn = _crop_to_ink(arc, 0.0, 0.0)
-            return horn.scaled(10 * u / horn.width, 10 * u / horn.height)
+            # Nét ngang bám đỉnh thân phải rồi một nét đứng vểnh lên, dày bằng nét chữ.
+            stroke = self.stroke()
+            thick = int(round(stroke * 0.85 * SCALE))
+            width = int(round((6 * u + stroke * 0.6) * SCALE))
+            height = int(round((5 * u + stroke) * SCALE))
+            mask = np.zeros((height, width), bool)
+            mask[height - thick :, :] = True
+            mask[:, width - thick :] = True
+            return Shape(mask, 0.0, 0.0)
         if name == "bar":
             bar = self.shape("-")
             return bar.scaled(15 * u / bar.width, 1.0)
         raise KeyError(name)
 
     # Ghép -------------------------------------------------------------
+
+    def _has(self, ch: str) -> bool:
+        return ch in self.by_char or (self.donor is not None and ch in self.donor.by_char)
+
+    def above(self, name: str, upper: bool, shrink: float) -> Shape:
+        """Dấu trên đầu chữ. Có dấu gốc của font thì dùng, khỏi co."""
+        native = self.native_mark(name, upper)
+        if native is not None:
+            return native
+        return self.mark(name).scaled(shrink)
 
     def guillemet(self, ch: str) -> tuple[Shape, dict]:
         u = self.unit
@@ -249,7 +302,8 @@ class Composer:
 
         if HORN in marks:
             horn = self.mark(HORN).scaled(shrink)
-            parts.append(horn.moved(base.right - horn.width * 0.45, base.top + horn.height * 0.6))
+            stroke = self.stroke()
+            parts.append(horn.moved(base.right - stroke * 0.5, base.top - stroke * 0.85 + horn.height))
 
         if DOT in marks:
             dot = self.mark(DOT).scaled(shrink)
@@ -258,12 +312,14 @@ class Composer:
         shelf = None
         if CIRCUMFLEX in marks or BREVE in marks:
             name = CIRCUMFLEX if CIRCUMFLEX in marks else BREVE
-            shelf = self.mark(name).scaled(shrink).centered(cx, above)
+            shelf = self.above(name, upper, shrink).centered(cx, above)
             parts.append(shelf)
 
         tone = next((m for m in marks if m in TONES), None)
         if tone is not None:
-            sign = self.mark(tone).scaled(shrink * (0.85 if shelf is not None else 1.0))
+            sign = self.above(tone, upper, shrink) if tone != HOOK else self.mark(tone).scaled(shrink)
+            if shelf is not None:
+                sign = sign.scaled(0.85)
             if shelf is None:
                 parts.append(sign.centered(cx, above))
             elif tone == TILDE or name == BREVE:
@@ -347,12 +403,13 @@ class Composer:
         old = self.atlas
         width = old.shape[1]
         height = old.shape[0]
-        extra = height
+        # Nới vừa đủ, theo bước 64 hàng. Gấp đôi atlas 4096 sẽ tốn bộ nhớ vô ích.
+        extra = 64
         while True:
             placed = _shelf_pack(fields, width, extra)
             if placed is not None:
                 break
-            extra *= 2
+            extra += 64
         canvas = np.zeros((height + extra, width), np.uint8)
         canvas[extra:, :] = old
         rects = []

@@ -22,7 +22,8 @@ Game chưa có `docs/font.md` thì đọc bản của `patapon12-replay` làm m�
 ## Làm
 
 1. Từ ảnh chụp, tìm câu trong `locale/vi/strings.csv` để có `id`, rồi ghi `id` vào issue.
-2. Xem `fonts.json`: font nào vẽ chữ đó, font đó vá theo luật nào.
+2. Xem `fonts.json`: font nào vẽ chữ đó, font đó vá theo luật nào. Chưa chắc font nào thì vẽ atlas gốc ra ảnh rồi so với ảnh chụp. Không đoán theo tên.
+   Mặc định giữ nét gốc (ghép dấu). Chỉ thay font khi font gốc thiếu chữ cái để ghép.
 3. Font chưa khớp luật, hoặc game vừa cập nhật thì chạy `inventory.py`, rồi sửa `RULES`.
 4. Chạy script vá font của game. Script phải tự kiểm tra (`--check`) trước khi áp.
 5. Vẽ ảnh xem thử (`preview.py`) và tự xem ảnh trước khi báo xong.

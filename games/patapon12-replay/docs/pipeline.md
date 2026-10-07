@@ -54,7 +54,7 @@ Bản Steam đã được áp. Log BepInEx ghi Unity 2022.3.52f1, BepInEx 6.0.0-
 
 Toàn bộ phần font nằm ở `docs/font.md`: font nào vẽ chữ gì, cách vá từng nhóm, lệnh chạy, và bẫy.
 
-Tóm tắt: font chữ thường (TShinGo, TTake) được thay bằng Be Vietnam Pro. Font kiểu Patapon (KakuPop, Londrina) giữ nét gốc, chữ Việt được ghép từ glyph của chính font đó. Không dùng font fallback và không trỏ font hệ thống. Danh sách font đã quét nằm ở `tools/font/fonts.json`.
+Tóm tắt: mọi font Latin (TTake là font kiểu Patapon của lời thoại, TShinGo, KakuPop, Londrina) giữ nét gốc; chữ Việt được ghép từ glyph của chính font đó. Riêng `_savewindow` được thay bằng Be Vietnam Pro vì thiếu chữ gốc để ghép. Không dùng font fallback và không trỏ font hệ thống. Danh sách font đã quét nằm ở `tools/font/fonts.json`.
 
 ```powershell
 .\.venv\Scripts\python.exe games\patapon12-replay\tools\font\apply_vietnamese_font.py

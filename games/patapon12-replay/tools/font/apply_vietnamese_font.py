@@ -2,8 +2,8 @@
 
 Danh sách font cần vá lấy từ `fonts.json` (sinh bởi `inventory.py`):
 
-- `replace-regular` / `replace-bold`: thay cả bảng glyph và atlas bằng Be Vietnam Pro.
-- `compose`: giữ nét gốc (KakuPop, Londrina), ghép thêm chữ Việt bằng `compose_glyphs.py`.
+- `compose`: giữ nét gốc (TTake, TShinGo, KakuPop, Londrina), ghép thêm chữ Việt bằng `compose_glyphs.py`.
+- `replace-regular` / `replace-bold`: thay cả bảng glyph và atlas bằng Be Vietnam Pro, cho font thiếu chữ gốc để ghép.
 
 Luôn đọc file gốc (qua `original()`), kể cả khi launcher đã áp bản vá cũ.
 File vá ghi vào `patch/`, giữ đúng đường dẫn tương đối với thư mục cài.
@@ -43,8 +43,13 @@ HOST_PREFER = {
     "regular": ("TShinGoPr6-Medium SDF", "TShinGoPr6-Medium SDF_mission", "TShinGoPr6-Regular SDF"),
     "bold": ("TTakeStd-Bold SDF", "TTakeStd-Bold_hcs"),
 }
-# Font KakuPop đủ dấu nhất. Font KakuPop nhỏ mượn dấu của font này.
-DONOR = ("sharedassets1.assets", "DF-KakuPop-W5 SDF_Padding14_Take")
+# Font nhỏ (chỉ có chữ và số) mượn dấu của font lớn cùng họ, theo tiền tố tên.
+DONORS = {
+    "TTakeStd": ("sharedassets5.assets", "TTakeStd-Bold SDF"),
+    "TShinGoPr6": ("sharedassets1.assets", "TShinGoPr6-Medium SDF"),
+    "DF-KakuPop": ("sharedassets1.assets", "DF-KakuPop-W5 SDF_Padding14_Take"),
+    "LondrinaSolid": ("sharedassets1.assets", "DF-KakuPop-W5 SDF_Padding14_Take"),
+}
 ALPHA8 = 1
 TMP_SDFAA = 4165
 
@@ -179,7 +184,7 @@ def retarget_materials(env, owners: set[str], redirect: dict[tuple[str, int], tu
 # Vá một file -----------------------------------------------------------
 
 
-def patch_fonts(env, items: list[dict], baked: dict[str, dict], chars: list[str], donor: Composer | None) -> int:
+def patch_fonts(env, items: list[dict], baked: dict[str, dict], chars: list[str], donors: Donors) -> int:
     """Vá các font trong `items`. Mọi font của một lần gọi nằm trong cùng env."""
     objects = {(obj.assets_file.name, obj.path_id): obj for obj in env.objects}
     owners = {item["serialized"] for item in items}
@@ -212,7 +217,7 @@ def patch_fonts(env, items: list[dict], baked: dict[str, dict], chars: list[str]
         tree = obj.read_typetree()
         atlas_pid = int(tree["m_AtlasTextures"][0]["m_PathID"])
         texture = objects[(owner, atlas_pid)]
-        composer = Composer(tree, read_alpha(texture), donor)
+        composer = Composer(tree, read_alpha(texture), donors.for_font(item["name"]))
         result = composer.build(chars)
         if not result["added"]:
             continue
@@ -252,19 +257,33 @@ def open_data_file(filename: str, gen, install: Path):
     return env
 
 
-def load_donor(fonts: list[dict], gen, install: Path) -> Composer:
-    filename, name = DONOR
-    item = next(row for row in fonts if row.get("file") == filename and row["name"] == name)
-    env = open_data_file(filename, gen, install)
-    objects = {(obj.assets_file.name, obj.path_id): obj for obj in env.objects}
-    tree = objects[(filename, item["pathId"])].read_typetree()
-    atlas = objects[(filename, int(tree["m_AtlasTextures"][0]["m_PathID"]))]
-    return Composer(tree, read_alpha(atlas))
+class Donors:
+    """Nạp font cho mượn dấu khi cần, mỗi font một lần."""
+
+    def __init__(self, fonts: list[dict], gen, install: Path) -> None:
+        self.fonts = fonts
+        self.gen = gen
+        self.install = install
+        self.cache: dict[tuple[str, str], Composer] = {}
+
+    def for_font(self, name: str) -> Composer | None:
+        key = next((DONORS[prefix] for prefix in DONORS if name.startswith(prefix)), None)
+        if key is None or key[1] == name:
+            return None
+        if key not in self.cache:
+            filename, donor_name = key
+            item = next(row for row in self.fonts if row.get("file") == filename and row["name"] == donor_name)
+            env = open_data_file(filename, self.gen, self.install)
+            objects = {(obj.assets_file.name, obj.path_id): obj for obj in env.objects}
+            tree = objects[(filename, item["pathId"])].read_typetree()
+            atlas = objects[(filename, int(tree["m_AtlasTextures"][0]["m_PathID"]))]
+            self.cache[key] = Composer(tree, read_alpha(atlas))
+        return self.cache[key]
 
 
-def patch_data_file(filename: str, items: list[dict], baked: dict, chars: list[str], donor: Composer, gen, install: Path) -> Path:
+def patch_data_file(filename: str, items: list[dict], baked: dict, chars: list[str], donors: Donors, gen, install: Path) -> Path:
     env = open_data_file(filename, gen, install)
-    patch_fonts(env, items, baked, chars, donor)
+    patch_fonts(env, items, baked, chars, donors)
     assets = next(obj.assets_file for obj in env.objects if obj.assets_file.name == filename)
     destination = PATCH / DATA_NAME / filename
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -273,13 +292,13 @@ def patch_data_file(filename: str, items: list[dict], baked: dict, chars: list[s
     return destination
 
 
-def patch_bundle(filename: str, items: list[dict], baked: dict, chars: list[str], donor: Composer, hashes: list[bytes], install: Path) -> Path:
+def patch_bundle(filename: str, items: list[dict], baked: dict, chars: list[str], donors: Donors, hashes: list[bytes], install: Path) -> Path:
     if filename in ex.HINTS.values():
         raise SystemExit(f"{filename} cũng là bundle LocalizeData. Cần gộp hai bản vá trước khi ghi.")
     source = ex.original_bundle(filename)
     key = ex.bundle_key(source, hashes)
     env = ex.open_bundle(source, hashes)
-    patch_fonts(env, items, baked, chars, donor)
+    patch_fonts(env, items, baked, chars, donors)
     destination = PATCH / ex.BUNDLES.relative_to(install) / filename
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_bytes(ex.save_bundle(env, key))
@@ -323,13 +342,13 @@ def main() -> int:
     gen = TypeTreeGenerator(UNITY, "AssetStudio")
     gen.load_local_game(str(install))
     hashes = ex.load_hashes()
-    donor = load_donor(payload["fonts"], gen, install)
+    donors = Donors(payload["fonts"], gen, install)
     for where, items in sorted(groups.items()):
         print(where)
         if where.endswith(".bundle"):
-            patch_bundle(where, items, baked, chars, donor, hashes, install)
+            patch_bundle(where, items, baked, chars, donors, hashes, install)
         else:
-            patch_data_file(where, items, baked, chars, donor, gen, install)
+            patch_data_file(where, items, baked, chars, donors, gen, install)
         gc.collect()
 
     print("kiểm tra bản vá")
