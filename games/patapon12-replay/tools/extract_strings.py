@@ -11,15 +11,19 @@ import base64
 import csv
 import hashlib
 import json
-import struct
 import sys
 from pathlib import Path
 
+import numpy as np
 import UnityPy
 from Crypto.Cipher import AES
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from game_config import install_dir, original  # noqa: E402
+
 GAME = Path(__file__).resolve().parents[1]
-INSTALL = Path(r"C:\Program Files (x86)\Steam\steamapps\common\PATAPON12_REPLAY")
+INSTALL = install_dir()
 CATALOG = INSTALL / "PATAPON12_REPLAY_Data" / "StreamingAssets" / "aa" / "catalog.json"
 BUNDLES = CATALOG.parent / "StandaloneWindows64"
 CSV_PATH = GAME / "locale" / "vi" / "strings.csv"
@@ -37,6 +41,11 @@ HINTS = {
     "P2": "5592336601a9d01c95fc7ad67f9eeaea.bundle",
     "P2S": "372b82c7be935e013ea369be02d082cd.bundle",
 }
+
+
+def original_bundle(filename: str) -> Path:
+    """Bundle gốc. Launcher đã áp bản vá thì lấy bản sao lưu, không đọc bundle đã vá."""
+    return original(BUNDLES.relative_to(INSTALL) / filename)
 
 
 def load_hashes() -> list[bytes]:
@@ -58,26 +67,42 @@ def derive_key(password: bytes, salt: bytes) -> bytes:
 
 
 def decrypt(data: bytes, key: bytes) -> bytes:
+    """XOR với dòng AES-ECB của bộ đếm. Mã hóa và giải mã là cùng một phép."""
     blocks = (len(data) + 15) // 16
-    nonces = bytearray(blocks * 16)
-    for index in range(blocks):
-        struct.pack_into("<Q", nonces, index * 16, index + 1)
-    stream = AES.new(key, AES.MODE_ECB).encrypt(bytes(nonces))
-    return bytes(left ^ right for left, right in zip(data, stream))
+    counters = np.zeros((blocks, 2), dtype="<u8")
+    counters[:, 0] = np.arange(1, blocks + 1, dtype="<u8")
+    stream = np.frombuffer(AES.new(key, AES.MODE_ECB).encrypt(counters.tobytes()), np.uint8)
+    return (np.frombuffer(data, np.uint8) ^ stream[: len(data)]).tobytes()
 
 
-def open_bundle(path: Path, hashes: list[bytes]):
-    data = path.read_bytes()
-    if data.startswith(b"UnityFS"):
-        return UnityPy.load(data)
+def bundle_key(path: Path, hashes: list[bytes]) -> bytes | None:
+    """Khóa AES của bundle. None nếu bundle không mã hóa."""
+    with path.open("rb") as handle:
+        head = handle.read(16)
+    if head.startswith(b"UnityFS"):
+        return None
     stem = path.stem.encode("ascii")
     for password in hashes:
         key = derive_key(password, stem)
         nonce = (1).to_bytes(8, "little") + b"\x00" * 8
-        head = bytes(a ^ b for a, b in zip(data[:7], AES.new(key, AES.MODE_ECB).encrypt(nonce)))
-        if head == b"UnityFS":
-            return UnityPy.load(decrypt(data, key))
+        plain = bytes(a ^ b for a, b in zip(head[:7], AES.new(key, AES.MODE_ECB).encrypt(nonce)))
+        if plain == b"UnityFS":
+            return key
     raise RuntimeError(f"Không giải được {path.name}")
+
+
+def open_bundle(path: Path, hashes: list[bytes]):
+    key = bundle_key(path, hashes)
+    data = path.read_bytes()
+    return UnityPy.load(data if key is None else decrypt(data, key))
+
+
+def save_bundle(env, key: bytes | None) -> bytes:
+    """Đóng gói lại bundle đã sửa, mã hóa bằng đúng khóa cũ."""
+    plain = next(iter(env.files.values())).save(packer="original")
+    if not plain.startswith(b"UnityFS"):
+        raise RuntimeError("Bundle sau khi ghi không phải UnityFS")
+    return plain if key is None else decrypt(plain, key)
 
 
 def add_lines(rows: list[dict[str, str]], product: str, context: str, suffix: str, messages: list) -> None:
@@ -164,7 +189,7 @@ def collect(hashes: list[bytes]) -> list[dict[str, str]]:
     wanted = dict(ASSETS)
     rows: list[dict[str, str]] = []
     for product, filename in HINTS.items():
-        path = BUNDLES / filename
+        path = original_bundle(filename)
         if product not in wanted or not path.is_file():
             continue
         take(open_bundle(path, hashes), path, wanted, rows)
@@ -172,6 +197,7 @@ def collect(hashes: list[bytes]) -> list[dict[str, str]]:
         for path in sorted(BUNDLES.glob("*.bundle")):
             if not wanted:
                 break
+            path = original_bundle(path.name)
             take(open_bundle(path, hashes), path, wanted, rows)
     if wanted:
         raise SystemExit("Không thấy LocalizeData của " + ", ".join(wanted))

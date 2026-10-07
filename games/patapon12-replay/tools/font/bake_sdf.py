@@ -8,7 +8,7 @@ cạnh chữ ở 0.5, spread = padding, rect khít bitmap.
 from __future__ import annotations
 
 import csv
-import json
+import sys
 from pathlib import Path
 
 import freetype
@@ -16,36 +16,13 @@ import numpy as np
 from PIL import Image
 from scipy.ndimage import distance_transform_edt
 
-ROOT = Path(__file__).resolve().parents[4]
-GAME_DIR = ROOT / "games" / "patapon12-replay"
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from game_config import GAME_DIR, font_path  # noqa: E402
+
 CSV_PATH = GAME_DIR / "locale" / "vi" / "strings.csv"
 CHARSET_PATH = Path(__file__).with_name("vietnamese-charset.txt")
 PREVIEW_DIR = GAME_DIR / "build" / "font-preview"
-EXE = "PATAPON12_REPLAY.exe"
-
-
-def load_config() -> dict:
-    """config.json của máy này. Chưa có thì dùng config.example.json."""
-    for name in ("config.json", "config.example.json"):
-        path = GAME_DIR / name
-        if path.is_file():
-            return json.loads(path.read_text(encoding="utf-8"))
-    return {}
-
-
-def install_dir() -> Path:
-    installs = load_config().get("installs") or {}
-    for value in installs.values():
-        if isinstance(value, str) and value.strip() and (Path(value) / EXE).is_file():
-            return Path(value)
-    raise SystemExit(f"Không thấy {EXE}. Điền installs trong config.json của game.")
-
-
-def font_path(kind: str) -> Path:
-    raw = str((load_config().get("fonts") or {}).get(kind) or "").strip()
-    if not raw or not Path(raw).is_file():
-        raise SystemExit(f"Thiếu font fonts.{kind}. Điền đường dẫn TTF Be Vietnam Pro trong config.json.")
-    return Path(raw)
 
 
 # Chỉ dùng cho ký tự Be Vietnam Pro không có. Chữ Việt vẫn một mặt chữ.
