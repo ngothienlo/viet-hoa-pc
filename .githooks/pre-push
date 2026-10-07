@@ -1,0 +1,14 @@
+#!/bin/sh
+# Chặn push lên nhánh được bảo vệ trên remote. Nhánh đó chỉ đổi qua PR merge trên GitHub.
+. "$(dirname "$0")/protected-branches.sh"
+
+while read -r local_ref local_sha remote_ref remote_sha; do
+  case "$remote_ref" in
+    refs/heads/*) branch=${remote_ref#refs/heads/} ;;
+    *) continue ;;
+  esac
+  if is_protected "$branch"; then
+    refuse "không push thẳng lên '$branch' của $1."
+  fi
+done
+exit 0
