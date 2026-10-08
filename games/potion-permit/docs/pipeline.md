@@ -66,6 +66,10 @@ Chạy tay:
 
 Ghi đè cột English, không thêm cột Vietnamese: menu chọn ngôn ngữ của game không có tiếng Việt, và các ngôn ngữ khác giữ nguyên.
 
+## Đã chạy thử
+
+2026-10-08, bản Steam (#19): áp 782 term qua launcher (734 câu khác bản gốc trong mỗi file), mở game. Game nạp bình thường. `Player.log` (`%USERPROFILE%\AppData\LocalLow\MasshiveMedia\Potion Permit\`) chỉ báo thiếu glyph chữ Việt (ự, ề, ị, ể…) trong `PixelMplus12-Regular` và các fallback, đúng như dự kiến khi chưa vá font.
+
 ## Font
 
 Game dùng font pixel họ PixelMplus12 kèm 14 font fallback. Font chưa có chữ Việt riêng (ư, ơ, ế…). Xem ticket font (#20) và `docs/font.md` khi có.
