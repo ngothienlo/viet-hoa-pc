@@ -47,6 +47,25 @@ Theo `docs/thuat-ngu.md` và `docs/van-phong.md`. Bản dịch theo lô gộp b�
 
 Mỗi file là mảng JSON `{"id", "vi"}`. Script loại câu lệch placeholder, thẻ màu, số dòng, thứ tự mở và đóng thẻ. Câu nhận vào lên `review`.
 
+## Rà xưng hô
+
+Chạy trước khi mở PR có hội thoại NPC:
+
+```powershell
+.\.venv\Scripts\python.exe games\potion-permit\tools\audit_pronouns.py --npc MYER,HELENE
+.\.venv\Scripts\python.exe games\potion-permit\tools\audit_pronouns.py lo1.json lo2.json
+```
+
+- Không có `--npc` thì rà mọi NPC. File JSON truyền vào là bản dịch chưa gộp, đè lên cột `vi` khi rà.
+- Lần chạy đầu đọc bundle `StreamingAssets/aa/Windows/StandaloneWindows64/so-event-data_*.bundle`. Mỗi cảnh sự kiện có danh sách NPC có mặt (`chemistEventActor`) và các bước; bước `eventType` = `DIALOG` trỏ tới term qua `eventDialog.npcIDString` + `dialogContent`. Kết quả lưu ở `extract/scenes.json` (không commit). Khoảng 94% câu `EVENTDIALOG` tìm được cảnh.
+- In hai danh sách:
+  1. Câu NPC nói riêng với nhân vật chính có từ lộ giới («anh», «cô», «ông»…) không phải cách NPC tự xưng, hoặc gọi «cậu» khi bảng ghi «cháu». Phần lớn là ngôi thứ ba («ông tôi», «cô kiểm lâm»): đọc rồi bỏ qua.
+  2. Danh xưng đứng trước tên NPC theo người được gọi («ngài Myer», «ông Myer»). Một người bị gọi bằng nhiều danh xưng thì xem có hợp quan hệ không.
+- Bảng xưng hô đọc từ `docs/van-phong.md`, mục «Xưng hô của từng NPC với nhân vật chính». Đổi tên mục hoặc cột thì sửa script.
+- Câu sự kiện không tìm được cảnh thì đọc tay.
+
+Muốn biết thứ tự lời trong một cảnh khi dịch: đọc `extract/scenes.json`, tìm theo tên term.
+
 ## Áp vào game
 
 `game.json` có `"build": "tools/build_patch.py"`. Bấm Áp dụng trong launcher (hoặc `VietHoa.exe`) thì launcher làm như sau:

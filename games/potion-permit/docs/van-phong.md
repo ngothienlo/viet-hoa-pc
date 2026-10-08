@@ -132,6 +132,66 @@ Ghi chú:
 
 Hội thoại nhóm (`Group/`) dùng bảng này. Nếu không rõ ai nói với ai, đọc id: `Group/DIALOGROOM_<ngày>_<việc>_<nơi>_<lượt>_<NPC>_<số>`. Các dòng cùng `<ngày>_<việc>_<nơi>` là một cảnh.
 
+### Ai nói với ai
+
+- Người nói: phần trước `/` của id. Mọi câu dưới `MYER/` là Myer nói.
+- Thoại hằng ngày, chào hỏi, quà, lời giận (`DAILY_DIALOG`, `GREETING_DIALOG`, `ANGRY_DIALOG`…): nói với nhân vật chính.
+- Cảnh sự kiện (`EVENTDIALOG`): id của mỗi NPC đánh số riêng, nên không đọc được thứ tự lời từ id. Thứ tự đúng và ai có mặt nằm trong bundle `so-event-data`. `tools/audit_pronouns.py` đọc bundle này (xem `pipeline.md`).
+- **Câu không chắc người nghe thì bỏ đại từ**, không đoán. Tiếng Việt cho phép câu không chủ ngữ: «Phải trang bị tốt hơn cho họ.» Câu hơi trung tính vẫn hơn gọi sai người.
+
+### Cặp chốt khi dịch hội thoại NPC (#22)
+
+Bổ sung cho bảng trên. Lô sau phải theo đúng để hai phía một cuộc nói chuyện khớp nhau.
+
+| Người nói → người nghe | Cách xưng hô |
+| --- | --- |
+| Myer ↔ Osman | tôi – anh. «my friend» → «anh bạn» |
+| Myer → Forrest | tôi – anh |
+| Myer → Zeke | tôi – ông. Nói với Dược sư về Zeke: «bác Zeke» |
+| Myer → Helene | tôi – cô |
+| Myer → Matheo / Matheo → Myer | tôi – cậu / tôi – ông, «ông Myer», «Thị trưởng» |
+| Myer → Reyner | tôi – cậu |
+| Myer → Runeheart, Russo | chú – cháu |
+| Myer → Nestor, Hội Y khoa | tôi – ông, «Bác sĩ», «quý vị» |
+| Xiao → Myer | «ngài Myer»; nói về Myer: «ngài ấy» |
+| Xiao → Opalheart, Moira | tôi – cô |
+| Xiao → Helene, Yorn | tôi – chị Helene, anh Yorn |
+| Xiao → Dev, Lucke, Victor | tôi – cậu |
+| Matheo → Nestor | tôi – ông, «thưa Bác sĩ» |
+| Matheo → Forrest | tôi – anh |
+| Dean → Helene | em – chị |
+| Helene → Derrek, Reyner | chị – cậu |
+| Reyner → Helene | tôi – chị Helene |
+| Helene → Yorn / Yorn → Helene | em – anh / tôi – cô |
+| Helene ↔ Hannah | chị – em |
+| Helene → Russo / Russo → Helene | chị – nhóc / em – cô Helene. Helene gắt «Cô á?! Nhóc tưởng chị là Nova hay sao?», nên Russo phải gọi «cô» |
+| Reyner → Runeheart, Derrek, Dean, Dev, Bubble, Rue, Ottmar | tôi – cậu |
+| Reyner, Runeheart → Leano, Opalheart, Nova, Myer | cháu – bác Leano, cô Opalheart, cô Nova, chú Myer |
+| Runeheart → Reyner, Dev, Bubble | tôi – cậu |
+| Opalheart → Xiao | cô – cậu, «boy» → «cậu nhóc» |
+| Opalheart ↔ Nova | tôi – chị |
+| Opalheart → Derrek / Derrek → Opalheart | cô – cháu, «kid» → «nhóc» / cháu – cô Opalheart |
+| Leano → Runeheart | ta – cô nương («m'lady») |
+| Leano → Myer, Reyner | ta – cậu |
+| Rue → Leano / Leano → Rue | cháu – bác Leano / ta – nhóc |
+| Lucke nói về Myer, Opalheart | «chú Myer», «cô Opalheart» |
+| Mariele → Lucke / Lucke → Mariele | cô – cháu / cháu – cô |
+| Osman → Dev | tôi – cậu |
+| Bubble → Nova | cháu – cô |
+| Socellia → Cassandra / Cassandra → Socellia | Sơ – chị / tôi – Sơ |
+| Dean, Hannah → Zeke | cháu – bác Zeke |
+| Victor ↔ Dev | tôi – cậu |
+| Olive → Dev / Dev → Olive | chị – em / em – chị Olive |
+| Victor → Hannah / Hannah → Victor | tôi – cậu / mình – cậu |
+| Martha ↔ Hannah, Rue | mình – cậu |
+| Nova ↔ Mariele, Mercy | tôi – chị |
+| Reyner → Rue / Rue → Reyner | tôi – cậu / mình – cậu |
+| Gọi người thứ ba | Martha: «anh Xiao», «anh Yorn». Rue: «anh Xiao», «chú Yorn». Bubble: «chú Yorn». Russo: «anh Victor». Olive: «anh Osman» |
+
+NPC có thể hẹn hò (Reyner, Lucke, Matheo, Xiao, Runeheart, Helene, Leano) giữ đúng cặp với nhân vật chính sau khi tỏ tình: Helene «chị – cưng», Leano «ta – nhóc», còn lại «tôi – cậu».
+
+Câu NPC hét viết in hoa thì giữ in hoa có dấu: «ĐỦ RỒI! CON KHÔNG CHỊU NỔI NỮA!».
+
 ## Con chó và con mèo
 
 - Con chó của nhân vật chính là đực («he»). Tên là `{[DOG_NAME]}`.
