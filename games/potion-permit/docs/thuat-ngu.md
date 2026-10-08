@@ -369,6 +369,30 @@ Dịch nghĩa thành tên ngắn. Tên viết hoa chữ đầu mỗi tiếng vì
 - Tên thần thoại giữ nguyên: Yggdrasil, Lacrima.
 - Đơn vị `lbs` trong sổ cá: giữ «lbs» vì game không đổi số.
 
+## Bổ sung từ lô UI (#19)
+
+| Gốc | Dịch |
+| --- | --- |
+| achievement | thành tựu |
+| trophy | danh hiệu |
+| coins | xu |
+| main menu | menu chính |
+| Friendship Lv.N | mức thân thiết N |
+| Key Item (túi đồ) | Đồ quan trọng |
+| Worm / Super Worm / Hyper Worm | Giun / Giun loại tốt / Giun thượng hạng |
+| Basic / Intermediate / Advanced Fishing Rod | Cần câu cơ bản / trung cấp / cao cấp |
+| Shop (tiêu đề cửa hàng) | Cửa hàng |
+| Credits | Nhóm thực hiện |
+| Controller, Gamepad | Tay cầm |
+| Master / Ambience / SFX | Tổng / Âm môi trường / Hiệu ứng |
+| Travel Point | điểm dịch chuyển |
+| Mail Carrier (thành tựu) | Bưu tá (khác chức danh «người đưa thư» của Dev) |
+| `UI_LANGUAGE` («English») | Tiếng Việt: bản vá ghi đè ô English, nên mục này trong menu là tiếng Việt |
+
+Tên cá theo `Fish/*_NAME` trong CSV (Cá mòi, Cá thu, Vẹm, Cá rồng bay…). Câu khác nhắc tới cá dùng đúng tên đó.
+
+Giữ tiếng Anh: `UI_COMPLETE_EDITION`, `UI_COMPLETE`, `UI_EDITION` (tên phiên bản, game ghép theo trật tự tiếng Anh), `Interaction/NONE` («ERROR», chuỗi gỡ lỗi).
+
 ## Còn phân vân
 
 Ghi lại để chốt khi chơi thử. Đổi thì sửa bảng trên trước, rồi sửa CSV.

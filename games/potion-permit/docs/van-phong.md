@@ -176,6 +176,7 @@ Hội thoại nhóm (`Group/`) dùng bảng này. Nếu không rõ ai nói với
 - Giữ dấu chấm than và chấm hỏi như bản gốc. Không thêm.
 - Giữ nguyên xuống dòng trong ô. Có thể dời vị trí xuống dòng cho câu Việt xuôi, nhưng giữ số dòng.
 - Giờ dùng `07:00`, không đổi thành «7 giờ sáng».
+- Số có dấu phân cách hàng nghìn viết kiểu Việt: «1,000» → «1.000». Số trong placeholder (`{0}`) để game điền, không đổi.
 
 ## Trạng thái dòng
 

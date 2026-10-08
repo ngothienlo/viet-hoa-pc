@@ -20,7 +20,7 @@ Script báo:
 - `id` trống hoặc trùng
 - `status` ngoài `todo`, `draft`, `review`, `done`
 - dòng `review` hoặc `done` nhưng ô `vi` trống
-- lệch placeholder, thẻ rich text hoặc `\n` giữa câu gốc và câu Việt
+- lệch placeholder, thẻ rich text hoặc `\n` giữa câu gốc và câu Việt. Placeholder (`{…}`, `%s`) được đổi chỗ vì trật tự từ tiếng Việt khác tiếng Anh; thẻ và `\n` phải giữ thứ tự.
 
 Dòng có `id` bắt đầu bằng `EXAMPLE` được bỏ qua. Mã thoát 0 khi mọi game được chỉ định đều hợp lệ, mã 1 khi có lỗi.
 

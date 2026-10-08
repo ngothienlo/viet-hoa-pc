@@ -2130,42 +2130,42 @@ Group/DIALOGROOM_MONDAY_SIT_PLAZA_C_MYER_01,Group,What happened to the cash flow
 Group/DIALOGROOM_MONDAY_SIT_PLAZA_C_XIAO_02,Group,Care to elaborate?,,todo,
 Group/DIALOGROOM_MONDAY_SIT_PLAZA_C_MYER_03,Group,It doesn't add up. Where did the rest of the money go?,,todo,
 Group/DIALOGROOM_MONDAY_SIT_PLAZA_C_XIAO_04,Group,"Uh, I think I must have miscalculated something. I'm sorry.",,todo,
-NPC/BUBBLE,NPC,Bubble,,todo,
-NPC/CASSANDRA,NPC,Cassandra,,todo,
-NPC/DEV,NPC,Dev,,todo,
-NPC/COLLIN,NPC,Collin,,todo,
-NPC/DAN,NPC,Dan,,todo,
-NPC/DEAN,NPC,Dean,,todo,
-NPC/DERREK,NPC,Derrek,,todo,
-NPC/FORREST,NPC,Forrest,,todo,
-NPC/GARRET,NPC,Garret,,todo,
-NPC/HANNAH,NPC,Hannah,,todo,
-NPC/HELENE,NPC,Helene,,todo,
-NPC/KIPPS,NPC,Kipps,,todo,
-NPC/LAURA,NPC,Laura,,todo,
-NPC/LEANO,NPC,Leano,,todo,
-NPC/LUCKE,NPC,Lucke,,todo,
-NPC/MARIELE,NPC,Mariele,,todo,
-NPC/MARTHA,NPC,Martha,,todo,
-NPC/MATHEO,NPC,Matheo,,todo,
-NPC/MERCY,NPC,Mercy,,todo,
-NPC/MOIRA,NPC,Moira,,todo,
-NPC/MYER,NPC,Myer,,todo,
-NPC/NESTOR,NPC,Nestor,,todo,
-NPC/NOVA,NPC,Nova,,todo,
-NPC/OLIVE,NPC,Olive,,todo,
-NPC/OPALHEART,NPC,Opalheart,,todo,
-NPC/OSMAN,NPC,Osman,,todo,
-NPC/OTTMAR,NPC,Ottmar,,todo,
-NPC/REYNER,NPC,Reyner,,todo,
-NPC/RUE,NPC,Rue,,todo,
-NPC/RUNEHEART,NPC,Runeheart,,todo,
-NPC/RUSSO,NPC,Russo,,todo,
-NPC/SOCELLIA,NPC,Socellia,,todo,
-NPC/VICTOR,NPC,Victor,,todo,
-NPC/XIAO,NPC,Xiao,,todo,
-NPC/YORN,NPC,Yorn,,todo,
-NPC/ZEKE,NPC,Zeke,,todo,
+NPC/BUBBLE,NPC,Bubble,Bubble,review,giữ nguyên
+NPC/CASSANDRA,NPC,Cassandra,Cassandra,review,giữ nguyên
+NPC/DEV,NPC,Dev,Dev,review,giữ nguyên
+NPC/COLLIN,NPC,Collin,Collin,review,giữ nguyên
+NPC/DAN,NPC,Dan,Dan,review,giữ nguyên
+NPC/DEAN,NPC,Dean,Dean,review,giữ nguyên
+NPC/DERREK,NPC,Derrek,Derrek,review,giữ nguyên
+NPC/FORREST,NPC,Forrest,Forrest,review,giữ nguyên
+NPC/GARRET,NPC,Garret,Garret,review,giữ nguyên
+NPC/HANNAH,NPC,Hannah,Hannah,review,giữ nguyên
+NPC/HELENE,NPC,Helene,Helene,review,giữ nguyên
+NPC/KIPPS,NPC,Kipps,Kipps,review,giữ nguyên
+NPC/LAURA,NPC,Laura,Laura,review,giữ nguyên
+NPC/LEANO,NPC,Leano,Leano,review,giữ nguyên
+NPC/LUCKE,NPC,Lucke,Lucke,review,giữ nguyên
+NPC/MARIELE,NPC,Mariele,Mariele,review,giữ nguyên
+NPC/MARTHA,NPC,Martha,Martha,review,giữ nguyên
+NPC/MATHEO,NPC,Matheo,Matheo,review,giữ nguyên
+NPC/MERCY,NPC,Mercy,Mercy,review,giữ nguyên
+NPC/MOIRA,NPC,Moira,Moira,review,giữ nguyên
+NPC/MYER,NPC,Myer,Myer,review,giữ nguyên
+NPC/NESTOR,NPC,Nestor,Nestor,review,giữ nguyên
+NPC/NOVA,NPC,Nova,Nova,review,giữ nguyên
+NPC/OLIVE,NPC,Olive,Olive,review,giữ nguyên
+NPC/OPALHEART,NPC,Opalheart,Opalheart,review,giữ nguyên
+NPC/OSMAN,NPC,Osman,Osman,review,giữ nguyên
+NPC/OTTMAR,NPC,Ottmar,Ottmar,review,giữ nguyên
+NPC/REYNER,NPC,Reyner,Reyner,review,giữ nguyên
+NPC/RUE,NPC,Rue,Rue,review,giữ nguyên
+NPC/RUNEHEART,NPC,Runeheart,Runeheart,review,giữ nguyên
+NPC/RUSSO,NPC,Russo,Russo,review,giữ nguyên
+NPC/SOCELLIA,NPC,Socellia,Socellia,review,giữ nguyên
+NPC/VICTOR,NPC,Victor,Victor,review,giữ nguyên
+NPC/XIAO,NPC,Xiao,Xiao,review,giữ nguyên
+NPC/YORN,NPC,Yorn,Yorn,review,giữ nguyên
+NPC/ZEKE,NPC,Zeke,Zeke,review,giữ nguyên
 BUBBLE/BG_STORY,BUBBLE,"Bubble is an assistant town ranger. She has natural instincts when it comes to the local flora and fauna.
 
 She is often standing lookout at the Ranger Post to keep watch for incidents in the surrounding area.",,todo,
@@ -9409,127 +9409,153 @@ ZEKE/EVENTDIALOG_SIDE_D_SUNFLOWER_03_08,ZEKE,"Isn't that right, Chemist?",,todo,
 ZEKE/EVENTDIALOG_SIDE_D_SUNFLOWER_03_09,ZEKE,Thank you for the sunflowers.,,todo,
 ZEKE/EVENTDIALOG_SIDE_D_SUNFLOWER_03_10,ZEKE,You've made this old man's day brighter too.,,todo,
 ZEKE/EVENTDIALOG_SIDE_D_SUNFLOWER_03_11,ZEKE,May your day be a good one.,,todo,
-PartTime/PART_TIME_POLICE_STATION,PartTime,Sort 20 bottles of ink,,todo,
-PartTime/PART_TIME_POST_OFFICE,PartTime,Pack 7 boxes,,todo,
-PartTime/PART_TIME_CHURCH,PartTime,Grind 10 sacks of grapes,,todo,
-Confirmation/QUIT,Confirmation,Do you want to quit the game?,,todo,
+PartTime/PART_TIME_POLICE_STATION,PartTime,Sort 20 bottles of ink,Phân loại 20 lọ mực,review,viết tay
+PartTime/PART_TIME_POST_OFFICE,PartTime,Pack 7 boxes,Đóng gói 7 thùng hàng,review,viết tay
+PartTime/PART_TIME_CHURCH,PartTime,Grind 10 sacks of grapes,Nghiền 10 bao nho,review,viết tay
+Confirmation/QUIT,Confirmation,Do you want to quit the game?,Bạn có muốn thoát trò chơi?,review,viết tay
 Confirmation/DELETE,Confirmation,"Are you sure you want to delete this?
 
-(Warning: Deletion can't be undone.)",,todo,
+(Warning: Deletion can't be undone.)","Bạn có chắc muốn xóa mục này?
+
+(Cảnh báo: Đã xóa thì không khôi phục được.)",review,viết tay
 Confirmation/CHARACTER_CREATION,Confirmation,"Are you sure?
 
-(Warning: Your name can't be changed later.)",,todo,
-Confirmation/NAME_WARNING,Confirmation,Name must have at least 1 character,,todo,
+(Warning: Your name can't be changed later.)","Bạn chắc chứ?
+
+(Cảnh báo: Sau này không đổi tên được nữa.)",review,viết tay
+Confirmation/NAME_WARNING,Confirmation,Name must have at least 1 character,Tên phải có ít nhất 1 ký tự,review,viết tay
 Confirmation/DOG_NAME,Confirmation,"Are you sure?
 
-(Warning: Your dog's name can't be changed later.)",,todo,
+(Warning: Your dog's name can't be changed later.)","Bạn chắc chứ?
+
+(Cảnh báo: Sau này không đổi tên chú chó được nữa.)",review,viết tay
 Confirmation/BACK_TO_MAIN_MENU,Confirmation,"Back to the main menu?
 
-(Warning: Unsaved progress will not be recorded.)",,todo,
-Confirmation/START_CAULDRON,Confirmation,Set the cauldron going?,,todo,
+(Warning: Unsaved progress will not be recorded.)","Quay về menu chính?
+
+(Cảnh báo: Tiến trình chưa lưu sẽ bị mất.)",review,viết tay
+Confirmation/START_CAULDRON,Confirmation,Set the cauldron going?,Bắt đầu pha chế?,review,viết tay
 Confirmation/BATHHOUSE,Confirmation,"Do you want to have a bath?
 
-(Warning: Having a bath takes 2 hours.)",,todo,
+(Warning: Having a bath takes 2 hours.)","Bạn có muốn tắm không?
+
+(Cảnh báo: Tắm mất 2 tiếng.)",review,viết tay
 Confirmation/PART_TIME_CHURCH,Confirmation,"Do you want to help grind grapes at the Church?
 
-(Warning: Part-time work takes 2 hours.)",,todo,
+(Warning: Part-time work takes 2 hours.)","Bạn có muốn giúp nghiền nho ở Nhà thờ?
+
+(Cảnh báo: Làm thêm mất 2 tiếng.)",review,viết tay
 Confirmation/PART_TIME_POLICE_STATION,Confirmation,"Do you want to help sort goods at the Police Department?
 
-(Warning: Part-time work takes 2 hours.)",,todo,
+(Warning: Part-time work takes 2 hours.)","Bạn có muốn giúp phân loại hàng ở Đồn cảnh sát?
+
+(Cảnh báo: Làm thêm mất 2 tiếng.)",review,viết tay
 Confirmation/PART_TIME_POST_OFFICE,Confirmation,"Do you want to help pack goods at the Post Office?
 
-(Warning: Part-time work takes 2 hours.)",,todo,
+(Warning: Part-time work takes 2 hours.)","Bạn có muốn giúp đóng gói hàng ở Bưu điện?
+
+(Cảnh báo: Làm thêm mất 2 tiếng.)",review,viết tay
 Confirmation/ROMANCE_ROUTE,Confirmation,"By confessing your love, you will unlock the romance path with this person. 
 Proceed?
 
-(Warning: You can't change the relationship status afterwards.)",,todo,
-Confirmation/MOON_BROOCH,Confirmation,Do you want to trade a Moon Brooch?,,todo,
+(Warning: You can't change the relationship status afterwards.)","Tỏ tình sẽ mở khóa tuyến tình cảm với người này.
+Tiếp tục?
+
+(Cảnh báo: Sau đó bạn không thể đổi tình trạng mối quan hệ.)",review,viết tay
+Confirmation/MOON_BROOCH,Confirmation,Do you want to trade a Moon Brooch?,Bạn có muốn đổi lấy một Trâm cài Trăng?,review,viết tay
 Confirmation/KEYBOARD_CONTROL_CHANGE,Confirmation,"Do you want to change the keyboard settings?
 
-(Note: The keyboard controls will change after this.)",,todo,
-Confirmation/NOT_ENOUGH_MONEY,Confirmation,Not enough resources!,,todo,
-Confirmation/NOT_ENOUGH_INGREDIENTS,Confirmation,Not enough ingredients!,,todo,
-Confirmation/SLEEP_CONFIRMATION,Confirmation,Do you want to sleep?,,todo,
+(Note: The keyboard controls will change after this.)","Bạn có muốn đổi cài đặt bàn phím?
+
+(Lưu ý: Phím điều khiển sẽ đổi theo cài đặt mới.)",review,viết tay
+Confirmation/NOT_ENOUGH_MONEY,Confirmation,Not enough resources!,Không đủ tiền!,review,viết tay
+Confirmation/NOT_ENOUGH_INGREDIENTS,Confirmation,Not enough ingredients!,Không đủ nguyên liệu!,review,viết tay
+Confirmation/SLEEP_CONFIRMATION,Confirmation,Do you want to sleep?,Bạn có muốn đi ngủ?,review,viết tay
 Confirmation/DISPLAY_SETTING_CONFIRMATION,Confirmation,"Do you want to keep this setting?
 
-(Cancelling in {0} seconds)",,todo,
+(Cancelling in {0} seconds)","Bạn có muốn giữ cài đặt này?
+
+(Tự hủy sau {0} giây)",review,viết tay
 Confirmation/OVERWRITE_POTION_RECIPE,Confirmation,"Are you sure want to replace this recipe?
 
-(Warning: You will lose the old recipe)",,todo,
-Confirmation/BED_REMOVAL_WARNING,Confirmation,You cannot remove your bed.,,todo,
-Confirmation/EXIT_BLOCKED_WARNING,Confirmation,You are not allowed to block the way out of your room.,,todo,
+(Warning: You will lose the old recipe)","Bạn có chắc muốn thay công thức này?
+
+(Cảnh báo: Công thức cũ sẽ mất)",review,viết tay
+Confirmation/BED_REMOVAL_WARNING,Confirmation,You cannot remove your bed.,Bạn không thể cất giường đi.,review,viết tay
+Confirmation/EXIT_BLOCKED_WARNING,Confirmation,You are not allowed to block the way out of your room.,Bạn không được chắn lối ra khỏi phòng.,review,viết tay
 Confirmation/KEYBIND_WARNING,Confirmation,"Press any buttons you'd like to assign.
-You're not allowed to bind any buttons assigned to movement.",,todo,
-Confirmation/KEYBIND_WARNING_NEW,Confirmation,Press any buttons you'd like to assign.,,todo,
-Confirmation/MAXIMUM_CAPACITY,Confirmation,Maximum capacity reached,,todo,
-Legend/SELECT,Legend,Select,,todo,
-Legend/BACK,Legend,Back,,todo,
-Legend/DELETE,Legend,Delete,,todo,
-Legend/RANDOM,Legend,Random,,todo,
-Legend/CHANGE_PAGE,Legend,Change Page,,todo,
-Legend/CHANGE_PAGE_L,Legend,Change Page L,,todo,
-Legend/CHANGE_PAGE_R,Legend,Change Page R,,todo,
-Legend/PLACE,Legend,Place,,todo,
-Legend/CANCEL,Legend,Cancel,,todo,
-Legend/MOVE,Legend,Move,,todo,
-Legend/BUY,Legend,Buy,,todo,
-Legend/SET_QTY,Legend,Set Quantity,,todo,
-Legend/UPGRADE,Legend,Upgrade,,todo,
-Legend/COOK,Legend,Cook,,todo,
-Legend/CONFIRM,Legend,Confirm,,todo,
-Legend/CHANGE_SETTING,Legend,Change Settings,,todo,
-Legend/EAT,Legend,Eat,,todo,
-Legend/READ,Legend,Read,,todo,
-Legend/YES,Legend,Yes,,todo,
-Legend/NO,Legend,No,,todo,
-Legend/OK,Legend,OK,,todo,
-Legend/PIN_QUEST,Legend,Pin Quest,,todo,
-Legend/TELEPORT,Legend,Teleport,,todo,
-Legend/FEED,Legend,Feed,,todo,
-Legend/RECIPE,Legend,Recipe,,todo,
-Legend/EDIT,Legend,Edit,,todo,
-Legend/PULL,Legend,Reel In,,todo,
-Legend/THROW,Legend,Cast,,todo,
-Legend/ROLL,Legend,Roll,,todo,
-Legend/REPAIR,Legend,Repair,,todo,
-Legend/CHANGE_KEY,Legend,Change Button,,todo,
-Legend/CHANGE_TARGET,Legend,Change Target,,todo,
-Legend/CHANGE_QUEST,Legend,Change Quest,,todo,
-Legend/LEFT_TAB,Legend,Left Tab,,todo,
-Legend/RIGHT_TAB,Legend,Right Tab,,todo,
-Legend/ACTION_1,Legend,Action 1,,todo,
-Legend/MOVEMENT_TYPE_1,Legend,Movement Type 1,,todo,
-Legend/MOVEMENT_TYPE_2,Legend,Movement Type 2,,todo,
-Legend/ENTER_BUTTON,Legend,Select,,todo,
-Legend/ESC_BUTTON,Legend,Back,,todo,
-Legend/PLAY,Legend,Play,,todo,
-Legend/PLANT,Legend,Plant,,todo,
-Legend/HARVEST,Legend,Harvest,,todo,
-Legend/HOLD_TO_DELETE,Legend,Hold to delete,,todo,
-Legend/SKIP,Legend,Skip,,todo,
-Interaction/NONE,Interaction,ERROR,,todo,
-Interaction/SLEEP,Interaction,Sleep,,todo,
-Interaction/SIT,Interaction,Sit,,todo,
-Interaction/TALK,Interaction,Talk,,todo,
-Interaction/SHOP,Interaction,Shop,,todo,
-Interaction/OPEN,Interaction,Open,,todo,
-Interaction/CLOSE,Interaction,Close,,todo,
-Interaction/CRAFT,Interaction,Craft,,todo,
-Interaction/COOK,Interaction,Cook,,todo,
-Interaction/FISHING,Interaction,Fish,,todo,
-Interaction/CHEAT,Interaction,Cheat,,todo,
-Interaction/COLLECT,Interaction,Collect,,todo,
-Interaction/DECORATE,Interaction,Decorate,,todo,
-Interaction/ACTIVATE,Interaction,Activate,,todo,
-Interaction/CHECK,Interaction,Check,,todo,
-Interaction/PLAY,Interaction,Play,,todo,
-Interaction/REPAIR,Interaction,Repair,,todo,
-Interaction/RESEARCH,Interaction,Research,,todo,
-Interaction/DOG,Interaction,{[DOG_NAME]},,todo,
-Interaction/TELEPORT,Interaction,Teleport,,todo,
-Interaction/REPORT,Interaction,Report,,todo,
-Interaction/PLANT,Interaction,Plant,,todo,
-Interaction/HARVEST,Interaction,Harvest,,todo,
+You're not allowed to bind any buttons assigned to movement.","Nhấn phím bạn muốn gán.
+Không được gán các phím dùng để di chuyển.",review,viết tay
+Confirmation/KEYBIND_WARNING_NEW,Confirmation,Press any buttons you'd like to assign.,Nhấn phím bạn muốn gán.,review,viết tay
+Confirmation/MAXIMUM_CAPACITY,Confirmation,Maximum capacity reached,Đã đạt sức chứa tối đa,review,viết tay
+Legend/SELECT,Legend,Select,Chọn,review,viết tay
+Legend/BACK,Legend,Back,Quay lại,review,viết tay
+Legend/DELETE,Legend,Delete,Xóa,review,viết tay
+Legend/RANDOM,Legend,Random,Ngẫu nhiên,review,viết tay
+Legend/CHANGE_PAGE,Legend,Change Page,Đổi trang,review,viết tay
+Legend/CHANGE_PAGE_L,Legend,Change Page L,Trang trước,review,viết tay
+Legend/CHANGE_PAGE_R,Legend,Change Page R,Trang sau,review,viết tay
+Legend/PLACE,Legend,Place,Đặt,review,viết tay
+Legend/CANCEL,Legend,Cancel,Hủy,review,viết tay
+Legend/MOVE,Legend,Move,Di chuyển,review,viết tay
+Legend/BUY,Legend,Buy,Mua,review,viết tay
+Legend/SET_QTY,Legend,Set Quantity,Chọn số lượng,review,viết tay
+Legend/UPGRADE,Legend,Upgrade,Nâng cấp,review,viết tay
+Legend/COOK,Legend,Cook,Nấu ăn,review,viết tay
+Legend/CONFIRM,Legend,Confirm,Xác nhận,review,viết tay
+Legend/CHANGE_SETTING,Legend,Change Settings,Đổi cài đặt,review,viết tay
+Legend/EAT,Legend,Eat,Ăn,review,viết tay
+Legend/READ,Legend,Read,Đọc,review,viết tay
+Legend/YES,Legend,Yes,Có,review,viết tay
+Legend/NO,Legend,No,Không,review,viết tay
+Legend/OK,Legend,OK,OK,review,giữ nguyên
+Legend/PIN_QUEST,Legend,Pin Quest,Ghim nhiệm vụ,review,viết tay
+Legend/TELEPORT,Legend,Teleport,Dịch chuyển,review,viết tay
+Legend/FEED,Legend,Feed,Cho ăn,review,viết tay
+Legend/RECIPE,Legend,Recipe,Công thức,review,viết tay
+Legend/EDIT,Legend,Edit,Sửa,review,viết tay
+Legend/PULL,Legend,Reel In,Kéo cần,review,viết tay
+Legend/THROW,Legend,Cast,Quăng cần,review,viết tay
+Legend/ROLL,Legend,Roll,Lăn,review,viết tay
+Legend/REPAIR,Legend,Repair,Sửa,review,viết tay
+Legend/CHANGE_KEY,Legend,Change Button,Đổi phím,review,viết tay
+Legend/CHANGE_TARGET,Legend,Change Target,Đổi mục tiêu,review,viết tay
+Legend/CHANGE_QUEST,Legend,Change Quest,Đổi nhiệm vụ,review,viết tay
+Legend/LEFT_TAB,Legend,Left Tab,Tab trái,review,viết tay
+Legend/RIGHT_TAB,Legend,Right Tab,Tab phải,review,viết tay
+Legend/ACTION_1,Legend,Action 1,Hành động 1,review,viết tay
+Legend/MOVEMENT_TYPE_1,Legend,Movement Type 1,Kiểu di chuyển 1,review,viết tay
+Legend/MOVEMENT_TYPE_2,Legend,Movement Type 2,Kiểu di chuyển 2,review,viết tay
+Legend/ENTER_BUTTON,Legend,Select,Chọn,review,viết tay
+Legend/ESC_BUTTON,Legend,Back,Quay lại,review,viết tay
+Legend/PLAY,Legend,Play,Chơi,review,viết tay
+Legend/PLANT,Legend,Plant,Trồng,review,viết tay
+Legend/HARVEST,Legend,Harvest,Thu hoạch,review,viết tay
+Legend/HOLD_TO_DELETE,Legend,Hold to delete,Giữ để xóa,review,viết tay
+Legend/SKIP,Legend,Skip,Bỏ qua,review,viết tay
+Interaction/NONE,Interaction,ERROR,ERROR,review,giữ nguyên
+Interaction/SLEEP,Interaction,Sleep,Ngủ,review,viết tay
+Interaction/SIT,Interaction,Sit,Ngồi,review,viết tay
+Interaction/TALK,Interaction,Talk,Trò chuyện,review,viết tay
+Interaction/SHOP,Interaction,Shop,Mua sắm,review,viết tay
+Interaction/OPEN,Interaction,Open,Mở,review,viết tay
+Interaction/CLOSE,Interaction,Close,Đóng,review,viết tay
+Interaction/CRAFT,Interaction,Craft,Chế tạo,review,viết tay
+Interaction/COOK,Interaction,Cook,Nấu ăn,review,viết tay
+Interaction/FISHING,Interaction,Fish,Câu cá,review,viết tay
+Interaction/CHEAT,Interaction,Cheat,Gian lận,review,viết tay
+Interaction/COLLECT,Interaction,Collect,Thu nhặt,review,viết tay
+Interaction/DECORATE,Interaction,Decorate,Trang trí,review,viết tay
+Interaction/ACTIVATE,Interaction,Activate,Kích hoạt,review,viết tay
+Interaction/CHECK,Interaction,Check,Xem,review,viết tay
+Interaction/PLAY,Interaction,Play,Chơi,review,viết tay
+Interaction/REPAIR,Interaction,Repair,Sửa,review,viết tay
+Interaction/RESEARCH,Interaction,Research,Nghiên cứu,review,viết tay
+Interaction/DOG,Interaction,{[DOG_NAME]},{[DOG_NAME]},review,giữ nguyên
+Interaction/TELEPORT,Interaction,Teleport,Dịch chuyển,review,viết tay
+Interaction/REPORT,Interaction,Report,Báo cáo,review,viết tay
+Interaction/PLANT,Interaction,Plant,Trồng,review,viết tay
+Interaction/HARVEST,Interaction,Harvest,Thu hoạch,review,viết tay
 Note/NOTE_CHEMIST_JOURNAL_PLAINS_01,Note,"Meadow Range Experiment, Day 1
 
 I, Dr. Samuel, have been appointed to lead the research team for this area.
@@ -9679,475 +9705,566 @@ We already have a machine to purify the water. All that's left is to make the po
 However, we've received instructions from the capital to pull out from the expedition by tomorrow. I don't know what's going on in their heads. We can't leave this area when it's still in such a bad condition!
 
 Why can't they just re-negotiate and make things right?",,todo,
-Upgrade/POTION_HOUSE_01_NAME,Upgrade,Kitchen Renovation,,todo,
-Upgrade/POTION_HOUSE_01_DETAIL,Upgrade,Renovate the kitchen in the <#54ba6a>Potion House</color> to unlock cooking.,,todo,
-Upgrade/POTION_HOUSE_02_NAME,Upgrade,House Expansion 1,,todo,
-Upgrade/POTION_HOUSE_02_DETAIL,Upgrade,Renovate the bedroom in the <#54ba6a>Potion House</color> to get more space.,,todo,
-Upgrade/POTION_HOUSE_03_NAME,Upgrade,House Expansion 2,,todo,
-Upgrade/POTION_HOUSE_03_DETAIL,Upgrade,Renovate the bedroom in the <#54ba6a>Potion House</color> to get more space.,,todo,
-Upgrade/CLINIC_01_NAME,Upgrade,Clinic Renovation 1,,todo,
-Upgrade/CLINIC_01_DETAIL,Upgrade,Renovate the <#54ba6a>Clinic</color> to unlock new serum recipes and increase your income.,,todo,
-Upgrade/CLINIC_02_NAME,Upgrade,Clinic Renovation 2,,todo,
-Upgrade/CLINIC_02_DETAIL,Upgrade,Renovate the <#54ba6a>Clinic</color> to unlock new serum recipes and increase your income.,,todo,
-Upgrade/CLINIC_03_NAME,Upgrade,Clinic Renovation 3,,todo,
-Upgrade/CLINIC_03_DETAIL,Upgrade,Renovate the <#54ba6a>Clinic</color> to unlock new serum recipes and increase your income.,,todo,
-Upgrade/CAULDRON_01_NAME,Upgrade,Cauldron Upgrade 1,,todo,
-Upgrade/CAULDRON_01_DETAIL,Upgrade,Increase the capacity of the cauldron in the <#54ba6a>Potion House</color>.,,todo,
-Upgrade/CAULDRON_02_NAME,Upgrade,Cauldron Upgrade 2,,todo,
-Upgrade/CAULDRON_02_DETAIL,Upgrade,Increase the capacity of the cauldron in the <#54ba6a>Potion House</color>.,,todo,
-Upgrade/CAULDRON_03_NAME,Upgrade,Cauldron Upgrade 3,,todo,
-Upgrade/CAULDRON_03_DETAIL,Upgrade,Increase the capacity of the cauldron in the <#54ba6a>Potion House</color>.,,todo,
-Upgrade/CAULDRON_04_NAME,Upgrade,Cauldron Upgrade 4,,todo,
-Upgrade/CAULDRON_04_DETAIL,Upgrade,Increase the capacity of the cauldron in the <#54ba6a>Potion House</color>.,,todo,
-Upgrade/CAULDRON_05_NAME,Upgrade,Cauldron Upgrade 5,,todo,
-Upgrade/CAULDRON_05_DETAIL,Upgrade,Increase the capacity of the cauldron in the <#54ba6a>Potion House</color>.,,todo,
-Upgrade/TOOL_SICKLE_01_NAME,Upgrade,Iron Sickle,,todo,
-Upgrade/TOOL_SICKLE_01_DETAIL,Upgrade,Strengthen your sickle to make it more effective.,,todo,
-Upgrade/TOOL_SICKLE_02_NAME,Upgrade,Steel Sickle,,todo,
-Upgrade/TOOL_SICKLE_02_DETAIL,Upgrade,Strengthen your sickle to make it more effective.,,todo,
-Upgrade/TOOL_SICKLE_03_NAME,Upgrade,Mythril Sickle,,todo,
-Upgrade/TOOL_SICKLE_03_DETAIL,Upgrade,Strengthen your sickle to make it more effective.,,todo,
-Upgrade/TOOL_AXE_01_NAME,Upgrade,Iron Axe,,todo,
-Upgrade/TOOL_AXE_01_DETAIL,Upgrade,Strengthen your axe to make it more effective.,,todo,
-Upgrade/TOOL_AXE_02_NAME,Upgrade,Steel Axe,,todo,
-Upgrade/TOOL_AXE_02_DETAIL,Upgrade,Strengthen your axe to make it more effective.,,todo,
-Upgrade/TOOL_AXE_03_NAME,Upgrade,Mythril Axe,,todo,
-Upgrade/TOOL_AXE_03_DETAIL,Upgrade,Strengthen your axe to make it more effective.,,todo,
-Upgrade/TOOL_HAMMER_01_NAME,Upgrade,Iron Hammer,,todo,
-Upgrade/TOOL_HAMMER_01_DETAIL,Upgrade,Strengthen your hammer to make it more effective.,,todo,
-Upgrade/TOOL_HAMMER_02_NAME,Upgrade,Steel Hammer,,todo,
-Upgrade/TOOL_HAMMER_02_DETAIL,Upgrade,Strengthen your hammer to make it more effective.,,todo,
-Upgrade/TOOL_HAMMER_03_NAME,Upgrade,Mythril Hammer,,todo,
-Upgrade/TOOL_HAMMER_03_DETAIL,Upgrade,Strengthen your hammer to make it more effective.,,todo,
-Upgrade/STATUS_HEALTH_UP_NAME,Upgrade,Health Expand,,todo,
-Upgrade/STATUS_HEALTH_UP_DETAIL,Upgrade,Increase your maximum health.,,todo,
-Upgrade/STATUS_STAMINA_UP_NAME,Upgrade,Stamina Expand,,todo,
-Upgrade/STATUS_STAMINA_UP_DETAIL,Upgrade,Increase your maximum stamina.,,todo,
-Upgrade/POST_DROP_01_NAME,Upgrade,Post Drop Box Upgrade 1,,todo,
-Upgrade/POST_DROP_01_DETAIL,Upgrade,Upgrade the <#54ba6a>Post Drop Box</color> to increase your storage space for potions.,,todo,
-Upgrade/POST_DROP_02_NAME,Upgrade,Post Drop Box Upgrade 2,,todo,
-Upgrade/POST_DROP_02_DETAIL,Upgrade,Upgrade the <#54ba6a>Post Drop Box</color> to increase your storage space for potions.,,todo,
-Upgrade/POST_DROP_03_NAME,Upgrade,Post Drop Box Upgrade 3,,todo,
-Upgrade/POST_DROP_03_DETAIL,Upgrade,Upgrade the <#54ba6a>Post Drop Box</color> to increase your storage space for potions.,,todo,
-Upgrade/GROW_BOX_NAME,Upgrade,Grow Box Repair,,todo,
-Upgrade/GROW_BOX_DETAIL,Upgrade,Repair the <#54ba6a>Grow Box</color> to unlock growing plants.,,todo,
-Monster/MONSTER_HUNGRY_SPORE_NAME,Monster,Greedbonnet,,todo,
+Upgrade/POTION_HOUSE_01_NAME,Upgrade,Kitchen Renovation,Sửa sang nhà bếp,review,viết tay
+Upgrade/POTION_HOUSE_01_DETAIL,Upgrade,Renovate the kitchen in the <#54ba6a>Potion House</color> to unlock cooking.,Sửa sang nhà bếp trong <#54ba6a>Nhà pha chế</color> để mở khóa nấu ăn.,review,viết tay
+Upgrade/POTION_HOUSE_02_NAME,Upgrade,House Expansion 1,Mở rộng nhà 1,review,viết tay
+Upgrade/POTION_HOUSE_02_DETAIL,Upgrade,Renovate the bedroom in the <#54ba6a>Potion House</color> to get more space.,Cải tạo phòng ngủ trong <#54ba6a>Nhà pha chế</color> để có thêm chỗ.,review,viết tay
+Upgrade/POTION_HOUSE_03_NAME,Upgrade,House Expansion 2,Mở rộng nhà 2,review,viết tay
+Upgrade/POTION_HOUSE_03_DETAIL,Upgrade,Renovate the bedroom in the <#54ba6a>Potion House</color> to get more space.,Cải tạo phòng ngủ trong <#54ba6a>Nhà pha chế</color> để có thêm chỗ.,review,viết tay
+Upgrade/CLINIC_01_NAME,Upgrade,Clinic Renovation 1,Cải tạo Phòng khám 1,review,viết tay
+Upgrade/CLINIC_01_DETAIL,Upgrade,Renovate the <#54ba6a>Clinic</color> to unlock new serum recipes and increase your income.,Cải tạo <#54ba6a>Phòng khám</color> để mở khóa công thức huyết thanh mới và tăng thu nhập.,review,viết tay
+Upgrade/CLINIC_02_NAME,Upgrade,Clinic Renovation 2,Cải tạo Phòng khám 2,review,viết tay
+Upgrade/CLINIC_02_DETAIL,Upgrade,Renovate the <#54ba6a>Clinic</color> to unlock new serum recipes and increase your income.,Cải tạo <#54ba6a>Phòng khám</color> để mở khóa công thức huyết thanh mới và tăng thu nhập.,review,viết tay
+Upgrade/CLINIC_03_NAME,Upgrade,Clinic Renovation 3,Cải tạo Phòng khám 3,review,viết tay
+Upgrade/CLINIC_03_DETAIL,Upgrade,Renovate the <#54ba6a>Clinic</color> to unlock new serum recipes and increase your income.,Cải tạo <#54ba6a>Phòng khám</color> để mở khóa công thức huyết thanh mới và tăng thu nhập.,review,viết tay
+Upgrade/CAULDRON_01_NAME,Upgrade,Cauldron Upgrade 1,Nâng cấp vạc 1,review,viết tay
+Upgrade/CAULDRON_01_DETAIL,Upgrade,Increase the capacity of the cauldron in the <#54ba6a>Potion House</color>.,Tăng sức chứa của vạc trong <#54ba6a>Nhà pha chế</color>.,review,viết tay
+Upgrade/CAULDRON_02_NAME,Upgrade,Cauldron Upgrade 2,Nâng cấp vạc 2,review,viết tay
+Upgrade/CAULDRON_02_DETAIL,Upgrade,Increase the capacity of the cauldron in the <#54ba6a>Potion House</color>.,Tăng sức chứa của vạc trong <#54ba6a>Nhà pha chế</color>.,review,viết tay
+Upgrade/CAULDRON_03_NAME,Upgrade,Cauldron Upgrade 3,Nâng cấp vạc 3,review,viết tay
+Upgrade/CAULDRON_03_DETAIL,Upgrade,Increase the capacity of the cauldron in the <#54ba6a>Potion House</color>.,Tăng sức chứa của vạc trong <#54ba6a>Nhà pha chế</color>.,review,viết tay
+Upgrade/CAULDRON_04_NAME,Upgrade,Cauldron Upgrade 4,Nâng cấp vạc 4,review,viết tay
+Upgrade/CAULDRON_04_DETAIL,Upgrade,Increase the capacity of the cauldron in the <#54ba6a>Potion House</color>.,Tăng sức chứa của vạc trong <#54ba6a>Nhà pha chế</color>.,review,viết tay
+Upgrade/CAULDRON_05_NAME,Upgrade,Cauldron Upgrade 5,Nâng cấp vạc 5,review,viết tay
+Upgrade/CAULDRON_05_DETAIL,Upgrade,Increase the capacity of the cauldron in the <#54ba6a>Potion House</color>.,Tăng sức chứa của vạc trong <#54ba6a>Nhà pha chế</color>.,review,viết tay
+Upgrade/TOOL_SICKLE_01_NAME,Upgrade,Iron Sickle,Liềm sắt,review,viết tay
+Upgrade/TOOL_SICKLE_01_DETAIL,Upgrade,Strengthen your sickle to make it more effective.,Gia cố liềm để dùng hiệu quả hơn.,review,viết tay
+Upgrade/TOOL_SICKLE_02_NAME,Upgrade,Steel Sickle,Liềm thép,review,viết tay
+Upgrade/TOOL_SICKLE_02_DETAIL,Upgrade,Strengthen your sickle to make it more effective.,Gia cố liềm để dùng hiệu quả hơn.,review,viết tay
+Upgrade/TOOL_SICKLE_03_NAME,Upgrade,Mythril Sickle,Liềm Mythril,review,viết tay
+Upgrade/TOOL_SICKLE_03_DETAIL,Upgrade,Strengthen your sickle to make it more effective.,Gia cố liềm để dùng hiệu quả hơn.,review,viết tay
+Upgrade/TOOL_AXE_01_NAME,Upgrade,Iron Axe,Rìu sắt,review,viết tay
+Upgrade/TOOL_AXE_01_DETAIL,Upgrade,Strengthen your axe to make it more effective.,Gia cố rìu để dùng hiệu quả hơn.,review,viết tay
+Upgrade/TOOL_AXE_02_NAME,Upgrade,Steel Axe,Rìu thép,review,viết tay
+Upgrade/TOOL_AXE_02_DETAIL,Upgrade,Strengthen your axe to make it more effective.,Gia cố rìu để dùng hiệu quả hơn.,review,viết tay
+Upgrade/TOOL_AXE_03_NAME,Upgrade,Mythril Axe,Rìu Mythril,review,viết tay
+Upgrade/TOOL_AXE_03_DETAIL,Upgrade,Strengthen your axe to make it more effective.,Gia cố rìu để dùng hiệu quả hơn.,review,viết tay
+Upgrade/TOOL_HAMMER_01_NAME,Upgrade,Iron Hammer,Búa sắt,review,viết tay
+Upgrade/TOOL_HAMMER_01_DETAIL,Upgrade,Strengthen your hammer to make it more effective.,Gia cố búa để dùng hiệu quả hơn.,review,viết tay
+Upgrade/TOOL_HAMMER_02_NAME,Upgrade,Steel Hammer,Búa thép,review,viết tay
+Upgrade/TOOL_HAMMER_02_DETAIL,Upgrade,Strengthen your hammer to make it more effective.,Gia cố búa để dùng hiệu quả hơn.,review,viết tay
+Upgrade/TOOL_HAMMER_03_NAME,Upgrade,Mythril Hammer,Búa Mythril,review,viết tay
+Upgrade/TOOL_HAMMER_03_DETAIL,Upgrade,Strengthen your hammer to make it more effective.,Gia cố búa để dùng hiệu quả hơn.,review,viết tay
+Upgrade/STATUS_HEALTH_UP_NAME,Upgrade,Health Expand,Tăng sinh lực,review,viết tay
+Upgrade/STATUS_HEALTH_UP_DETAIL,Upgrade,Increase your maximum health.,Tăng sinh lực tối đa.,review,viết tay
+Upgrade/STATUS_STAMINA_UP_NAME,Upgrade,Stamina Expand,Tăng thể lực,review,viết tay
+Upgrade/STATUS_STAMINA_UP_DETAIL,Upgrade,Increase your maximum stamina.,Tăng thể lực tối đa.,review,viết tay
+Upgrade/POST_DROP_01_NAME,Upgrade,Post Drop Box Upgrade 1,Nâng cấp hộp ký gửi 1,review,viết tay
+Upgrade/POST_DROP_01_DETAIL,Upgrade,Upgrade the <#54ba6a>Post Drop Box</color> to increase your storage space for potions.,Nâng cấp <#54ba6a>Hộp ký gửi</color> để chứa được nhiều thuốc hơn.,review,viết tay
+Upgrade/POST_DROP_02_NAME,Upgrade,Post Drop Box Upgrade 2,Nâng cấp hộp ký gửi 2,review,viết tay
+Upgrade/POST_DROP_02_DETAIL,Upgrade,Upgrade the <#54ba6a>Post Drop Box</color> to increase your storage space for potions.,Nâng cấp <#54ba6a>Hộp ký gửi</color> để chứa được nhiều thuốc hơn.,review,viết tay
+Upgrade/POST_DROP_03_NAME,Upgrade,Post Drop Box Upgrade 3,Nâng cấp hộp ký gửi 3,review,viết tay
+Upgrade/POST_DROP_03_DETAIL,Upgrade,Upgrade the <#54ba6a>Post Drop Box</color> to increase your storage space for potions.,Nâng cấp <#54ba6a>Hộp ký gửi</color> để chứa được nhiều thuốc hơn.,review,viết tay
+Upgrade/GROW_BOX_NAME,Upgrade,Grow Box Repair,Sửa bồn trồng cây,review,viết tay
+Upgrade/GROW_BOX_DETAIL,Upgrade,Repair the <#54ba6a>Grow Box</color> to unlock growing plants.,Sửa <#54ba6a>Bồn trồng cây</color> để mở khóa trồng cây.,review,viết tay
+Monster/MONSTER_HUNGRY_SPORE_NAME,Monster,Greedbonnet,Nấm Tham Ăn,review,viết tay
 Monster/MONSTER_HUNGRY_SPORE_DETAILS,Monster,"This mushroom-shaped monster is easily spotted roaming in fields.
 
-Don't be fooled by their bunny-like ears: they will headbutt their opponent to bring them down.",,todo,
-Monster/MONSTER_GREEN_BLOB_NAME,Monster,Green Blob,,todo,
+Don't be fooled by their bunny-like ears: they will headbutt their opponent to bring them down.","Loài quái hình cây nấm này hay đi lang thang trên đồng cỏ.
+
+Đừng để đôi tai như tai thỏ đánh lừa: chúng sẽ húc đầu để quật ngã đối thủ.",review,viết tay
+Monster/MONSTER_GREEN_BLOB_NAME,Monster,Green Blob,Nhầy Xanh,review,viết tay
 Monster/MONSTER_GREEN_BLOB_DETAILS,Monster,"A single-cell life form. Many believe these monsters have no brain or emotions and only move by instinct.
 
-Although they have chlorophyll-producing genes in their DNA, they still need to find food to survive.",,todo,
-Monster/MONSTER_MINI_GREEN_BLOB_NAME,Monster,Mini Green Blob,,todo,
+Although they have chlorophyll-producing genes in their DNA, they still need to find food to survive.","Dạng sống đơn bào. Nhiều người tin loài quái này không có não hay cảm xúc, chỉ di chuyển theo bản năng.
+
+Dù DNA có gen tạo diệp lục, chúng vẫn phải kiếm thức ăn để sống.",review,viết tay
+Monster/MONSTER_MINI_GREEN_BLOB_NAME,Monster,Mini Green Blob,Nhầy Xanh Nhí,review,viết tay
 Monster/MONSTER_MINI_GREEN_BLOB_DETAILS,Monster,"Cells from an exploded Green Blob. This cell-splitting mechanism is the Blobs' final line of defence.
 
-They tend to be weak, causing disarray and confusion by scattering and then running away.",,todo,
-Monster/MONSTER_HONEY_BEAR_NAME,Monster,Honeypaw,,todo,
+They tend to be weak, causing disarray and confusion by scattering and then running away.","Tế bào văng ra từ một con Nhầy Xanh đã nổ tung. Phân bào là cách tự vệ cuối cùng của loài Nhầy.
+
+Chúng khá yếu, chuyên gây rối bằng cách tản ra rồi bỏ chạy.",review,viết tay
+Monster/MONSTER_HONEY_BEAR_NAME,Monster,Honeypaw,Gấu Mật,review,viết tay
 Monster/MONSTER_HONEY_BEAR_DETAILS,Monster,"Not really your average heart-warming bear: Honeypaws are very aggressive.
 
-They grow sharp nails for scratching and can grab honey from hard-to-reach spots in trees.",,todo,
-Monster/MONSTER_RAIN_BEETLE_NAME,Monster,Crownmite,,todo,
+They grow sharp nails for scratching and can grab honey from hard-to-reach spots in trees.","Đây không phải loài gấu dễ thương thường thấy: Gấu Mật cực kỳ hung dữ.
+
+Chúng mọc móng sắc để cào và có thể lấy mật ở những hốc cây khó với tới.",review,viết tay
+Monster/MONSTER_RAIN_BEETLE_NAME,Monster,Crownmite,Bọ Vương Miện,review,viết tay
 Monster/MONSTER_RAIN_BEETLE_DETAILS,Monster,"Giant insects that have a green exoskeleton to protect themselves. They usually inhabit humid areas.
 
-They tend to live in colonies, but prefer to go hunting alone for their food.",,todo,
-Monster/MONSTER_LEAF_SPINNER_NAME,Monster,Pangol,,todo,
+They tend to live in colonies, but prefer to go hunting alone for their food.","Loài côn trùng khổng lồ có bộ xương ngoài màu xanh lục để tự vệ. Chúng thường sống ở vùng ẩm ướt.
+
+Chúng sống thành bầy, nhưng thích đi kiếm ăn một mình.",review,viết tay
+Monster/MONSTER_LEAF_SPINNER_NAME,Monster,Pangol,Tê Tê Lăn,review,viết tay
 Monster/MONSTER_LEAF_SPINNER_DETAILS,Monster,"Related to the armadillo, these mammals possess a sturdy exoskeleton on their backs.
 
-They roll up into an impenetrable spinning ball when chasing their target.",,todo,
-Monster/MONSTER_PLAINS_SAVAGE_NAME,Monster,Bonemask,,todo,
+They roll up into an impenetrable spinning ball when chasing their target.","Họ hàng với tatu, loài thú có vú này có lớp giáp chắc chắn trên lưng.
+
+Khi đuổi theo mục tiêu, chúng cuộn tròn thành quả cầu xoay tít không gì xuyên thủng được.",review,viết tay
+Monster/MONSTER_PLAINS_SAVAGE_NAME,Monster,Bonemask,Mặt Nạ Xương,review,viết tay
 Monster/MONSTER_PLAINS_SAVAGE_DETAILS,Monster,"A herbivore with an exoskeleton mask made of bone. They are very territorial and always aggressive.
 
-Their bone mask is pretty tough and can bring down any trees it is rammed into.",,todo,
-Monster/MONSTER_BLACKPAW_NAME,Monster,Blackpaw,,todo,
+Their bone mask is pretty tough and can bring down any trees it is rammed into.","Loài ăn cỏ đeo chiếc mặt nạ bằng xương. Chúng rất giữ lãnh thổ và luôn hung hăng.
+
+Mặt nạ xương của chúng rất cứng, húc vào cây nào là cây đó đổ.",review,viết tay
+Monster/MONSTER_BLACKPAW_NAME,Monster,Blackpaw,Gấu Vuốt Đen,review,viết tay
 Monster/MONSTER_BLACKPAW_DETAILS,Monster,"A giant, carnivorous bear with thick black fur covering its whole body.
 
-They often hunt at night, driven by an almost constant hunger, and are always on the lookout for prey.",,todo,
-Monster/MONSTER_GOLD_BEETLE_NAME,Monster,Goldenhorn,,todo,
+They often hunt at night, driven by an almost constant hunger, and are always on the lookout for prey.","Loài gấu ăn thịt khổng lồ, toàn thân phủ lớp lông đen dày.
+
+Chúng thường săn mồi về đêm, gần như lúc nào cũng đói và luôn rình tìm con mồi.",review,viết tay
+Monster/MONSTER_GOLD_BEETLE_NAME,Monster,Goldenhorn,Bọ Sừng Vàng,review,viết tay
 Monster/MONSTER_GOLD_BEETLE_DETAILS,Monster,"These slow-moving insects are covered in a tough exoskeleton of a vibrant gold colour.
 
-They are not aggressive, and are mainly attracted to smaller insects and fruits as their main food source.",,todo,
-Monster/MONSTER_NUT_MOLE_NAME,Monster,Spook Digger,,todo,
+They are not aggressive, and are mainly attracted to smaller insects and fruits as their main food source.","Loài côn trùng chậm chạp này khoác lớp vỏ ngoài cứng màu vàng óng.
+
+Chúng không hung dữ, thức ăn chính là côn trùng nhỏ hơn và trái cây.",review,viết tay
+Monster/MONSTER_NUT_MOLE_NAME,Monster,Spook Digger,Chuột Chũi Ma,review,viết tay
 Monster/MONSTER_NUT_MOLE_DETAILS,Monster,"These creatures live in the ground underneath the soil and are hard to catch.
 
-They come up to the surface to hunt and shoot solid nuts to protect themselves.",,todo,
-Monster/MONSTER_SEED_THROWER_NAME,Monster,Blossom Shooter,,todo,
+They come up to the surface to hunt and shoot solid nuts to protect themselves.","Loài sinh vật sống sâu dưới lòng đất, rất khó bắt.
+
+Chúng trồi lên mặt đất để săn mồi và bắn hạt cứng để tự vệ.",review,viết tay
+Monster/MONSTER_SEED_THROWER_NAME,Monster,Blossom Shooter,Hoa Bắn Hạt,review,viết tay
 Monster/MONSTER_SEED_THROWER_DETAILS,Monster,"A species of plant-like carnivores that camouflage themselves as plants.
 
-They shoot explosive seeds whenever they feel threatened. Nobody really knows what the explosive substance inside the seed is.",,todo,
-Monster/MONSTER_CAVE_BOMBER_NAME,Monster,Bomber Bee,,todo,
+They shoot explosive seeds whenever they feel threatened. Nobody really knows what the explosive substance inside the seed is.","Loài ăn thịt trông giống thực vật, ngụy trang thành cây cỏ.
+
+Chúng bắn hạt nổ mỗi khi thấy bị đe dọa. Chẳng ai biết rõ chất nổ trong hạt là gì.",review,viết tay
+Monster/MONSTER_CAVE_BOMBER_NAME,Monster,Bomber Bee,Ong Ném Bom,review,viết tay
 Monster/MONSTER_CAVE_BOMBER_DETAILS,Monster,"Flying insects that shoot venom at their prey. They move together in a colony and have a complex hierarchy.
 
-As they grow older, their vision tends to get worse, and they become very sensitive to light.",,todo,
-Monster/MONSTER_ELDER_WOLF_NAME,Monster,Elder Wolf,,todo,
+As they grow older, their vision tends to get worse, and they become very sensitive to light.","Loài côn trùng biết bay, phun nọc độc vào con mồi. Chúng di chuyển thành đàn và có thứ bậc phức tạp.
+
+Càng về già, mắt chúng càng kém và rất nhạy cảm với ánh sáng.",review,viết tay
+Monster/MONSTER_ELDER_WOLF_NAME,Monster,Elder Wolf,Sói Cổ Xưa,review,viết tay
 Monster/MONSTER_ELDER_WOLF_DETAILS,Monster,"Majestic ancient wolves that inhabit the mountain. They are known for their spellbinding howl and ability to hunt in a pack.
 
-They have a strong jaw, great agility, and are considered a symbol of loyalty by some people.",,todo,
-Monster/MONSTER_KOBLIN_ASSASSIN_NAME,Monster,Koblin Assassin,,todo,
+They have a strong jaw, great agility, and are considered a symbol of loyalty by some people.","Loài sói cổ xưa uy nghi sống trên núi. Chúng nổi tiếng với tiếng hú mê hoặc và tài săn theo bầy.
+
+Chúng có hàm khỏe, rất nhanh nhẹn, và được một số người xem là biểu tượng của lòng trung thành.",review,viết tay
+Monster/MONSTER_KOBLIN_ASSASSIN_NAME,Monster,Koblin Assassin,Sát Thủ Koblin,review,viết tay
 Monster/MONSTER_KOBLIN_ASSASSIN_DETAILS,Monster,"Their agility makes these Koblins very skilful ""assassins"". Koblins can camouflage themselves to creep up on their prey.
 
-They tend to avoid face-to-face combat and prefer to attack their opponent from behind.",,todo,
-Monster/MONSTER_DESERT_BEETLE_NAME,Monster,Sandcrawl,,todo,
+They tend to avoid face-to-face combat and prefer to attack their opponent from behind.","Nhờ nhanh nhẹn, những Koblin này là «sát thủ» rất lành nghề. Koblin có thể ngụy trang để lén tiếp cận con mồi.
+
+Chúng thường tránh đối đầu trực diện và thích tấn công đối thủ từ phía sau.",review,viết tay
+Monster/MONSTER_DESERT_BEETLE_NAME,Monster,Sandcrawl,Bọ Cát,review,viết tay
 Monster/MONSTER_DESERT_BEETLE_DETAILS,Monster,"These animals are considered wasteland pests because their colonies are large and frequently disturb the ecosystem they live in.
 
-Their tough shells also make them very adaptable and able to withstand both heat and cold.",,todo,
-Monster/MONSTER_MOUNTAIN_OX_NAME,Monster,Grandhorn,,todo,
+Their tough shells also make them very adaptable and able to withstand both heat and cold.","Loài vật này bị coi là sâu hại của hoang mạc, vì chúng sống thành bầy lớn và thường xuyên làm xáo trộn hệ sinh thái nơi chúng sống.
+
+Lớp vỏ cứng giúp chúng thích nghi rất tốt, chịu được cả nóng lẫn lạnh.",review,viết tay
+Monster/MONSTER_MOUNTAIN_OX_NAME,Monster,Grandhorn,Bò Sừng Lớn,review,viết tay
 Monster/MONSTER_MOUNTAIN_OX_DETAILS,Monster,"Giant, ancient creatures that are famous for their horns. They are usually friendly, but turn aggressive when provoked.
 
-Some Koblin tribes worship this animal as one of their gods and protectors.",,todo,
-Monster/MONSTER_DEADLY_CRAB_NAME,Monster,Sunclaw,,todo,
+Some Koblin tribes worship this animal as one of their gods and protectors.","Loài sinh vật cổ xưa khổng lồ nổi tiếng với cặp sừng. Chúng thường hiền lành nhưng sẽ hung hăng khi bị khiêu khích.
+
+Một số bộ tộc Koblin tôn thờ loài vật này như vị thần hộ mệnh của mình.",review,viết tay
+Monster/MONSTER_DEADLY_CRAB_NAME,Monster,Sunclaw,Cua Càng Lửa,review,viết tay
 Monster/MONSTER_DEADLY_CRAB_DETAILS,Monster,"Fierce creatures with pincers strong enough to break bone. They are fast runners, although they can only move sideways.
 
-They specialise in one-on-one combat and will usually fight to the death for their kin.",,todo,
-Monster/MONSTER_KOBLIN_MAGE_NAME,Monster,Koblin Mage,,todo,
+They specialise in one-on-one combat and will usually fight to the death for their kin.","Sinh vật hung tợn với đôi càng đủ khỏe để bẻ gãy xương. Chúng chạy rất nhanh, dù chỉ đi được ngang.
+
+Chúng giỏi đánh tay đôi và thường chiến đấu đến chết để bảo vệ đồng loại.",review,viết tay
+Monster/MONSTER_KOBLIN_MAGE_NAME,Monster,Koblin Mage,Pháp Sư Koblin,review,viết tay
 Monster/MONSTER_KOBLIN_MAGE_DETAILS,Monster,"A species of Koblin that has a strong bond with nature and the ability to control the spirit of fire.
 
-Some people believe the fires they create are merely magic tricks or illusions.",,todo,
-Monster/MONSTER_KOBLIN_GENERAL_NAME,Monster,Koblin General,,todo,
+Some people believe the fires they create are merely magic tricks or illusions.","Một nhánh Koblin gắn bó mật thiết với thiên nhiên và điều khiển được linh hồn lửa.
+
+Có người tin rằng lửa chúng tạo ra chỉ là trò ảo thuật hay ảo ảnh.",review,viết tay
+Monster/MONSTER_KOBLIN_GENERAL_NAME,Monster,Koblin General,Tướng Koblin,review,viết tay
 Monster/MONSTER_KOBLIN_GENERAL_DETAILS,Monster,"These feared Koblins are dominant within their tribe.
 
-They have good endurance and strength, allowing them to keep fighting for longer.",,todo,
-Monster/MONSTER_PIRATE_KING_NAME,Monster,Ironfin,,todo,
+They have good endurance and strength, allowing them to keep fighting for longer.","Những Koblin đáng sợ này nắm quyền thống trị trong bộ tộc.
+
+Chúng bền bỉ và khỏe mạnh, nhờ vậy có thể chiến đấu lâu hơn.",review,viết tay
+Monster/MONSTER_PIRATE_KING_NAME,Monster,Ironfin,Vây Sắt,review,viết tay
 Monster/MONSTER_PIRATE_KING_DETAILS,Monster,"Ironfins are at the top of the food chain in the wasteland ecosystem. These deadly predators inhabit the deepest layers of sand.
 
-Their movements are fast and unpredictable, and they tend to ambush their prey by bursting out of the ground.",,todo,
-UI/UI_ACCEPT,UI,Accept,,todo,
-UI/UI_PLAY_BUTTON,UI,Play,,todo,
-UI/UI_EXIT_BUTTON,UI,Exit,,todo,
-UI/UI_NEXT,UI,Next,,todo,
-UI/UI_APPROVAL_BADGE,UI,Approval Badge,,todo,
-UI/UI_TRUST,UI,Trust,,todo,
-UI/UI_BADGE,UI,Badge,,todo,
-UI/UI_REQUIREMENTS,UI,Requirements,,todo,
-UI/UI_ON,UI,On,,todo,
-UI/UI_OFF,UI,Off,,todo,
-UI/UI_CHAR_CREATION_GENDER,UI,Character,,todo,
-UI/UI_CHAR_CREATION_HAIR_TYPE,UI,Hairstyle,,todo,
-UI/UI_CHAR_CREATION_HAIR_COLOR,UI,Hair Colour,,todo,
-UI/UI_CHAR_CREATION_EYES_COLOR,UI,Eye Colour,,todo,
-UI/UI_CHAR_CREATION_SKIN_COLOR,UI,Skin Colour,,todo,
-UI/UI_CHAR_CREATION_CLOTH_COLOR,UI,Outfit Colour,,todo,
-UI/UI_CHAR_CREATION_CAPE_COLOR,UI,Cape Colour,,todo,
-UI/UI_CHAR_CREATION_EDIT_NAME,UI,Name,,todo,
-UI/UI_ICON_CATEGORY_MATERIAL,UI,Material,,todo,
-UI/UI_ICON_CATEGORY_FOOD,UI,Food,,todo,
-UI/UI_ICON_CATEGORY_POTION,UI,Potion,,todo,
-UI/UI_ICON_CATEGORY_KEY_ITEM,UI,Key Item,,todo,
-UI/UI_ICON_FIRE,UI,Fire,,todo,
-UI/UI_ICON_WATER,UI,Water,,todo,
-UI/UI_ICON_WIND,UI,Wind,,todo,
-UI/UI_ICON_EARTH,UI,Earth,,todo,
-UI/UI_QUEST,UI,Task,,todo,
-UI/UI_SOCIAL,UI,Social,,todo,
-UI/UI_ITEM,UI,Item,,todo,
-UI/UI_POTIONS,UI,Potions,,todo,
-UI/UI_COOKING,UI,Cooking,,todo,
-UI/UI_FISH,UI,Fish,,todo,
-UI/UI_MONSTER,UI,Monster,,todo,
-UI/UI_TUTORIAL,UI,Tutorial,,todo,
-UI/UI_OPTIONS,UI,Options,,todo,
-UI/UI_NO_QUEST,UI,No available quests.,,todo,
+Their movements are fast and unpredictable, and they tend to ambush their prey by bursting out of the ground.","Vây Sắt đứng đầu chuỗi thức ăn trong hệ sinh thái hoang mạc. Loài săn mồi chết người này sống ở những tầng cát sâu nhất.
+
+Chúng di chuyển nhanh và khó lường, thường phục kích con mồi bằng cách lao vọt lên từ dưới đất.",review,viết tay
+UI/UI_ACCEPT,UI,Accept,Nhận,review,viết tay
+UI/UI_PLAY_BUTTON,UI,Play,Chơi,review,viết tay
+UI/UI_EXIT_BUTTON,UI,Exit,Thoát,review,viết tay
+UI/UI_NEXT,UI,Next,Tiếp,review,viết tay
+UI/UI_APPROVAL_BADGE,UI,Approval Badge,Huy hiệu Công nhận,review,viết tay
+UI/UI_TRUST,UI,Trust,Uy tín,review,viết tay
+UI/UI_BADGE,UI,Badge,Huy hiệu,review,viết tay
+UI/UI_REQUIREMENTS,UI,Requirements,Yêu cầu,review,viết tay
+UI/UI_ON,UI,On,Bật,review,viết tay
+UI/UI_OFF,UI,Off,Tắt,review,viết tay
+UI/UI_CHAR_CREATION_GENDER,UI,Character,Nhân vật,review,viết tay
+UI/UI_CHAR_CREATION_HAIR_TYPE,UI,Hairstyle,Kiểu tóc,review,viết tay
+UI/UI_CHAR_CREATION_HAIR_COLOR,UI,Hair Colour,Màu tóc,review,viết tay
+UI/UI_CHAR_CREATION_EYES_COLOR,UI,Eye Colour,Màu mắt,review,viết tay
+UI/UI_CHAR_CREATION_SKIN_COLOR,UI,Skin Colour,Màu da,review,viết tay
+UI/UI_CHAR_CREATION_CLOTH_COLOR,UI,Outfit Colour,Màu trang phục,review,viết tay
+UI/UI_CHAR_CREATION_CAPE_COLOR,UI,Cape Colour,Màu áo choàng,review,viết tay
+UI/UI_CHAR_CREATION_EDIT_NAME,UI,Name,Tên,review,viết tay
+UI/UI_ICON_CATEGORY_MATERIAL,UI,Material,Nguyên liệu,review,viết tay
+UI/UI_ICON_CATEGORY_FOOD,UI,Food,Món ăn,review,viết tay
+UI/UI_ICON_CATEGORY_POTION,UI,Potion,Thuốc,review,viết tay
+UI/UI_ICON_CATEGORY_KEY_ITEM,UI,Key Item,Đồ quan trọng,review,viết tay
+UI/UI_ICON_FIRE,UI,Fire,Lửa,review,viết tay
+UI/UI_ICON_WATER,UI,Water,Nước,review,viết tay
+UI/UI_ICON_WIND,UI,Wind,Gió,review,viết tay
+UI/UI_ICON_EARTH,UI,Earth,Đất,review,viết tay
+UI/UI_QUEST,UI,Task,Nhiệm vụ,review,viết tay
+UI/UI_SOCIAL,UI,Social,Giao lưu,review,viết tay
+UI/UI_ITEM,UI,Item,Vật phẩm,review,viết tay
+UI/UI_POTIONS,UI,Potions,Thuốc,review,viết tay
+UI/UI_COOKING,UI,Cooking,Nấu ăn,review,viết tay
+UI/UI_FISH,UI,Fish,Cá,review,viết tay
+UI/UI_MONSTER,UI,Monster,Quái,review,viết tay
+UI/UI_TUTORIAL,UI,Tutorial,Hướng dẫn,review,viết tay
+UI/UI_OPTIONS,UI,Options,Tùy chọn,review,viết tay
+UI/UI_NO_QUEST,UI,No available quests.,Không có nhiệm vụ nào.,review,viết tay
 UI/UI_NO_QUEST_BOARD,UI,"No available quests. 
-The quests will be refreshed every Monday.",,todo,
-UI/UI_NO_NEWS,UI,There's no available news at the moment.,,todo,
-UI/UI_BULLETIN_BOARD,UI,Bulletin Board,,todo,
-UI/UI_TUTORIAL_LOCK,UI,Not available yet,,todo,
-UI/UI_PATIENT,UI,Patient,,todo,
-UI/UI_REWARDS,UI,Rewards,,todo,
-UI/UI_DESCRIPTION,UI,Description,,todo,
-UI/UI_QUEST_BOARD,UI,Community Board,,todo,
-UI/UI_QUEST_REPORT_GIVE_ITEM,UI,Give,,todo,
-UI/UI_ANIM_INTERACTION_TALK,UI,Talk,,todo,
-UI/UI_ANIM_INTERACTION_GIFT,UI,Gift,,todo,
-UI/UI_ANIM_INTERACTION_QUEST,UI,Quest,,todo,
-UI/UI_ANIM_INTERACTION_CONFESS,UI,Confess,,todo,
-UI/UI_ANIM_INTERACTION_DATE,UI,Date,,todo,
-UI/UI_ANIM_INTERACTION_LEAVE,UI,Leave,,todo,
-UI/UI_ANIM_INTERACTION_DOG_PET,UI,Pet,,todo,
-UI/UI_ANIM_INTERACTION_DOG_FEED,UI,Feed,,todo,
-UI/UI_ANIM_INTERACTION_DOG_FIND_NPC,UI,Find,,todo,
-UI/UI_HUD_INFO_LOCATION,UI,Location,,todo,
-UI/UI_HUD_INFO_QUEST_COMPLETE,UI,Quest Completed,,todo,
-UI/UI_DIAGNOSE_CURE_SUCCESS,UI,Treatment Completed,,todo,
-UI/UI_EVENT_HOLD_TO_SKIP,UI,Hold to skip,,todo,
-UI/UI_OVERSLEPT,UI,You overslept,,todo,
-UI/UI_JOURNAL_CHANGE_PAGE,UI,Change Page,,todo,
-UI/UI_JOURNAL_CHANGE_PAGE_LEFT,UI,Change Page L,,todo,
-UI/UI_JOURNAL_CHANGE_PAGE_RIGHT,UI,Change Page R,,todo,
-UI/UI_JOURNAL_FOUND_AT,UI,Where to find,,todo,
-UI/UI_JOURNAL_CURES,UI,Cures,,todo,
-UI/UI_JOURNAL_SELLING_PRICE,UI,Selling Price:,,todo,
-UI/UI_JOURNAL_NO_QUEST,UI,There are no ongoing quests at the moment.,,todo,
-UI/UI_JOURNAL_QUEST_PIN,UI,Pinned,,todo,
-UI/UI_JOURNAL_CHARACTER_STORY,UI,Background Story,,todo,
-UI/UI_JOURNAL_NPC_LOCK,UI,You haven't met this character yet.,,todo,
-UI/UI_JOURNAL_NPC_STORY_LOCK,UI,Higher friendship level required.,,todo,
-UI/UI_JOURNAL_INFORMATION,UI,Information,,todo,
-UI/UI_JOURNAL_RECIPE,UI,Recipe,,todo,
-UI/UI_JOURNAL_BEST,UI,Best,,todo,
-UI/UI_JOURNAL_KG,UI,lbs,,todo,
-UI/UI_JOURNAL_CONFIGURATION,UI,Configuration,,todo,
-UI/UI_JOURNAL_KEYBOARD_1,UI,Keyboard 1,,todo,
-UI/UI_JOURNAL_KEYBOARD_2,UI,Keyboard 2,,todo,
-UI/UI_MONDAY,UI,Monday,,todo,
-UI/UI_TUESDAY,UI,Tuesday,,todo,
-UI/UI_WEDNESDAY,UI,Wednesday,,todo,
-UI/UI_THURSDAY,UI,Thursday,,todo,
-UI/UI_FRIDAY,UI,Friday,,todo,
-UI/UI_SATURDAY,UI,Saturday,,todo,
-UI/UI_SUNDAY,UI,Sunday,,todo,
-UI/UI_SAVING,UI,Saving,,todo,
-UI/UI_OPTIONS_GAME_SETTINGS,UI,Settings,,todo,
-UI/UI_OPTIONS_GAME_AUDIO,UI,Audio,,todo,
-UI/UI_OPTIONS_GAME_DISPLAY,UI,Display,,todo,
-UI/UI_OPTIONS_DEVICE_GAMEPAD,UI,Controller,,todo,
-UI/UI_OPTIONS_DEVICE_KEYBOARD,UI,Keyboard,,todo,
-UI/UI_OPTIONS_RESET_DEFAULT,UI,Reset to Default,,todo,
-UI/UI_OPTIONS_BACK_TO_MAIN_MENU,UI,Back to Title,,todo,
-UI/UI_AUDIO_OPTIONS_MASTER,UI,Master,,todo,
-UI/UI_AUDIO_OPTIONS_MUSIC,UI,Music,,todo,
-UI/UI_AUDIO_OPTIONS_AMBIENCE,UI,Ambience,,todo,
-UI/UI_AUDIO_OPTIONS_SFX,UI,SFX,,todo,
-UI/UI_DISPLAY_OPTIONS_RESOLUTION,UI,Resolution,,todo,
-UI/UI_DISPLAY_OPTIONS_FULLSCREEN,UI,Fullscreen,,todo,
-UI/UI_DISPLAY_OPTIONS_VYSNC,UI,Vsync,,todo,
-UI/UI_LANGUAGE_OPTIONS,UI,Language,,todo,
-UI/UI_LANGUAGE,UI,English,,todo,
-UI/UI_CREDITS,UI,Credits,,todo,
-UI/UI_VIBRATION,UI,Vibration,,todo,
-UI/UI_CUSTOM,UI,Custom,,todo,
-UI/UI_CONTROL_ATTACK,UI,Attack,,todo,
-UI/UI_CONTROL_ROLL,UI,Roll,,todo,
-UI/UI_CONTROL_INVENTORY,UI,Inventory,,todo,
-UI/UI_CONTROL_JOURNAL,UI,Journal,,todo,
-UI/UI_CONTROL_WHISTLE,UI,Whistle,,todo,
-UI/UI_CONTROL_DECORATE,UI,Decorate,,todo,
-UI/UI_CONTROL_SWITCH_TOOLS_L,UI,Switch Tools L,,todo,
-UI/UI_CONTROL_SWITCH_TOOLS_R,UI,Switch Tools R,,todo,
-UI/UI_CONTROL_WORLD_MAP,UI,World Map,,todo,
-UI/UI_CONTROL_UP,UI,Up,,todo,
-UI/UI_CONTROL_DOWN,UI,Down,,todo,
-UI/UI_CONTROL_LEFT,UI,Left,,todo,
-UI/UI_CONTROL_RIGHT,UI,Right,,todo,
-UI/UI_CONTROL_PULL,UI,Reel In,,todo,
-UI/UI_CONTROL_THROW,UI,Cast,,todo,
-UI/UI_SIGNBOARD_MOONBURY_GATE,UI,Moonbury Town,,todo,
+The quests will be refreshed every Monday.","Không có nhiệm vụ nào.
+Nhiệm vụ mới được cập nhật vào mỗi Thứ Hai.",review,viết tay
+UI/UI_NO_NEWS,UI,There's no available news at the moment.,Hiện chưa có tin tức nào.,review,viết tay
+UI/UI_BULLETIN_BOARD,UI,Bulletin Board,Bảng tin,review,viết tay
+UI/UI_TUTORIAL_LOCK,UI,Not available yet,Chưa mở khóa,review,viết tay
+UI/UI_PATIENT,UI,Patient,Bệnh nhân,review,viết tay
+UI/UI_REWARDS,UI,Rewards,Phần thưởng,review,viết tay
+UI/UI_DESCRIPTION,UI,Description,Mô tả,review,viết tay
+UI/UI_QUEST_BOARD,UI,Community Board,Bảng yêu cầu,review,viết tay
+UI/UI_QUEST_REPORT_GIVE_ITEM,UI,Give,Đưa,review,viết tay
+UI/UI_ANIM_INTERACTION_TALK,UI,Talk,Trò chuyện,review,viết tay
+UI/UI_ANIM_INTERACTION_GIFT,UI,Gift,Tặng quà,review,viết tay
+UI/UI_ANIM_INTERACTION_QUEST,UI,Quest,Nhiệm vụ,review,viết tay
+UI/UI_ANIM_INTERACTION_CONFESS,UI,Confess,Tỏ tình,review,viết tay
+UI/UI_ANIM_INTERACTION_DATE,UI,Date,Hẹn hò,review,viết tay
+UI/UI_ANIM_INTERACTION_LEAVE,UI,Leave,Rời đi,review,viết tay
+UI/UI_ANIM_INTERACTION_DOG_PET,UI,Pet,Vuốt ve,review,viết tay
+UI/UI_ANIM_INTERACTION_DOG_FEED,UI,Feed,Cho ăn,review,viết tay
+UI/UI_ANIM_INTERACTION_DOG_FIND_NPC,UI,Find,Tìm người,review,viết tay
+UI/UI_HUD_INFO_LOCATION,UI,Location,Địa điểm,review,viết tay
+UI/UI_HUD_INFO_QUEST_COMPLETE,UI,Quest Completed,Hoàn thành nhiệm vụ,review,viết tay
+UI/UI_DIAGNOSE_CURE_SUCCESS,UI,Treatment Completed,Đã điều trị xong,review,viết tay
+UI/UI_EVENT_HOLD_TO_SKIP,UI,Hold to skip,Giữ để bỏ qua,review,viết tay
+UI/UI_OVERSLEPT,UI,You overslept,Bạn đã ngủ quên,review,viết tay
+UI/UI_JOURNAL_CHANGE_PAGE,UI,Change Page,Đổi trang,review,viết tay
+UI/UI_JOURNAL_CHANGE_PAGE_LEFT,UI,Change Page L,Trang trước,review,viết tay
+UI/UI_JOURNAL_CHANGE_PAGE_RIGHT,UI,Change Page R,Trang sau,review,viết tay
+UI/UI_JOURNAL_FOUND_AT,UI,Where to find,Nơi tìm thấy,review,viết tay
+UI/UI_JOURNAL_CURES,UI,Cures,Chữa trị,review,viết tay
+UI/UI_JOURNAL_SELLING_PRICE,UI,Selling Price:,Giá bán:,review,viết tay
+UI/UI_JOURNAL_NO_QUEST,UI,There are no ongoing quests at the moment.,Hiện không có nhiệm vụ nào đang làm.,review,viết tay
+UI/UI_JOURNAL_QUEST_PIN,UI,Pinned,Đã ghim,review,viết tay
+UI/UI_JOURNAL_CHARACTER_STORY,UI,Background Story,Tiểu sử,review,viết tay
+UI/UI_JOURNAL_NPC_LOCK,UI,You haven't met this character yet.,Bạn chưa gặp nhân vật này.,review,viết tay
+UI/UI_JOURNAL_NPC_STORY_LOCK,UI,Higher friendship level required.,Cần mức thân thiết cao hơn.,review,viết tay
+UI/UI_JOURNAL_INFORMATION,UI,Information,Thông tin,review,viết tay
+UI/UI_JOURNAL_RECIPE,UI,Recipe,Công thức,review,viết tay
+UI/UI_JOURNAL_BEST,UI,Best,Kỷ lục,review,viết tay
+UI/UI_JOURNAL_KG,UI,lbs,lbs,review,giữ nguyên
+UI/UI_JOURNAL_CONFIGURATION,UI,Configuration,Cấu hình,review,viết tay
+UI/UI_JOURNAL_KEYBOARD_1,UI,Keyboard 1,Bàn phím 1,review,viết tay
+UI/UI_JOURNAL_KEYBOARD_2,UI,Keyboard 2,Bàn phím 2,review,viết tay
+UI/UI_MONDAY,UI,Monday,Thứ Hai,review,viết tay
+UI/UI_TUESDAY,UI,Tuesday,Thứ Ba,review,viết tay
+UI/UI_WEDNESDAY,UI,Wednesday,Thứ Tư,review,viết tay
+UI/UI_THURSDAY,UI,Thursday,Thứ Năm,review,viết tay
+UI/UI_FRIDAY,UI,Friday,Thứ Sáu,review,viết tay
+UI/UI_SATURDAY,UI,Saturday,Thứ Bảy,review,viết tay
+UI/UI_SUNDAY,UI,Sunday,Chủ Nhật,review,viết tay
+UI/UI_SAVING,UI,Saving,Đang lưu,review,viết tay
+UI/UI_OPTIONS_GAME_SETTINGS,UI,Settings,Cài đặt,review,viết tay
+UI/UI_OPTIONS_GAME_AUDIO,UI,Audio,Âm thanh,review,viết tay
+UI/UI_OPTIONS_GAME_DISPLAY,UI,Display,Hiển thị,review,viết tay
+UI/UI_OPTIONS_DEVICE_GAMEPAD,UI,Controller,Tay cầm,review,viết tay
+UI/UI_OPTIONS_DEVICE_KEYBOARD,UI,Keyboard,Bàn phím,review,viết tay
+UI/UI_OPTIONS_RESET_DEFAULT,UI,Reset to Default,Khôi phục mặc định,review,viết tay
+UI/UI_OPTIONS_BACK_TO_MAIN_MENU,UI,Back to Title,Về màn hình chính,review,viết tay
+UI/UI_AUDIO_OPTIONS_MASTER,UI,Master,Tổng,review,viết tay
+UI/UI_AUDIO_OPTIONS_MUSIC,UI,Music,Nhạc,review,viết tay
+UI/UI_AUDIO_OPTIONS_AMBIENCE,UI,Ambience,Âm môi trường,review,viết tay
+UI/UI_AUDIO_OPTIONS_SFX,UI,SFX,Hiệu ứng,review,viết tay
+UI/UI_DISPLAY_OPTIONS_RESOLUTION,UI,Resolution,Độ phân giải,review,viết tay
+UI/UI_DISPLAY_OPTIONS_FULLSCREEN,UI,Fullscreen,Toàn màn hình,review,viết tay
+UI/UI_DISPLAY_OPTIONS_VYSNC,UI,Vsync,Vsync,review,giữ nguyên
+UI/UI_LANGUAGE_OPTIONS,UI,Language,Ngôn ngữ,review,viết tay
+UI/UI_LANGUAGE,UI,English,Tiếng Việt,review,viết tay
+UI/UI_CREDITS,UI,Credits,Nhóm thực hiện,review,viết tay
+UI/UI_VIBRATION,UI,Vibration,Rung,review,viết tay
+UI/UI_CUSTOM,UI,Custom,Tùy chỉnh,review,viết tay
+UI/UI_CONTROL_ATTACK,UI,Attack,Tấn công,review,viết tay
+UI/UI_CONTROL_ROLL,UI,Roll,Lăn,review,viết tay
+UI/UI_CONTROL_INVENTORY,UI,Inventory,Túi đồ,review,viết tay
+UI/UI_CONTROL_JOURNAL,UI,Journal,Sổ tay,review,viết tay
+UI/UI_CONTROL_WHISTLE,UI,Whistle,Huýt sáo,review,viết tay
+UI/UI_CONTROL_DECORATE,UI,Decorate,Trang trí,review,viết tay
+UI/UI_CONTROL_SWITCH_TOOLS_L,UI,Switch Tools L,Dụng cụ trước,review,viết tay
+UI/UI_CONTROL_SWITCH_TOOLS_R,UI,Switch Tools R,Dụng cụ sau,review,viết tay
+UI/UI_CONTROL_WORLD_MAP,UI,World Map,Bản đồ thế giới,review,viết tay
+UI/UI_CONTROL_UP,UI,Up,Lên,review,viết tay
+UI/UI_CONTROL_DOWN,UI,Down,Xuống,review,viết tay
+UI/UI_CONTROL_LEFT,UI,Left,Trái,review,viết tay
+UI/UI_CONTROL_RIGHT,UI,Right,Phải,review,viết tay
+UI/UI_CONTROL_PULL,UI,Reel In,Kéo cần,review,viết tay
+UI/UI_CONTROL_THROW,UI,Cast,Quăng cần,review,viết tay
+UI/UI_SIGNBOARD_MOONBURY_GATE,UI,Moonbury Town,Thị trấn Moonbury,review,viết tay
 UI/UI_SIGNBOARD_ARCADE,UI,"Arcade Centre
 
 Open 10:00 to 24:00
-Closed on Mondays",,todo,
+Closed on Mondays","Khu trò chơi
+
+Mở cửa 10:00 đến 24:00
+Nghỉ Thứ Hai",review,viết tay
 UI/UI_SIGNBOARD_BATHHOUSE,UI,"Willow Waters Bathhouse
 
 Open 09:00 to 18:00
-Closed on Thursdays",,todo,
-UI/UI_SIGNBOARD_BEACH,UI,Moonbury Beach,,todo,
+Closed on Thursdays","Nhà tắm Willow Waters
+
+Mở cửa 09:00 đến 18:00
+Nghỉ Thứ Năm",review,viết tay
+UI/UI_SIGNBOARD_BEACH,UI,Moonbury Beach,Bãi biển Moonbury,review,viết tay
 UI/UI_SIGNBOARD_BLACKSMITH,UI,"Hearts and Sparks
 
 Open 10:00 to 18:00
-Closed on Fridays",,todo,
+Closed on Fridays","Hearts and Sparks
+
+Mở cửa 10:00 đến 18:00
+Nghỉ Thứ Sáu",review,viết tay
 UI/UI_SIGNBOARD_CARPENTER,UI,"Bulk and Build
 
 Open 08:00 to 15:00
-Closed on Tuesdays",,todo,
+Closed on Tuesdays","Bulk and Build
+
+Mở cửa 08:00 đến 15:00
+Nghỉ Thứ Ba",review,viết tay
 UI/UI_SIGNBOARD_CHURCH,UI,"Church
 
 Open 08:00 to 17:00
-Closed on Wednesdays",,todo,
-UI/UI_SIGNBOARD_CLIFF,UI,Moonbury Cliff,,todo,
+Closed on Wednesdays","Nhà thờ
+
+Mở cửa 08:00 đến 17:00
+Nghỉ Thứ Tư",review,viết tay
+UI/UI_SIGNBOARD_CLIFF,UI,Moonbury Cliff,Vách đá Moonbury,review,viết tay
 UI/UI_SIGNBOARD_FARMHOUSE,UI,"Farmhouse
 
 Open 07:00 to 17:00
-Closed on Mondays",,todo,
+Closed on Mondays","Trang trại
+
+Mở cửa 07:00 đến 17:00
+Nghỉ Thứ Hai",review,viết tay
 UI/UI_SIGNBOARD_FISH_SHOP,UI,"Primerose Sail
 
 Open 10:00 to 18:00
-Closed on Saturdays",,todo,
-UI/UI_SIGNBOARD_PARK,UI,Moonbury Park,,todo,
+Closed on Saturdays","Primerose Sail
+
+Mở cửa 10:00 đến 18:00
+Nghỉ Thứ Bảy",review,viết tay
+UI/UI_SIGNBOARD_PARK,UI,Moonbury Park,Công viên Moonbury,review,viết tay
 UI/UI_SIGNBOARD_POLICE_STATION,UI,"Police Department
 
-Open 08:00 to 22:00",,todo,
+Open 08:00 to 22:00","Đồn cảnh sát
+
+Mở cửa 08:00 đến 22:00",review,viết tay
 UI/UI_SIGNBOARD_TAILOR,UI,"Silky Stitch Tailor's
 
 Open 11:00 to 17:00
-Closed on Sundays",,todo,
+Closed on Sundays","Tiệm may Silky Stitch
+
+Mở cửa 11:00 đến 17:00
+Nghỉ Chủ Nhật",review,viết tay
 UI/UI_SIGNBOARD_TAVERN,UI,"Lazy Bowl Tavern
 
 Open 10:00 to 24:00
-Closed on Mondays",,todo,
+Closed on Mondays","Quán rượu Lazy Bowl
+
+Mở cửa 10:00 đến 24:00
+Nghỉ Thứ Hai",review,viết tay
 UI/UI_SIGNBOARD_TOWN_HALL,UI,"Town Hall
 
 Open 08:00 to 15:00
-Closed on Sundays",,todo,
+Closed on Sundays","Tòa thị chính
+
+Mở cửa 08:00 đến 15:00
+Nghỉ Chủ Nhật",review,viết tay
 UI/UI_SIGNBOARD_MEADOW_RANGE,UI,"East: Meadow Range
 West: Moonbury Town
-South: Matheo's House",,todo,
-UI/UI_SIGNBOARD_MOONBURY_STATION,UI,Moonbury Train Station,,todo,
+South: Matheo's House","Hướng đông: Thảo nguyên Meadow
+Hướng tây: Thị trấn Moonbury
+Hướng nam: Nhà Matheo",review,viết tay
+UI/UI_SIGNBOARD_MOONBURY_STATION,UI,Moonbury Train Station,Ga tàu Moonbury,review,viết tay
 UI/UI_SIGNBOARD_RANGER_POST,UI,"Ranger Post
 
 Open 09:00 to 20:00
-Closed on Sundays",,todo,
+Closed on Sundays","Trạm Kiểm lâm
+
+Mở cửa 09:00 đến 20:00
+Nghỉ Chủ Nhật",review,viết tay
 UI/UI_SIGNBOARD_BEACH_CAFE,UI,"Ottmar's Cafe
 
-Open 15:00 to 23:00 (Wed, Thu, Sat)",,todo,
+Open 15:00 to 23:00 (Wed, Thu, Sat)","Quán cà phê Ottmar
+
+Mở cửa 15:00 đến 23:00 (T4, T5, T7)",review,viết tay
 UI/UI_SIGNBOARD_IRE_LANDSLIDE,UI,"Warning!
 
-Path closed due to a landslide.",,todo,
+Path closed due to a landslide.","Cảnh báo!
+
+Đường bị chặn do sạt lở đất.",review,viết tay
 UI/UI_SIGNBOARD_SNOW_GONDOLA,UI,"Warning!
 
-The cable car is not in service.",,todo,
+The cable car is not in service.","Cảnh báo!
+
+Cáp treo đang ngừng hoạt động.",review,viết tay
 UI/UI_SIGNBOARD_GEYSER_REACTOR,UI,"Warning!
 
-Hot geyser burst up ahead.",,todo,
+Hot geyser burst up ahead.","Cảnh báo!
+
+Phía trước có mạch nước nóng phun trào.",review,viết tay
 UI/UI_SIGNBOARD_PLAINS_NORTH,UI,"North: Glaze Iceberg
 South: Barren Wasteland
-West: Moonbury Town",,todo,
+West: Moonbury Town","Hướng bắc: Núi băng Glaze
+Hướng nam: Hoang mạc Barren
+Hướng tây: Thị trấn Moonbury",review,viết tay
 UI/UI_SIGNBOARD_FISHING_BEACH,UI,"Required
-Advanced Fishing Rod and Hyper Worm",,todo,
+Advanced Fishing Rod and Hyper Worm","Yêu cầu
+Cần câu cao cấp và Giun thượng hạng",review,viết tay
 UI/UI_SIGNBOARD_FISHING_RIVER,UI,"Required
-Intermediate Fishing Rod and Super Worm",,todo,
+Intermediate Fishing Rod and Super Worm","Yêu cầu
+Cần câu trung cấp và Giun loại tốt",review,viết tay
 UI/UI_SIGNBOARD_FISHING_PARK,UI,"Required
-Basic Fishing Rod and Worm",,todo,
-UI/UI_CONTROL_GAME,UI,Game,,todo,
-UI/UI_CONTROL_GAMEPLAY,UI,Gameplay,,todo,
-UI/UI_CONTROL_GUI,UI,GUI,,todo,
-UI/UI_CONTROL_MOVEMENT,UI,Movement,,todo,
-UI/UI_CONTROL_NAVIGATION,UI,Navigation,,todo,
-UI/UI_CONTROL_BACK,UI,Back,,todo,
-UI/UI_CONTROL_INTERACT,UI,Interact,,todo,
-UI/UI_CONTROL_MENU,UI,Menu,,todo,
-UI/UI_CONTROL_MAP,UI,Map,,todo,
-UI/UI_CONTROL_LEFT_TAB,UI,Left Tab,,todo,
-UI/UI_CONTROL_RIGHT_TAB,UI,Right Tab,,todo,
-UI/UI_CONTROL_EAT,UI,Eat,,todo,
-UI/UI_CONTROL_PLACE,UI,Place,,todo,
-UI/UI_HINT_REPAIR_NEEDED,UI,Repair needed.,,todo,
-UI/UI_HINT_DOG_HOUSE,UI,{[DOG_NAME]}'s House,,todo,
-UI/UI_HINT_NPC_UNAVAILABLE,UI,Related character(s) are <#ff1d1d>currently sick</color> or you have an <#ff1d1d>insufficient trust level</color>.,,todo,
-UI/UI_HINT_FISHING_UNAVAILABLE,UI,You need a <#ff1d1d>fishing rod</color> and a <#ff1d1d>fishing bait</color> is required.,,todo,
-UI/UI_HINT_PART_TIME_UNAVAILABLE,UI,No <#ff1d1d>part-time job</color> available today.,,todo,
-UI/UI_FEATURE_UNLOCK_CAULDRON,UI,Cauldron Unlocked,,todo,
-UI/UI_FEATURE_UNLOCK_CAULDRON_UPGRADE_01,UI,Cauldron Upgrade 1 Completed,,todo,
-UI/UI_FEATURE_UNLOCK_CAULDRON_UPGRADE_02,UI,Cauldron Upgrade 2 Completed,,todo,
-UI/UI_FEATURE_UNLOCK_CAULDRON_UPGRADE_03,UI,Cauldron Upgrade 3 Completed,,todo,
-UI/UI_FEATURE_UNLOCK_CAULDRON_UPGRADE_04,UI,Cauldron Upgrade 4 Completed,,todo,
-UI/UI_FEATURE_UNLOCK_CAULDRON_UPGRADE_05,UI,Cauldron Upgrade 5 Completed,,todo,
-UI/UI_FEATURE_UNLOCK_CLINIC,UI,Clinic Unlocked,,todo,
-UI/UI_FEATURE_UNLOCK_CLINIC_UPGRADE_01,UI,Clinic Renovation 1 Completed,,todo,
-UI/UI_FEATURE_UNLOCK_CLINIC_UPGRADE_02,UI,Clinic Renovation 2 Completed,,todo,
-UI/UI_FEATURE_UNLOCK_CLINIC_UPGRADE_03,UI,Clinic Renovation 3 Completed,,todo,
-UI/UI_FEATURE_UNLOCK_QUEST_BOARD,UI,Quest Board Unlocked,,todo,
-UI/UI_FEATURE_UNLOCK_FISHING,UI,Basic Fishing Rod Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_FISHING_UPGRADE_01,UI,Intermediate Fishing Rod Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_FISHING_UPGRADE_02,UI,Advanced Fishing Rod Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_POTION_HOUSE_01,UI,Kitchen Renovation Completed,,todo,
-UI/UI_FEATURE_UNLOCK_POTION_HOUSE_02,UI,House Expansion 1 Completed,,todo,
-UI/UI_FEATURE_UNLOCK_POTION_HOUSE_03,UI,House Expansion 2 Completed,,todo,
-UI/UI_FEATURE_UNLOCK_HEALTH_UP,UI,Health Capacity Increased,,todo,
-UI/UI_FEATURE_UNLOCK_APPROVAL_BADGE_01,UI,Approval Badge 1 Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_APPROVAL_BADGE_02,UI,Approval Badge 2 Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_APPROVAL_BADGE_03,UI,Approval Badge 3 Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_DOG_DIGGING,UI,{[DOG_NAME]}'s Digging Ability Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_DOG_TRACKING,UI,{[DOG_NAME]}'s Tracking Ability Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_TOOL_SICKLE_01,UI,Iron Sickle Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_TOOL_SICKLE_02,UI,Steel Sickle Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_TOOL_SICKLE_03,UI,Mythril Sickle Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_TOOL_AXE_01,UI,Iron Axe Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_TOOL_AXE_02,UI,Steel Axe Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_TOOL_AXE_03,UI,Mythril Axe Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_TOOL_HAMMER_01,UI,Iron Hammer Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_TOOL_HAMMER_02,UI,Steel Hammer Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_TOOL_HAMMER_03,UI,Mythril Hammer Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_POST_DROP_00,UI,Post Drop Box Unlocked,,todo,
-UI/UI_FEATURE_UNLOCK_POST_DROP_01,UI,Post Drop Box 1 Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_POST_DROP_02,UI,Post Drop Box 2 Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_POST_DROP_03,UI,Post Drop Box 3 Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_NEW_POTION_RECIPE,UI,New Potion Recipes Acquired,,todo,
-UI/UI_FEATURE_UNLOCK_DATING,UI,Dating Unlocked,,todo,
-UI/UI_FEATURE_UNLOCK_RESEARCH,UI,Research Completed,,todo,
-UI/UI_REPUTATION_UP,UI,Trust Up,,todo,
-UI/UI_REPUTATION_DOWN,UI,Trust Down,,todo,
-UI/UI_UNAVAILABLE,UI,Currently unavailable.,,todo,
-UI/UI_POST_DROP_UNAVAILABLE,UI,Post Drop Box Upgrade Required.,,todo,
-UI/UI_NPC_SICK_INFO,UI,{0} is currently sick,,todo,
-UI/UI_BLACKSMITH_UPGRADE_REQUIRE,UI,Blacksmith Upgrade Required,,todo,
-UI/UI_CARPENTER_UPGRADE_REQUIRE,UI,Carpenter Upgrade Required,,todo,
-UI/UI_UPGRADE_MAX_LEVEL,UI,Max level reached,,todo,
-UI/UI_CARPENTER_CATEGORY_ALL,UI,All,,todo,
-UI/UI_CARPENTER_CATEGORY_UPGRADE,UI,Upgrade,,todo,
-UI/UI_CARPENTER_CATEGORY_TABLE,UI,Table,,todo,
-UI/UI_CARPENTER_CATEGORY_CHAIR,UI,Chair,,todo,
-UI/UI_CARPENTER_CATEGORY_LIGHT,UI,Lighting,,todo,
-UI/UI_CARPENTER_CATEGORY_DECO,UI,Decoration,,todo,
-UI/UI_CARPENTER_CATEGORY_MISC,UI,Misc.,,todo,
-UI/UI_SHOP_GROCERY,UI,Shop,,todo,
-UI/UI_SHOP_TOTAL,UI,Total,,todo,
-UI/UI_SHOP_PRICE,UI,Price,,todo,
-UI/UI_NOTIFICATION_NEW,UI,New!,,todo,
-UI/UI_NEW_RECIPE_UNLOCK,UI,Recipe Unlocked,,todo,
-UI/UI_RESEARCH_UNLOCK,UI,Research Unlocked,,todo,
-UI/UI_SATISFACTION,UI,Satisfaction,,todo,
-UI/UI_COMPLAINTS,UI,Complaints:,,todo,
-UI/UI_WARNING,UI,Warning!,,todo,
-UI/UI_POTION_CRAFT_COUNT_HINT,UI,Craft {0} time(s) to unlock,,todo,
-UI/UI_POTION_RECIPE_REPLACE_WARNING,UI,Choose the recipe that you want to replace,,todo,
-UI/UI_POTION_CRAFT_START,UI,Start brewing?,,todo,
-UI/UI_POTION_CRAFT_ADD_TO_RECIPE,UI,Add to recipe,,todo,
-UI/UI_MAP_CANT_TELEPORT_HINT,UI,Can't teleport while inside a building,,todo,
-UI/UI_QUEST_AVAILABLE,UI,Available,,todo,
-UI/UI_QUEST_TAKEN,UI,Taken,,todo,
-UI/UI_QUEST_REPORT,UI,Report,,todo,
-UI/UI_FRIENDSHIP_LEVEL_UP,UI,Friendship Level Up,,todo,
-UI/UI_WEIGHT,UI,Weight,,todo,
-UI/UI_BEST_RECORD,UI,New Record!,,todo,
-UI/UI_ROOM_EDITOR,UI,Room Editor,,todo,
-UI/UI_NO_RESEARCH,UI,Nothing to research,,todo,
-UI/UI_DOG_LEVEL_HINT,UI,Increase {[DOG_NAME]}'s level,,todo,
-UI/UI_RESEARCH_HEADER,UI,Research,,todo,
-UI/UI_DOG_FIND_NPC_TITLE,UI,Person To Find,,todo,
-UI/UI_DIAGNOSE,UI,Diagnosis,,todo,
-UI/UI_YOU,UI,You,,todo,
-UI/UI_TELEPORT,UI,Teleport,,todo,
-UI/UI_SCORE,UI,Score,,todo,
-UI/UI_FINISH,UI,Finish,,todo,
-UI/UI_NO_DATA,UI,No Data,,todo,
-UI/UI_EMPTY,UI,Empty,,todo,
-UI/UI_PAGE_MISSING,UI,Page Missing,,todo,
-UI/UI_FEATURE_UNLOCK_GIFT,UI,Moon Cloves Unlocked,,todo,
-UI/UI_FEATURE_UNLOCK_MOON_BROOCH,UI,Moon Brooch Unlocked,,todo,
-UI/UI_FEATURE_UNLOCK_MILESTONE_01,UI,Messy Garden Cleared,,todo,
-UI/UI_FEATURE_UNLOCK_MILESTONE_02,UI,Broken Street Lamps Fixed,,todo,
-UI/UI_FEATURE_UNLOCK_MILESTONE_03,UI,Rickety Bridge Fixed,,todo,
-UI/UI_FEATURE_UNLOCK_MILESTONE_04,UI,Dirty Beach Cleaned,,todo,
-UI/UI_FEATURE_UNLOCK_MILESTONE_05,UI,Old Fountain Fixed,,todo,
-UI/UI_FEATURE_UNLOCK_MILESTONE_ENDING,UI,Town Square Statue Fixed,,todo,
-UI/UI_FEATURE_UNLOCK_CARPENTER_01,UI,Carpenter Upgrade 1,,todo,
-UI/UI_FEATURE_UNLOCK_CARPENTER_02,UI,Carpenter Upgrade 2,,todo,
-UI/UI_FEATURE_UNLOCK_BLACKSMITH_01,UI,Blacksmith Upgrade 1,,todo,
-UI/UI_FEATURE_UNLOCK_BLACKSMITH_02,UI,Blacksmith Upgrade 2,,todo,
-UI/UI_FAST_TRAVEL_UNLOCK,UI,Travel Point Unlocked,,todo,
-UI/UI_ALLOWED_INGREDIENTS,UI,Permitted Ingredients,,todo,
-UI/UI_CHARACTER_ALBUM_UNLOCK,UI,Character Image Unlocked,,todo,
-UI/ITEM_MAX_LIMIT_REACH,UI,Max item limit reached!,,todo,
-UI/UI_CHARACTER_ROMANCEABLE,UI,Romanceable,,todo,
-UI/UI_QUEST_DAY_LEFT,UI,{0} Day(s) Left,,todo,
-UI/UI_BOARD_BULLETIN_UNAVAILABLE,UI,Events cannot be started with an <#ff1d1d>insufficient trust level</color> or if related characters are currently <#ff1d1d>sick</color>.,,todo,
-UI/UI_DOOR_LOCKED,UI,The door is locked.,,todo,
-UI/UI_OPTIONS_DEVICE_CONTROLS,UI,Controller,,todo,
-UI/UI_USER_INTERFACE,UI,User Interface,,todo,
-UI/UI_DELIVERY_BOX,UI,Delivery Box,,todo,
-UI/UI_INSERT_COIN,UI,Insert a coin to play,,todo,
-UI/UI_DIALOG_TEXT_SIZE,UI,Dialog Text Size,,todo,
-UI/UI_FEATURE_UNLOCK_GROW_BOX,UI,Grow Box Unlocked,,todo,
-UI/UI_GROW_BOX_COUNT_HINT,UI,Collect {0} {1} to unlock,,todo,
-UI/UI_GET_SEED,UI,Get seed,,todo,
-UI/UI_SEED_OBTAINED,UI,Seed obtained,,todo,
-UI/UI_SEED_INFO,UI,{0} seed,,todo,
-UI/UI_GROW_BOX_SEED_LOCK,UI,Unlock seed at Bubble's Farm,,todo,
-UI/UI_PLANT_GROW_TIME,UI,Days to grow: {0},,todo,
-UI/UI_OPTIONS_DEVICE_CONTROLS_UNUSED,UI,Controls,,todo,
-UI/UI_COMPLETE_EDITION,UI,Complete Edition,,todo,
-UI/UI_COMPLETE,UI,Complete,,todo,
-UI/UI_EDITION,UI,Edition,,todo,
+Basic Fishing Rod and Worm","Yêu cầu
+Cần câu cơ bản và Giun",review,viết tay
+UI/UI_CONTROL_GAME,UI,Game,Trò chơi,review,viết tay
+UI/UI_CONTROL_GAMEPLAY,UI,Gameplay,Lối chơi,review,viết tay
+UI/UI_CONTROL_GUI,UI,GUI,Giao diện,review,viết tay
+UI/UI_CONTROL_MOVEMENT,UI,Movement,Di chuyển,review,viết tay
+UI/UI_CONTROL_NAVIGATION,UI,Navigation,Điều hướng,review,viết tay
+UI/UI_CONTROL_BACK,UI,Back,Quay lại,review,viết tay
+UI/UI_CONTROL_INTERACT,UI,Interact,Tương tác,review,viết tay
+UI/UI_CONTROL_MENU,UI,Menu,Menu,review,giữ nguyên
+UI/UI_CONTROL_MAP,UI,Map,Bản đồ,review,viết tay
+UI/UI_CONTROL_LEFT_TAB,UI,Left Tab,Tab trái,review,viết tay
+UI/UI_CONTROL_RIGHT_TAB,UI,Right Tab,Tab phải,review,viết tay
+UI/UI_CONTROL_EAT,UI,Eat,Ăn,review,viết tay
+UI/UI_CONTROL_PLACE,UI,Place,Đặt,review,viết tay
+UI/UI_HINT_REPAIR_NEEDED,UI,Repair needed.,Cần sửa chữa.,review,viết tay
+UI/UI_HINT_DOG_HOUSE,UI,{[DOG_NAME]}'s House,Nhà của {[DOG_NAME]},review,viết tay
+UI/UI_HINT_NPC_UNAVAILABLE,UI,Related character(s) are <#ff1d1d>currently sick</color> or you have an <#ff1d1d>insufficient trust level</color>.,Nhân vật liên quan <#ff1d1d>đang ốm</color> hoặc <#ff1d1d>uy tín chưa đủ</color>.,review,viết tay
+UI/UI_HINT_FISHING_UNAVAILABLE,UI,You need a <#ff1d1d>fishing rod</color> and a <#ff1d1d>fishing bait</color> is required.,Bạn cần có <#ff1d1d>cần câu</color> và <#ff1d1d>mồi câu</color>.,review,viết tay
+UI/UI_HINT_PART_TIME_UNAVAILABLE,UI,No <#ff1d1d>part-time job</color> available today.,Hôm nay không có <#ff1d1d>việc làm thêm</color>.,review,viết tay
+UI/UI_FEATURE_UNLOCK_CAULDRON,UI,Cauldron Unlocked,Đã mở khóa vạc,review,viết tay
+UI/UI_FEATURE_UNLOCK_CAULDRON_UPGRADE_01,UI,Cauldron Upgrade 1 Completed,Đã hoàn thành nâng cấp vạc 1,review,viết tay
+UI/UI_FEATURE_UNLOCK_CAULDRON_UPGRADE_02,UI,Cauldron Upgrade 2 Completed,Đã hoàn thành nâng cấp vạc 2,review,viết tay
+UI/UI_FEATURE_UNLOCK_CAULDRON_UPGRADE_03,UI,Cauldron Upgrade 3 Completed,Đã hoàn thành nâng cấp vạc 3,review,viết tay
+UI/UI_FEATURE_UNLOCK_CAULDRON_UPGRADE_04,UI,Cauldron Upgrade 4 Completed,Đã hoàn thành nâng cấp vạc 4,review,viết tay
+UI/UI_FEATURE_UNLOCK_CAULDRON_UPGRADE_05,UI,Cauldron Upgrade 5 Completed,Đã hoàn thành nâng cấp vạc 5,review,viết tay
+UI/UI_FEATURE_UNLOCK_CLINIC,UI,Clinic Unlocked,Đã mở khóa Phòng khám,review,viết tay
+UI/UI_FEATURE_UNLOCK_CLINIC_UPGRADE_01,UI,Clinic Renovation 1 Completed,Đã hoàn thành cải tạo Phòng khám 1,review,viết tay
+UI/UI_FEATURE_UNLOCK_CLINIC_UPGRADE_02,UI,Clinic Renovation 2 Completed,Đã hoàn thành cải tạo Phòng khám 2,review,viết tay
+UI/UI_FEATURE_UNLOCK_CLINIC_UPGRADE_03,UI,Clinic Renovation 3 Completed,Đã hoàn thành cải tạo Phòng khám 3,review,viết tay
+UI/UI_FEATURE_UNLOCK_QUEST_BOARD,UI,Quest Board Unlocked,Đã mở khóa Bảng yêu cầu,review,viết tay
+UI/UI_FEATURE_UNLOCK_FISHING,UI,Basic Fishing Rod Acquired,Đã nhận Cần câu cơ bản,review,viết tay
+UI/UI_FEATURE_UNLOCK_FISHING_UPGRADE_01,UI,Intermediate Fishing Rod Acquired,Đã nhận Cần câu trung cấp,review,viết tay
+UI/UI_FEATURE_UNLOCK_FISHING_UPGRADE_02,UI,Advanced Fishing Rod Acquired,Đã nhận Cần câu cao cấp,review,viết tay
+UI/UI_FEATURE_UNLOCK_POTION_HOUSE_01,UI,Kitchen Renovation Completed,Đã hoàn thành sửa sang nhà bếp,review,viết tay
+UI/UI_FEATURE_UNLOCK_POTION_HOUSE_02,UI,House Expansion 1 Completed,Đã hoàn thành mở rộng nhà 1,review,viết tay
+UI/UI_FEATURE_UNLOCK_POTION_HOUSE_03,UI,House Expansion 2 Completed,Đã hoàn thành mở rộng nhà 2,review,viết tay
+UI/UI_FEATURE_UNLOCK_HEALTH_UP,UI,Health Capacity Increased,Đã tăng giới hạn sinh lực,review,viết tay
+UI/UI_FEATURE_UNLOCK_APPROVAL_BADGE_01,UI,Approval Badge 1 Acquired,Đã nhận Huy hiệu Công nhận 1,review,viết tay
+UI/UI_FEATURE_UNLOCK_APPROVAL_BADGE_02,UI,Approval Badge 2 Acquired,Đã nhận Huy hiệu Công nhận 2,review,viết tay
+UI/UI_FEATURE_UNLOCK_APPROVAL_BADGE_03,UI,Approval Badge 3 Acquired,Đã nhận Huy hiệu Công nhận 3,review,viết tay
+UI/UI_FEATURE_UNLOCK_DOG_DIGGING,UI,{[DOG_NAME]}'s Digging Ability Acquired,{[DOG_NAME]} đã có khả năng đào bới,review,viết tay
+UI/UI_FEATURE_UNLOCK_DOG_TRACKING,UI,{[DOG_NAME]}'s Tracking Ability Acquired,{[DOG_NAME]} đã có khả năng lần dấu,review,viết tay
+UI/UI_FEATURE_UNLOCK_TOOL_SICKLE_01,UI,Iron Sickle Acquired,Đã nhận Liềm sắt,review,viết tay
+UI/UI_FEATURE_UNLOCK_TOOL_SICKLE_02,UI,Steel Sickle Acquired,Đã nhận Liềm thép,review,viết tay
+UI/UI_FEATURE_UNLOCK_TOOL_SICKLE_03,UI,Mythril Sickle Acquired,Đã nhận Liềm Mythril,review,viết tay
+UI/UI_FEATURE_UNLOCK_TOOL_AXE_01,UI,Iron Axe Acquired,Đã nhận Rìu sắt,review,viết tay
+UI/UI_FEATURE_UNLOCK_TOOL_AXE_02,UI,Steel Axe Acquired,Đã nhận Rìu thép,review,viết tay
+UI/UI_FEATURE_UNLOCK_TOOL_AXE_03,UI,Mythril Axe Acquired,Đã nhận Rìu Mythril,review,viết tay
+UI/UI_FEATURE_UNLOCK_TOOL_HAMMER_01,UI,Iron Hammer Acquired,Đã nhận Búa sắt,review,viết tay
+UI/UI_FEATURE_UNLOCK_TOOL_HAMMER_02,UI,Steel Hammer Acquired,Đã nhận Búa thép,review,viết tay
+UI/UI_FEATURE_UNLOCK_TOOL_HAMMER_03,UI,Mythril Hammer Acquired,Đã nhận Búa Mythril,review,viết tay
+UI/UI_FEATURE_UNLOCK_POST_DROP_00,UI,Post Drop Box Unlocked,Đã mở khóa hộp ký gửi,review,viết tay
+UI/UI_FEATURE_UNLOCK_POST_DROP_01,UI,Post Drop Box 1 Acquired,Đã nhận hộp ký gửi 1,review,viết tay
+UI/UI_FEATURE_UNLOCK_POST_DROP_02,UI,Post Drop Box 2 Acquired,Đã nhận hộp ký gửi 2,review,viết tay
+UI/UI_FEATURE_UNLOCK_POST_DROP_03,UI,Post Drop Box 3 Acquired,Đã nhận hộp ký gửi 3,review,viết tay
+UI/UI_FEATURE_UNLOCK_NEW_POTION_RECIPE,UI,New Potion Recipes Acquired,Đã nhận công thức thuốc mới,review,viết tay
+UI/UI_FEATURE_UNLOCK_DATING,UI,Dating Unlocked,Đã mở khóa hẹn hò,review,viết tay
+UI/UI_FEATURE_UNLOCK_RESEARCH,UI,Research Completed,Đã hoàn thành nghiên cứu,review,viết tay
+UI/UI_REPUTATION_UP,UI,Trust Up,Uy tín tăng,review,viết tay
+UI/UI_REPUTATION_DOWN,UI,Trust Down,Uy tín giảm,review,viết tay
+UI/UI_UNAVAILABLE,UI,Currently unavailable.,Hiện chưa dùng được.,review,viết tay
+UI/UI_POST_DROP_UNAVAILABLE,UI,Post Drop Box Upgrade Required.,Cần nâng cấp hộp ký gửi.,review,viết tay
+UI/UI_NPC_SICK_INFO,UI,{0} is currently sick,{0} đang ốm,review,viết tay
+UI/UI_BLACKSMITH_UPGRADE_REQUIRE,UI,Blacksmith Upgrade Required,Cần nâng cấp lò rèn,review,viết tay
+UI/UI_CARPENTER_UPGRADE_REQUIRE,UI,Carpenter Upgrade Required,Cần nâng cấp xưởng mộc,review,viết tay
+UI/UI_UPGRADE_MAX_LEVEL,UI,Max level reached,Đã đạt cấp tối đa,review,viết tay
+UI/UI_CARPENTER_CATEGORY_ALL,UI,All,Tất cả,review,viết tay
+UI/UI_CARPENTER_CATEGORY_UPGRADE,UI,Upgrade,Nâng cấp,review,viết tay
+UI/UI_CARPENTER_CATEGORY_TABLE,UI,Table,Bàn,review,viết tay
+UI/UI_CARPENTER_CATEGORY_CHAIR,UI,Chair,Ghế,review,viết tay
+UI/UI_CARPENTER_CATEGORY_LIGHT,UI,Lighting,Đèn,review,viết tay
+UI/UI_CARPENTER_CATEGORY_DECO,UI,Decoration,Trang trí,review,viết tay
+UI/UI_CARPENTER_CATEGORY_MISC,UI,Misc.,Khác,review,viết tay
+UI/UI_SHOP_GROCERY,UI,Shop,Cửa hàng,review,viết tay
+UI/UI_SHOP_TOTAL,UI,Total,Tổng,review,viết tay
+UI/UI_SHOP_PRICE,UI,Price,Giá,review,viết tay
+UI/UI_NOTIFICATION_NEW,UI,New!,Mới!,review,viết tay
+UI/UI_NEW_RECIPE_UNLOCK,UI,Recipe Unlocked,Đã mở khóa công thức,review,viết tay
+UI/UI_RESEARCH_UNLOCK,UI,Research Unlocked,Đã mở khóa nghiên cứu,review,viết tay
+UI/UI_SATISFACTION,UI,Satisfaction,Mức hài lòng,review,viết tay
+UI/UI_COMPLAINTS,UI,Complaints:,Lời kể bệnh:,review,viết tay
+UI/UI_WARNING,UI,Warning!,Cảnh báo!,review,viết tay
+UI/UI_POTION_CRAFT_COUNT_HINT,UI,Craft {0} time(s) to unlock,Pha chế {0} lần để mở khóa,review,viết tay
+UI/UI_POTION_RECIPE_REPLACE_WARNING,UI,Choose the recipe that you want to replace,Chọn công thức bạn muốn thay thế,review,viết tay
+UI/UI_POTION_CRAFT_START,UI,Start brewing?,Bắt đầu pha chế?,review,viết tay
+UI/UI_POTION_CRAFT_ADD_TO_RECIPE,UI,Add to recipe,Thêm vào công thức,review,viết tay
+UI/UI_MAP_CANT_TELEPORT_HINT,UI,Can't teleport while inside a building,Không thể dịch chuyển khi đang ở trong nhà,review,viết tay
+UI/UI_QUEST_AVAILABLE,UI,Available,Còn trống,review,viết tay
+UI/UI_QUEST_TAKEN,UI,Taken,Đã nhận,review,viết tay
+UI/UI_QUEST_REPORT,UI,Report,Báo cáo,review,viết tay
+UI/UI_FRIENDSHIP_LEVEL_UP,UI,Friendship Level Up,Thân thiết hơn rồi!,review,viết tay
+UI/UI_WEIGHT,UI,Weight,Cân nặng,review,viết tay
+UI/UI_BEST_RECORD,UI,New Record!,Kỷ lục mới!,review,viết tay
+UI/UI_ROOM_EDITOR,UI,Room Editor,Trang trí phòng,review,viết tay
+UI/UI_NO_RESEARCH,UI,Nothing to research,Không có gì để nghiên cứu,review,viết tay
+UI/UI_DOG_LEVEL_HINT,UI,Increase {[DOG_NAME]}'s level,Tăng cấp cho {[DOG_NAME]},review,viết tay
+UI/UI_RESEARCH_HEADER,UI,Research,Nghiên cứu,review,viết tay
+UI/UI_DOG_FIND_NPC_TITLE,UI,Person To Find,Người cần tìm,review,viết tay
+UI/UI_DIAGNOSE,UI,Diagnosis,Chẩn đoán,review,viết tay
+UI/UI_YOU,UI,You,Bạn,review,viết tay
+UI/UI_TELEPORT,UI,Teleport,Dịch chuyển,review,viết tay
+UI/UI_SCORE,UI,Score,Điểm,review,viết tay
+UI/UI_FINISH,UI,Finish,Hoàn tất,review,viết tay
+UI/UI_NO_DATA,UI,No Data,Không có dữ liệu,review,viết tay
+UI/UI_EMPTY,UI,Empty,Trống,review,viết tay
+UI/UI_PAGE_MISSING,UI,Page Missing,Thiếu trang,review,viết tay
+UI/UI_FEATURE_UNLOCK_GIFT,UI,Moon Cloves Unlocked,Đã mở khóa Đinh hương Trăng,review,viết tay
+UI/UI_FEATURE_UNLOCK_MOON_BROOCH,UI,Moon Brooch Unlocked,Đã mở khóa Trâm cài Trăng,review,viết tay
+UI/UI_FEATURE_UNLOCK_MILESTONE_01,UI,Messy Garden Cleared,Đã dọn khu vườn bừa bộn,review,viết tay
+UI/UI_FEATURE_UNLOCK_MILESTONE_02,UI,Broken Street Lamps Fixed,Đã sửa đèn đường hỏng,review,viết tay
+UI/UI_FEATURE_UNLOCK_MILESTONE_03,UI,Rickety Bridge Fixed,Đã sửa cây cầu ọp ẹp,review,viết tay
+UI/UI_FEATURE_UNLOCK_MILESTONE_04,UI,Dirty Beach Cleaned,Đã dọn sạch bãi biển,review,viết tay
+UI/UI_FEATURE_UNLOCK_MILESTONE_05,UI,Old Fountain Fixed,Đã sửa đài phun nước cũ,review,viết tay
+UI/UI_FEATURE_UNLOCK_MILESTONE_ENDING,UI,Town Square Statue Fixed,Đã sửa bức tượng ở Quảng trường,review,viết tay
+UI/UI_FEATURE_UNLOCK_CARPENTER_01,UI,Carpenter Upgrade 1,Nâng cấp xưởng mộc 1,review,viết tay
+UI/UI_FEATURE_UNLOCK_CARPENTER_02,UI,Carpenter Upgrade 2,Nâng cấp xưởng mộc 2,review,viết tay
+UI/UI_FEATURE_UNLOCK_BLACKSMITH_01,UI,Blacksmith Upgrade 1,Nâng cấp lò rèn 1,review,viết tay
+UI/UI_FEATURE_UNLOCK_BLACKSMITH_02,UI,Blacksmith Upgrade 2,Nâng cấp lò rèn 2,review,viết tay
+UI/UI_FAST_TRAVEL_UNLOCK,UI,Travel Point Unlocked,Đã mở khóa điểm dịch chuyển,review,viết tay
+UI/UI_ALLOWED_INGREDIENTS,UI,Permitted Ingredients,Nguyên liệu được dùng,review,viết tay
+UI/UI_CHARACTER_ALBUM_UNLOCK,UI,Character Image Unlocked,Đã mở khóa ảnh nhân vật,review,viết tay
+UI/ITEM_MAX_LIMIT_REACH,UI,Max item limit reached!,Đã đạt số lượng tối đa!,review,viết tay
+UI/UI_CHARACTER_ROMANCEABLE,UI,Romanceable,Có thể hẹn hò,review,viết tay
+UI/UI_QUEST_DAY_LEFT,UI,{0} Day(s) Left,Còn {0} ngày,review,viết tay
+UI/UI_BOARD_BULLETIN_UNAVAILABLE,UI,Events cannot be started with an <#ff1d1d>insufficient trust level</color> or if related characters are currently <#ff1d1d>sick</color>.,Không thể bắt đầu sự kiện khi <#ff1d1d>uy tín chưa đủ</color> hoặc khi nhân vật liên quan đang <#ff1d1d>ốm</color>.,review,viết tay
+UI/UI_DOOR_LOCKED,UI,The door is locked.,Cửa đã khóa.,review,viết tay
+UI/UI_OPTIONS_DEVICE_CONTROLS,UI,Controller,Tay cầm,review,viết tay
+UI/UI_USER_INTERFACE,UI,User Interface,Giao diện,review,viết tay
+UI/UI_DELIVERY_BOX,UI,Delivery Box,Hộp giao hàng,review,viết tay
+UI/UI_INSERT_COIN,UI,Insert a coin to play,Bỏ một xu để chơi,review,viết tay
+UI/UI_DIALOG_TEXT_SIZE,UI,Dialog Text Size,Cỡ chữ hội thoại,review,viết tay
+UI/UI_FEATURE_UNLOCK_GROW_BOX,UI,Grow Box Unlocked,Đã mở khóa bồn trồng cây,review,viết tay
+UI/UI_GROW_BOX_COUNT_HINT,UI,Collect {0} {1} to unlock,Thu thập {0} {1} để mở khóa,review,viết tay
+UI/UI_GET_SEED,UI,Get seed,Lấy hạt giống,review,viết tay
+UI/UI_SEED_OBTAINED,UI,Seed obtained,Đã nhận hạt giống,review,viết tay
+UI/UI_SEED_INFO,UI,{0} seed,Hạt giống {0},review,viết tay
+UI/UI_GROW_BOX_SEED_LOCK,UI,Unlock seed at Bubble's Farm,Mở khóa hạt giống ở vườn của Bubble,review,viết tay
+UI/UI_PLANT_GROW_TIME,UI,Days to grow: {0},Số ngày phát triển: {0},review,viết tay
+UI/UI_OPTIONS_DEVICE_CONTROLS_UNUSED,UI,Controls,Điều khiển,review,viết tay
+UI/UI_COMPLETE_EDITION,UI,Complete Edition,Complete Edition,review,giữ nguyên
+UI/UI_COMPLETE,UI,Complete,Complete,review,giữ nguyên
+UI/UI_EDITION,UI,Edition,Edition,review,giữ nguyên
 Item/FOOD_MUSHROOM_NAME,Item,Mushroom,,todo,
 Item/FOOD_MUSHROOM_DETAIL,Item,"A protein-rich food source. Often overlooked, but everyone loves it.",,todo,
 Item/FOOD_EGG_NAME,Item,Egg,,todo,
@@ -10561,250 +10678,298 @@ Item/NOTE_CHEMIST_JOURNAL_DESERT_NAME,Item,Note: Barren Wasteland,,todo,
 Item/NOTE_CHEMIST_JOURNAL_DESERT_DETAIL,Item,A very old document about an experiment conducted a long time ago in the Barren Wasteland.,,todo,
 Item/NOTE_PLAINS_DUMMY_NAME,Item,Old Experiment Record,,todo,
 Item/KEY_ITEM_MOON_STONE,Item,Moon Stone,,todo,
-Fish/FISH_SMALL_CHEST_NAME,Fish,Small Chest,,todo,
-Fish/FISH_BIG_CHEST_NAME,Fish,Big Chest,,todo,
-Fish/FISH_SHRIMP_NAME,Fish,Shrimp,,todo,
+Fish/FISH_SMALL_CHEST_NAME,Fish,Small Chest,Rương nhỏ,review,viết tay
+Fish/FISH_BIG_CHEST_NAME,Fish,Big Chest,Rương lớn,review,viết tay
+Fish/FISH_SHRIMP_NAME,Fish,Shrimp,Tôm,review,viết tay
 Fish/FISH_SHRIMP_DETAILS,Fish,"A tiny water-dwelling creature with a hard shell body, lots of long legs and a small brain.
 
-They usually consume plankton as their daily meal. Found in shallow water, in both seas and river beds.",,todo,
-Fish/FISH_CRAYFISH_NAME,Fish,Crayfish,,todo,
+They usually consume plankton as their daily meal. Found in shallow water, in both seas and river beds.","Sinh vật nhỏ sống dưới nước, thân có vỏ cứng, nhiều chân dài và bộ não bé xíu.
+
+Tôm thường ăn sinh vật phù du hằng ngày. Chúng sống ở vùng nước nông, cả ngoài biển lẫn lòng sông.",review,viết tay
+Fish/FISH_CRAYFISH_NAME,Fish,Crayfish,Tôm hùm đất,review,viết tay
 Fish/FISH_CRAYFISH_DETAILS,Fish,"A freshwater creature related to the lobster. They might be small, but their claws are quite strong.
 
-They also have a very strong shell and can swim very fast.",,todo,
-Fish/FISH_SARDINE_NAME,Fish,Sardine,,todo,
+They also have a very strong shell and can swim very fast.","Sinh vật nước ngọt họ hàng với tôm hùm. Tuy nhỏ nhưng càng của chúng khá khỏe.
+
+Chúng còn có lớp vỏ rất cứng và bơi rất nhanh.",review,viết tay
+Fish/FISH_SARDINE_NAME,Fish,Sardine,Cá mòi,review,viết tay
 Fish/FISH_SARDINE_DETAILS,Fish,"A very small fish that is commonly sold canned.
 
-In their natural habitat, sardines live in large colonies and swim in lots of different formations to avoid predators.",,todo,
-Fish/FISH_ANCHOVY_NAME,Fish,Anchovy,,todo,
+In their natural habitat, sardines live in large colonies and swim in lots of different formations to avoid predators.","Loài cá rất nhỏ, thường được bán đóng hộp.
+
+Ngoài tự nhiên, cá mòi sống thành đàn lớn và bơi theo nhiều đội hình khác nhau để tránh kẻ săn mồi.",review,viết tay
+Fish/FISH_ANCHOVY_NAME,Fish,Anchovy,Cá cơm,review,viết tay
 Fish/FISH_ANCHOVY_DETAILS,Fish,"A small fish that usually lives in the sea, although they can also be freshwater fish.
 
-Anchovies have a beautiful blue mark on their body. Some believe they communicate using their electro-sensory organs.",,todo,
-Fish/FISH_SQUID_NAME,Fish,Squid,,todo,
+Anchovies have a beautiful blue mark on their body. Some believe they communicate using their electro-sensory organs.","Loài cá nhỏ thường sống ở biển, dù cũng có loài sống ở nước ngọt.
+
+Cá cơm có một vệt xanh lam rất đẹp trên thân. Có người tin rằng chúng giao tiếp bằng cơ quan cảm nhận điện.",review,viết tay
+Fish/FISH_SQUID_NAME,Fish,Squid,Mực,review,viết tay
 Fish/FISH_SQUID_DETAILS,Fish,"A rapid swimmer with excellent camouflage skills.
 
-This soft-bodied creature shoots ink to escape from predators.",,todo,
-Fish/FISH_SHELLFISH_NAME,Fish,Shellfish,,todo,
+This soft-bodied creature shoots ink to escape from predators.","Tay bơi cừ khôi với tài ngụy trang tuyệt vời.
+
+Sinh vật thân mềm này phun mực để thoát khỏi kẻ săn mồi.",review,viết tay
+Fish/FISH_SHELLFISH_NAME,Fish,Shellfish,Sò,review,viết tay
 Fish/FISH_SHELLFISH_DETAILS,Fish,"A marine creature that eats plankton and can be found both in the shallows and in the depths of the ocean.
 
-The shellfish family includes many different species.",,todo,
-Fish/FISH_EEL_NAME,Fish,Eel,,todo,
+The shellfish family includes many different species.","Sinh vật biển ăn sinh vật phù du, có ở cả vùng nước nông lẫn nơi sâu thẳm của đại dương.
+
+Họ nhà sò có rất nhiều loài khác nhau.",review,viết tay
+Fish/FISH_EEL_NAME,Fish,Eel,Cá chình,review,viết tay
 Fish/FISH_EEL_DETAILS,Fish,"A long-bodied fish that looks like a snake with its slippery, slimy skin.
 
-Their meat is delicious, but some eels are dangerous, with the ability to generate electricity.",,todo,
-Fish/FISH_MACKEREL_NAME,Fish,Mackerel,,todo,
+Their meat is delicious, but some eels are dangerous, with the ability to generate electricity.","Loài cá thân dài trông như rắn, da trơn và nhớt.
+
+Thịt cá chình rất ngon, nhưng có loài lại nguy hiểm vì tạo ra được điện.",review,viết tay
+Fish/FISH_MACKEREL_NAME,Fish,Mackerel,Cá thu,review,viết tay
 Fish/FISH_MACKEREL_DETAILS,Fish,"A tropical sea fish that can only survive in tepid and warm water.
 
-They are highly prized for their juicy meat.",,todo,
-Fish/FISH_CRAB_NAME,Fish,Crab,,todo,
+They are highly prized for their juicy meat.","Loài cá biển nhiệt đới chỉ sống được ở vùng nước âm ấm và ấm áp.
+
+Chúng được săn đón vì thịt mọng nước.",review,viết tay
+Fish/FISH_CRAB_NAME,Fish,Crab,Cua,review,viết tay
 Fish/FISH_CRAB_DETAILS,Fish,"A sea creature with a tough exoskeleton that can be found in both seawater and fresh water.
 
-Their eggs have to be preserved by humans, as some species of crab have problems with reproduction.",,todo,
-Fish/FISH_BLUE_MARLIN_NAME,Fish,Blue Marlin,,todo,
+Their eggs have to be preserved by humans, as some species of crab have problems with reproduction.","Sinh vật biển có bộ xương ngoài cứng cáp, sống được cả ở nước mặn lẫn nước ngọt.
+
+Trứng cua cần được con người bảo tồn, vì một số loài cua gặp khó khăn trong việc sinh sản.",review,viết tay
+Fish/FISH_BLUE_MARLIN_NAME,Fish,Blue Marlin,Cá cờ xanh,review,viết tay
 Fish/FISH_BLUE_MARLIN_DETAILS,Fish,"An ocean fish with a long sharp bill that they use to hunt and impale their enemies.
 
-They are rapid swimmers and can put on incredible bursts of speed when chasing their target.",,todo,
-Fish/FISH_SEABASS_NAME,Fish,Seabass,,todo,
+They are rapid swimmers and can put on incredible bursts of speed when chasing their target.","Loài cá đại dương có chiếc mỏ dài và nhọn, dùng để săn mồi và đâm xuyên kẻ thù.
+
+Chúng bơi rất nhanh và có thể tăng tốc đột ngột đến kinh ngạc khi đuổi theo con mồi.",review,viết tay
+Fish/FISH_SEABASS_NAME,Fish,Seabass,Cá vược,review,viết tay
 Fish/FISH_SEABASS_DETAILS,Fish,"A pretty common fish that can be found in rivers or the sea.
 
-Commonly sold at fish markets almost year-round.",,todo,
-Fish/FISH_CATFISH_NAME,Fish,Catfish,,todo,
+Commonly sold at fish markets almost year-round.","Loài cá khá phổ biến, có thể tìm thấy ở sông hoặc biển.
+
+Thường được bán ở chợ cá gần như quanh năm.",review,viết tay
+Fish/FISH_CATFISH_NAME,Fish,Catfish,Cá trê,review,viết tay
 Fish/FISH_CATFISH_DETAILS,Fish,"A freshwater fish with whiskers that usually lives in the mud.
 
-Its meat generally has a strong, earthy smell. It requires careful cooking to make it taste delicious.",,todo,
-Fish/FISH_STURGEON_NAME,Fish,Sturgeon,,todo,
+Its meat generally has a strong, earthy smell. It requires careful cooking to make it taste delicious.","Loài cá nước ngọt có râu, thường sống dưới bùn.
+
+Thịt cá thường có mùi bùn đất nồng. Phải chế biến khéo mới ngon.",review,viết tay
+Fish/FISH_STURGEON_NAME,Fish,Sturgeon,Cá tầm,review,viết tay
 Fish/FISH_STURGEON_DETAILS,Fish,"A primitive type of fish that many call a living fossil.
 
-They can live for a very long time and are commonly bred for their eggs.",,todo,
-Fish/FISH_RAINBOW_TROUT_NAME,Fish,Rainbow Trout,,todo,
+They can live for a very long time and are commonly bred for their eggs.","Loài cá nguyên thủy mà nhiều người gọi là hóa thạch sống.
+
+Chúng sống rất lâu và thường được nuôi để lấy trứng.",review,viết tay
+Fish/FISH_RAINBOW_TROUT_NAME,Fish,Rainbow Trout,Cá hồi vân,review,viết tay
 Fish/FISH_RAINBOW_TROUT_DETAILS,Fish,"A cold-water fish that usually migrates from rivers to the sea.
 
-They have a beautiful rainbow skin from gill to tail.",,todo,
-Fish/FISH_GOLDFISH_NAME,Fish,Goldfish,,todo,
+They have a beautiful rainbow skin from gill to tail.","Loài cá nước lạnh, thường di cư từ sông ra biển.
+
+Chúng có lớp da óng ánh sắc cầu vồng từ mang đến đuôi.",review,viết tay
+Fish/FISH_GOLDFISH_NAME,Fish,Goldfish,Cá vàng,review,viết tay
 Fish/FISH_GOLDFISH_DETAILS,Fish,"A freshwater fish with shiny scales. People put them inside water tanks to show them off.
 
-They have a lot of small bones, making them less than ideal for cooking.",,todo,
-Fish/FISH_COD_NAME,Fish,Lingcod,,todo,
+They have a lot of small bones, making them less than ideal for cooking.","Loài cá nước ngọt có vảy óng ánh. Người ta thả chúng vào bể để ngắm.
+
+Cá vàng nhiều xương dăm nên không hợp để nấu ăn.",review,viết tay
+Fish/FISH_COD_NAME,Fish,Lingcod,Cá tuyết ling,review,viết tay
 Fish/FISH_COD_DETAILS,Fish,"A fish species that was long considered extinct.
 
-They are famous for their blue meat and produce a nutritious oil in their livers.",,todo,
-Fish/FISH_TUNA_NAME,Fish,Tuna,,todo,
+They are famous for their blue meat and produce a nutritious oil in their livers.","Loài cá từ lâu bị coi là đã tuyệt chủng.
+
+Chúng nổi tiếng với thịt màu xanh lam, và gan của chúng chứa một loại dầu bổ dưỡng.",review,viết tay
+Fish/FISH_TUNA_NAME,Fish,Tuna,Cá ngừ,review,viết tay
 Fish/FISH_TUNA_DETAILS,Fish,"A large, predatory schooling fish that can grow very large.
 
-Usually commands a very high price because the meat is so good and often used for fine dining.",,todo,
-Fish/FISH_FAIRY_NAME,Fish,Fairy,,todo,
+Usually commands a very high price because the meat is so good and often used for fine dining.","Loài cá săn mồi sống thành đàn, có thể lớn rất to.
+
+Thường có giá rất cao vì thịt ngon, hay được dùng trong các nhà hàng sang trọng.",review,viết tay
+Fish/FISH_FAIRY_NAME,Fish,Fairy,Cá tiên,review,viết tay
 Fish/FISH_FAIRY_DETAILS,Fish,"A rare pixie fish that lives under the water.
 
-They shine bright at night and sometimes jump right out of the water, making them look like fairies reaching for a star.",,todo,
-Fish/FISH_SALMON_NAME,Fish,Salmon,,todo,
+They shine bright at night and sometimes jump right out of the water, making them look like fairies reaching for a star.","Loài cá tinh linh hiếm có sống dưới nước.
+
+Chúng phát sáng rực rỡ vào ban đêm và đôi khi nhảy vọt khỏi mặt nước, trông như những nàng tiên đang với lấy vì sao.",review,viết tay
+Fish/FISH_SALMON_NAME,Fish,Salmon,Cá hồi,review,viết tay
 Fish/FISH_SALMON_DETAILS,Fish,"A large fish that lives in the ocean but migrates to rivers to reproduce.
 
-Their meat is usually grey, but the meat of commercial breeds of salmon is pink.",,todo,
-Fish/FISH_SEA_CUCUMBER_NAME,Fish,Blue Sea Cucumber,,todo,
+Their meat is usually grey, but the meat of commercial breeds of salmon is pink.","Loài cá lớn sống ngoài đại dương nhưng di cư vào sông để sinh sản.
+
+Thịt cá hồi thường có màu xám, nhưng cá hồi nuôi thương phẩm lại có thịt màu hồng.",review,viết tay
+Fish/FISH_SEA_CUCUMBER_NAME,Fish,Blue Sea Cucumber,Hải sâm xanh,review,viết tay
 Fish/FISH_SEA_CUCUMBER_DETAILS,Fish,"A marine creature that lives on the sea floor. They are commonly used in several cuisines and believed to have medical value.
 
-The bacteria they produce are very important for the marine ecosystem.",,todo,
-Fish/FISH_LOBSTER_NAME,Fish,Lobster,,todo,
+The bacteria they produce are very important for the marine ecosystem.","Sinh vật sống dưới đáy biển. Chúng có mặt trong nhiều nền ẩm thực và được cho là có giá trị y học.
+
+Vi khuẩn chúng tạo ra rất quan trọng với hệ sinh thái biển.",review,viết tay
+Fish/FISH_LOBSTER_NAME,Fish,Lobster,Tôm hùm,review,viết tay
 Fish/FISH_LOBSTER_DETAILS,Fish,"A sea creature that commands a very high price. They live at the bottom of the sea or under rocks on the sea floor.
 
-They can live for up to 50 years without losing their ability to reproduce.",,todo,
-Fish/FISH_MUSSEL_NAME,Fish,Mussel,,todo,
+They can live for up to 50 years without losing their ability to reproduce.","Sinh vật biển có giá rất cao. Chúng sống dưới đáy biển hoặc nấp dưới đá.
+
+Tôm hùm có thể sống đến 50 năm mà vẫn không mất khả năng sinh sản.",review,viết tay
+Fish/FISH_MUSSEL_NAME,Fish,Mussel,Vẹm,review,viết tay
 Fish/FISH_MUSSEL_DETAILS,Fish,"A member of the clam family. Usually has a dark, elongated shell and lives in a colony.
 
-Mussels tend to attach themselves to rocks or hard surfaces.",,todo,
-Fish/FISH_OCTOPUS_NAME,Fish,Blue Octopus,,todo,
+Mussels tend to attach themselves to rocks or hard surfaces.","Một thành viên trong họ nghêu sò. Vẹm thường có vỏ thuôn dài màu sẫm và sống thành quần thể.
+
+Chúng hay bám vào đá hoặc các bề mặt cứng.",review,viết tay
+Fish/FISH_OCTOPUS_NAME,Fish,Blue Octopus,Bạch tuộc xanh,review,viết tay
 Fish/FISH_OCTOPUS_DETAILS,Fish,"A beautiful and highly intelligent marine creature with a soft body and eight limbs.
 
-They have the unique ability to camouflage themselves by changing colour to match their surroundings.",,todo,
-Fish/FISH_FLYING_DRAGON_FISH_NAME,Fish,Flying Dragon Fish,,todo,
+They have the unique ability to camouflage themselves by changing colour to match their surroundings.","Sinh vật biển xinh đẹp và rất thông minh, thân mềm và có tám xúc tu.
+
+Chúng có khả năng đặc biệt là đổi màu để hòa vào môi trường xung quanh.",review,viết tay
+Fish/FISH_FLYING_DRAGON_FISH_NAME,Fish,Flying Dragon Fish,Cá rồng bay,review,viết tay
 Fish/FISH_FLYING_DRAGON_FISH_DETAILS,Fish,"A fish that leaps out of the water. Often mistaken for a dragon due to their winglike fins.
 
-They are very hard to catch, as their pectoral fins enable them to swim rapidly against the current.",,todo,
-Location/BATHHOUSE,Location,Willow Waters Bathhouse,,todo,
-Location/BLACKSMITH,Location,Hearts and Sparks Shop,,todo,
-Location/CARPENTER_MAP,Location,Bulk and Build,,todo,
-Location/CARPENTER,Location,Bulk and Build - GF,,todo,
-Location/CARPENTER_2F,Location,Bulk and Build - 1F,,todo,
-Location/TAILORSHOP,Location,Silky Stitch Tailor's,,todo,
-Location/TAVERN_1B,Location,Arcade Centre,,todo,
-Location/TAVERN_1B_DOWN,Location,Arcade Centre,,todo,
-Location/TAVERN_MAP,Location,Lazy Bowl Tavern,,todo,
-Location/TAVERN_1F,Location,Lazy Bowl Tavern - GF,,todo,
-Location/TAVERN_2F,Location,Lazy Bowl Tavern - 1F,,todo,
-Location/RANCH_MAP,Location,Farmhouse,,todo,
-Location/RANCH_1F,Location,Farmhouse - GF,,todo,
-Location/RANCH_2F,Location,Farmhouse - 1F,,todo,
-Location/FISH_SHOP_MAP,Location,Primerose Sail,,todo,
-Location/FISH_SHOP_1F,Location,Primerose Sail - GF,,todo,
-Location/FISH_SHOP_2F,Location,Primerose Sail - 1F,,todo,
-Location/CHURCH,Location,Church,,todo,
-Location/BEACH_CAFE,Location,Ottmar's Cafe,,todo,
-Location/RANGER_POST,Location,Ranger Post,,todo,
-Location/BULLETIN_BOARD,Location,Bulletin Board,,todo,
-Location/STABLE,Location,Coach House,,todo,
-Location/TOWN_HALL_MAP,Location,Town Hall,,todo,
-Location/TOWN_HALL_1F,Location,Town Hall - GF,,todo,
-Location/TOWN_HALL_2F,Location,Town Hall - 1F,,todo,
-Location/TOWN_HALL_2F_UP_L,Location,Town Hall - 1F,,todo,
-Location/TOWN_HALL_2F_UP_R,Location,Town Hall - 1F,,todo,
-Location/MONASTERY,Location,Monastery,,todo,
-Location/POLICE_STATION,Location,Police Department,,todo,
-Location/CLINIC,Location,Clinic,,todo,
-Location/MC_HOUSE,Location,Potion House,,todo,
-Location/HOUSE01,Location,Osman's House,,todo,
-Location/HOUSE02,Location,Nova's House,,todo,
-Location/HOUSE03,Location,Olive's House,,todo,
-Location/HOUSE04,Location,Bulk and Build - 1F,,todo,
-Location/HOUSE05,Location,Dev's House,,todo,
-Location/HOUSE06,Location,Opalheart's House,,todo,
-Location/HOUSE07_MAP,Location,Myer's House,,todo,
-Location/HOUSE07,Location,Myer's House - GF,,todo,
-Location/HOUSE07_2F,Location,Myer's House - 1F,,todo,
-Location/HOUSE08,Location,House,,todo,
-Location/HOUSE09,Location,Derrek's House,,todo,
-Location/HOUSE10,Location,Xiao's House,,todo,
-Location/HOUSE11,Location,Hannah's House,,todo,
-Location/TENT,Location,Zeke's Tent,,todo,
-Location/RANGER,Location,Forrest's House,,todo,
-Location/MATHEO,Location,Matheo's House,,todo,
-Location/GENERAL_FIELD_1,Location,Meadow Range,,todo,
-Location/SNOW_FIELD_1,Location,Glaze Iceberg,,todo,
-Location/DESERT_FIELD_1,Location,Barren Wasteland,,todo,
-Location/MAP_CITY,Location,Moonbury Town,,todo,
-Location/FISHING_PARK,Location,Park Fishing Spot,,todo,
-Location/FISHING_RIVER,Location,River Fishing Spot,,todo,
-Location/FISHING_BEACH,Location,Beach Fishing Spot,,todo,
-Location/FAST_TRAVEL_MOONBURY_TOWN_01,Location,Moonbury Town Square,,todo,
-Location/FAST_TRAVEL_MOONBURY_TOWN_02,Location,Moonbury Beach,,todo,
-Location/FAST_TRAVEL_MEADOW_RANGE_01,Location,West of Meadow Range,,todo,
-Location/FAST_TRAVEL_MEADOW_RANGE_02,Location,Heart of Meadow Range,,todo,
-Location/FAST_TRAVEL_MEADOW_RANGE_03,Location,South of Meadow Range,,todo,
-Location/FAST_TRAVEL_GLAZE_ICEBERG_01,Location,South of Glaze Iceberg,,todo,
-Location/FAST_TRAVEL_GLAZE_ICEBERG_02,Location,North of Glaze Iceberg,,todo,
-Location/FAST_TRAVEL_BARREN_WASTELAND_01,Location,North of Barren Wasteland,,todo,
-Location/FAST_TRAVEL_BARREN_WASTELAND_02,Location,Heart of Barren Wasteland,,todo,
-Location/IRE_LANDSLIDE,Location,Ire Landslide,,todo,
-Location/SNOW_GONDOLA,Location,Snow Cable Car,,todo,
-Location/GEYSER_REACTOR,Location,Geyser Reactor,,todo,
-Location/SNOW_INTERIOR,Location,Glaze Grotto,,todo,
-Location/DESERT_INTERIOR,Location,Barren Chasm,,todo,
-Location/FISHING_SNOW,Location,Glaze Grotto Fishing Spot,,todo,
-Trigger/TOWN_TO_GENERAL_FIELD,Trigger,Meadow Range Entrance,,todo,
-Trigger/RANGER_POST_ENTRANCE,Trigger,Ranger Post,,todo,
-Trigger/CLIFF_ENTRANCE,Trigger,Moonbury Cliff,,todo,
-Trigger/HOME_ENTRANCE,Trigger,Potion House Entrance,,todo,
-Trigger/CHURCH_ENTRANCE,Trigger,Church Entrance,,todo,
-Trigger/RANGER_HOUSE,Trigger,Forrest's House,,todo,
-Trigger/BEACH_AREA_1,Trigger,Beach Entrance,,todo,
-Trigger/MEADOW_RANGE_02_A,Trigger,North-east of Meadow Range,,todo,
-Trigger/MEADOW_RANGE_02_B,Trigger,South-east of Meadow Range,,todo,
-Trigger/MEADOW_RANGE_02_C,Trigger,South-west of Meadow Range,,todo,
-Trigger/TOWN_HALL_2F_UP_L,Trigger,Town Hall - 1F,,todo,
-Trigger/TAVERN_1B_DOWN,Trigger,Arcade Centre,,todo,
-Trigger/MEADOW_RANGE_02_NORTH,Trigger,North of Meadow Range,,todo,
-Trigger/GLAZE_ICEBERG_01_SOUTH,Trigger,South of Glaze Iceberg,,todo,
-Trigger/BARREN_WASTELAND_01_SOUTH,Trigger,South of Barren Wasteland,,todo,
-Complaint/COMPLAINT_A_01,Complaint,There is something wrong with my {[BODY_PART]}.,,todo,
-Complaint/COMPLAINT_A_02,Complaint,Something is not right with my {[BODY_PART]}.,,todo,
-Complaint/COMPLAINT_A_03,Complaint,There is something weird on my {[BODY_PART]}.,,todo,
-Complaint/COMPLAINT_A_04,Complaint,I've seen something odd all over my {[BODY_PART]}.,,todo,
-Complaint/COMPLAINT_A_05,Complaint,I noticed something unusual on my {[BODY_PART]}.,,todo,
-Complaint/COMPLAINT_A_06,Complaint,Something irregular has appeared on my {[BODY_PART]}.,,todo,
-Complaint/COMPLAINT_B_01,Complaint,I can feel a strange {[SYMPTOM]} in my {[BODY_PART]}.,,todo,
-Complaint/COMPLAINT_B_02,Complaint,There's some {[SYMPTOM]} in my {[BODY_PART]}.,,todo,
-Complaint/COMPLAINT_B_03,Complaint,There's some {[SYMPTOM]} in my {[BODY_PART]} than usual.,,todo,
-Complaint/COMPLAINT_B_04,Complaint,There's a {[SYMPTOM]} in my {[BODY_PART]}.,,todo,
-Complaint/COMPLAINT_C_01,Complaint,I can't feel my {[BODY_PART]}.,,todo,
-Complaint/COMPLAINT_C_02,Complaint,I think there's something wrong with my {[BODY_PART]}.,,todo,
-Complaint/COMPLAINT_C_03,Complaint,I don't feel very well at all. It's my {[BODY_PART]}.,,todo,
-Complaint/HEALING,Complaint,Completely cured.,,todo,
-Complaint/COMPLAINT_UNKNOWN_1,Complaint,My {[BODY_PART]} feels weird.,,todo,
-BodyPart/L_EYE,BodyPart,left eye,,todo,
-BodyPart/R_EYE,BodyPart,right eye,,todo,
-BodyPart/MOUTH,BodyPart,mouth,,todo,
-BodyPart/NECK,BodyPart,neck,,todo,
-BodyPart/HEART,BodyPart,lower chest,,todo,
-BodyPart/LUNG,BodyPart,upper chest,,todo,
-BodyPart/LIVER,BodyPart,left upper stomach,,todo,
-BodyPart/INTESTINE,BodyPart,lower stomach,,todo,
-BodyPart/KIDNEY,BodyPart,right upper stomach,,todo,
-BodyPart/L_SHOULDER,BodyPart,left shoulder,,todo,
-BodyPart/R_SHOULDER,BodyPart,right shoulder,,todo,
-BodyPart/L_UPPERARM,BodyPart,left upper arm,,todo,
-BodyPart/R_UPPERARM,BodyPart,right upper arm,,todo,
-BodyPart/L_LOWERARM,BodyPart,lower left arm,,todo,
-BodyPart/R_LOWERARM,BodyPart,lower right arm,,todo,
-BodyPart/L_PALM,BodyPart,left palm,,todo,
-BodyPart/R_PALM,BodyPart,right palm,,todo,
-BodyPart/L_THIGH,BodyPart,left thigh,,todo,
-BodyPart/R_THIGH,BodyPart,right thigh,,todo,
-BodyPart/L_KNEE,BodyPart,left knee,,todo,
-BodyPart/R_KNEE,BodyPart,right knee,,todo,
-BodyPart/L_ANKLE,BodyPart,left ankle,,todo,
-BodyPart/R_ANKLE,BodyPart,right ankle,,todo,
-BodyPart/L_FOOT,BodyPart,left foot,,todo,
-BodyPart/R_FOOT,BodyPart,right foot,,todo,
-Symptom/BLISTERS,Symptom,blisters,,todo,
-Symptom/BLOATING,Symptom,bloating,,todo,
-Symptom/BLURREDVISION,Symptom,blurred vision,,todo,
-Symptom/BRUISES,Symptom,bruises,,todo,
-Symptom/BURNING,Symptom,burning,,todo,
-Symptom/CLAMMYPATCHES,Symptom,clammy patches,,todo,
-Symptom/CRAMPS,Symptom,cramps,,todo,
-Symptom/DRYNESS,Symptom,dryness,,todo,
-Symptom/HIGHHEARTRATE,Symptom,high heart rate,,todo,
-Symptom/INFLAMMATION,Symptom,inflammation,,todo,
-Symptom/ITCHINESS,Symptom,itchiness,,todo,
-Symptom/LOWHEARTRATE,Symptom,low heart rate,,todo,
-Symptom/LUMPS,Symptom,lumps,,todo,
-Symptom/MOONWARTS,Symptom,Moonwarts,,todo,
-Symptom/NUMBNESS,Symptom,numbness,,todo,
-Symptom/OXYGENDEPRIVATION,Symptom,oxygen depravation,,todo,
-Symptom/RASHES,Symptom,rashes,,todo,
-Symptom/STIFFNESS,Symptom,stiffness,,todo,
-Symptom/SWELLING,Symptom,swelling,,todo,
-Symptom/TINGLING,Symptom,tingling,,todo,
-Symptom/WOBBLINESS,Symptom,wobbliness,,todo,
-Symptom/SUNWORM,Symptom,Sunworm,,todo,
+They are very hard to catch, as their pectoral fins enable them to swim rapidly against the current.","Loài cá biết nhảy vọt khỏi mặt nước. Thường bị nhầm là rồng vì vây trông như đôi cánh.
+
+Chúng rất khó bắt, vì vây ngực giúp chúng bơi nhanh ngược dòng.",review,viết tay
+Location/BATHHOUSE,Location,Willow Waters Bathhouse,Nhà tắm Willow Waters,review,viết tay
+Location/BLACKSMITH,Location,Hearts and Sparks Shop,Tiệm rèn Hearts and Sparks,review,viết tay
+Location/CARPENTER_MAP,Location,Bulk and Build,Bulk and Build,review,giữ nguyên
+Location/CARPENTER,Location,Bulk and Build - GF,Bulk and Build - Tầng 1,review,viết tay
+Location/CARPENTER_2F,Location,Bulk and Build - 1F,Bulk and Build - Tầng 2,review,viết tay
+Location/TAILORSHOP,Location,Silky Stitch Tailor's,Tiệm may Silky Stitch,review,viết tay
+Location/TAVERN_1B,Location,Arcade Centre,Khu trò chơi,review,viết tay
+Location/TAVERN_1B_DOWN,Location,Arcade Centre,Khu trò chơi,review,viết tay
+Location/TAVERN_MAP,Location,Lazy Bowl Tavern,Quán rượu Lazy Bowl,review,viết tay
+Location/TAVERN_1F,Location,Lazy Bowl Tavern - GF,Quán rượu Lazy Bowl - Tầng 1,review,viết tay
+Location/TAVERN_2F,Location,Lazy Bowl Tavern - 1F,Quán rượu Lazy Bowl - Tầng 2,review,viết tay
+Location/RANCH_MAP,Location,Farmhouse,Trang trại,review,viết tay
+Location/RANCH_1F,Location,Farmhouse - GF,Trang trại - Tầng 1,review,viết tay
+Location/RANCH_2F,Location,Farmhouse - 1F,Trang trại - Tầng 2,review,viết tay
+Location/FISH_SHOP_MAP,Location,Primerose Sail,Primerose Sail,review,giữ nguyên
+Location/FISH_SHOP_1F,Location,Primerose Sail - GF,Primerose Sail - Tầng 1,review,viết tay
+Location/FISH_SHOP_2F,Location,Primerose Sail - 1F,Primerose Sail - Tầng 2,review,viết tay
+Location/CHURCH,Location,Church,Nhà thờ,review,viết tay
+Location/BEACH_CAFE,Location,Ottmar's Cafe,Quán cà phê Ottmar,review,viết tay
+Location/RANGER_POST,Location,Ranger Post,Trạm Kiểm lâm,review,viết tay
+Location/BULLETIN_BOARD,Location,Bulletin Board,Bảng tin,review,viết tay
+Location/STABLE,Location,Coach House,Trạm xe ngựa,review,viết tay
+Location/TOWN_HALL_MAP,Location,Town Hall,Tòa thị chính,review,viết tay
+Location/TOWN_HALL_1F,Location,Town Hall - GF,Tòa thị chính - Tầng 1,review,viết tay
+Location/TOWN_HALL_2F,Location,Town Hall - 1F,Tòa thị chính - Tầng 2,review,viết tay
+Location/TOWN_HALL_2F_UP_L,Location,Town Hall - 1F,Tòa thị chính - Tầng 2,review,viết tay
+Location/TOWN_HALL_2F_UP_R,Location,Town Hall - 1F,Tòa thị chính - Tầng 2,review,viết tay
+Location/MONASTERY,Location,Monastery,Tu viện,review,viết tay
+Location/POLICE_STATION,Location,Police Department,Đồn cảnh sát,review,viết tay
+Location/CLINIC,Location,Clinic,Phòng khám,review,viết tay
+Location/MC_HOUSE,Location,Potion House,Nhà pha chế,review,viết tay
+Location/HOUSE01,Location,Osman's House,Nhà Osman,review,viết tay
+Location/HOUSE02,Location,Nova's House,Nhà Nova,review,viết tay
+Location/HOUSE03,Location,Olive's House,Nhà Olive,review,viết tay
+Location/HOUSE04,Location,Bulk and Build - 1F,Bulk and Build - Tầng 2,review,viết tay
+Location/HOUSE05,Location,Dev's House,Nhà Dev,review,viết tay
+Location/HOUSE06,Location,Opalheart's House,Nhà Opalheart,review,viết tay
+Location/HOUSE07_MAP,Location,Myer's House,Nhà Myer,review,viết tay
+Location/HOUSE07,Location,Myer's House - GF,Nhà Myer - Tầng 1,review,viết tay
+Location/HOUSE07_2F,Location,Myer's House - 1F,Nhà Myer - Tầng 2,review,viết tay
+Location/HOUSE08,Location,House,Nhà dân,review,viết tay
+Location/HOUSE09,Location,Derrek's House,Nhà Derrek,review,viết tay
+Location/HOUSE10,Location,Xiao's House,Nhà Xiao,review,viết tay
+Location/HOUSE11,Location,Hannah's House,Nhà Hannah,review,viết tay
+Location/TENT,Location,Zeke's Tent,Lều của Zeke,review,viết tay
+Location/RANGER,Location,Forrest's House,Nhà Forrest,review,viết tay
+Location/MATHEO,Location,Matheo's House,Nhà Matheo,review,viết tay
+Location/GENERAL_FIELD_1,Location,Meadow Range,Thảo nguyên Meadow,review,viết tay
+Location/SNOW_FIELD_1,Location,Glaze Iceberg,Núi băng Glaze,review,viết tay
+Location/DESERT_FIELD_1,Location,Barren Wasteland,Hoang mạc Barren,review,viết tay
+Location/MAP_CITY,Location,Moonbury Town,Thị trấn Moonbury,review,viết tay
+Location/FISHING_PARK,Location,Park Fishing Spot,Điểm câu Công viên,review,viết tay
+Location/FISHING_RIVER,Location,River Fishing Spot,Điểm câu Sông,review,viết tay
+Location/FISHING_BEACH,Location,Beach Fishing Spot,Điểm câu Bãi biển,review,viết tay
+Location/FAST_TRAVEL_MOONBURY_TOWN_01,Location,Moonbury Town Square,Quảng trường Moonbury,review,viết tay
+Location/FAST_TRAVEL_MOONBURY_TOWN_02,Location,Moonbury Beach,Bãi biển Moonbury,review,viết tay
+Location/FAST_TRAVEL_MEADOW_RANGE_01,Location,West of Meadow Range,Phía tây Thảo nguyên Meadow,review,viết tay
+Location/FAST_TRAVEL_MEADOW_RANGE_02,Location,Heart of Meadow Range,Trung tâm Thảo nguyên Meadow,review,viết tay
+Location/FAST_TRAVEL_MEADOW_RANGE_03,Location,South of Meadow Range,Phía nam Thảo nguyên Meadow,review,viết tay
+Location/FAST_TRAVEL_GLAZE_ICEBERG_01,Location,South of Glaze Iceberg,Phía nam Núi băng Glaze,review,viết tay
+Location/FAST_TRAVEL_GLAZE_ICEBERG_02,Location,North of Glaze Iceberg,Phía bắc Núi băng Glaze,review,viết tay
+Location/FAST_TRAVEL_BARREN_WASTELAND_01,Location,North of Barren Wasteland,Phía bắc Hoang mạc Barren,review,viết tay
+Location/FAST_TRAVEL_BARREN_WASTELAND_02,Location,Heart of Barren Wasteland,Trung tâm Hoang mạc Barren,review,viết tay
+Location/IRE_LANDSLIDE,Location,Ire Landslide,Vùng sạt lở Ire,review,viết tay
+Location/SNOW_GONDOLA,Location,Snow Cable Car,Cáp treo Núi tuyết,review,viết tay
+Location/GEYSER_REACTOR,Location,Geyser Reactor,Trạm Mạch nước nóng,review,viết tay
+Location/SNOW_INTERIOR,Location,Glaze Grotto,Hang Glaze,review,viết tay
+Location/DESERT_INTERIOR,Location,Barren Chasm,Vực Barren,review,viết tay
+Location/FISHING_SNOW,Location,Glaze Grotto Fishing Spot,Điểm câu Hang Glaze,review,viết tay
+Trigger/TOWN_TO_GENERAL_FIELD,Trigger,Meadow Range Entrance,Lối vào Thảo nguyên Meadow,review,viết tay
+Trigger/RANGER_POST_ENTRANCE,Trigger,Ranger Post,Trạm Kiểm lâm,review,viết tay
+Trigger/CLIFF_ENTRANCE,Trigger,Moonbury Cliff,Vách đá Moonbury,review,viết tay
+Trigger/HOME_ENTRANCE,Trigger,Potion House Entrance,Lối vào Nhà pha chế,review,viết tay
+Trigger/CHURCH_ENTRANCE,Trigger,Church Entrance,Lối vào Nhà thờ,review,viết tay
+Trigger/RANGER_HOUSE,Trigger,Forrest's House,Nhà Forrest,review,viết tay
+Trigger/BEACH_AREA_1,Trigger,Beach Entrance,Lối vào Bãi biển,review,viết tay
+Trigger/MEADOW_RANGE_02_A,Trigger,North-east of Meadow Range,Phía đông bắc Thảo nguyên Meadow,review,viết tay
+Trigger/MEADOW_RANGE_02_B,Trigger,South-east of Meadow Range,Phía đông nam Thảo nguyên Meadow,review,viết tay
+Trigger/MEADOW_RANGE_02_C,Trigger,South-west of Meadow Range,Phía tây nam Thảo nguyên Meadow,review,viết tay
+Trigger/TOWN_HALL_2F_UP_L,Trigger,Town Hall - 1F,Tòa thị chính - Tầng 2,review,viết tay
+Trigger/TAVERN_1B_DOWN,Trigger,Arcade Centre,Khu trò chơi,review,viết tay
+Trigger/MEADOW_RANGE_02_NORTH,Trigger,North of Meadow Range,Phía bắc Thảo nguyên Meadow,review,viết tay
+Trigger/GLAZE_ICEBERG_01_SOUTH,Trigger,South of Glaze Iceberg,Phía nam Núi băng Glaze,review,viết tay
+Trigger/BARREN_WASTELAND_01_SOUTH,Trigger,South of Barren Wasteland,Phía nam Hoang mạc Barren,review,viết tay
+Complaint/COMPLAINT_A_01,Complaint,There is something wrong with my {[BODY_PART]}.,Hình như {[BODY_PART]} có vấn đề.,review,viết tay
+Complaint/COMPLAINT_A_02,Complaint,Something is not right with my {[BODY_PART]}.,Thấy {[BODY_PART]} không ổn lắm.,review,viết tay
+Complaint/COMPLAINT_A_03,Complaint,There is something weird on my {[BODY_PART]}.,Có gì đó lạ lạ ở {[BODY_PART]}.,review,viết tay
+Complaint/COMPLAINT_A_04,Complaint,I've seen something odd all over my {[BODY_PART]}.,Thấy khắp {[BODY_PART]} có gì đó kỳ kỳ.,review,viết tay
+Complaint/COMPLAINT_A_05,Complaint,I noticed something unusual on my {[BODY_PART]}.,Để ý thấy {[BODY_PART]} có gì đó khác thường.,review,viết tay
+Complaint/COMPLAINT_A_06,Complaint,Something irregular has appeared on my {[BODY_PART]}.,Có thứ gì lạ nổi lên ở {[BODY_PART]}.,review,viết tay
+Complaint/COMPLAINT_B_01,Complaint,I can feel a strange {[SYMPTOM]} in my {[BODY_PART]}.,Thấy {[BODY_PART]} bị {[SYMPTOM]} lạ lắm.,review,viết tay
+Complaint/COMPLAINT_B_02,Complaint,There's some {[SYMPTOM]} in my {[BODY_PART]}.,Chỗ {[BODY_PART]} hơi bị {[SYMPTOM]}.,review,viết tay
+Complaint/COMPLAINT_B_03,Complaint,There's some {[SYMPTOM]} in my {[BODY_PART]} than usual.,Dạo này {[BODY_PART]} bị {[SYMPTOM]} hơn mọi khi.,review,viết tay
+Complaint/COMPLAINT_B_04,Complaint,There's a {[SYMPTOM]} in my {[BODY_PART]}.,Chỗ {[BODY_PART]} bị {[SYMPTOM]}.,review,viết tay
+Complaint/COMPLAINT_C_01,Complaint,I can't feel my {[BODY_PART]}.,Không còn cảm giác gì ở {[BODY_PART]}.,review,viết tay
+Complaint/COMPLAINT_C_02,Complaint,I think there's something wrong with my {[BODY_PART]}.,Chắc là {[BODY_PART]} có vấn đề rồi.,review,viết tay
+Complaint/COMPLAINT_C_03,Complaint,I don't feel very well at all. It's my {[BODY_PART]}.,Trong người khó chịu quá. Ở chỗ {[BODY_PART]} ấy.,review,viết tay
+Complaint/HEALING,Complaint,Completely cured.,Đã khỏi hẳn.,review,viết tay
+Complaint/COMPLAINT_UNKNOWN_1,Complaint,My {[BODY_PART]} feels weird.,Thấy {[BODY_PART]} là lạ.,review,viết tay
+BodyPart/L_EYE,BodyPart,left eye,mắt trái,review,viết tay
+BodyPart/R_EYE,BodyPart,right eye,mắt phải,review,viết tay
+BodyPart/MOUTH,BodyPart,mouth,miệng,review,viết tay
+BodyPart/NECK,BodyPart,neck,cổ,review,viết tay
+BodyPart/HEART,BodyPart,lower chest,ngực dưới,review,viết tay
+BodyPart/LUNG,BodyPart,upper chest,ngực trên,review,viết tay
+BodyPart/LIVER,BodyPart,left upper stomach,bụng trên bên trái,review,viết tay
+BodyPart/INTESTINE,BodyPart,lower stomach,bụng dưới,review,viết tay
+BodyPart/KIDNEY,BodyPart,right upper stomach,bụng trên bên phải,review,viết tay
+BodyPart/L_SHOULDER,BodyPart,left shoulder,vai trái,review,viết tay
+BodyPart/R_SHOULDER,BodyPart,right shoulder,vai phải,review,viết tay
+BodyPart/L_UPPERARM,BodyPart,left upper arm,bắp tay trái,review,viết tay
+BodyPart/R_UPPERARM,BodyPart,right upper arm,bắp tay phải,review,viết tay
+BodyPart/L_LOWERARM,BodyPart,lower left arm,cẳng tay trái,review,viết tay
+BodyPart/R_LOWERARM,BodyPart,lower right arm,cẳng tay phải,review,viết tay
+BodyPart/L_PALM,BodyPart,left palm,lòng bàn tay trái,review,viết tay
+BodyPart/R_PALM,BodyPart,right palm,lòng bàn tay phải,review,viết tay
+BodyPart/L_THIGH,BodyPart,left thigh,đùi trái,review,viết tay
+BodyPart/R_THIGH,BodyPart,right thigh,đùi phải,review,viết tay
+BodyPart/L_KNEE,BodyPart,left knee,đầu gối trái,review,viết tay
+BodyPart/R_KNEE,BodyPart,right knee,đầu gối phải,review,viết tay
+BodyPart/L_ANKLE,BodyPart,left ankle,mắt cá chân trái,review,viết tay
+BodyPart/R_ANKLE,BodyPart,right ankle,mắt cá chân phải,review,viết tay
+BodyPart/L_FOOT,BodyPart,left foot,bàn chân trái,review,viết tay
+BodyPart/R_FOOT,BodyPart,right foot,bàn chân phải,review,viết tay
+Symptom/BLISTERS,Symptom,blisters,phồng rộp,review,viết tay
+Symptom/BLOATING,Symptom,bloating,chướng,review,viết tay
+Symptom/BLURREDVISION,Symptom,blurred vision,mờ mắt,review,viết tay
+Symptom/BRUISES,Symptom,bruises,bầm tím,review,viết tay
+Symptom/BURNING,Symptom,burning,nóng rát,review,viết tay
+Symptom/CLAMMYPATCHES,Symptom,clammy patches,mảng da ẩm lạnh,review,viết tay
+Symptom/CRAMPS,Symptom,cramps,chuột rút,review,viết tay
+Symptom/DRYNESS,Symptom,dryness,khô rát,review,viết tay
+Symptom/HIGHHEARTRATE,Symptom,high heart rate,tim đập nhanh,review,viết tay
+Symptom/INFLAMMATION,Symptom,inflammation,viêm,review,viết tay
+Symptom/ITCHINESS,Symptom,itchiness,ngứa,review,viết tay
+Symptom/LOWHEARTRATE,Symptom,low heart rate,tim đập chậm,review,viết tay
+Symptom/LUMPS,Symptom,lumps,nổi cục,review,viết tay
+Symptom/MOONWARTS,Symptom,Moonwarts,Mụn cóc Trăng,review,viết tay
+Symptom/NUMBNESS,Symptom,numbness,tê bì,review,viết tay
+Symptom/OXYGENDEPRIVATION,Symptom,oxygen depravation,thiếu oxy,review,viết tay
+Symptom/RASHES,Symptom,rashes,phát ban,review,viết tay
+Symptom/STIFFNESS,Symptom,stiffness,co cứng,review,viết tay
+Symptom/SWELLING,Symptom,swelling,sưng,review,viết tay
+Symptom/TINGLING,Symptom,tingling,râm ran,review,viết tay
+Symptom/WOBBLINESS,Symptom,wobbliness,run rẩy,review,viết tay
+Symptom/SUNWORM,Symptom,Sunworm,Giun Mặt Trời,review,viết tay
 Furniture/FURNITURE_TABLE_CHEAP_01_NAME,Furniture,Cheap Long Table,,todo,
 Furniture/FURNITURE_TABLE_CHEAP_01_DETAIL,Furniture,"A relatively old, worthless table made of wood.",,todo,
 Furniture/FURNITURE_TABLE_CHEAP_02_NAME,Furniture,Cheap Small Table,,todo,
@@ -10971,80 +11136,80 @@ Furniture/FURNITURE_LIGHT_WALLLAMP_03_NAME,Furniture,Luxury Wall Lamp,,todo,
 Furniture/FURNITURE_LIGHT_WALLLAMP_03_DETAIL,Furniture,A lamp made of high-quality material which shines brightly.,,todo,
 Furniture/FURNITURE_OBJECT_BED_NAME,Furniture,Basic Bed,,todo,
 Furniture/FURNITURE_OBJECT_BED_DETAIL,Furniture,A cosy-looking bed comprised of some sturdy wood and a green blanket.,,todo,
-Achievements/ACHIEVEMENTS_01_NAME,Achievements,Welcome to Moonbury,,todo,
-Achievements/ACHIEVEMENTS_01_DETAIL,Achievements,Start a new game,,todo,
-Achievements/ACHIEVEMENTS_02_NAME,Achievements,Great Doctor,,todo,
-Achievements/ACHIEVEMENTS_02_DETAIL,Achievements,Successfully cure 10 patients,,todo,
-Achievements/ACHIEVEMENTS_03_NAME,Achievements,Good Samaritan,,todo,
-Achievements/ACHIEVEMENTS_03_DETAIL,Achievements,Successfully cure 50 patients,,todo,
-Achievements/ACHIEVEMENTS_04_NAME,Achievements,Being forgetful...,,todo,
-Achievements/ACHIEVEMENTS_04_DETAIL,Achievements,Failed to cure patient for the first time,,todo,
-Achievements/ACHIEVEMENTS_05_NAME,Achievements,Being a donut...,,todo,
-Achievements/ACHIEVEMENTS_05_DETAIL,Achievements,Failed to cure 10 patients,,todo,
-Achievements/ACHIEVEMENTS_06_NAME,Achievements,Acrobatic Adventurer,,todo,
-Achievements/ACHIEVEMENTS_06_DETAIL,Achievements,"Roll for 1,000 times",,todo,
-Achievements/ACHIEVEMENTS_07_NAME,Achievements,K.O.!,,todo,
-Achievements/ACHIEVEMENTS_07_DETAIL,Achievements,Passed out for the first time,,todo,
-Achievements/ACHIEVEMENTS_08_NAME,Achievements,The First Step,,todo,
-Achievements/ACHIEVEMENTS_08_DETAIL,Achievements,Brew your first potion,,todo,
-Achievements/ACHIEVEMENTS_09_NAME,Achievements,Rookie Chemist,,todo,
-Achievements/ACHIEVEMENTS_09_DETAIL,Achievements,Brew potions 15 times,,todo,
-Achievements/ACHIEVEMENTS_10_NAME,Achievements,Intermediate Chemist,,todo,
-Achievements/ACHIEVEMENTS_10_DETAIL,Achievements,Brew potions 50 times,,todo,
-Achievements/ACHIEVEMENTS_11_NAME,Achievements,Expert Chemist,,todo,
-Achievements/ACHIEVEMENTS_11_DETAIL,Achievements,Brew potions 150 times,,todo,
-Achievements/ACHIEVEMENTS_12_NAME,Achievements,Amateur Chef,,todo,
-Achievements/ACHIEVEMENTS_12_DETAIL,Achievements,Cook food 5 times,,todo,
-Achievements/ACHIEVEMENTS_13_NAME,Achievements,Line Cook,,todo,
-Achievements/ACHIEVEMENTS_13_DETAIL,Achievements,Cook food 15 times,,todo,
-Achievements/ACHIEVEMENTS_14_NAME,Achievements,Sous Chef,,todo,
-Achievements/ACHIEVEMENTS_14_DETAIL,Achievements,Cook food 50 times,,todo,
-Achievements/ACHIEVEMENTS_15_NAME,Achievements,Friendly,,todo,
-Achievements/ACHIEVEMENTS_15_DETAIL,Achievements,Reach Friendship Lv.1 with 5 villagers,,todo,
-Achievements/ACHIEVEMENTS_16_NAME,Achievements,Sociable,,todo,
-Achievements/ACHIEVEMENTS_16_DETAIL,Achievements,Reach Friendship Lv.2 with 10 villagers,,todo,
-Achievements/ACHIEVEMENTS_17_NAME,Achievements,Heart of Gold,,todo,
-Achievements/ACHIEVEMENTS_17_DETAIL,Achievements,Reach Friendship Lv.3 with a villager,,todo,
-Achievements/ACHIEVEMENTS_18_NAME,Achievements,Dog Whisperer,,todo,
-Achievements/ACHIEVEMENTS_18_DETAIL,Achievements,Reach Friendship Lv.1 with your dog,,todo,
-Achievements/ACHIEVEMENTS_19_NAME,Achievements,Spark of Love,,todo,
-Achievements/ACHIEVEMENTS_19_DETAIL,Achievements,Date an NPC for the first time,,todo,
-Achievements/ACHIEVEMENTS_20_NAME,Achievements,Decorative Mind,,todo,
-Achievements/ACHIEVEMENTS_20_DETAIL,Achievements,Collect 10 pieces of furniture,,todo,
-Achievements/ACHIEVEMENTS_21_NAME,Achievements,Fishing Guru,,todo,
-Achievements/ACHIEVEMENTS_21_DETAIL,Achievements,Collect 10 type of fish in Moonbury,,todo,
-Achievements/ACHIEVEMENTS_22_NAME,Achievements,The Capitalist,,todo,
-Achievements/ACHIEVEMENTS_22_DETAIL,Achievements,"Collect 10,000 coins",,todo,
-Achievements/ACHIEVEMENTS_23_NAME,Achievements,Lumber Specialist,,todo,
-Achievements/ACHIEVEMENTS_23_DETAIL,Achievements,"Collect 3,000 wood",,todo,
-Achievements/ACHIEVEMENTS_24_NAME,Achievements,Stone Specialist,,todo,
-Achievements/ACHIEVEMENTS_24_DETAIL,Achievements,"Collect 10,000 stone",,todo,
-Achievements/ACHIEVEMENTS_25_NAME,Achievements,Community Helper,,todo,
-Achievements/ACHIEVEMENTS_25_DETAIL,Achievements,Clear 25 quests from the Community Board,,todo,
-Achievements/ACHIEVEMENTS_26_NAME,Achievements,Community Advisor,,todo,
-Achievements/ACHIEVEMENTS_26_DETAIL,Achievements,Clear 75 quests from the Community Board,,todo,
-Achievements/ACHIEVEMENTS_27_NAME,Achievements,Plantation Exterminator,,todo,
-Achievements/ACHIEVEMENTS_27_DETAIL,Achievements,"Forage 1,000 plants",,todo,
-Achievements/ACHIEVEMENTS_28_NAME,Achievements,Rock Exterminator,,todo,
-Achievements/ACHIEVEMENTS_28_DETAIL,Achievements,"Forage 1,000 stone",,todo,
-Achievements/ACHIEVEMENTS_29_NAME,Achievements,Tree Exterminator,,todo,
-Achievements/ACHIEVEMENTS_29_DETAIL,Achievements,"Forage 1,000 tree",,todo,
-Achievements/ACHIEVEMENTS_30_NAME,Achievements,Animal Exterminator,,todo,
-Achievements/ACHIEVEMENTS_30_DETAIL,Achievements,"Defeat 1,000 enemies",,todo,
-Achievements/ACHIEVEMENTS_31_NAME,Achievements,Ablutomaniac,,todo,
-Achievements/ACHIEVEMENTS_31_DETAIL,Achievements,Have a bath in Willow Waters Bathhouse 10 times,,todo,
-Achievements/ACHIEVEMENTS_32_NAME,Achievements,Animal Lover,,todo,
-Achievements/ACHIEVEMENTS_32_DETAIL,Achievements,Pet your dog 50 times,,todo,
-Achievements/ACHIEVEMENTS_33_NAME,Achievements,Catch of the Day,,todo,
-Achievements/ACHIEVEMENTS_33_DETAIL,Achievements,Go fishing 50 times,,todo,
-Achievements/ACHIEVEMENTS_34_NAME,Achievements,Moonbury Traveller,,todo,
-Achievements/ACHIEVEMENTS_34_DETAIL,Achievements,Use fast travel 20 times,,todo,
-Achievements/ACHIEVEMENTS_35_NAME,Achievements,Production Sorter,,todo,
-Achievements/ACHIEVEMENTS_35_DETAIL,Achievements,Work part-time in the Police Department 15 times,,todo,
-Achievements/ACHIEVEMENTS_36_NAME,Achievements,Grape Supplier,,todo,
-Achievements/ACHIEVEMENTS_36_DETAIL,Achievements,Work part-time in the Church 15 times,,todo,
-Achievements/ACHIEVEMENTS_37_NAME,Achievements,Mail Carrier,,todo,
-Achievements/ACHIEVEMENTS_37_DETAIL,Achievements,Work part-time in the Post Office 15 times,,todo,
-Achievements/ACHIEVEMENTS_38_NAME,Achievements,Moonbury Navigator,,todo,
-Achievements/ACHIEVEMENTS_38_DETAIL,Achievements,Unlock all achievements,,todo,
-Achievements/ACHIEVEMENTS_38_1_DETAIL,Achievements,Unlock all trophies,,todo,
+Achievements/ACHIEVEMENTS_01_NAME,Achievements,Welcome to Moonbury,Chào mừng đến Moonbury,review,viết tay
+Achievements/ACHIEVEMENTS_01_DETAIL,Achievements,Start a new game,Bắt đầu trò chơi mới,review,viết tay
+Achievements/ACHIEVEMENTS_02_NAME,Achievements,Great Doctor,Thầy thuốc giỏi,review,viết tay
+Achievements/ACHIEVEMENTS_02_DETAIL,Achievements,Successfully cure 10 patients,Chữa khỏi 10 bệnh nhân,review,viết tay
+Achievements/ACHIEVEMENTS_03_NAME,Achievements,Good Samaritan,Người tốt việc tốt,review,viết tay
+Achievements/ACHIEVEMENTS_03_DETAIL,Achievements,Successfully cure 50 patients,Chữa khỏi 50 bệnh nhân,review,viết tay
+Achievements/ACHIEVEMENTS_04_NAME,Achievements,Being forgetful...,Đãng trí quá...,review,viết tay
+Achievements/ACHIEVEMENTS_04_DETAIL,Achievements,Failed to cure patient for the first time,Lần đầu chữa bệnh thất bại,review,viết tay
+Achievements/ACHIEVEMENTS_05_NAME,Achievements,Being a donut...,Ngốc quá đi...,review,viết tay
+Achievements/ACHIEVEMENTS_05_DETAIL,Achievements,Failed to cure 10 patients,Chữa bệnh thất bại 10 lần,review,viết tay
+Achievements/ACHIEVEMENTS_06_NAME,Achievements,Acrobatic Adventurer,Nhà thám hiểm nhào lộn,review,viết tay
+Achievements/ACHIEVEMENTS_06_DETAIL,Achievements,"Roll for 1,000 times",Lăn 1.000 lần,review,viết tay
+Achievements/ACHIEVEMENTS_07_NAME,Achievements,K.O.!,K.O.!,review,giữ nguyên
+Achievements/ACHIEVEMENTS_07_DETAIL,Achievements,Passed out for the first time,Ngất xỉu lần đầu,review,viết tay
+Achievements/ACHIEVEMENTS_08_NAME,Achievements,The First Step,Bước đầu tiên,review,viết tay
+Achievements/ACHIEVEMENTS_08_DETAIL,Achievements,Brew your first potion,Pha chế lọ thuốc đầu tiên,review,viết tay
+Achievements/ACHIEVEMENTS_09_NAME,Achievements,Rookie Chemist,Dược sư tân binh,review,viết tay
+Achievements/ACHIEVEMENTS_09_DETAIL,Achievements,Brew potions 15 times,Pha chế thuốc 15 lần,review,viết tay
+Achievements/ACHIEVEMENTS_10_NAME,Achievements,Intermediate Chemist,Dược sư trung cấp,review,viết tay
+Achievements/ACHIEVEMENTS_10_DETAIL,Achievements,Brew potions 50 times,Pha chế thuốc 50 lần,review,viết tay
+Achievements/ACHIEVEMENTS_11_NAME,Achievements,Expert Chemist,Dược sư lão luyện,review,viết tay
+Achievements/ACHIEVEMENTS_11_DETAIL,Achievements,Brew potions 150 times,Pha chế thuốc 150 lần,review,viết tay
+Achievements/ACHIEVEMENTS_12_NAME,Achievements,Amateur Chef,Đầu bếp nghiệp dư,review,viết tay
+Achievements/ACHIEVEMENTS_12_DETAIL,Achievements,Cook food 5 times,Nấu ăn 5 lần,review,viết tay
+Achievements/ACHIEVEMENTS_13_NAME,Achievements,Line Cook,Phụ bếp,review,viết tay
+Achievements/ACHIEVEMENTS_13_DETAIL,Achievements,Cook food 15 times,Nấu ăn 15 lần,review,viết tay
+Achievements/ACHIEVEMENTS_14_NAME,Achievements,Sous Chef,Bếp phó,review,viết tay
+Achievements/ACHIEVEMENTS_14_DETAIL,Achievements,Cook food 50 times,Nấu ăn 50 lần,review,viết tay
+Achievements/ACHIEVEMENTS_15_NAME,Achievements,Friendly,Thân thiện,review,viết tay
+Achievements/ACHIEVEMENTS_15_DETAIL,Achievements,Reach Friendship Lv.1 with 5 villagers,Đạt mức thân thiết 1 với 5 người dân,review,viết tay
+Achievements/ACHIEVEMENTS_16_NAME,Achievements,Sociable,Hòa đồng,review,viết tay
+Achievements/ACHIEVEMENTS_16_DETAIL,Achievements,Reach Friendship Lv.2 with 10 villagers,Đạt mức thân thiết 2 với 10 người dân,review,viết tay
+Achievements/ACHIEVEMENTS_17_NAME,Achievements,Heart of Gold,Tấm lòng vàng,review,viết tay
+Achievements/ACHIEVEMENTS_17_DETAIL,Achievements,Reach Friendship Lv.3 with a villager,Đạt mức thân thiết 3 với một người dân,review,viết tay
+Achievements/ACHIEVEMENTS_18_NAME,Achievements,Dog Whisperer,Người hiểu lòng cún,review,viết tay
+Achievements/ACHIEVEMENTS_18_DETAIL,Achievements,Reach Friendship Lv.1 with your dog,Đạt mức thân thiết 1 với chú chó của bạn,review,viết tay
+Achievements/ACHIEVEMENTS_19_NAME,Achievements,Spark of Love,Tia lửa tình yêu,review,viết tay
+Achievements/ACHIEVEMENTS_19_DETAIL,Achievements,Date an NPC for the first time,Lần đầu hẹn hò với một người dân,review,viết tay
+Achievements/ACHIEVEMENTS_20_NAME,Achievements,Decorative Mind,Mắt thẩm mỹ,review,viết tay
+Achievements/ACHIEVEMENTS_20_DETAIL,Achievements,Collect 10 pieces of furniture,Sưu tầm 10 món đồ nội thất,review,viết tay
+Achievements/ACHIEVEMENTS_21_NAME,Achievements,Fishing Guru,Bậc thầy câu cá,review,viết tay
+Achievements/ACHIEVEMENTS_21_DETAIL,Achievements,Collect 10 type of fish in Moonbury,Sưu tầm 10 loại cá ở Moonbury,review,viết tay
+Achievements/ACHIEVEMENTS_22_NAME,Achievements,The Capitalist,Nhà tư bản,review,viết tay
+Achievements/ACHIEVEMENTS_22_DETAIL,Achievements,"Collect 10,000 coins",Kiếm được 10.000 xu,review,viết tay
+Achievements/ACHIEVEMENTS_23_NAME,Achievements,Lumber Specialist,Chuyên gia gỗ,review,viết tay
+Achievements/ACHIEVEMENTS_23_DETAIL,Achievements,"Collect 3,000 wood",Thu thập 3.000 gỗ,review,viết tay
+Achievements/ACHIEVEMENTS_24_NAME,Achievements,Stone Specialist,Chuyên gia đá,review,viết tay
+Achievements/ACHIEVEMENTS_24_DETAIL,Achievements,"Collect 10,000 stone",Thu thập 10.000 đá,review,viết tay
+Achievements/ACHIEVEMENTS_25_NAME,Achievements,Community Helper,Trợ thủ thị trấn,review,viết tay
+Achievements/ACHIEVEMENTS_25_DETAIL,Achievements,Clear 25 quests from the Community Board,Hoàn thành 25 yêu cầu trên Bảng yêu cầu,review,viết tay
+Achievements/ACHIEVEMENTS_26_NAME,Achievements,Community Advisor,Cố vấn thị trấn,review,viết tay
+Achievements/ACHIEVEMENTS_26_DETAIL,Achievements,Clear 75 quests from the Community Board,Hoàn thành 75 yêu cầu trên Bảng yêu cầu,review,viết tay
+Achievements/ACHIEVEMENTS_27_NAME,Achievements,Plantation Exterminator,Kẻ hủy diệt cỏ cây,review,viết tay
+Achievements/ACHIEVEMENTS_27_DETAIL,Achievements,"Forage 1,000 plants",Hái 1.000 cây cỏ,review,viết tay
+Achievements/ACHIEVEMENTS_28_NAME,Achievements,Rock Exterminator,Kẻ hủy diệt đá,review,viết tay
+Achievements/ACHIEVEMENTS_28_DETAIL,Achievements,"Forage 1,000 stone",Đập 1.000 tảng đá,review,viết tay
+Achievements/ACHIEVEMENTS_29_NAME,Achievements,Tree Exterminator,Kẻ hủy diệt rừng cây,review,viết tay
+Achievements/ACHIEVEMENTS_29_DETAIL,Achievements,"Forage 1,000 tree",Đốn 1.000 cây,review,viết tay
+Achievements/ACHIEVEMENTS_30_NAME,Achievements,Animal Exterminator,Kẻ hủy diệt dã thú,review,viết tay
+Achievements/ACHIEVEMENTS_30_DETAIL,Achievements,"Defeat 1,000 enemies",Hạ gục 1.000 kẻ địch,review,viết tay
+Achievements/ACHIEVEMENTS_31_NAME,Achievements,Ablutomaniac,Nghiện tắm,review,viết tay
+Achievements/ACHIEVEMENTS_31_DETAIL,Achievements,Have a bath in Willow Waters Bathhouse 10 times,Tắm ở Nhà tắm Willow Waters 10 lần,review,viết tay
+Achievements/ACHIEVEMENTS_32_NAME,Achievements,Animal Lover,Người yêu động vật,review,viết tay
+Achievements/ACHIEVEMENTS_32_DETAIL,Achievements,Pet your dog 50 times,Vuốt ve chú chó của bạn 50 lần,review,viết tay
+Achievements/ACHIEVEMENTS_33_NAME,Achievements,Catch of the Day,Mẻ cá hôm nay,review,viết tay
+Achievements/ACHIEVEMENTS_33_DETAIL,Achievements,Go fishing 50 times,Đi câu cá 50 lần,review,viết tay
+Achievements/ACHIEVEMENTS_34_NAME,Achievements,Moonbury Traveller,Lữ khách Moonbury,review,viết tay
+Achievements/ACHIEVEMENTS_34_DETAIL,Achievements,Use fast travel 20 times,Dịch chuyển 20 lần,review,viết tay
+Achievements/ACHIEVEMENTS_35_NAME,Achievements,Production Sorter,Thợ phân loại,review,viết tay
+Achievements/ACHIEVEMENTS_35_DETAIL,Achievements,Work part-time in the Police Department 15 times,Làm thêm ở Đồn cảnh sát 15 lần,review,viết tay
+Achievements/ACHIEVEMENTS_36_NAME,Achievements,Grape Supplier,Nhà cung cấp nho,review,viết tay
+Achievements/ACHIEVEMENTS_36_DETAIL,Achievements,Work part-time in the Church 15 times,Làm thêm ở Nhà thờ 15 lần,review,viết tay
+Achievements/ACHIEVEMENTS_37_NAME,Achievements,Mail Carrier,Bưu tá,review,viết tay
+Achievements/ACHIEVEMENTS_37_DETAIL,Achievements,Work part-time in the Post Office 15 times,Làm thêm ở Bưu điện 15 lần,review,viết tay
+Achievements/ACHIEVEMENTS_38_NAME,Achievements,Moonbury Navigator,Hoa tiêu Moonbury,review,viết tay
+Achievements/ACHIEVEMENTS_38_DETAIL,Achievements,Unlock all achievements,Mở khóa mọi thành tựu,review,viết tay
+Achievements/ACHIEVEMENTS_38_1_DETAIL,Achievements,Unlock all trophies,Mở khóa mọi danh hiệu,review,viết tay

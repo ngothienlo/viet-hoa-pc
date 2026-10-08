@@ -19,6 +19,18 @@ def tokens(text: str) -> list[str]:
     return TOKEN.findall(text)
 
 
+def same_tokens(source: str, vi: str) -> bool:
+    """Placeholder `{…}`, `%s` được đổi chỗ (trật tự từ tiếng Việt khác tiếng Anh).
+    Thẻ và `\\n` phải giữ đúng thứ tự, vì thẻ mở và đóng đi theo cặp."""
+    def split(text: str) -> tuple[list[str], list[str]]:
+        found = tokens(text)
+        movable = sorted(token for token in found if token.startswith(("{", "%")))
+        fixed = [token for token in found if not token.startswith(("{", "%"))]
+        return movable, fixed
+
+    return split(source) == split(vi)
+
+
 def game_dirs(args: list[str]) -> list[Path]:
     if args:
         found: list[Path] = []
@@ -72,7 +84,7 @@ def check(game_dir: Path) -> int:
                 errors.append(
                     f"Dòng {line_no} ({key}): status {status} nhưng chưa có bản dịch"
                 )
-            if vi.strip() and tokens(source) != tokens(vi):
+            if vi.strip() and not same_tokens(source, vi):
                 errors.append(
                     f"Dòng {line_no} ({key}): placeholder lệch. "
                     f"Gốc {tokens(source)} / Việt {tokens(vi)}"
