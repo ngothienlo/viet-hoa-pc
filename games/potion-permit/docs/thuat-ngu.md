@@ -238,6 +238,38 @@ Chức danh đi trước tên được dịch:
 
 Thoại nhắc vật phẩm người chơi cần tìm thì dùng đúng tên vật phẩm, kể cả khi bản Anh nói tắt: «Carrots from a cold region» → «Cà rốt mùa đông».
 
+### Hội thoại NPC phần 2 (#23)
+
+| Gốc | Dịch | Ghi chú |
+| --- | --- | --- |
+| Maw / Grr (Kipps) | Ngao / Grừ | |
+| sandstorm season | mùa bão cát | |
+| restricted area | khu vực cấm | |
+| supplies (Trạm Kiểm lâm) | đồ dự trữ | |
+| red sugar | đường đỏ | |
+| knitting | đan len | |
+| Surprise! | Bất ngờ chưa! | |
+| soft toy | thú bông | Theo vật phẩm «Thú bông» |
+| banjo | đàn banjo | |
+| wedding suit | bộ vest cưới | |
+| recipe book (Yorn) | sổ công thức | |
+| police badge | phù hiệu cảnh sát | Khác «Huy hiệu» của UI |
+| anxiety attack | cơn lo âu | Cassandra |
+| refugee from the capital | kẻ chạy nạn từ Thủ đô | |
+| purgative potion | thuốc nhuận tràng | |
+| scythe / hay feeder | lưỡi hái / máng cỏ | |
+| Detective Russo | Thám tử Russo | |
+| business (Russo bỏ thuốc vào trà Myer) | «việc riêng», «việc riêng gấp» | Myer và Russo dùng cùng chữ |
+| root beer | bia rễ cây | Theo vật phẩm «Bia rễ cây hảo hạng» |
+| hymn, hymn book | thánh ca, sách thánh ca | |
+| Association HQ, branch | Trụ sở Hội, chi nhánh | |
+| CORNTASTIC! | NGON NGẤT NGÂY! | Collin |
+| dissociative identity disorder | rối loạn đa nhân cách | Dev và Dan |
+| ritual altar / pact | tế đàn / khế ước | Victor |
+| the other side, realm of the unliving | thế giới bên kia, cõi của người đã khuất | |
+| Avast! / Sink me / weigh anchor | Đứng lại đó! / Chìm tàu mất thôi / nhổ neo | Dan |
+| booty / me hearties | chiến lợi phẩm / các chiến hữu | Dan |
+
 ## Địa danh (`Location/`, `Trigger/`, biển hiệu)
 
 Phần chung viết hoa chữ đầu, phần tên riêng giữ nguyên.

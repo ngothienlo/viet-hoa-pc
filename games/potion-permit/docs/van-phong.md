@@ -39,7 +39,7 @@ Khi đại từ lặp lại nhiều, bỏ chủ ngữ. Tiếng Việt cho phép 
 
 Trong nhiệm vụ, tiểu sử, bảng tin: gọi bằng tên hoặc «Dược sư». Không dùng «anh ấy», «cô ấy», «họ» cho một người.
 
-- `Martha starts keeping her distance from {[CHARACTER_NAME]}, who gets worried and tries to track her down` → «Martha bắt đầu tránh mặt {[CHARACTER_NAME]}. Lo lắng, {[CHARACTER_NAME]} tìm cách gặp cô ấy để nói chuyện.»
+- `Martha starts keeping her distance from {[CHARACTER_NAME]}, who gets worried and tries to track her down` → «Martha bắt đầu tránh mặt {[CHARACTER_NAME]}. Lo lắng, Dược sư tìm cách gặp cô ấy để nói chuyện.» Câu Việt phải giữ đúng số placeholder của câu gốc, nên lần nhắc thứ hai dùng «Dược sư».
 - `the chemist` chỉ nhân vật chính → «Dược sư», viết hoa.
 
 ### Nếu sau này có lời của nhân vật chính
@@ -191,6 +191,60 @@ Bổ sung cho bảng trên. Lô sau phải theo đúng để hai phía một cu�
 NPC có thể hẹn hò (Reyner, Lucke, Matheo, Xiao, Runeheart, Helene, Leano) giữ đúng cặp với nhân vật chính sau khi tỏ tình: Helene «chị – cưng», Leano «ta – nhóc», còn lại «tôi – cậu».
 
 Câu NPC hét viết in hoa thì giữ in hoa có dấu: «ĐỦ RỒI! CON KHÔNG CHỊU NỔI NỮA!».
+
+### Cặp chốt khi dịch hội thoại NPC phần 2 (#23)
+
+| Người nói → người nghe | Cách xưng hô |
+| --- | --- |
+| Forrest → Osman, Myer | tôi – anh / tôi, «thưa Thị trưởng» |
+| Forrest → Lucke, Matheo, Dan | tôi – cậu |
+| Forrest → Russo | chú – nhóc. Forrest thường xưng «tôi», nhưng nói với trẻ con mà xưng «tôi» thì cứng |
+| Zeke → Myer | tôi – cậu, «my friend» → «anh bạn» |
+| Zeke → Laura | bác – cháu, «my dear» → «cháu yêu» |
+| Mariele → Olive | chị – em |
+| Mariele → Derrek / Derrek → Mariele | cô – cháu / tôi – cô, «ma'am» → «thưa cô» khi đang làm việc |
+| Rue → Lucke | mình – cậu |
+| Dean, Derrek → Cassandra | em – chị Cassandra |
+| Derrek → Helene | tôi – chị. Nói về Helene với Dược sư: «chị ta» |
+| Derrek → Reyner | tôi – cậu, «brother» → «người anh em» |
+| Dean → Russo | anh – em |
+| Dean → Yorn | tôi – anh |
+| Dean → Martha | tớ – cậu |
+| Cassandra → Runeheart | chị – em |
+| Olive → Ottmar | chị – cậu |
+| Olive → Martha / Martha → Olive | chị – em / em – chị Olive |
+| Olive → Mariele | tôi – chị Mariele |
+| Martha → Laura | chị – em |
+| Martha → Osman | cháu – Cảnh sát trưởng |
+| Martha nói với khách khi không rõ là ai | «quý khách» |
+| Yorn → Dean | tôi – cậu |
+| Nova → Olive | tôi – cô |
+| Nova → Bubble, đội kiểm lâm | tôi – cháu, «các cháu» |
+| Nova → Socellia / Socellia → Nova | tôi – Sơ / Sơ – chị Nova |
+| Nova nói với người chồng đã mất | em – anh, mở đầu «chồng yêu ơi» để người chơi không tưởng Nova gọi mình |
+| Hannah → Nova | em – chị Nova |
+| Hannah nói về Mariele | «cô Mariele» |
+| Russo → Myer | cháu – chú Thị trưởng, chú Myer |
+| Russo → Dean, Victor | em – anh Dean, anh Victor |
+| Victor → Laura, Russo | anh – các em |
+| Laura → Victor | em – anh |
+| Laura, Hannah → Zeke | cháu – bác Zeke |
+| Garret, Mercy nói về nhau với Dược sư | «bà nhà bác», «ông Garret nhà bác» |
+| Nestor → Myer | tôi – ông, «thưa Thị trưởng» |
+| Nestor → Matheo | tôi – cậu |
+| Moira → Myer | tôi – ông |
+| Collin → Yorn | tôi – anh, «Grizzly Guy» → «Anh Gấu Xám» |
+| Collin nói về Ottmar | «Cậu Ngô» («Corn Boy») |
+| Socellia → các vị thần | con – các ngài |
+| Dan → mọi người | ta – nhà ngươi, «crewmate» → «thuyền viên của ta» |
+| Dev → Nova, Myer | cháu – cô Nova, chú Myer |
+| Dev → Reyner, Runeheart | tôi – cậu |
+| Victor → Socellia | tôi – Sơ, «Vâng, thưa Sơ» |
+| Victor → Lucke | tôi – cậu |
+| Victor → Caenus, Amadeus | tôi – cậu, «Amadeus thân mến» |
+| Ottmar → mọi người | luôn gọi tên, không dùng đại từ |
+
+Nestor không gọi Dược sư bằng đại từ ngôi hai: chỉ dùng «Dược sư», tên, hoặc bỏ chủ ngữ.
 
 ## Con chó và con mèo
 
