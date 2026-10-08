@@ -36,9 +36,10 @@ Không chép bảng thuật ngữ vào skill này. Không lấy quy ước của
 
 ```powershell
 .\.venv\Scripts\python.exe tools\validate_locale.py games\<id>
+.\.venv\Scripts\python.exe tools\check_vietnamese.py games\<id>
 ```
 
-Lệnh phải trả mã 0 trước commit.
+Hai lệnh phải trả mã 0 trước commit. `check_vietnamese.py` bắt âm tiết sai cấu trúc, dấu đặt sai chữ, dấu cách thừa. Nó không bắt được nhầm s/x, ch/tr, hỏi/ngã, nên vẫn phải đọc lại câu.
 
 ## Ngoài phạm vi
 

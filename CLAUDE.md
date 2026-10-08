@@ -91,6 +91,8 @@ Khi đổi CSV hoặc `tools/validate_locale.py`, lệnh này phải qua trướ
 .\.venv\Scripts\python.exe tools\validate_locale.py
 ```
 
+Khi đổi cột `vi`, chạy thêm kiểm chính tả cho game đó: `.\.venv\Scripts\python.exe tools\check_vietnamese.py games\<id>`.
+
 Khi đổi `.githooks/`, chạy thêm `.\.venv\Scripts\python.exe tools\test_git_hooks.py`.
 
 Khi đổi `launcher/`, chạy thêm:

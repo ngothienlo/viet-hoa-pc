@@ -204,7 +204,7 @@ Chức danh đi trước tên được dịch:
 | artefact | cổ vật | |
 | dig site | khu khai quật | |
 | archives, files | hồ sơ, kho hồ sơ | Văn phòng Myer, Đồn cảnh sát |
-| journal (sổ của dược sư cũ) | sổ ghi chép | Khác «Sổ tay» của UI |
+| journal (sổ của dược sư cũ) | sổ ghi chép | Khác «Sổ tay» của UI. Dùng cả trong `Note/NOTE_CHEMIST_JOURNAL_*` và mô tả nhiệm vụ |
 | filter machine | máy lọc | |
 | geyser | mạch nước nóng | Khớp «Trạm Mạch nước nóng» |
 | Aloe (cây ở Hoang mạc Barren) | Lô hội rồng | Theo vật phẩm «Drake Aloe» |
@@ -249,7 +249,9 @@ Thoại nhắc vật phẩm người chơi cần tìm thì dùng đúng tên v�
 | red sugar | đường đỏ | |
 | knitting | đan len | |
 | Surprise! | Bất ngờ chưa! | |
-| soft toy | thú bông | Theo vật phẩm «Thú bông» |
+| soft toy | thú bông | Theo vật phẩm «Thú bông». Món của Kipps là «Chuột bông» (Mouse Soft Toy) |
+| Legendary Blacksmith, legendary blacksmith | Thợ rèn lừng danh, thợ rèn lừng danh | Luôn dùng chữ này, kể cả khi bản Anh viết thường. Không dùng «huyền thoại» (chỉ dành cho «Thanh kiếm cong huyền thoại») |
+| archives | kho hồ sơ | Không dùng «kho lưu trữ» |
 | banjo | đàn banjo | |
 | wedding suit | bộ vest cưới | |
 | recipe book (Yorn) | sổ công thức | |
@@ -551,4 +553,4 @@ Ghi lại để chốt khi chơi thử. Đổi thì sửa bảng trên trước,
 - Vật phẩm nhiệm vụ tên kiểu thơ, cần xem trong game: «Nộ khí rồng» (Draconic Temper), «Nụ hôn tan nhầy» (Slime Kisser), «Bột xẹp phồng» (Popping Aid), «Kem tẩy thiên thanh» (Cerulean Scrub).
 - White / Blue / Pink Meat: tạm «Thịt trắng / xanh / hồng». Cần xem là thịt con gì.
 - Tên nhiệm vụ chơi chữ: «Tức ngực» (A Chest Problem), «Anh cảnh sát tự ti» (Self-Esteem Officer), «Hướng mắt về tôi / về cậu» (Eyes on Me / You).
-- Hướng dẫn `CLINIC_01`: «horn sound» tạm «tiếng còi». Cần nghe trong game.
+- Hướng dẫn `CLINIC_01`: «horn sound» là «tiếng còi» (đã chốt ở #29, dùng chung cho thoại Bubble, Myer). Không dùng «tù và».
