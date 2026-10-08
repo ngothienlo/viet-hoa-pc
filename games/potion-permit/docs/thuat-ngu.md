@@ -434,6 +434,76 @@ Tên cá theo `Fish/*_NAME` trong CSV (Cá mòi, Cá thu, Vẹm, Cá rồng bay�
 
 Giữ tiếng Anh: `UI_COMPLETE_EDITION`, `UI_COMPLETE`, `UI_EDITION` (tên phiên bản, game ghép theo trật tự tiếng Anh), `Interaction/NONE` («ERROR», chuỗi gỡ lỗi).
 
+## Bổ sung từ lô nhiệm vụ, vật phẩm, bảng tin, hướng dẫn (#21)
+
+### Vật phẩm và nội thất
+
+- Thuốc theo loại: balm → «Cao», ointment → «Thuốc mỡ», concoction → «Hỗn dược», tonic → «Thuốc bổ», draught → «Thuốc nước», elixir → «Tiên dược». Thuốc đặt tên theo công dụng: «Thuốc + công dụng» («Thuốc tăng cân»). Tên kiểu thơ dịch nghĩa («Nụ hôn sấm sét», «Lệ hồi xuân»).
+- Nguyên liệu rơi từ quái theo khuôn: «Nhựa cây + vị» (đắng, nhạt, chua, ngọt, đậm đà), «Mẩu + kim loại» (đồng, bạc, vàng), «Da thú cứng / Da thú thượng hạng». «Dark» → «bóng tối» («Tinh thể bóng tối»).
+- Thức ăn dùng tên món quen, giọng miền Bắc: Ngô, Bánh kếp, Trứng tráng, Mì Ý. «Truffle» → «Nấm truffle». «Tenderloin Steak», «Grilled Tenderloin» → «Thăn nướng».
+- Nội thất: loại đồ, rồi màu, rồi hạng. Cheap / Basic / High Quality / Luxury → «rẻ tiền» / «thường» / «loại tốt» / «sang trọng». Ví dụ «Ghế sang trọng 1».
+- «Potion Permit» là đồ trang trí → «Giấy phép pha chế». Trên hai tấm áp phích là tên game → giữ «Potion Permit».
+
+| Gốc | Dịch | Gốc | Dịch |
+| --- | --- | --- | --- |
+| Lemon Balm | Tía tô đất | Feverfew | Cúc hạ sốt |
+| Hibiscus | Hoa dâm bụt | Orchid | Hoa lan |
+| Desert Datura | Cà độc dược sa mạc | Drake Aloe | Lô hội rồng |
+| Moon Stone | Đá Trăng | Moonbrine | Nước muối Trăng |
+| Frostmite (quái) | Bọ Băng | Flying Dragon Fish | Cá rồng bay |
+| Ginseng Tonic | Thuốc bổ nhân sâm | Dev's Briefcase | Cặp tài liệu của Dev |
+
+### Nhiệm vụ
+
+| Gốc | Dịch |
+| --- | --- |
+| Get / Craft / Defeat / Collect {0} | Kiếm / Chế tạo / Hạ gục / Thu thập {0} |
+| Go to / Talk to {0} between {1} | Đến / Nói chuyện với {0} trong khoảng {1} |
+| Deliver {0} to {1} | Giao {0} cho {1} |
+| Report back to the Community Board | Báo cáo lại ở Bảng yêu cầu |
+| volunteer | tình nguyện viên |
+| badge promotion | thăng hạng huy hiệu |
+| archives | kho hồ sơ |
+| artefact | cổ vật |
+| cutlass | thanh kiếm cong |
+| steam machine / filter machine / water heater | máy hơi nước / máy lọc / máy đun nước nóng |
+| drafting table | bàn vẽ |
+| anvil | đe rèn |
+| token of affection | tín vật tình cảm |
+| Fair Trade N / A Local Delicacy N | Trao đổi sòng phẳng N / Đặc sản địa phương N |
+| Fortified Quenching / Improving the Anvil | Tôi thép vững bền / Nâng cấp đe rèn (cùng tên ở Quest và Bulletin) |
+| Family Issues / Family Matters | Chuyện gia đình / Ý nghĩa gia đình |
+
+NPC ở ngôi thứ ba trong nhiệm vụ gọi theo tuổi: bạn trẻ «cậu ấy», người lớn «anh ấy», «cô ấy», người lớn tuổi «ông», «bà». Nhân vật chính vẫn chỉ gọi bằng tên hoặc «Dược sư».
+
+### Bảng tin
+
+| Gốc | Dịch |
+| --- | --- |
+| Dear Chemist, / To all Moonbury residents, | Gửi Dược sư, / Gửi người dân Moonbury, |
+| X's Story N | Chuyện của X N |
+| {[DOG_NAME]}'s Progress N | Tiến bộ của {[DOG_NAME]} N |
+| Dr Samuel, Dr Lewis (nhà nghiên cứu ở Thủ đô) | Tiến sĩ Samuel, Tiến sĩ Lewis. Khác «Bác sĩ Nestor» |
+| Town Square / Beach Cafe | Quảng trường / Quán cà phê bãi biển |
+| cleansing elixir | tiên dược thanh lọc |
+| ice spikes | gai băng |
+| P.S. | TB |
+
+Thứ trong dòng giờ cuối bảng tin: «Thứ Hai … Chủ Nhật», «A to B» → «A đến B».
+
+### Hướng dẫn
+
+| Gốc | Dịch | Gốc | Dịch |
+| --- | --- | --- | --- |
+| Mini-Game: X | Trò chơi nhỏ: X | Fishing Mini-Game | Trò chơi câu cá |
+| Part-Time: X | Làm thêm: X | Foraging | Hái lượm |
+| gathering point | điểm thu thập | mini-map | bản đồ nhỏ |
+| progress bar | thanh tiến độ | satisfaction bar | thanh hài lòng |
+| hit box | vùng bấm | emoticon | biểu tượng cảm xúc |
+| Shielded / Armoured Animals | Thú có khiên / Thú có giáp | mound (chó đào) | ụ đất |
+| Unlocking Areas | Mở khóa khu vực | Patients' Health | Sức khỏe bệnh nhân |
+| Dog Interaction | Tương tác với chó | highlight (nhiệm vụ) | ghim |
+
 ## Còn phân vân
 
 Ghi lại để chốt khi chơi thử. Đổi thì sửa bảng trên trước, rồi sửa CSV.
@@ -445,3 +515,8 @@ Ghi lại để chốt khi chơi thử. Đổi thì sửa bảng trên trước,
 - Tên vùng (`Meadow Range`, `Glaze Iceberg`, `Barren Wasteland`): đang giữ chữ tiếng Anh làm tên riêng. Có thể dịch hẳn («Đồng cỏ xanh», «Núi băng», «Hoang mạc cằn») nếu thấy câu Việt lẫn chữ Anh quá nhiều.
 - `Geyser Reactor`: «Trạm Mạch nước nóng». Cần xem cảnh trong game.
 - Tên quái: đang dịch nghĩa. Nếu tên quá dài trong khung sổ tay, giữ tên gốc.
+- `Quest/CRAFT` «Craft {0}» → «Chế tạo {0}». Nếu `{0}` chủ yếu là thuốc thì đổi sang «Pha chế {0}».
+- Vật phẩm nhiệm vụ tên kiểu thơ, cần xem trong game: «Nộ khí rồng» (Draconic Temper), «Nụ hôn tan nhầy» (Slime Kisser), «Bột xẹp phồng» (Popping Aid), «Kem tẩy thiên thanh» (Cerulean Scrub).
+- White / Blue / Pink Meat: tạm «Thịt trắng / xanh / hồng». Cần xem là thịt con gì.
+- Tên nhiệm vụ chơi chữ: «Tức ngực» (A Chest Problem), «Anh cảnh sát tự ti» (Self-Esteem Officer), «Hướng mắt về tôi / về cậu» (Eyes on Me / You).
+- Hướng dẫn `CLINIC_01`: «horn sound» tạm «tiếng còi». Cần nghe trong game.
