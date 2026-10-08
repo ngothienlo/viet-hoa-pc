@@ -34,3 +34,6 @@ games/*/patch/doorstop_config.ini
 games/*/patch/.doorstop_version
 games/*/patch/.fetch-stamp.json
 games/*/patch/dotnet/
+
+# File vá sinh ra trong patch/ khi chạy tay (scene Unity không có đuôi).
+games/*/patch/**/level[0-9]*

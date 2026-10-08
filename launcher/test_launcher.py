@@ -180,6 +180,14 @@ class ApplyTests(unittest.TestCase):
         self.assertEqual(patapon.build.name, "build_patch.py")
         self.assertTrue(any("PATAPON12_REPLAY" in str(hint) for hint in patapon.hints))
 
+    def test_real_repo_lists_potion_permit(self) -> None:
+        repo = Path(__file__).resolve().parents[1]
+        game = next(game for game in load_games(repo) if game.id == "potion-permit")
+        self.assertEqual(game.exe, "Potion Permit.exe")
+        self.assertIsNotNone(game.build)
+        self.assertTrue(game.build.is_file())
+        self.assertIn("Potion Permit_Data/level1", game.detect)
+
 
 class ButtonTests(unittest.TestCase):
     def test_apply_stays_off_until_path_and_pack_are_ready(self) -> None:

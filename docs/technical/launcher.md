@@ -33,6 +33,8 @@ Trước khi gọi script, launcher đặt biến môi trường `VH_STATE_DIR`.
 
 Lỗi trong script (kể cả `SystemExit`) hiện lên cửa sổ, không làm launcher dừng.
 
+Nhiều game chạy chung một tiến trình launcher, và tool của các game có module trùng tên (`game_config`, `extract_strings`). Script build của mỗi game phải đưa thư mục tool của mình lên đầu `sys.path` (gỡ chỗ cũ rồi chèn lại), và bỏ các module đó khỏi `sys.modules` trước và sau khi build. Không làm vậy thì build game thứ hai có thể nạp nhầm module của game thứ nhất (#19).
+
 Patapon dùng `tools/build_patch.py`. Script đó cần UnityPy và các thư viện trong `requirements.txt`.
 
 `VietHoa.exe --build-only` (hoặc gọi `launcher.app.build_only()`) chỉ tạo bản vá cho mọi game đã chọn thư mục cài, không mở cửa sổ, không áp lên game, rồi ghi log vào `%LOCALAPPDATA%\viet-hoa-pc\build.log`. Dùng để kiểm tra bản exe, hoặc để người chơi gửi log khi báo lỗi.
