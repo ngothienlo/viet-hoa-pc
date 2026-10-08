@@ -9,6 +9,7 @@ Không chứa file cài game, bundle, video hay âm thanh.
 | Thư mục | Game |
 | --- | --- |
 | `games/patapon12-replay/` | PATAPON 1+2 REPLAY |
+| `games/potion-permit/` | Potion Permit |
 
 Thêm game là thêm `games/<id>/`. Không để chuỗi của game này trong thư mục game kia.
 

@@ -1,0 +1,8 @@
+{
+  "id": "potion-permit",
+  "title": "Potion Permit",
+  "summary": "Bản PC Steam. Bản vá được tạo ngay từ bản cài của ngươi, không kèm file game.",
+  "exe": "Potion Permit.exe",
+  "detect": ["Potion Permit.exe", "Potion Permit_Data/level1", "Potion Permit_Data/sharedassets0.assets"],
+  "build": "tools/build_patch.py"
+}

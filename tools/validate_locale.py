@@ -11,7 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 GAMES = ROOT / "games"
 REQUIRED = ["id", "context", "source", "vi", "status", "note"]
 STATUSES = {"todo", "draft", "review", "done"}
-TOKEN = re.compile(r"(\{[^{}]+\}|%[sdif]|</?[A-Za-z][^>]*>|\\n)")
+# Placeholder, thẻ rich text (cả thẻ màu `<#ff1d1d>` của TextMesh Pro) và `\n` viết bằng hai ký tự.
+TOKEN = re.compile(r"(\{[^{}]+\}|%[sdif]|</?[A-Za-z][^>]*>|<#[0-9A-Fa-f]{3,8}>|\\n)")
 
 
 def tokens(text: str) -> list[str]:

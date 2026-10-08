@@ -68,9 +68,11 @@ def build(install: Path, out: Path, log: Callable[[str], None] | None = None) ->
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
+    # Game khác có module trùng tên (game_config, extract_strings): đưa thư mục của game này lên đầu.
     for folder in (FONT_TOOLS, TOOLS):
-        if str(folder) not in sys.path:
-            sys.path.insert(0, str(folder))
+        while str(folder) in sys.path:
+            sys.path.remove(str(folder))
+        sys.path.insert(0, str(folder))
 
     stream = _Lines(log)
     saved = {key: os.environ.get(key) for key in ("VH_INSTALL_DIR", "VH_PATCH_DIR")}
