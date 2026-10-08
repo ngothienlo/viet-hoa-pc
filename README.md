@@ -1,6 +1,6 @@
 # Việt hóa game PC
 
-Repo private cho bản dịch tiếng Việt của game PC (Steam và Epic). Mỗi game một thư mục trong `games/`. Patapon là game đầu tiên, không phải tên repo.
+Repo private cho bản dịch tiếng Việt của game PC (Steam và Epic). Mỗi game một thư mục trong `games/`.
 
 Không chứa file cài game, bundle, video hay âm thanh.
 
