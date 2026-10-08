@@ -54,6 +54,15 @@ gh release create v1.0.0 dist\VietHoa.exe dist\VietHoa.exe.sha256 --title "v1.0"
 
 Tag tạo trên `main`, sau khi PR đã merge. Hook `pre-push` chỉ chặn nhánh, không chặn tag.
 
+## Các bản đã phát hành
+
+| Bản | Issue | Nội dung |
+| --- | --- | --- |
+| v1.0 | #17 | PATAPON 1+2 REPLAY |
+| v1.1.0 | #31 | Thêm Potion Permit: 9.661 câu, font pixel có chữ Việt. Kiểm chính tả bằng `tools/check_vietnamese.py` |
+
+Bản mới có thêm game hoặc tính năng thì tăng số giữa. Bản chỉ sửa lỗi dịch thì tăng số cuối.
+
 ## Giới hạn
 
 - `fonts.json` gắn với một bản game (sha1 của `catalog.json`). Game cập nhật thì exe báo không khớp, không vá. Khi đó quét lại font, build và phát hành bản mới.
