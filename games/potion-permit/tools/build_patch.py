@@ -2,7 +2,9 @@
 
 Ghi câu Việt trong `locale/vi/strings.csv` vào cột English của cả hai `LanguageSource`
 (trong `sharedassets0.assets` và scene `level1`). Người chơi để game ở English thì thấy
-tiếng Việt; term chưa dịch giữ tiếng Anh. Đọc file gốc qua bản sao lưu của launcher.
+tiếng Việt; term chưa dịch giữ tiếng Anh. Thêm chữ Việt vào font pixel (`font/patch_font.py`):
+ghi `resources.assets`, bundle `prefab-battle` và `catalog.json`. Đọc file gốc qua bản sao
+lưu của launcher.
 Repo và bản exe không chứa file nào của game.
 
     python games/potion-permit/tools/build_patch.py "<thư mục cài>" "<thư mục ra>"
@@ -19,8 +21,9 @@ from pathlib import Path
 from typing import Callable
 
 TOOLS = Path(__file__).resolve().parent
+FONT_TOOLS = TOOLS / "font"
 # Module của game này. Game khác có module trùng tên, nên bỏ cache trước và sau khi build.
-MODULES = ("game_config", "extract_strings")
+MODULES = ("game_config", "extract_strings", "patch_font", "pixel_glyphs")
 # Ghi chú của dòng không được đưa vào game.
 SKIP_NOTES = {"dịch máy", "không dịch", "lệch placeholder"}
 
@@ -36,9 +39,10 @@ def translations(csv_path: Path) -> dict[str, str]:
 
 
 def _use_own_modules() -> None:
-    while str(TOOLS) in sys.path:
-        sys.path.remove(str(TOOLS))
-    sys.path.insert(0, str(TOOLS))
+    for folder in (FONT_TOOLS, TOOLS):
+        while str(folder) in sys.path:
+            sys.path.remove(str(folder))
+        sys.path.insert(0, str(folder))
     for name in MODULES:
         sys.modules.pop(name, None)
 
@@ -54,7 +58,8 @@ def build(install: Path, out: Path, log: Callable[[str], None] | None = None) ->
                 real.flush()
 
     if out.exists():
-        shutil.rmtree(out)
+        # Đường dẫn trong thư mục ra có thể vượt 260 ký tự (bundle nằm sâu), nên xóa theo dạng `\\?\`.
+        shutil.rmtree("\\\\?\\" + str(out.resolve()) if sys.platform == "win32" else out)
     out.mkdir(parents=True)
     saved = {key: os.environ.get(key) for key in ("VH_INSTALL_DIR", "VH_PATCH_DIR")}
     os.environ["VH_INSTALL_DIR"] = str(install)
@@ -62,7 +67,8 @@ def build(install: Path, out: Path, log: Callable[[str], None] | None = None) ->
     try:
         _use_own_modules()
         import extract_strings as ex
-        from game_config import DATA_NAME
+        import patch_font
+        from game_config import DATA_NAME, original
 
         table = translations(ex.CSV_PATH)
         log(f"Có {len(table)} term tiếng Việt.")
@@ -86,6 +92,9 @@ def build(install: Path, out: Path, log: Callable[[str], None] | None = None) ->
             destination.write_bytes(assets.save())
             log(f"{filename}: ghi {changed} câu ({destination.stat().st_size / 1048576:.1f} MB)")
             _verify(destination, filename, table, install, gen, ex)
+        written = patch_font.patch(install, out, gen, log, original)
+        patch_font.verify(written[0], gen, install / DATA_NAME)
+        patch_font.verify(written[1])
     finally:
         for key, old in saved.items():
             if old is None:

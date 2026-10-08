@@ -53,8 +53,9 @@ Mỗi file là mảng JSON `{"id", "vi"}`. Script loại câu lệch placeholder
 
 1. Đọc `sharedassets0.assets` và `level1` gốc của người chơi, qua bản sao lưu nếu đã áp.
 2. Ghi câu Việt vào **cột English** của cả hai `LanguageSource`.
-3. Đọc lại để kiểm.
-4. Chép hai file vào bản cài.
+3. Thêm chữ Việt vào font (`docs/font.md`): `resources.assets`, bundle `prefab-battle`, `catalog.json`.
+4. Đọc lại để kiểm.
+5. Chép năm file vào bản cài.
 
 Người chơi để ngôn ngữ của game là English thì thấy tiếng Việt. Term chưa dịch giữ tiếng Anh.
 
@@ -72,7 +73,7 @@ Ghi đè cột English, không thêm cột Vietnamese: menu chọn ngôn ngữ c
 
 ## Font
 
-Game dùng font pixel họ PixelMplus12 kèm 14 font fallback. Font chưa có chữ Việt riêng (ư, ơ, ế…). Xem ticket font (#20) và `docs/font.md` khi có.
+Game dùng font pixel `PixelMplus12-Regular` kèm 14 font fallback. Font gốc không có chữ Việt riêng (ư, ơ, ế…). `build_patch.py` ghép thêm 102 chữ Việt vào font này, nên bản vá có thêm `resources.assets`, bundle `prefab-battle_assets_all_*.bundle` và `StreamingAssets/aa/Windows/catalog.json`. Chi tiết: `docs/font.md`.
 
 ## Không commit
 

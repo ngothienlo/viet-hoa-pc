@@ -57,6 +57,19 @@ Kết luận: font nào có thể vẽ chữ của bản dịch thì phải tự
 
 Đổi lại, dấu ghép không đẹp bằng dấu do người vẽ font làm. Bù lại, chữ giữ nguyên nét của game, và không phải mang font ngoài vào.
 
+### Font pixel
+
+Rút ra từ Potion Permit (`games/potion-permit/docs/font.md`).
+
+- Font pixel trong TMP vẫn có thể là SDF: font 12 px dựng ở cỡ 46, nên một điểm ảnh thiết kế là khoảng 3,85 đơn vị atlas. Đo lưới từ glyph có sẵn (đáy của chữ, bề rộng của chữ 5 điểm ảnh).
+- Lưới đo được không khớp tuyệt đối với cách game làm tròn. Thân chữ và dấu có sẵn thì lấy nguyên hình từ atlas, ở đúng vị trí gốc. Chỉ dấu font không có mới vẽ bằng ô điểm ảnh.
+- Font pixel thường ép chữ hoa có dấu thấp đi vài hàng để dấu vừa dòng (ví dụ `Á` chỉ cao 7 hàng thay vì 9). Lấy thân chữ hoa từ phần dưới của chữ Latin-1 có dấu, không lấy từ chữ hoa ASCII.
+- Không lấy chữ từ fallback khác họ (ví dụ `ă` của một font pixel khác): nét dày khác, câu sẽ lẫn hai mặt chữ.
+
+### Bundle Addressables có CRC
+
+Catalog của Addressables có thể ghi CRC cho từng bundle (`m_Crc` trong JSON UTF-16 nằm ở `m_ExtraDataString`). Khi đó bundle đã vá sẽ không nạp được. Đổi CRC của bundle đó thành `0` và giữ nguyên độ dài chuỗi (thay chữ số bằng `0` và dấu cách). Nhớ đưa `catalog.json` vào bản vá.
+
 ### Ghi
 
 - Thay atlas: `Texture2D.set_image(..., target_format=Alpha8)` rồi `save()`. Dữ liệu được ghi thẳng vào file, không còn trỏ sang `.resS`.
