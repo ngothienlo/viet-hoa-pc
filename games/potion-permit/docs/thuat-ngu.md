@@ -197,6 +197,47 @@ Chức danh đi trước tên được dịch:
 | Person To Find | Người cần tìm |
 | {[DOG_NAME]}'s House | Nhà của {[DOG_NAME]} |
 
+### Hội thoại NPC (#22)
+
+| Gốc | Dịch | Ghi chú |
+| --- | --- | --- |
+| artefact | cổ vật | |
+| dig site | khu khai quật | |
+| archives, files | hồ sơ, kho hồ sơ | Văn phòng Myer, Đồn cảnh sát |
+| journal (sổ của dược sư cũ) | sổ ghi chép | Khác «Sổ tay» của UI |
+| filter machine | máy lọc | |
+| geyser | mạch nước nóng | Khớp «Trạm Mạch nước nóng» |
+| Aloe (cây ở Hoang mạc Barren) | Lô hội rồng | Theo vật phẩm «Drake Aloe» |
+| Moon Stone | Đá Trăng | |
+| Moon Incense, Moon Clove tea | Hương Trăng, trà Đinh hương Trăng | |
+| plant fever | bệnh sốt cây | |
+| capital lackey | tay sai của Thủ đô | Matheo mắng dược sư |
+| witchdoctor knowledge | kiến thức thầy lang | |
+| the Cliff (chỗ Xiao ngồi thiền) | Vách đá | |
+| the Station | Ga | |
+| the Arcade, arcade machines | Khu trò chơi, máy trò chơi | |
+| tarot reading | bói bài tarot | Helene |
+| treasure, treasure chest | kho báu, rương kho báu | |
+| Legendary Blacksmith | Thợ rèn lừng danh | Danh hiệu của Opalheart |
+| anvil, furnace, alloy, ore, blueprint | đe rèn, lò, hợp kim, quặng, bản vẽ | |
+| cable car | cáp treo | |
+| beaker | cốc thí nghiệm | |
+| dart board, darts | bảng phi tiêu, phi tiêu | |
+| scholar, apprentice scholar | học giả, học giả tập sự | Lucke |
+| Caenus' realm | cõi của Caenus | Victor |
+| Purr / Mew, Meow / Myu | Rừ / Meo / Miu | Kipps |
+| Amen | A-men | |
+| Oh my gods, dear gods | Các vị thần ơi | |
+| Ahoy | Ahoy | Giữ nguyên, chất cướp biển |
+| landlubber | đồ chuột đất liền, lũ chuột đất liền | Leano, Dan |
+| Blow me down! / shiver me timbers | Ối sóng gió ơi! / rung rinh cả cột buồm | |
+| savvy? / scallywag / scurvy dogs | hiểu chứ? / nhóc ranh / lũ chó ghẻ | |
+| three sheets to the wind | say bí tỉ | |
+| old salt, sea dog | dân biển già, con sói biển già | |
+| partner (tuyến tình cảm của Leano) | bạn đời | |
+
+Thoại nhắc vật phẩm người chơi cần tìm thì dùng đúng tên vật phẩm, kể cả khi bản Anh nói tắt: «Carrots from a cold region» → «Cà rốt mùa đông».
+
 ## Địa danh (`Location/`, `Trigger/`, biển hiệu)
 
 Phần chung viết hoa chữ đầu, phần tên riêng giữ nguyên.
