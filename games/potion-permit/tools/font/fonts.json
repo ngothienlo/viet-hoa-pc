@@ -1,0 +1,583 @@
+{
+ "game": "potion-permit",
+ "unity": "2020.1.1f1",
+ "catalogSha1": "bcda5ca1c29cacba834552912cadf1fc543f3000",
+ "scanned": "2026-10-08",
+ "note": "Sinh bởi tools/font/inventory.py. Không sửa tay.",
+ "fonts": [
+  {
+   "name": "GNUUnifont9-CJK_Bopomofo",
+   "file": "resources.assets",
+   "pathId": 8411,
+   "chars": 41,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "GNUUnifont9-CJK_PP",
+   "file": "resources.assets",
+   "pathId": 8412,
+   "chars": 2356,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 4096,
+    "height": 4096,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "GNUUnifont9-CJK_PP_Traditional",
+   "file": "resources.assets",
+   "pathId": 8413,
+   "chars": 2473,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 4096,
+    "height": 4096,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "GNUUnifont9-CJK_Punctuation_PP",
+   "file": "resources.assets",
+   "pathId": 8414,
+   "chars": 65,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "GNUUnifont9-Halfwidth_Fullwidth_PP",
+   "file": "resources.assets",
+   "pathId": 8415,
+   "chars": 226,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 1024,
+    "height": 1024,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "LanaPixel12-Copyright_PP",
+   "file": "resources.assets",
+   "pathId": 8416,
+   "chars": 1,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 64,
+    "height": 64,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "LanaPixel12-Cyrillic_PP",
+   "file": "resources.assets",
+   "pathId": 8417,
+   "chars": 114,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 1024,
+    "height": 1024,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "LanaPixel12-General_Punctuation_Missing_PP",
+   "file": "resources.assets",
+   "pathId": 8418,
+   "chars": 8,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 128,
+    "height": 128,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "LanaPixel12-Latin_Extended_PP",
+   "file": "resources.assets",
+   "pathId": 8419,
+   "chars": 128,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 1024,
+    "height": 512,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 126,
+   "action": "keep",
+   "why": "fallback khác họ có ă đ ĩ ũ; chữ ghép trong font chính được tìm trước nên không còn dùng tới"
+  },
+  {
+   "name": "PixelMplus12-General_Punctutation_PP",
+   "file": "resources.assets",
+   "pathId": 8420,
+   "chars": 11,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 256,
+    "height": 256,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "PixelMplus12-Halfwidth_Fullwidth_PP",
+   "file": "resources.assets",
+   "pathId": 8421,
+   "chars": 10,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 256,
+    "height": 256,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "PixelMplus12-Japanese_PP",
+   "file": "resources.assets",
+   "pathId": 8422,
+   "chars": 1637,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 4096,
+    "height": 2048,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "PixelMplus12-Japanese_Punctuation_PP",
+   "file": "resources.assets",
+   "pathId": 8423,
+   "chars": 10,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 256,
+    "height": 128,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "PixelMplus12-Latin_Supplement_PP",
+   "file": "resources.assets",
+   "pathId": 8424,
+   "chars": 95,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 1024,
+    "height": 512,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 102,
+   "action": "keep",
+   "why": "fallback có chữ Latin-1 (á â ê ô…), cùng họ; dùng làm nguồn dấu"
+  },
+  {
+   "name": "PixelMplus12-Regular",
+   "file": "resources.assets",
+   "pathId": 8425,
+   "chars": 97,
+   "renderMode": 32810,
+   "atlas": {
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [
+    "PixelMplus12-General_Punctutation_PP",
+    "PixelMplus12-Latin_Supplement_PP",
+    "PixelMplus12-Halfwidth_Fullwidth_PP",
+    "PixelMplus12-Japanese_PP",
+    "PixelMplus12-Japanese_Punctuation_PP",
+    "LanaPixel12-General_Punctuation_Missing_PP",
+    "LanaPixel12-Copyright_PP",
+    "LanaPixel12-Cyrillic_PP",
+    "LanaPixel12-Latin_Extended_PP",
+    "neodgm-Hangul_PP",
+    "GNUUnifont9-CJK_PP",
+    "GNUUnifont9-CJK_Punctuation_PP",
+    "GNUUnifont9-CJK_PP_Traditional",
+    "GNUUnifont9-CJK_Bopomofo"
+   ],
+   "missingVi": 134,
+   "action": "compose",
+   "why": "font chính của mọi chữ trong game; ghép chữ Việt theo lưới điểm ảnh"
+  },
+  {
+   "name": "neodgm-Hangul_PP",
+   "file": "resources.assets",
+   "pathId": 8426,
+   "chars": 1130,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 4096,
+    "height": 2048,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "LiberationSans SDF",
+   "file": "resources.assets",
+   "pathId": 12506,
+   "chars": 250,
+   "renderMode": 32810,
+   "atlas": {
+    "width": 1024,
+    "height": 1024,
+    "padding": 9
+   },
+   "pointSize": 86,
+   "fallbacks": [],
+   "missingVi": 102,
+   "action": "keep",
+   "why": "font mặc định của TMP, không thấy chữ nào của game dùng"
+  },
+  {
+   "name": "PixelMplus12-Japanese_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": -8811062138300526633,
+   "chars": 1637,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 4096,
+    "height": 2048,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "PixelMplus12-Latin_Supplement_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": -6041210067883304753,
+   "chars": 95,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 1024,
+    "height": 512,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 102,
+   "action": "keep",
+   "why": "fallback có chữ Latin-1 (á â ê ô…), cùng họ; dùng làm nguồn dấu"
+  },
+  {
+   "name": "PixelMplus12-Japanese_Punctuation_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": -3649347828065896568,
+   "chars": 10,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 256,
+    "height": 128,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "PixelMplus12-Regular",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": -3152404447588183667,
+   "chars": 97,
+   "renderMode": 32810,
+   "atlas": {
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [
+    "PixelMplus12-General_Punctutation_PP",
+    "PixelMplus12-Latin_Supplement_PP",
+    "PixelMplus12-Halfwidth_Fullwidth_PP",
+    "PixelMplus12-Japanese_PP",
+    "PixelMplus12-Japanese_Punctuation_PP",
+    "LanaPixel12-General_Punctuation_Missing_PP",
+    "LanaPixel12-Copyright_PP",
+    "LanaPixel12-Cyrillic_PP",
+    "LanaPixel12-Latin_Extended_PP",
+    "neodgm-Hangul_PP",
+    "GNUUnifont9-CJK_PP",
+    "GNUUnifont9-CJK_Punctuation_PP",
+    "GNUUnifont9-CJK_PP_Traditional",
+    "GNUUnifont9-CJK_Bopomofo"
+   ],
+   "missingVi": 134,
+   "action": "compose",
+   "why": "font chính của mọi chữ trong game; ghép chữ Việt theo lưới điểm ảnh"
+  },
+  {
+   "name": "PixelMplus12-Halfwidth_Fullwidth_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": -3103430989946039616,
+   "chars": 10,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 256,
+    "height": 256,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "GNUUnifont9-CJK_PP_Traditional",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": -863016823923301330,
+   "chars": 2473,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 4096,
+    "height": 4096,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "LanaPixel12-Cyrillic_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": -488706275596217583,
+   "chars": 114,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 1024,
+    "height": 1024,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "GNUUnifont9-CJK_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": -9771799607802132,
+   "chars": 2356,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 4096,
+    "height": 4096,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "GNUUnifont9-CJK_Punctuation_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": 108152170434012521,
+   "chars": 65,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "PixelMplus12-General_Punctutation_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": 875899387757262900,
+   "chars": 11,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 256,
+    "height": 256,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "LanaPixel12-Copyright_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": 4365347508381884786,
+   "chars": 1,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 64,
+    "height": 64,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "neodgm-Hangul_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": 6224984083828743317,
+   "chars": 1130,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 4096,
+    "height": 2048,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "LanaPixel12-General_Punctuation_Missing_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": 6998168631055393435,
+   "chars": 8,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 128,
+    "height": 128,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "GNUUnifont9-CJK_Bopomofo",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": 7154181371005443465,
+   "chars": 41,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 512,
+    "height": 512,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 134,
+   "action": "keep",
+   "why": "font Nhật, Hàn, Trung, Cyrillic hoặc ký hiệu"
+  },
+  {
+   "name": "LanaPixel12-Latin_Extended_PP",
+   "file": "StreamingAssets/aa/Windows/StandaloneWindows64/prefab-battle_assets_all_affb7c71d6ed474451691f662636a7c8.bundle",
+   "pathId": 8440117746202369260,
+   "chars": 128,
+   "renderMode": 4169,
+   "atlas": {
+    "width": 1024,
+    "height": 512,
+    "padding": 12
+   },
+   "pointSize": 46,
+   "fallbacks": [],
+   "missingVi": 126,
+   "action": "keep",
+   "why": "fallback khác họ có ă đ ĩ ũ; chữ ghép trong font chính được tìm trước nên không còn dùng tới"
+  }
+ ]
+}
