@@ -40,7 +40,20 @@ Khi đại từ lặp lại nhiều, bỏ chủ ngữ. Tiếng Việt cho phép 
 Trong nhiệm vụ, tiểu sử, bảng tin: gọi bằng tên hoặc «Dược sư». Không dùng «anh ấy», «cô ấy», «họ» cho một người.
 
 - `Martha starts keeping her distance from {[CHARACTER_NAME]}, who gets worried and tries to track her down` → «Martha bắt đầu tránh mặt {[CHARACTER_NAME]}. Lo lắng, Dược sư tìm cách gặp cô ấy để nói chuyện.» Câu Việt phải giữ đúng số placeholder của câu gốc, nên lần nhắc thứ hai dùng «Dược sư».
-- `the chemist` chỉ nhân vật chính → «Dược sư», viết hoa.
+- `the chemist` chỉ nhân vật chính → «Dược sư», viết hoa. Kể cả trong lời thoại: «Cái đứa mới đến, Dược sư đấy à?».
+
+NPC ở ngôi thứ ba (tiểu sử `BG_STORY`, nhiệm vụ, bảng tin): mỗi NPC một đại từ, dùng giống nhau ở mọi chỗ. Không dùng «cậu ta», «anh ta», «cô ta» (nghe coi thường).
+
+| Đại từ | NPC |
+| --- | --- |
+| ông | Myer, Osman, Garret, Nestor, Zeke |
+| bà | Mercy, Nova |
+| anh, anh ấy | Collin, Dean, Derrek, Lucke, Matheo, Reyner, Victor, Xiao, Yorn, Forrest, Ottmar |
+| cô, cô ấy | Mariele, Cassandra, Opalheart, Leano, Helene, Olive, Moira, Martha, Hannah, Bubble, Rue, Runeheart, Socellia |
+| cậu ấy | Dev, Dan |
+| cô bé, cậu bé | Laura, Russo |
+
+Đã có tên ở câu trước thì câu sau bỏ đại từ hoặc nhắc lại tên, đừng lặp «anh ấy» nhiều lần trong một đoạn.
 
 ### Nếu sau này có lời của nhân vật chính
 
@@ -261,7 +274,7 @@ Nestor không gọi Dược sư bằng đại từ ngôi hai: chỉ dùng «Dư�
 - Tránh từ địa phương quá đậm. Dùng «bố, mẹ», không dùng «ba, má» hay «tía, u».
 - Dùng tiểu từ cuối câu cho có tình: «nhé», «nhỉ», «à», «đấy», «mà». Không lạm dụng.
 - Giữ tiếng cười và thán từ cho hợp tiếng Việt: «Hahaha», «Hehehe», «Hừ», «Ối», «Trời ơi», «Ồ».
-- Lời lắp bắp giữ dạng lặp chữ đầu: «T-Thank you» → «C-Cảm ơn».
+- Lời lắp bắp giữ dạng lặp chữ đầu. Ở đầu câu, chữ sau gạch cũng viết hoa: «T-Thank you» → «C-Cảm ơn», «K-Không...». Thán từ có gạch không phải lắp bắp thì để thường: «A-men», «Yo-ho-ho», «Ơ-ờ».
 
 ## Quy tắc câu
 
@@ -291,6 +304,35 @@ Nestor không gọi Dược sư bằng đại từ ngôi hai: chỉ dùng «Dư�
 - Giữ nguyên xuống dòng trong ô. Có thể dời vị trí xuống dòng cho câu Việt xuôi, nhưng giữ số dòng.
 - Giờ dùng `07:00`, không đổi thành «7 giờ sáng».
 - Số có dấu phân cách hàng nghìn viết kiểu Việt: «1,000» → «1.000». Số trong placeholder (`{0}`) để game điền, không đổi.
+
+## Lỗi hay gặp
+
+Rút ra từ lượt rà soát toàn bộ bản dịch (#29). Script `tools/check_vietnamese.py` không bắt được các lỗi này, phải đọc mới thấy.
+
+- **«we» không gồm người nghe** thì không dịch «chúng ta». Myer kể việc thị trấn đã làm: «Mọi người vừa sửa xong cây cầu», «Bọn chú vừa dọn sạch bãi biển», không phải «Chúng ta vừa…». «Không có cháu thì cả thị trấn chẳng làm nổi đâu.»
+- **Dịch sát cấu trúc tiếng Anh.** Viết lại theo cách người Việt nói:
+
+  | Gốc | Tránh | Nên |
+  | --- | --- | --- |
+  | How's your day? | Hôm nay của cậu thế nào? | Hôm nay cậu thế nào? |
+  | I'm glad we talked | Mình vui vì tụi mình đã trò chuyện | Mình vui vì được tâm sự với cậu |
+  | Forgive me for… | Tha thứ cho mình vì đã… | Mình … quá, cậu tha thứ cho mình nhé? |
+  | The feeling is mutual | Tình cảm này đến từ cả hai phía | Mình cũng có tình cảm với cậu |
+  | Only to find… | Chỉ để thấy… | Nào ngờ… |
+  | It's here | Nó ở đây | Ở đây ạ |
+  | Noted. | Ghi nhớ. | Nhớ rồi. |
+  | long face | mặt dài thượt | mặt mày ủ rũ |
+  | Accept this from me | Nhận cái này từ tôi | Nhận cái này của tôi |
+  | Let me guess | Đoán xem nào | Khỏi nói cũng biết |
+
+- **Câu bị động** («cannot be seen») đảo lại cho đúng chủ thể: «Mắt thường không thể nhìn thấy họ», không phải «Họ không thể nhìn thấy».
+- **«giúp» thiếu bổ ngữ** dễ hiểu ngược: «Em cần mọi người giúp», «Tôi cần nhờ một việc», «ngỏ ý giúp Sơ», không phải «Em cần giúp», «xin giúp Sơ».
+- **Lặp từ:** «cháu… cháu à» trong một câu ngắn (bỏ «cháu à» khi câu đã có «cháu»), «Được rồi. Thế là được.», «mai… Mai…», «thế nào nào».
+- **Vừa gọi danh xưng vừa gọi tên** trong một câu («Dược sư…, {[CHARACTER_NAME]}?»): giữ một.
+- **Bỏ chủ ngữ mà vế sau đổi người** thì nhắc tên: «Dược sư càng thân với người bạn này thì nó sẽ càng khôn.»
+- **Tiểu từ:** «ạ» là người dưới nói với người trên; Myer nói với Dược sư dùng «à». Không chồng hai tiểu từ («chứ, nhỉ?»).
+- **Tiếng Anh còn sót:** «Yay!», «Yeah!» → «Hoan hô!», «Tuyệt quá!», «Ha!».
+- **Từ dễ dùng sai nghĩa:** «thành thật» (trung thực) khác «thành hiện thực»; «gỡ lại» (gỡ vốn) khác «khắc phục»; «nửa kia» là người yêu; «người khó khăn» thành «người gặp khó khăn»; «người rất lý tưởng» (hoàn hảo) khác «sống có lý tưởng»; «khét tiếng» là tai tiếng.
 
 ## Trạng thái dòng
 
